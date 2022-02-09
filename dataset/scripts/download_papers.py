@@ -40,16 +40,28 @@ def create_folder(folder_path):
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
 
-def download_pdf(url, paper_key):
-    url = url + '.pdf'
+def download_pdf(url_org, paper_key):
+    url_pdf = url_org + '.pdf'
     filepath = os.path.join('./downloads/pdfs', paper_key + '.pdf')
-    if not os.path.exists(filepath):
+
+    if os.path.exists(filepath): # already downloaded
+        return True 
+
+    pdf_found = False
+    for url in [url_pdf, url_org]:
         r = requests.get(url, allow_redirects=True)
-        if r.status_code == 200: # url exists
+        content_type = r.headers.get('content-type')
+        if r.status_code == 200 and 'application/pdf' in content_type: # url exits and pdf file
             with open(filepath, 'wb') as f:
                 f.write(r.content)
-        else:
-            print(f"URL {url} for {paper_key} not found!!!")
+            if pdf_found:
+                print("Multiple PDFs for {url_pdf} or {url_org} with {paper_key}!!!")
+            pdf_found = True
+    if not pdf_found:
+        print(f"URL {url_pdf} or {url_org} for {paper_key} not found with pdf!!!")
+    return pdf_found
+    
+
 
 def main(args):
     bib_dict = read_bibfile(args.bib_path)

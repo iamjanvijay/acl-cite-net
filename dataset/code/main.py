@@ -13,7 +13,7 @@ from tqdm import tqdm
 from pybtex.database.input import bibtex
 from difflib import SequenceMatcher
 from fuzzywuzzy import fuzz
-from fuzzywuzzy import process
+from networks import CitationNet
 
 def read_bibfile(filepath):
     if filepath=='./downloads/anthology+abstracts.bib' and os.path.exists('./downloads/anthology+abstracts.pkl'):
@@ -175,7 +175,7 @@ def main(args):
     print(bib_dict[random.choice(list(bib_dict.keys()))])
     print("-"*50)
 
-    if args.dump_bib_details:
+    if args.dump_bib_details: # ==> Dump details from bib file to csv format.
         with open('./downloads/bib_paper_details.csv', 'w') as csvfile:
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(['paper_key', 'paper_type', 'paper_title', 'paper_book_title', 'month', 'year', 'url'])
@@ -185,12 +185,12 @@ def main(args):
                 paper_title, paper_book_title, paper_month, paper_year, paper_url = fields_dict['title'], query_dict(fields_dict, 'booktitle'), query_dict(fields_dict, 'month'), query_dict(fields_dict, 'year'), query_dict(fields_dict, 'url')
                 csvwriter.writerow([paper_key, paper_type, paper_title, paper_book_title, paper_month, paper_year, paper_url])
                         
-    if args.download_pdfs:
+    if args.download_pdfs: # ==> Download pdfs from ACL anthology.
         create_folder('./downloads/pdfs')
         for paper_key in tqdm(bib_dict):
             download_pdf(bib_dict[paper_key]['fields']['url'], paper_key)
     
-    if args.create_cite_net:
+    if args.fetch_paper_details: # ==> Fetch paper-ids and references corresponding to each paper.
         ss_request_counts = 0
         correct_paper_details, total_paper_details = 0.0, 0.0
 
@@ -254,7 +254,7 @@ def main(args):
                     ref_paperids[paper_id], ss_request_counts = fetch_ref_paper_ids(paper_id, ss_request_counts)
                     f.write(f'{paper_id},{",".join(ref_paperids[paper_id])}\n')
     
-    if args.clean_paper_details:
+    if args.clean_paper_details: # ==> Manually clean up partially correct paper details.
         title_to_paper_details_filepath = './downloads/title_to_paper_details.csv'
         title_to_filtered_paper_details_filepath = './downloads/title_to_paper_filtered_details.csv'
         paper_details, filtered_paper_details = [], []
@@ -308,6 +308,12 @@ def main(args):
             for row in filtered_paper_details:
                 csvwriter.writerow(row)
 
+    if args.create_cite_net: # create the acl citation network.
+        title_to_paper_details_filepath = './downloads/title_to_paper_filtered_details.csv'
+        ref_paperids_filepath = './downloads/ref_paper_ids.csv'
+        citenet = CitationNet(title_to_paper_details_filepath, ref_paperids_filepath)
+        citenet.print_top_k_cited(20)
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--bib_path", default='./downloads/anthology+abstracts.bib', type=str, 
@@ -316,10 +322,12 @@ if __name__ == '__main__':
                         help='dumps some details from the bibtex file')
     parser.add_argument("--download_pdfs", action='store_true', default=False, 
                         help='if true, download and save pdfs')
-    parser.add_argument("--create_cite_net", action='store_true', default=False, 
-                        help='if true, use semantic scholar APIs to create a citation network')
+    parser.add_argument("--fetch_paper_details", action='store_true', default=False, 
+                        help='if true, use semantic scholar APIs to fetch relevant paper details')
     parser.add_argument("--clean_paper_details", action='store_true', default=False, 
                         help='cleans the title_to_paper_details csv file.')
+    parser.add_argument("--create_cite_net", action='store_true', default=False, 
+                        help='creates citation network using the fetched paper details.')
     args = parser.parse_args()
     
     main(args)

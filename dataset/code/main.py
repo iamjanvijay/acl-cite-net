@@ -309,10 +309,14 @@ def main(args):
                 csvwriter.writerow(row)
 
     if args.create_cite_net: # create the acl citation network.
-        title_to_paper_details_filepath = './downloads/title_to_paper_filtered_details.csv'
-        ref_paperids_filepath = './downloads/ref_paper_ids.csv'
-        citenet = CitationNet(title_to_paper_details_filepath, ref_paperids_filepath)
+        title_to_paper_details_fpath = './downloads/title_to_paper_filtered_details.csv'
+        ref_paperids_fpath = './downloads/ref_paper_ids.csv'
+        bib_paper_details_fpath = './downloads/bib_paper_details.csv'
+        paper_country_fpath = './downloads/paper_country_list.json'
+        country_citation_count_fpath = './downloads/country_cited_count.json'
+        citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
         citenet.print_top_k_cited(20)
+        citenet.extract_country_cited_count(country_citation_count_fpath)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

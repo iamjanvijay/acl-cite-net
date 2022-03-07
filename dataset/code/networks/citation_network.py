@@ -51,6 +51,7 @@ class CitationNet:
         with open(country_list_filepath) as f: # load country annotations.
             paper_key_to_country_list = json.load(f)
 
+        missing, total = 0, 0
         for paper_id in self.paper_features: # adding bib-details and country annotations in nodes.
             paper_key, paper_type, paper_book_title, month, year, url = bib_title_to_bib_details[self.paper_features[paper_id]['bib_title']] 
             self.paper_features[paper_id]['paper_key'] = paper_key
@@ -59,7 +60,6 @@ class CitationNet:
             self.paper_features[paper_id]['month'] = month
             self.paper_features[paper_id]['year'] = year
 
-            missing, total = 0, 0
             key_for_country_list = paper_key + '.txt'
             if key_for_country_list in paper_key_to_country_list:
                 country_list = paper_key_to_country_list[key_for_country_list]

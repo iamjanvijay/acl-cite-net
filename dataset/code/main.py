@@ -312,7 +312,7 @@ def main(args):
         title_to_paper_details_fpath = './downloads/title_to_paper_filtered_details.csv'
         ref_paperids_fpath = './downloads/ref_paper_ids.csv'
         bib_paper_details_fpath = './downloads/bib_paper_details.csv'
-        paper_country_fpath = './downloads/paper_country_list.json'
+        paper_country_fpath = './downloads/paper_country_list_all_company.json'
         country_citation_count_fpath = './downloads/country_cited_count.json'
         citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
         citenet.print_top_k_cited(20)

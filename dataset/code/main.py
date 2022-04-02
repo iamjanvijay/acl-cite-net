@@ -183,6 +183,8 @@ def main(args):
                 paper_type = bib_dict[paper_key]['type']
                 fields_dict = bib_dict[paper_key]['fields']
                 paper_title, paper_book_title, paper_month, paper_year, paper_url = fields_dict['title'], query_dict(fields_dict, 'booktitle'), query_dict(fields_dict, 'month'), query_dict(fields_dict, 'year'), query_dict(fields_dict, 'url')
+                if paper_book_title == 'None': # if book_title not available check for journal name
+                    paper_book_title = query_dict(fields_dict, 'journal')
                 csvwriter.writerow([paper_key, paper_type, paper_title, paper_book_title, paper_month, paper_year, paper_url])
                         
     if args.download_pdfs: # ==> Download pdfs from ACL anthology.

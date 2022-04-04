@@ -316,9 +316,14 @@ def main(args):
         bib_paper_details_fpath = './downloads/bib_paper_details.csv'
         paper_country_fpath = './downloads/paper_country_list_all_company.json'
         country_citation_count_fpath = './downloads/country_cited_count.json'
+        inter_country_citation_count_fpath = './downloads/inter_country_cited_count.json'
+        inter_country_citation_count_wo_year_fpath = './downloads/inter_country_cited_count_wo_year.json'
         citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
-        citenet.print_top_k_cited(20)
-        citenet.extract_country_cited_count(country_citation_count_fpath)
+        
+        # citenet.print_top_k_cited(20)
+        # citenet.extract_country_cited_count(country_citation_count_fpath)
+        citenet.same_year_citations_fraction()
+        citenet.extract_cross_country_cited_count(inter_country_citation_count_fpath, 10)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

@@ -3,12 +3,14 @@ import os
 import json
 import re
 import statistics
+from tqdm import tqdm
 
 class CitationNet:
     def __init__(self, paper_details_filepath, references_filepath, bib_details_filepath, country_list_filepath, thresold_year):
         self.paper_to_references = dict() # paperID => [list of references of paper with paperID]
         self.paper_to_citedby = dict() # paperID => [list of papers citing paper with paperID]
         self.paper_features = dict() # paperID => [dictonary of features of paper with paperID]
+        self.cache = dict() # stores some results to speed-up computations
 
         with open(bib_details_filepath) as csvfile: # load bib details.
             bib_title_to_bib_details = dict()
@@ -71,19 +73,28 @@ class CitationNet:
             self.paper_features[paper_id]['countries'] = list(set(country_list)) # unique
 
         print(f"*** Total {missing} out of {total} paper-keys missing in country list.")
-
-    def print_top_k_cited(self, k):
-        top_k_papers = sorted(self.paper_to_citedby.items(), key=lambda x: -len(x[1]))[:k]
-        print("-"*50)  
-        print("TOP CITED PAPERS:")
-        print("-"*50) 
-        for i, (paper_id, cited_by) in enumerate(top_k_papers):
-            print(f"Paper #{i+1}:")
-            print(f"TITLE: {self.paper_features[paper_id]['sem_title']}")
-            print(f"Cited by {len(cited_by)} papers.")
-            print("-"*50)
+    
+    def country_to_publications(self):
+        '''
+            Return the dict with paper_ids corresponding to each country.
+            country_name => [paper_id_1, paper_id_2 ... paper_id_n]
+            paper_id_1, paper_id_2 ... paper_id_n are n papers associated with country_name
+        '''
+        country_to_paper_ids = dict()
+        for paper_id in self.paper_features:
+            country_list = self.paper_features[paper_id]['countries']
+            for country in country_list:
+                if country not in country_to_paper_ids:
+                    country_to_paper_ids[country] = []
+                country_to_paper_ids[country].append(paper_id)
+        return country_to_paper_ids
 
     def extract_country_cited_count(self, save_fpath):
+        '''
+            for every "paper" (say X) identies the "count of papers" (Y) citing it;
+            identifies countries associated with X and returns an aggregated list of form: 
+            "country" (associated with "paper" X_1, X_2, ... X_n) => [Y_1, Y_2, ... Y_n]
+        '''
         country_cited_count = dict()
         for paper_id in self.paper_to_citedby:
             citations = len(self.paper_to_citedby[paper_id])
@@ -104,7 +115,89 @@ class CitationNet:
         with open(save_fpath, 'w') as f:
             json.dump(country_cited_count, f)
 
+    def paper_1_cites_paper_2(self, paper_1_id, paper_2_id):
+        '''
+        Returns True if paper with paper_id_1 cites paper with paper_id_2; else returns False.
+        '''
+        if 'paper_1_cites_paper_2' not in self.cache:
+            self.cache['paper_1_cites_paper_2'] = dict()
+            for paper_1_id in self.paper_to_references:
+                for paper_2_id in self.paper_to_references[paper_1_id]:
+                    self.cache['paper_1_cites_paper_2'][(paper_1_id, paper_2_id)] = True # paper_1_id cites paper_2_id
+            print("paper_1_cites_paper_2 cache created...")
 
+        return (paper_1_id, paper_2_id) in self.cache['paper_1_cites_paper_2']
+
+    def paper_1_could_cite_paper_2(self, paper_1_id, paper_2_id):
+        '''
+        Returns True if paper with paper_id_1 could have cited paper with paper_id_2; else returns False.
+        '''
+        return (int(self.paper_features[paper_1_id]['year']) >= int(self.paper_features[paper_2_id]['year']))
+
+    def extract_cross_country_cited_count(self, save_fpath, k):
+        '''
+            selects top_k countries by total publication count;
+            computes number of times country 'x' is cited by country 'y';
+            also averages the last metric over total papers of x and total papers of y.
+        '''
+
+        country_to_paper_ids = self.country_to_publications()
+        company_names = ['google', 'amazon', 'facebook', 'microsoft', 'huggingface', 'ibm', 'bloomberg', 'yahoo', 'samsung', 'alibaba', 'allenai', 'baidu']
+        country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in company_names} # filter out company names
+        top_k_countries = sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:k]
+        country_1_cites_country_2_stats = dict()
+
+        for country_1, country_1_paper_ids in top_k_countries:
+            for country_2, country_2_paper_ids in top_k_countries:
+                country_1_cites_country_2_stats[f"{country_1}#{country_2}"] = {
+                                                                            'citation_count': 0, 
+                                                                            'possible_citations_w_year': 0,
+                                                                            'possible_citations_wo_year': 0
+                                                                        }
+                print(f"Computing stats for {country_1} [num-papers: {len(country_1_paper_ids)}] citing {country_2} [num-papers: {len(country_2_paper_ids)}]...")
+                # compute stats for country_1 cites country_2
+                for paper_id_1 in tqdm(country_1_paper_ids):
+                    for paper_id_2 in country_2_paper_ids:
+                        if paper_id_1==paper_id_2: # a common paper
+                            continue
+
+                        if self.paper_1_cites_paper_2(paper_id_1, paper_id_2):
+                            country_1_cites_country_2_stats[f"{country_1}#{country_2}"]['citation_count'] += 1
+
+                        if self.paper_1_could_cite_paper_2(paper_id_1, paper_id_2):
+                            country_1_cites_country_2_stats[f"{country_1}#{country_2}"]['possible_citations_w_year'] += 1
+                        country_1_cites_country_2_stats[f"{country_1}#{country_2}"]['possible_citations_wo_year'] += 1
+
+                country_1_cites_country_2_stats[f"{country_1}#{country_2}"]['citation_density_w_year'] = float(country_1_cites_country_2_stats[f"{country_1}#{country_2}"]['citation_count']) / country_1_cites_country_2_stats[f"{country_1}#{country_2}"]['possible_citations_w_year']
+                country_1_cites_country_2_stats[f"{country_1}#{country_2}"]['citation_density_wo_year'] = float(country_1_cites_country_2_stats[f"{country_1}#{country_2}"]['citation_count']) / country_1_cites_country_2_stats[f"{country_1}#{country_2}"]['possible_citations_wo_year']
+
+        with open(save_fpath, 'w') as f:
+            json.dump(country_1_cites_country_2_stats, f)
+
+    # methods just to print some stats.
+
+    def same_year_citations_fraction(self):
+        total_citations, same_year_citations, future_year_citations = 0., 0., 0.
+        for paper_id in self.paper_to_references:
+            total_citations += len(self.paper_to_references[paper_id])
+            for cited_paper_id in self.paper_to_references[paper_id]:
+                if int(self.paper_features[cited_paper_id]['year']) > int(self.paper_features[paper_id]['year']):
+                    future_year_citations += 1
+                if int(self.paper_features[cited_paper_id]['year']) == int(self.paper_features[paper_id]['year']):
+                    same_year_citations += 1
+        print(f"total citations: {total_citations} | same_year_citations: {same_year_citations} | fraction of same year citations: {100 * same_year_citations / total_citations}")
+        print(f"total citations: {total_citations} | future_year_citations: {future_year_citations} | fraction of future year citations: {100 * future_year_citations / total_citations}")
+
+    def print_top_k_cited(self, k):
+        top_k_papers = sorted(self.paper_to_citedby.items(), key=lambda x: -len(x[1]))[:k]
+        print("-"*50)  
+        print("TOP CITED PAPERS:")
+        print("-"*50) 
+        for i, (paper_id, cited_by) in enumerate(top_k_papers):
+            print(f"Paper #{i+1}:")
+            print(f"TITLE: {self.paper_features[paper_id]['sem_title']}")
+            print(f"Cited by {len(cited_by)} papers.")
+            print("-"*50)
 
 
 

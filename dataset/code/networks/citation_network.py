@@ -6,11 +6,12 @@ import statistics
 from tqdm import tqdm
 
 class CitationNet:
-    def __init__(self, paper_details_filepath, references_filepath, bib_details_filepath, country_list_filepath, thresold_year):
+    def __init__(self, paper_details_filepath, references_filepath, bib_details_filepath, country_list_filepath, thresold_year, verbose=True):
         self.paper_to_references = dict() # paperID => [list of references of paper with paperID]
         self.paper_to_citedby = dict() # paperID => [list of papers citing paper with paperID]
         self.paper_features = dict() # paperID => [dictonary of features of paper with paperID]
         self.cache = dict() # stores some results to speed-up computations
+        self.company_names = ['google', 'amazon', 'facebook', 'microsoft', 'huggingface', 'ibm', 'bloomberg', 'yahoo', 'samsung', 'alibaba', 'allenai', 'baidu']
 
         with open(bib_details_filepath) as csvfile: # load bib details.
             bib_title_to_bib_details = dict()
@@ -67,7 +68,8 @@ class CitationNet:
                 country_list = paper_key_to_country_list[key_for_country_list]
             else:
                 country_list = []
-                print(f"** Country list not found for paper {paper_key}.")
+                if verbose:
+                    print(f"** Country list not found for paper {paper_key}.")
                 missing += 1
             total += 1
             self.paper_features[paper_id]['countries'] = list(set(country_list)) # unique
@@ -104,6 +106,9 @@ class CitationNet:
                     country_cited_count[country] = []
                 country_cited_count[country].append(citations)
         
+        if save_fpath==None:
+            return country_cited_count
+
         for country in country_cited_count:
             print(f"Country: {country}")
             print("-"*50)
@@ -142,8 +147,7 @@ class CitationNet:
         '''
 
         country_to_paper_ids = self.country_to_publications()
-        company_names = ['google', 'amazon', 'facebook', 'microsoft', 'huggingface', 'ibm', 'bloomberg', 'yahoo', 'samsung', 'alibaba', 'allenai', 'baidu']
-        country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in company_names} # filter out company names
+        country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in self.company_names} # filter out company names
         top_k_countries = sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:k]
         country_1_cites_country_2_stats = dict()
 

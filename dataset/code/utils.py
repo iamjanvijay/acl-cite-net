@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import argparse
 import json
 import os
+from math import log
 
 def plot_2d_matrix(array, row_indices, column_indices, output_folder, file_name):
     '''
@@ -13,6 +14,8 @@ def plot_2d_matrix(array, row_indices, column_indices, output_folder, file_name)
     plt.figure(figsize = (10,7))
     figure = sns.heatmap(df_cm, annot=True, cmap="OrRd")
     figure.get_figure().savefig(os.path.join(output_folder, file_name))
+
+# def plot_time_series()
 
 def main(args):
     if args.plot_inter_country_cite_stats:
@@ -44,11 +47,56 @@ def main(args):
 
             plot_2d_matrix(array_w_year, row_indices, column_indices, args.output_folder, os.path.basename(args.input_file).split('.')[0] + '_w_year.png')
             plot_2d_matrix(array_wo_year, row_indices, column_indices, args.output_folder, os.path.basename(args.input_file).split('.')[0] + '_wo_year.png')
+
+    if args.plot_time_country_cite_stats:
+        with open(args.input_file) as f:
+            stats_dict = json.load(f)
+
+            # get list of countries
+            print("stats_dict", stats_dict)
+            for year in stats_dict:
+                list_of_countries = [country for country in stats_dict[year]]
+                break
+
+            # create paper count and citation count data-frame
+            paper_count_df_dict, citation_count_df_dict = dict(), dict()
+            for year in sorted(stats_dict):
+                if 'year' not in paper_count_df_dict:
+                    paper_count_df_dict['year'], citation_count_df_dict['year'] = [], []
+                paper_count_df_dict['year'].append(str(year))
+                citation_count_df_dict['year'].append(str(year))
+
+                for country in stats_dict[year]:
+                    if country not in paper_count_df_dict:
+                        paper_count_df_dict[country] = []
+                        citation_count_df_dict[country] = []
+                    paper_count_df_dict[country].append(stats_dict[year][country][0]) # paper count
+                    citation_count_df_dict[country].append(stats_dict[year][country][1]) # citation count
+            paper_count_df, citation_count_df = pd.DataFrame(paper_count_df_dict), pd.DataFrame(citation_count_df_dict)
+
+        # colors = ['black', 'darkgrey', 'maroon', 'red', 'sandybrown', 'olive', 'yellow', 'lime', 'navy', 'magenta']
+        # for country, color in zip(list_of_countries, colors):
+        #     paper_count_df[country].plot(label=country, color=color)
+        # plt.title('Paper Count from 2000 to 2021')
+        # plt.xlabel('Years')
+        # plt.legend()
+        # plt.savefig(os.path.join(args.output_folder, 'paper_count_over_years.png'))
+
+        colors = ['black', 'darkgrey', 'maroon', 'red', 'sandybrown', 'olive', 'yellow', 'lime', 'navy', 'magenta']
+        for country, color in zip(list_of_countries, colors):
+            citation_count_df[country].plot(label=country, color=color)
+        plt.title('Citation Count from 2000 to 2021')
+        plt.xlabel('Years')
+        plt.legend()
+        plt.savefig(os.path.join(args.output_folder, 'citation_count_over_years.png'))
+            
                 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--plot_inter_country_cite_stats", action='store_true', default=False,
                     help='wheather to plot the 2-d heatmap from input json file')
+    parser.add_argument("--plot_time_country_cite_stats", action='store_true', default=False,
+                    help='wheather to plot the citation counts and paper counts for top-10 publishing countries')
     parser.add_argument("--input_file", type=str, required=True, 
                         help='path to file with stats') # like: './downloads/inter_country_cited_count.json'
     parser.add_argument("--output_folder", type=str, default='./downloads', 

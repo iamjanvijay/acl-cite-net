@@ -12,13 +12,13 @@ def plot_2d_matrix(array, row_indices, column_indices, output_folder, file_name)
     '''
     df_cm = pd.DataFrame(array, index = [i for i in row_indices], columns = [i for i in column_indices])
     plt.figure(figsize = (10,7))
-    figure = sns.heatmap(df_cm, annot=True, cmap="OrRd")
+    figure = sns.heatmap(df_cm, annot=True, cmap="OrRd", robust=True)
     figure.get_figure().savefig(os.path.join(output_folder, file_name))
 
 # def plot_time_series()
 
 def main(args):
-    if args.plot_inter_country_cite_stats:
+    if args.plot_inter_country_cite_density_stats: # for density metrics of citation subgraphs
         index, country_to_index = 0, dict()
         with open(args.input_file) as f:
             stats_dict = json.load(f)
@@ -48,6 +48,30 @@ def main(args):
             plot_2d_matrix(array_w_year, row_indices, column_indices, args.output_folder, os.path.basename(args.input_file).split('.')[0] + '_w_year.png')
             plot_2d_matrix(array_wo_year, row_indices, column_indices, args.output_folder, os.path.basename(args.input_file).split('.')[0] + '_wo_year.png')
 
+    if args.plot_country_to_referenced_country_fraction:
+        with open(args.input_file) as f:
+            stats_dict = json.load(f)
+            first_covert_counts_to_fraction = False
+            top_countires = sorted([country for country in stats_dict if country != 'all'])
+            array = [[0 for j in range(len(top_countires))] for i in range(len(top_countires))]
+            country_to_idx = {country: idx for idx, country in enumerate(top_countires)}
+   
+            if first_covert_counts_to_fraction:
+                for country in top_countires:
+                    for ref_country in top_countires:
+                            for paper_idx in range(len(stats_dict[country][ref_country])):
+                                if stats_dict[country]['all'][paper_idx] != 0: # if paper has total non-zero references
+                                    stats_dict[country][ref_country][paper_idx] = stats_dict[country][ref_country][paper_idx] / float(stats_dict[country]['all'][paper_idx])
+                    for paper_idx in range(len(stats_dict[country]['all'])):
+                        if stats_dict[country]['all'][paper_idx] != 0: # if paper has total non-zero references
+                            stats_dict[country]['all'][paper_idx] = 1.0
+            
+            for country in top_countires:
+                for ref_country in top_countires:
+                    array[country_to_idx[country]][country_to_idx[ref_country]] = 100 * sum(stats_dict[country][ref_country]) / sum(stats_dict[country]['all'])
+            
+            plot_2d_matrix(array, top_countires, top_countires, args.output_folder, os.path.basename(args.input_file).split('.')[0] + '.png')
+                        
     if args.plot_time_country_cite_stats:
         with open(args.input_file) as f:
             stats_dict = json.load(f)
@@ -93,10 +117,12 @@ def main(args):
                 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--plot_inter_country_cite_stats", action='store_true', default=False,
+    parser.add_argument("--plot_inter_country_cite_density_stats", action='store_true', default=False,
                     help='wheather to plot the 2-d heatmap from input json file')
     parser.add_argument("--plot_time_country_cite_stats", action='store_true', default=False,
-                    help='wheather to plot the citation counts and paper counts for top-10 publishing countries')
+                    help='wheather to plot the citation densities and paper counts for top-10 publishing countries')
+    parser.add_argument("--plot_country_to_referenced_country_fraction", action='store_true', default=False,
+                    help='wheather to plot the citation fractions for top-10 publishing countries')
     parser.add_argument("--input_file", type=str, required=True, 
                         help='path to file with stats') # like: './downloads/inter_country_cited_count.json'
     parser.add_argument("--output_folder", type=str, default='./downloads', 

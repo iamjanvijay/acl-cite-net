@@ -320,6 +320,7 @@ def main(args):
         inter_country_citation_count_fpath = './downloads/inter_country_cited_count.json'
         inter_country_citation_count_wo_year_fpath = './downloads/inter_country_cited_count_wo_year.json'
         year_to_country_citation_count_fpath = './downloads/year_to_country_citation_count.json'
+        country_to_country_referened_count_fpath = './downloads/country_to_referenced_country_counts.json'
 
         # citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
         # citenet.print_top_k_cited(20) # prints top-20 cited papers
@@ -327,26 +328,28 @@ def main(args):
         # citenet.same_year_citations_fraction() # prints the same and future year citation fraction
         # citenet.extract_cross_country_cited_count(inter_country_citation_count_fpath, 10) # saves the inter country citation density metrics
 
-        # saves citation count of countries with time
-        citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, verbose=False)
-        country_to_paper_ids = citenet.country_to_publications()
-        country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in citenet.company_names} # filter out company names
-        top_10_countries = [country_1 for country_1, country_1_paper_ids in sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:10]] # select top-10 publishing countires
-        print("Top-10 publishing countries:", top_10_countries)
+        # # saves citation count of countries with time
+        # citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, verbose=False)
+        # country_to_paper_ids = citenet.country_to_publications()
+        # country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in citenet.company_names} # filter out company names
+        # top_10_countries = [country_1 for country_1, country_1_paper_ids in sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:10]] # select top-10 publishing countires
+        # print("Top-10 publishing countries:", top_10_countries)
 
-        year_to_country_citations = dict()
-        for year in range(2000, 2022):
-            print(f"Creating citation network until {year}...")
-            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, verbose=False)
-            country_to_cite_count = citenet.extract_country_cited_count(None) # country to list (with # citations of each paper associated with the country)
-            country_to_cite_count = {country: [len(country_to_cite_count[country]), sum(country_to_cite_count[country])] for country in country_to_cite_count if country in top_10_countries}
-            assert(len(country_to_cite_count)==10)
-            print(f"(paper, citation) counts until {year}:", country_to_cite_count)
-            year_to_country_citations[year] = country_to_cite_count
+        # year_to_country_citations = dict()
+        # for year in range(2000, 2022):
+        #     print(f"Creating citation network until {year}...")
+        #     citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, verbose=False)
+        #     country_to_cite_count = citenet.extract_country_cited_count(None) # country to list (with # citations of each paper associated with the country)
+        #     country_to_cite_count = {country: [len(country_to_cite_count[country]), sum(country_to_cite_count[country])] for country in country_to_cite_count if country in top_10_countries}
+        #     assert(len(country_to_cite_count)==10)
+        #     print(f"(paper, citation) counts until {year}:", country_to_cite_count)
+        #     year_to_country_citations[year] = country_to_cite_count
 
-        with open(year_to_country_citation_count_fpath, 'w') as f: # saves year => {country => (paper_count, citation_count)}
-            json.dump(year_to_country_citations, f)
+        # with open(year_to_country_citation_count_fpath, 'w') as f: # saves year => {country => (paper_count, citation_count)}
+        #     json.dump(year_to_country_citations, f)
 
+        citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
+        citenet.country_to_country_fraction(country_to_country_referened_count_fpath)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

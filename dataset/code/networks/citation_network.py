@@ -178,6 +178,58 @@ class CitationNet:
         with open(save_fpath, 'w') as f:
             json.dump(country_1_cites_country_2_stats, f)
 
+    def paper_id_to_country_cited_count(self):
+        paper_id_to_country_cited = dict() # paper_id to country_cited counts
+        for paper_id in self.paper_to_references:
+            paper_id_to_country_cited[paper_id] = dict()
+            ref_paper_ids = self.paper_to_references[paper_id]
+            for ref_paper_id in ref_paper_ids: # for each paper id, iterate over all the referenced paper ids
+                ref_countries = self.paper_features[ref_paper_id]['countries']
+                for ref_country in ref_countries: # for each referenced paper, iterate over all the countries
+                    if ref_country not in paper_id_to_country_cited:
+                        paper_id_to_country_cited[paper_id][ref_country] = 0
+                    paper_id_to_country_cited[paper_id][ref_country] += 1
+        return paper_id_to_country_cited
+
+    def country_to_country_fraction(self, save_fpath, k = 10):
+        '''
+            For top-k countries computes the fraction of references (of all the references of country A) of country A to country B
+        '''
+        paper_id_to_country_cited = self.paper_id_to_country_cited_count()
+        country_to_paper_ids = self.country_to_publications()
+        country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in self.company_names} # filter out company names
+        top_k_countries = [country_1 for country_1, country_1_paper_ids in sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:k]] # top k publishing countries
+
+        country_to_ref_country_counts = dict()
+        for country in top_k_countries:
+            if country not in country_to_ref_country_counts:
+                country_to_ref_country_counts[country] = dict()
+            for paper_id in country_to_paper_ids[country]: # iterating over all the paper_ids of country
+
+                all_counts = 0
+                for referenced_country in paper_id_to_country_cited[paper_id]:
+                    all_counts += paper_id_to_country_cited[paper_id][referenced_country]
+                if 'all' not in country_to_ref_country_counts[country]: # all country to all references count
+                    country_to_ref_country_counts[country]['all'] = []
+                country_to_ref_country_counts[country]['all'].append(all_counts)
+
+                for ref_country in top_k_countries:
+                    ref_country_count = 0
+                    if ref_country in paper_id_to_country_cited[paper_id]:
+                        ref_country_count = paper_id_to_country_cited[paper_id][ref_country]
+
+                    if ref_country not in country_to_ref_country_counts[country]: # all country to all references count
+                        country_to_ref_country_counts[country][ref_country] = []
+                    country_to_ref_country_counts[country][ref_country].append(ref_country_count)    
+                    
+        for country in top_k_countries:
+            paper_count = len(country_to_ref_country_counts[country]['all'])
+            for ref_country in top_k_countries:
+                assert(paper_count==len(country_to_ref_country_counts[country][ref_country]))
+
+        with open(save_fpath, 'w') as f:
+            json.dump(country_to_ref_country_counts, f)
+                        
     # methods just to print some stats.
 
     def same_year_citations_fraction(self):

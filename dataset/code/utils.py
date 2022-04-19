@@ -113,7 +113,36 @@ def main(args):
         plt.xlabel('Years')
         plt.legend()
         plt.savefig(os.path.join(args.output_folder, 'citation_count_over_years.png'))
-            
+
+    if args.plot_clique_count_heatmap:
+        clique_size = 6
+
+        with open(args.input_file) as f:
+            stats_dict = json.load(f)
+        
+            index, country_to_index = 0, dict()
+            for country_pair in stats_dict:
+                country_1, country_2 = country_pair.split('#')
+                if country_1 not in country_to_index:
+                    country_to_index[country_1] = index
+                    index += 1
+                if country_2 not in country_to_index:
+                    country_to_index[country_2] = index
+                    index += 1
+
+            array = [[0 for j in range(index)] for i in range(index)]
+            inv_country_to_index = {v: k for k, v in country_to_index.items()}
+            row_indices = column_indices = [inv_country_to_index[i] for i in range(index)]
+
+            for country_pair in stats_dict:
+                node_count, edge_count, author_id_to_author_name, clique_len_to_count = stats_dict[country_pair]["node_count"], stats_dict[country_pair]["edge_count"], stats_dict[country_pair]["author_id_to_author_name"], stats_dict[country_pair]["clique_len_to_count"]
+                
+                country_1, country_2 = country_pair.split('#')
+                country_1_index, country_2_index = country_to_index[country_1], country_to_index[country_2]
+                array[country_1_index][country_2_index] = array[country_2_index][country_1_index] = float(clique_len_to_count[str(clique_size)] if str(clique_size) in clique_len_to_count else 0) / node_count
+
+            plot_2d_matrix(array, row_indices, column_indices, args.output_folder, os.path.basename(args.input_file).split('.')[0] + f'_clique_size_{clique_size}.png')
+
                 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -123,6 +152,8 @@ if __name__ == '__main__':
                     help='wheather to plot the citation densities and paper counts for top-10 publishing countries')
     parser.add_argument("--plot_country_to_referenced_country_fraction", action='store_true', default=False,
                     help='wheather to plot the citation fractions for top-10 publishing countries')
+    parser.add_argument("--plot_clique_count_heatmap", action='store_true', default=False,
+                    help='plot the heatmap consisting of counts of cliques in subgraph (citation edges allowed only for a pair of countries) of authors')
     parser.add_argument("--input_file", type=str, required=True, 
                         help='path to file with stats') # like: './downloads/inter_country_cited_count.json'
     parser.add_argument("--output_folder", type=str, default='./downloads', 

@@ -230,16 +230,26 @@ class CitationNet:
         with open(save_fpath, 'w') as f:
             json.dump(country_to_ref_country_counts, f)
 
-    def cont_1_to_cont_2_auth_edges_and_names(self, country_1_paper_ids, country_2_paper_ids):
-        author_id_to_author_name, edges_dict = dict(), dict()
+    def cont_1_to_cont_2_auth_edges_and_names(self, country_1_paper_ids, country_2_paper_ids, dominant_edges_thresold, thresold_type):
+        author_id_to_author_name, author_id_to_references_count, edges_dict = dict(), dict(), dict()
         for paper_id in country_1_paper_ids:
             name_and_id_list = self.paper_features[paper_id]['authors'] # [[auth_1_id, auth_1], [auth_2_id, auth_2]]
             for cited_paper_id in self.paper_to_references[paper_id]:
                 if cited_paper_id in country_2_paper_ids: # relevant edge | country_1 -> country_2
                     cited_name_and_id_list = self.paper_features[cited_paper_id]['authors']
                     # add some edges.
-                    for author_id, author_name in name_and_id_list:
-                        for cited_author_id, cited_author_name in cited_name_and_id_list:
+                    for author_id_author_name in name_and_id_list:
+                        if len(author_id_author_name) < 2:
+                            print(f"*********************************** {author_id_author_name}")
+                            continue
+                        author_id, author_name = author_id_author_name
+
+                        for cited_author_id_cited_author_name in cited_name_and_id_list:
+                            if len(cited_author_id_cited_author_name) < 2:
+                                print(f"*********************************** {cited_author_id_cited_author_name}")
+                                continue
+                            cited_author_id, cited_author_name = cited_author_id_cited_author_name
+                            
                             if author_id=='None' or cited_author_id=='None': # discarding edge because author id not known for either of the author
                                 continue
                             if author_id==cited_author_id: # discarding edge because its a self loop
@@ -259,9 +269,26 @@ class CitationNet:
                             if key not in edges_dict:
                                 edges_dict[key] = 0
                             edges_dict[key] += 1
+
+                            if author_id not in author_id_to_references_count:
+                                author_id_to_references_count[author_id] = 0
+                            author_id_to_references_count[author_id] += 1
+
+        # do some thresolding
+        for edge in edges_dict:
+
+            if thresold_type == 'count':
+                if edges_dict[edge] < dominant_edges_thresold: # only consider edges >=dominant_edges_thresold
+                    edges_dict[edge] = 0
+
+            if thresold_type == 'fraction':
+                author_id, cited_author_id = edge.split('#')
+                if 100.0 * edges_dict[edge] / author_id_to_references_count[author_id] < dominant_edges_thresold:
+                    edges_dict[edge] = 0
+
         return author_id_to_author_name, edges_dict
 
-    def author_undirected_graph(self, country_pair):
+    def author_undirected_graph(self, country_pair, dominant_edges_thresold = 0, thresold_type = 'count'):
         '''
             Assumes a pair of countries; 
             Identifies paper-citations such that they are in (country_1, country_2) or (country_2, country_1);
@@ -274,9 +301,9 @@ class CitationNet:
         country_1_paper_ids, country_2_paper_ids = country_to_paper_ids[country_pair[0]], country_to_paper_ids[country_pair[1]]
         
         # discuss about papers related with multiple countries?
-        author_id_to_author_name_1_2, edges_dict_1_2 = self.cont_1_to_cont_2_auth_edges_and_names(country_1_paper_ids, country_2_paper_ids)
+        author_id_to_author_name_1_2, edges_dict_1_2 = self.cont_1_to_cont_2_auth_edges_and_names(country_1_paper_ids, country_2_paper_ids, dominant_edges_thresold, thresold_type)
         print(f"Identified edges from {country_pair[0]} to {country_pair[1]}...")
-        author_id_to_author_name_2_1, edges_dict_2_1 = self.cont_1_to_cont_2_auth_edges_and_names(country_2_paper_ids, country_1_paper_ids)
+        author_id_to_author_name_2_1, edges_dict_2_1 = self.cont_1_to_cont_2_auth_edges_and_names(country_2_paper_ids, country_1_paper_ids, dominant_edges_thresold, thresold_type)
         print(f"Identified edges from {country_pair[1]} to {country_pair[0]}...")
         author_id_to_author_name = {**author_id_to_author_name_1_2, **author_id_to_author_name_2_1}
         
@@ -286,9 +313,11 @@ class CitationNet:
             nodes.add(author_id)
         # accumulating edges
         for edge_1_2 in edges_dict_1_2:
+            if edges_dict_1_2[edge_1_2] <= 0: # not a dominant edge
+                continue
             author_id, cited_author_id = edge_1_2.split('#')
             reversed_edge_1_2 = f'{cited_author_id}#{author_id}'
-            if reversed_edge_1_2 in edges_dict_2_1: # add a bidirectional edge
+            if reversed_edge_1_2 in edges_dict_2_1 and edges_dict_2_1[reversed_edge_1_2] > 0: # add a bidirectional edge if reverse edge is a domainat edge in edges_dict_2_1
                 if author_id < cited_author_id:
                     edges.add((author_id, cited_author_id))
                 else:

@@ -322,6 +322,9 @@ def main(args):
         inter_country_citation_count_wo_year_fpath = './downloads/inter_country_cited_count_wo_year.json'
         year_to_country_citation_count_fpath = './downloads/year_to_country_citation_count.json'
         country_to_country_referened_count_fpath = './downloads/country_to_referenced_country_counts.json'
+        country_pair_to_clique_size_fpath = './downloads/country_pair_to_clique_size.json'
+        country_pair_to_dominant_count_clique_size_fpath = './downloads/country_pair_to_dominant_count_clique_size.json'
+        country_pair_to_dominant_fraction_clique_size_fpath = './downloads/country_pair_to_dominant_fraction_clique_size.json'
 
         # citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
         # citenet.print_top_k_cited(20) # prints top-20 cited papers
@@ -360,24 +363,39 @@ def main(args):
         top_10_countries = [country_1 for country_1, country_1_paper_ids in sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:10]] # select top-10 publishing countires
         print("Top-10 publishing countries:", top_10_countries)
 
+        max_clique_size, dominant_edges_thresold, thresold_type = 10, 0.0, 'count' # if author-a cites author-b in >=dominant_edges_thresold fraction of papers we consider it to be a valid edge | thresold_type can be 'fraction' or 'count'
+        # max_clique_size, dominant_edges_thresold, thresold_type = 10, 2.00, 'count' # if author-a cites author-b in >=dominant_edges_thresold fraction of papers we consider it to be a valid edge | thresold_type can be 'fraction' or 'count'
+        # max_clique_size, dominant_edges_thresold, thresold_type = 10, 5.00, 'fraction' # if author-a cites author-b in >=dominant_edges_thresold fraction of papers we consider it to be a valid edge | thresold_type can be 'fraction' or 'count'
+        country_pair_to_clique = dict()
         for country_1 in top_10_countries[::-1]:
             clique_len_to_count = dict()
             for country_2 in top_10_countries[::-1]:
-                if country_2 != 'united states':
-                    continue
                 if country_1 <= country_2:
-                    nodes, edges, author_id_to_author_name = citenet.author_undirected_graph([country_1, country_2])
+                    nodes, edges, author_id_to_author_name = citenet.author_undirected_graph([country_1, country_2], dominant_edges_thresold, thresold_type)
+                    
                     graph = nx.Graph()
                     graph.add_nodes_from(nodes)
                     graph.add_edges_from(edges)
                     print(f"Total authors: {len(nodes)}")
                     print(f"Total citation bi-directional edges: {len(edges)}")
                     for i, clique in enumerate(nx.enumerate_all_cliques(graph)):
+                        if len(clique) > max_clique_size:
+                            break
                         if len(clique) not in clique_len_to_count:
                             clique_len_to_count[len(clique)] = 0
                         clique_len_to_count[len(clique)] += 1
-            print(clique_len_to_count)
-            break
+                    
+                    country_pair_to_clique[f"{country_1}#{country_2}"] = {
+                                                                            "node_count": len(nodes), 
+                                                                            "edge_count": len(edges), 
+                                                                            "author_id_to_author_name": author_id_to_author_name,
+                                                                            "clique_len_to_count": clique_len_to_count
+                                                                        }
+
+        with open(country_pair_to_clique_size_fpath, 'w') as f:
+        # with open(country_pair_to_dominant_count_clique_size_fpath, 'w') as f:
+        # with open(country_pair_to_dominant_fraction_clique_size_fpath, 'w') as f:
+            json.dump(country_pair_to_clique, f)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

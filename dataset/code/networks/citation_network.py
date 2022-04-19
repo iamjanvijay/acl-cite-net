@@ -90,7 +90,7 @@ class CitationNet:
                     country_to_paper_ids[country] = []
                 country_to_paper_ids[country].append(paper_id)
         return country_to_paper_ids
-
+    
     def extract_country_cited_count(self, save_fpath):
         '''
             for every "paper" (say X) identies the "count of papers" (Y) citing it;
@@ -229,7 +229,74 @@ class CitationNet:
 
         with open(save_fpath, 'w') as f:
             json.dump(country_to_ref_country_counts, f)
-                        
+
+    def cont_1_to_cont_2_auth_edges_and_names(self, country_1_paper_ids, country_2_paper_ids):
+        author_id_to_author_name, edges_dict = dict(), dict()
+        for paper_id in country_1_paper_ids:
+            name_and_id_list = self.paper_features[paper_id]['authors'] # [[auth_1_id, auth_1], [auth_2_id, auth_2]]
+            for cited_paper_id in self.paper_to_references[paper_id]:
+                if cited_paper_id in country_2_paper_ids: # relevant edge | country_1 -> country_2
+                    cited_name_and_id_list = self.paper_features[cited_paper_id]['authors']
+                    # add some edges.
+                    for author_id, author_name in name_and_id_list:
+                        for cited_author_id, cited_author_name in cited_name_and_id_list:
+                            if author_id=='None' or cited_author_id=='None': # discarding edge because author id not known for either of the author
+                                continue
+                            if author_id==cited_author_id: # discarding edge because its a self loop
+                                continue
+
+                            if author_id in author_id_to_author_name:
+                                assert(author_id_to_author_name[author_id]==author_name), f"Author ID matching multiple author names | {author_id} => [{author_name}, {author_id_to_author_name[author_id]}]"
+                            else:
+                                author_id_to_author_name[author_id] = author_name
+
+                            if cited_author_id in author_id_to_author_name:
+                                assert(author_id_to_author_name[cited_author_id]==cited_author_name), f"Author ID matching multiple author names | {cited_author_id} => [{cited_author_name}, {author_id_to_author_name[cited_author_id]}]"
+                            else:
+                                author_id_to_author_name[cited_author_id] = cited_author_name
+
+                            key = f'{author_id}#{cited_author_id}'
+                            if key not in edges_dict:
+                                edges_dict[key] = 0
+                            edges_dict[key] += 1
+        return author_id_to_author_name, edges_dict
+
+    def author_undirected_graph(self, country_pair):
+        '''
+            Assumes a pair of countries; 
+            Identifies paper-citations such that they are in (country_1, country_2) or (country_2, country_1);
+            Creates a graph with authors as nodes and edges only identified in last step;
+            Returns set of vertices and edges of this graph as list: [node_1, node_2, ..., node_k] and  [(node_3, node_2), ..., (node_5, node_10)].
+        '''
+        assert(len(country_pair)==2), "Specify exactly two countires"
+
+        country_to_paper_ids = self.country_to_publications()
+        country_1_paper_ids, country_2_paper_ids = country_to_paper_ids[country_pair[0]], country_to_paper_ids[country_pair[1]]
+        
+        # discuss about papers related with multiple countries?
+        author_id_to_author_name_1_2, edges_dict_1_2 = self.cont_1_to_cont_2_auth_edges_and_names(country_1_paper_ids, country_2_paper_ids)
+        print(f"Identified edges from {country_pair[0]} to {country_pair[1]}...")
+        author_id_to_author_name_2_1, edges_dict_2_1 = self.cont_1_to_cont_2_auth_edges_and_names(country_2_paper_ids, country_1_paper_ids)
+        print(f"Identified edges from {country_pair[1]} to {country_pair[0]}...")
+        author_id_to_author_name = {**author_id_to_author_name_1_2, **author_id_to_author_name_2_1}
+        
+        nodes, edges = set(), set()
+        # accumulating nodes
+        for author_id in author_id_to_author_name:
+            nodes.add(author_id)
+        # accumulating edges
+        for edge_1_2 in edges_dict_1_2:
+            author_id, cited_author_id = edge_1_2.split('#')
+            reversed_edge_1_2 = f'{cited_author_id}#{author_id}'
+            if reversed_edge_1_2 in edges_dict_2_1: # add a bidirectional edge
+                if author_id < cited_author_id:
+                    edges.add((author_id, cited_author_id))
+                else:
+                    edges.add((cited_author_id, author_id))
+        print(f"Computed all the bi-directional edges...")
+
+        return list(nodes), list(edges), author_id_to_author_name
+            
     # methods just to print some stats.
 
     def same_year_citations_fraction(self):

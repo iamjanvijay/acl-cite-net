@@ -15,6 +15,7 @@ from difflib import SequenceMatcher
 from fuzzywuzzy import fuzz
 import json
 from networks import CitationNet
+import networkx as nx
 
 def read_bibfile(filepath):
     if filepath=='./downloads/anthology+abstracts.bib' and os.path.exists('./downloads/anthology+abstracts.pkl'):
@@ -348,8 +349,35 @@ def main(args):
         # with open(year_to_country_citation_count_fpath, 'w') as f: # saves year => {country => (paper_count, citation_count)}
         #     json.dump(year_to_country_citations, f)
 
-        citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
-        citenet.country_to_country_fraction(country_to_country_referened_count_fpath)
+        # # fraction of citations analysis
+        # citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
+        # citenet.country_to_country_fraction(country_to_country_referened_count_fpath)
+
+        # # counts cliques in a country pairs
+        citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, verbose=False)
+        country_to_paper_ids = citenet.country_to_publications()
+        country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in citenet.company_names} # filter out company names
+        top_10_countries = [country_1 for country_1, country_1_paper_ids in sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:10]] # select top-10 publishing countires
+        print("Top-10 publishing countries:", top_10_countries)
+
+        for country_1 in top_10_countries[::-1]:
+            clique_len_to_count = dict()
+            for country_2 in top_10_countries[::-1]:
+                if country_2 != 'united states':
+                    continue
+                if country_1 <= country_2:
+                    nodes, edges, author_id_to_author_name = citenet.author_undirected_graph([country_1, country_2])
+                    graph = nx.Graph()
+                    graph.add_nodes_from(nodes)
+                    graph.add_edges_from(edges)
+                    print(f"Total authors: {len(nodes)}")
+                    print(f"Total citation bi-directional edges: {len(edges)}")
+                    for i, clique in enumerate(nx.enumerate_all_cliques(graph)):
+                        if len(clique) not in clique_len_to_count:
+                            clique_len_to_count[len(clique)] = 0
+                        clique_len_to_count[len(clique)] += 1
+            print(clique_len_to_count)
+            break
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

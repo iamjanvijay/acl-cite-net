@@ -338,7 +338,7 @@ def main(args):
             print(paper_features)
     
         # output the features list in a csv
-        row_header = ['paper-key', 'countries', 'author genders (in authorship order)', 'author names (in authorship order)', 'authors count', 'authors citations (uptil present; in authorship order)', 'authors citations (uptil year of publication; in authorship order)', 'nlp academic age (uptil present; in authorship order)', 'nlp academic age (uptil year of publication; in authorship order)', 'venue', 'min university rank', 'max university rank']
+        row_header = ['paper-key', 'countries', 'author genders (in authorship order)', 'author names (in authorship order)', 'authors count', 'authors citations (uptil present; in authorship order)', 'authors citations (uptil year of publication; in authorship order)', 'nlp academic age (uptil present; in authorship order)', 'nlp academic age (uptil year of publication; in authorship order)', 'venue', 'min university rank', 'max university rank', 'age of paper (years)', 'paper total ciatations']
         with open(regression_features_fpath, 'w') as f:
             csv_writer = csv.writer(f, delimiter='|')
             csv_writer.writerow(row_header)
@@ -403,7 +403,7 @@ def main(args):
                     min_rank = min_rank.strip()
                 else:
                     min_rank = 'UNK'
-                min_rank = 'unknown' if min_rank is 'UNK' else min_rank
+                min_rank = min_rank if min_rank!='UNK' else 'unknown'
                 
                 # max university rank
                 if paper_key in paper_key_to_mean_rank_cat:
@@ -414,9 +414,16 @@ def main(args):
                     mean_rank = mean_rank.strip()
                 else:
                     mean_rank = 'UNK'
-                mean_rank = 'unknown' if mean_rank is 'UNK' else mean_rank
+                mean_rank = mean_rank if mean_rank!='UNK' else 'unknown'
 
-                row = [paper_key, countries, author_genders, authors, authors_count, citations_uptil_present, citations_uptil_yop, acad_age_uptil_present, acad_age_uptil_yop, venue, min_rank, mean_rank]
+                # age of the NLP paper
+                assert(final_year==2021)
+                paper_age = final_year - paper_id_year
+
+                # total citations of the paper
+                paper_total_ciatations = len(citenet.paper_to_citedby[paperID]) if paperID in citenet.paper_to_citedby else 0
+
+                row = [paper_key, countries, author_genders, authors, authors_count, citations_uptil_present, citations_uptil_yop, acad_age_uptil_present, acad_age_uptil_yop, venue, min_rank, mean_rank, paper_age, paper_total_ciatations]
                 csv_writer.writerow(row)
 
 if __name__ == '__main__':

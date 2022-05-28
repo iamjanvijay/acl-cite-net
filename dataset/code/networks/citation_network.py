@@ -52,7 +52,7 @@ class CitationNet:
                             if referenced_paper_id not in self.paper_to_citedby:
                                 self.paper_to_citedby[referenced_paper_id] = set()
                             self.paper_to_citedby[referenced_paper_id].add(curr_paper_id)
-
+                            
         print("finished creating citation network...")
 
         with open(country_list_filepath) as f: # load country annotations.
@@ -166,7 +166,7 @@ class CitationNet:
                     cum_citation_count += citations[author_id][year]
                 cum_citation_count_dict[year] = cum_citation_count
             citations[author_id] = cum_citation_count_dict
-
+        
         return citations # cumulated over years
 
     def author_id_to_first_paper(self):

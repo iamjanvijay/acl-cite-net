@@ -5,8 +5,11 @@ import re
 import statistics
 from tqdm import tqdm
 
+def strip_non_alpha(text):
+    return ''.join([i for i in text if i.isalpha()])
+
 class CitationNet:
-    def __init__(self, paper_details_filepath, references_filepath, bib_details_filepath, country_list_filepath, thresold_year, verbose=True):
+    def __init__(self, paper_details_filepath, references_filepath, bib_details_filepath, country_list_filepath, thresold_year, bib_dict, verbose=True):
         self.paper_to_references = dict() # paperID => [list of references of paper with paperID]
         self.paper_to_citedby = dict() # paperID => [list of papers citing paper with paperID]
         self.paper_features = dict() # paperID => [dictonary of features of paper with paperID]
@@ -21,6 +24,7 @@ class CitationNet:
                     continue
                 paper_key, paper_type, paper_title, paper_book_title, month, year, url = row
                 bib_title_to_bib_details[paper_title] = [paper_key, paper_type, paper_book_title, month, year, url]
+                bib_title_to_bib_details[paper_title].append(bib_dict[paper_key]['authors']) # (first, last) sorted in authorship order
 
         def is_valid_paper_id(bib_title, bib_title_to_bib_details, thresold_year):
             if int(bib_title_to_bib_details[bib_title][4]) <= thresold_year:
@@ -31,11 +35,11 @@ class CitationNet:
             with open(paper_details_filepath) as csvfile:
                 csvreader = csv.reader(csvfile)
                 for row in csvreader:
-                    paper_id, bib_title, ret_title, authors, fuzzy_score, request_type = row 
+                    paper_id, bib_title, ret_title, sem_authors, fuzzy_score, request_type = row 
                     if is_valid_paper_id(bib_title, bib_title_to_bib_details, thresold_year):
-                        authors = [author_and_id.strip().split('#') for author_and_id in authors.strip().split('%')] # [[auth_1, auth_1_id], [auth_2, auth_2_id]]
+                        sem_authors = [author_and_id.strip().split('#') for author_and_id in sem_authors.strip().split('%')] # [[auth_1, auth_1_id], [auth_2, auth_2_id]]
                         self.paper_to_references[paper_id] = set()
-                        self.paper_features[paper_id] = {'bib_title': bib_title, 'sem_title': ret_title, 'authors': authors}
+                        self.paper_features[paper_id] = {'bib_title': bib_title, 'sem_title': ret_title, 'sem_authors': sem_authors}
 
         if os.path.exists(references_filepath): # read referenced papers and add citation edges.
             with open(references_filepath) as csvfile:
@@ -56,12 +60,13 @@ class CitationNet:
 
         missing, total = 0, 0
         for paper_id in self.paper_features: # adding bib-details and country annotations in nodes.
-            paper_key, paper_type, paper_book_title, month, year, url = bib_title_to_bib_details[self.paper_features[paper_id]['bib_title']] 
+            paper_key, paper_type, paper_book_title, month, year, url, bib_authors = bib_title_to_bib_details[self.paper_features[paper_id]['bib_title']] 
             self.paper_features[paper_id]['paper_key'] = paper_key
             self.paper_features[paper_id]['paper_type'] = paper_type
             self.paper_features[paper_id]['paper_book_title'] = paper_book_title
             self.paper_features[paper_id]['month'] = month
             self.paper_features[paper_id]['year'] = year
+            self.paper_features[paper_id]['bib_authors'] = bib_authors
 
             key_for_country_list = paper_key + '.txt'
             if key_for_country_list in paper_key_to_country_list:
@@ -75,7 +80,150 @@ class CitationNet:
             self.paper_features[paper_id]['countries'] = list(set(country_list)) # unique
 
         print(f"*** Total {missing} out of {total} paper-keys missing in country list.")
-    
+
+        # author id to ciations
+        self.cumulative_citations = self.author_id_to_num_citations_in_a_year() # self.cumulative_citations[author_id][year]
+
+        # author id to academic age
+        self.first_pub_year = self.author_id_to_first_paper() # author id to first publication year first_pub_year[author_id]; used for computing NLP academic age
+
+        # fetch gender mapping
+        stanford_male_full_names, stanford_female_full_names, \
+            ssa_male_first_names, ssa_female_first_names, \
+                pubmed_male_first_names, pubmed_female_first_names = self.create_name_to_gender_mapping()
+
+        # assign the gender to bib author sequence
+        total, stanford_hit, ssa_hit, pubmed_hit = 0.0, 0.0, 0.0, 0.0
+        for paper_id in self.paper_features:
+            bib_authors = self.paper_features[paper_id]['bib_authors']
+            bib_author_genders = []
+            for bib_author in bib_authors:
+                total += 1.0
+
+                gender = 'unknown'
+                bib_author_first_name, bib_author_last_name = [strip_non_alpha(name.lower()) for name in bib_author]
+
+                # try using stanford list
+                if (bib_author_first_name, bib_author_last_name) in stanford_male_full_names:
+                    gender = 'male'
+                elif (bib_author_first_name, bib_author_last_name) in stanford_female_full_names:
+                    gender = 'female'
+
+                if gender != 'unknown':
+                    stanford_hit += 1.0
+                else:
+                    # try ssa list
+                    if bib_author_first_name in ssa_male_first_names:
+                        gender = 'male'
+                    elif bib_author_first_name in ssa_female_first_names:
+                        gender = 'female'
+
+                    if gender != 'unknown':
+                        ssa_hit += 1.0
+                    else:
+                        # try pubmed list
+                        if bib_author_first_name in pubmed_male_first_names:
+                            gender = 'male'
+                        elif bib_author_first_name in pubmed_female_first_names:
+                            gender = 'female'
+
+                        if gender != 'unknown':
+                            pubmed_hit += 1.0
+                            
+                # assigning genders
+                bib_author_genders.append(gender)
+
+            self.paper_features[paper_id]['bib_author_genders'] = bib_author_genders
+
+        print(f"Stanford Hit: {stanford_hit/total} | SSA Hit: {ssa_hit/total} | PubMed Hit: {pubmed_hit/total}")
+
+    def author_id_to_num_citations_in_a_year(self):
+        citations = dict() # accessed as citations[author_id][1997]
+
+        for paper_id in self.paper_features:
+            author_ids = [auth_id_auth_name[0] for auth_id_auth_name in self.paper_features[paper_id]['sem_authors'] if auth_id_auth_name != ['']] # [[auth_1_id, auth_1], [auth_2_id, auth_2]]
+            for author_id in author_ids:
+                if author_id not in citations:
+                    citations[author_id] = dict()
+        
+        min_paper_id_year, max_paper_id_year = 5000, -1
+        for paper_id in self.paper_to_references:
+            paper_id_year = int(self.paper_features[paper_id]['year'])
+            min_paper_id_year = min(paper_id_year, min_paper_id_year)
+            max_paper_id_year = max(paper_id_year, max_paper_id_year)
+            for ref_paper_id in self.paper_to_references[paper_id]: # paper_id increases the citation count of every ref_paper_id's author by 1
+                ref_author_ids = [auth_id_auth_name[0] for auth_id_auth_name in self.paper_features[ref_paper_id]['sem_authors'] if auth_id_auth_name != ['']]
+                for ref_author_id in ref_author_ids:
+                    if paper_id_year not in citations[ref_author_id]:
+                        citations[ref_author_id][paper_id_year] = 0
+                    citations[ref_author_id][paper_id_year] += 1
+
+        # cumulate the citation uptil x year
+        for author_id in citations:
+            cum_citation_count_dict, cum_citation_count = dict(), 0
+            for year in range(min_paper_id_year, max_paper_id_year + 1):
+                if year in citations[author_id]:
+                    cum_citation_count += citations[author_id][year]
+                cum_citation_count_dict[year] = cum_citation_count
+            citations[author_id] = cum_citation_count_dict
+
+        return citations # cumulated over years
+
+    def author_id_to_first_paper(self):
+        first_pub = dict() # accessed as first_pub[author_id] => returns an integer indicating year of first publication
+
+        # skips unknown authors (authors with no semantic scholar paper ID)
+        for paper_id in self.paper_features:
+            author_ids = [auth_id_auth_name[0] for auth_id_auth_name in self.paper_features[paper_id]['sem_authors'] if auth_id_auth_name != ['']] # [[auth_1_id, auth_1], [auth_2_id, auth_2]]
+            paper_id_year = int(self.paper_features[paper_id]['year'])
+            for author_id in author_ids:
+                if author_id not in first_pub:
+                    first_pub[author_id] = 5000 # assining some max year
+                first_pub[author_id] = min(first_pub[author_id], paper_id_year)
+
+        return first_pub 
+
+    def create_name_to_gender_mapping(self):
+
+        # stanford list
+        stanford_male_full_names, stanford_female_full_names = [], []
+        with open('../gender_dataset/stanford/acl-male.txt') as f:
+            for full_name in f:
+                full_name_split = [name.strip() for name in full_name.split(',')]
+                last_name, first_name = full_name_split[0], ''.join(full_name_split[1:])
+                stanford_male_full_names.append((strip_non_alpha(first_name.lower()), strip_non_alpha(last_name.lower())))
+        with open('../gender_dataset/stanford/acl-female.txt') as f:
+            for full_name in f:
+                full_name_split = [name.strip() for name in full_name.split(',')]
+                last_name, first_name = full_name_split[0], ''.join(full_name_split[1:])
+                stanford_female_full_names.append((strip_non_alpha(first_name.lower()), strip_non_alpha(last_name.lower())))
+        
+        # ssa list
+        ssa_male_first_names, ssa_female_first_names = [], []
+        with open('../gender_dataset/ssa/ssa_male_first_names.txt') as f:
+            for first_name in f:
+                first_name = first_name.strip()
+                ssa_male_first_names.append(strip_non_alpha(first_name.lower()))
+        with open('../gender_dataset/ssa/ssa_female_first_names.txt') as f:
+            for first_name in f:
+                first_name = first_name.strip()
+                ssa_female_first_names.append(strip_non_alpha(first_name.lower()))
+
+        # pubmed list
+        pubmed_male_first_names, pubmed_female_first_names = [], []
+        with open('../gender_dataset/pubmed/pubmed_genni_male_first_names.txt') as f:
+            for first_name in f:
+                first_name = first_name.strip()
+                pubmed_male_first_names.append(strip_non_alpha(first_name.lower()))
+        with open('../gender_dataset/pubmed/pubmed_genni_female_first_names.txt') as f:
+            for first_name in f:
+                first_name = first_name.strip()
+                pubmed_female_first_names.append(strip_non_alpha(first_name.lower()))
+        
+        return stanford_male_full_names, stanford_female_full_names, \
+            ssa_male_first_names, ssa_female_first_names, \
+                pubmed_male_first_names, pubmed_female_first_names
+        
     def country_to_publications(self):
         '''
             Return the dict with paper_ids corresponding to each country.
@@ -233,10 +381,10 @@ class CitationNet:
     def cont_1_to_cont_2_auth_edges_and_names(self, country_1_paper_ids, country_2_paper_ids, dominant_edges_thresold, thresold_type):
         author_id_to_author_name, author_id_to_references_count, edges_dict = dict(), dict(), dict()
         for paper_id in country_1_paper_ids:
-            name_and_id_list = self.paper_features[paper_id]['authors'] # [[auth_1_id, auth_1], [auth_2_id, auth_2]]
+            name_and_id_list = self.paper_features[paper_id]['sem_authors'] # [[auth_1_id, auth_1], [auth_2_id, auth_2]]
             for cited_paper_id in self.paper_to_references[paper_id]:
                 if cited_paper_id in country_2_paper_ids: # relevant edge | country_1 -> country_2
-                    cited_name_and_id_list = self.paper_features[cited_paper_id]['authors']
+                    cited_name_and_id_list = self.paper_features[cited_paper_id]['sem_authors']
                     # add some edges.
                     for author_id_author_name in name_and_id_list:
                         if len(author_id_author_name) < 2:

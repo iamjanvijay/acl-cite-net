@@ -325,77 +325,99 @@ def main(args):
         country_pair_to_clique_size_fpath = './downloads/country_pair_to_clique_size.json'
         country_pair_to_dominant_count_clique_size_fpath = './downloads/country_pair_to_dominant_count_clique_size.json'
         country_pair_to_dominant_fraction_clique_size_fpath = './downloads/country_pair_to_dominant_fraction_clique_size.json'
+        regression_features_fpath = './downloads/paper_key_to_regression_features.csv'
 
-        # citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
+        citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict)
         # citenet.print_top_k_cited(20) # prints top-20 cited papers
-        # citenet.extract_country_cited_count(country_citation_count_fpath) # saves the citation count of all papers associated with each country
-        # citenet.same_year_citations_fraction() # prints the same and future year citation fraction
-        # citenet.extract_cross_country_cited_count(inter_country_citation_count_fpath, 10) # saves the inter country citation density metrics
 
-        # # saves citation count of countries with time
-        # citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, verbose=False)
-        # country_to_paper_ids = citenet.country_to_publications()
-        # country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in citenet.company_names} # filter out company names
-        # top_10_countries = [country_1 for country_1, country_1_paper_ids in sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:10]] # select top-10 publishing countires
-        # print("Top-10 publishing countries:", top_10_countries)
+        for i, paperID in enumerate(citenet.paper_features):
+            if i >= 10:
+                break
+            paper_features = citenet.paper_features[paperID]
+            print(paperID)
+            print(paper_features)
+    
+        # output the features list in a csv
+        row_header = ['paper-key', 'countries', 'author genders (in authorship order)', 'author names (in authorship order)', 'authors count', 'authors citations (uptil present; in authorship order)', 'authors citations (uptil year of publication; in authorship order)', 'nlp academic age (uptil present; in authorship order)', 'nlp academic age (uptil year of publication; in authorship order)', 'venue', 'min university rank', 'max university rank']
+        with open(regression_features_fpath, 'w') as f:
+            csv_writer = csv.writer(f, delimiter='|')
+            csv_writer.writerow(row_header)
+            paper_key_to_venue = json.load(open('./downloads/dict_paper_id_to_venue.json'))
+            paper_key_to_min_rank_cat = json.load(open('./downloads/dict_paper_uni_minrank.json'))
+            paper_key_to_mean_rank_cat = json.load(open('./downloads/dict_paper_uni_meanrank.json'))
 
-        # year_to_country_citations = dict()
-        # for year in range(2000, 2022):
-        #     print(f"Creating citation network until {year}...")
-        #     citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, verbose=False)
-        #     country_to_cite_count = citenet.extract_country_cited_count(None) # country to list (with # citations of each paper associated with the country)
-        #     country_to_cite_count = {country: [len(country_to_cite_count[country]), sum(country_to_cite_count[country])] for country in country_to_cite_count if country in top_10_countries}
-        #     assert(len(country_to_cite_count)==10)
-        #     print(f"(paper, citation) counts until {year}:", country_to_cite_count)
-        #     year_to_country_citations[year] = country_to_cite_count
+            for i, paperID in enumerate(citenet.paper_features):
 
-        # with open(year_to_country_citation_count_fpath, 'w') as f: # saves year => {country => (paper_count, citation_count)}
-        #     json.dump(year_to_country_citations, f)
+                paper_key = citenet.paper_features[paperID]['paper_key']
+                paper_id_year = int(citenet.paper_features[paperID]['year'])
 
-        # # fraction of citations analysis
-        # citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
-        # citenet.country_to_country_fraction(country_to_country_referened_count_fpath)
+                # countries associated with the paper; excluding the company names
+                countries = ','.join([country.strip() for country in citenet.paper_features[paperID]['countries'] if country not in citenet.company_names])
+                if len(countries.strip()) == 0:
+                    countries = 'unknown'
 
-        # # counts cliques in a country pairs
-        citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, verbose=False)
-        country_to_paper_ids = citenet.country_to_publications()
-        country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in citenet.company_names} # filter out company names
-        top_10_countries = [country_1 for country_1, country_1_paper_ids in sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:10]] # select top-10 publishing countires
-        print("Top-10 publishing countries:", top_10_countries)
+                # author count and names of authors
+                authors = citenet.paper_features[paperID]['bib_authors']
+                authors = ['~'.join([name.strip() for name in f_name_l_name]) for f_name_l_name in authors]
+                authors_count = len(authors)
+                authors = ','.join(authors)
 
-        max_clique_size, dominant_edges_thresold, thresold_type = 10, 0.0, 'count' # if author-a cites author-b in >=dominant_edges_thresold fraction of papers we consider it to be a valid edge | thresold_type can be 'fraction' or 'count'
-        # max_clique_size, dominant_edges_thresold, thresold_type = 10, 2.00, 'count' # if author-a cites author-b in >=dominant_edges_thresold fraction of papers we consider it to be a valid edge | thresold_type can be 'fraction' or 'count'
-        # max_clique_size, dominant_edges_thresold, thresold_type = 10, 5.00, 'fraction' # if author-a cites author-b in >=dominant_edges_thresold fraction of papers we consider it to be a valid edge | thresold_type can be 'fraction' or 'count'
-        country_pair_to_clique = dict()
-        for country_1 in top_10_countries[::-1]:
-            clique_len_to_count = dict()
-            for country_2 in top_10_countries[::-1]:
-                if country_1 <= country_2:
-                    nodes, edges, author_id_to_author_name = citenet.author_undirected_graph([country_1, country_2], dominant_edges_thresold, thresold_type)
-                    
-                    graph = nx.Graph()
-                    graph.add_nodes_from(nodes)
-                    graph.add_edges_from(edges)
-                    print(f"Total authors: {len(nodes)}")
-                    print(f"Total citation bi-directional edges: {len(edges)}")
-                    for i, clique in enumerate(nx.enumerate_all_cliques(graph)):
-                        if len(clique) > max_clique_size:
-                            break
-                        if len(clique) not in clique_len_to_count:
-                            clique_len_to_count[len(clique)] = 0
-                        clique_len_to_count[len(clique)] += 1
-                    
-                    country_pair_to_clique[f"{country_1}#{country_2}"] = {
-                                                                            "node_count": len(nodes), 
-                                                                            "edge_count": len(edges), 
-                                                                            "author_id_to_author_name": author_id_to_author_name,
-                                                                            "clique_len_to_count": clique_len_to_count
-                                                                        }
+                # gender of authors
+                author_genders = citenet.paper_features[paperID]['bib_author_genders']
+                author_genders = ','.join(author_genders)
 
-        with open(country_pair_to_clique_size_fpath, 'w') as f:
-        # with open(country_pair_to_dominant_count_clique_size_fpath, 'w') as f:
-        # with open(country_pair_to_dominant_fraction_clique_size_fpath, 'w') as f:
-            json.dump(country_pair_to_clique, f)
+                # citation uptil present & uptil year of publication | some papers might be missing in computation of citation count since few authors don't author ids from Semantic Scholar| len(author_names) - len(ciation_count) is missed authors for paper
+                # unkonwn (without semnatic scholar id) authors are assinged 0 ciations
+                citations_uptil_present, citations_uptil_yop = [], []
+                author_ids = [auth_id_auth_name[0] for auth_id_auth_name in citenet.paper_features[paperID]['sem_authors'] if auth_id_auth_name!=['']] # what if author id doesn't take a valid value?
+                for author_id in author_ids:
+                    author_citation_count = citenet.cumulative_citations[author_id][paper_id_year]
+                    citations_uptil_yop.append(author_citation_count)
+
+                    final_year = max(citenet.cumulative_citations[author_id])
+                    author_citation_count = citenet.cumulative_citations[author_id][final_year]
+                    citations_uptil_present.append(author_citation_count)
+                citations_uptil_yop = ','.join([str(count) for count in citations_uptil_yop])
+                citations_uptil_present = ','.join([str(count) for count in citations_uptil_present])
+                # empty string if citaitons not found for any of the authors
+                
+                # NLP academic age uptil present & uptil year of publication
+                acad_age_uptil_present, acad_age_uptil_yop = [], []
+                for author_id in author_ids:
+                    acad_age_uptil_yop.append(paper_id_year - citenet.first_pub_year[author_id])
+                    acad_age_uptil_present.append(final_year - citenet.first_pub_year[author_id])
+                acad_age_uptil_yop = ','.join([str(age) for age in acad_age_uptil_yop])
+                acad_age_uptil_present = ','.join([str(age) for age in acad_age_uptil_present])
+                # empty string if citaitons not found for any of the authors
+
+                # venue
+                venue = paper_key_to_venue[paper_key]
+                venue = 'unknown' if len(venue.strip())==0 else venue.strip()
+                
+                # min university rank
+                if paper_key in paper_key_to_min_rank_cat:
+                    min_rank = paper_key_to_min_rank_cat[paper_key]
+                else:
+                    min_rank = 'UNK'
+                if min_rank is not None:
+                    min_rank = min_rank.strip()
+                else:
+                    min_rank = 'UNK'
+                min_rank = 'unknown' if min_rank is 'UNK' else min_rank
+                
+                # max university rank
+                if paper_key in paper_key_to_mean_rank_cat:
+                    mean_rank = paper_key_to_mean_rank_cat[paper_key]
+                else:
+                    mean_rank = 'UNK'
+                if mean_rank is not None:
+                    mean_rank = mean_rank.strip()
+                else:
+                    mean_rank = 'UNK'
+                mean_rank = 'unknown' if mean_rank is 'UNK' else mean_rank
+
+                row = [paper_key, countries, author_genders, authors, authors_count, citations_uptil_present, citations_uptil_yop, acad_age_uptil_present, acad_age_uptil_yop, venue, min_rank, mean_rank]
+                csv_writer.writerow(row)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

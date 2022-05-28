@@ -1,0 +1,8572 @@
+Aarseth, Paul
+Aarts, Erik
+Abaitua, Joseba
+Abascal, Julio G.
+Abate, Solomon Teferra
+Abb, Bernd
+Abbes, Ramzi
+Abdalla, Rashid M.
+Abdelali, Ahmed
+AbdelRahman, Samir
+Abdul, Mujibur
+Abe, Akinori
+Abekawa, Takeshi
+Abelson, Robert P.
+Abe, Masahiro
+Abe, Naoki
+Abend, Omri
+Abe, Norihiro
+Aberdeen, John
+Abe, Shuya
+Abe, Yasunori
+Abe, Yoshiharu
+Abney, Steven P.
+abokrtský, Zdeněk
+Abolhassani, Hassan
+Abouenour, Lahsen
+Aboutajdine, Driss
+Abouzakhar, Nasser
+Abracos, Jose
+Abramowicz, Witold
+Abramson, Harvey
+Abrash, Victor
+Abrusci, V. Michele
+Abuhakema, Ghazi
+Abuleil, Saleem
+Abu-Salem, Hani
+Acero, Alex (Alejandro)
+Ackerman, Christopher
+Acosta, Jaime
+Acquaah-Mensah, George
+Adachi, Fumihiro
+Adachi, Hisahiro
+Adali, Esref
+Adams, Brian
+Adams, Gary
+Adams, Jeff
+Adams, Rod
+Adcock, John E.
+Adda, Gilles
+Adderley, Richard
+Addison, Edwin
+Adegbola, Tunde
+Adell, Jordi
+Adler, Meni
+, Adnan
+Adolphs, Peter
+Adorni, Giovanni
+Adriaans, Pieter
+Adriaens, Geert
+Afantenos, Stergos
+Afendras, Evangelos A.
+Afify, Mohamed
+Agarwal, Apoorv
+Agarwal, Rajeev
+Agarwal, Sachin
+Agbago, Akakpo
+Agerri, R.
+Agerri, Rodrigo
+Agichtein, Eugene
+Agirre, Eneko
+Aguilera Navarro, Santiago
+Agustini, Alexandre
+Ahlswede, Thomas E.
+Ahmad, Faisal
+Ahmad, Farooq
+Ahmad, Khurshid
+Ahmed, Syed Toufeeq
+Ahn, David
+Ahn, Jung-Ho
+Ahn, Kisuh
+Ah-Pine, Julien
+Ahrenberg, Lars
+Ai, Hua
+Aijaz, Adil
+Aikawa, Kiyoaki
+Aimetti, Guillaume
+Airola, Antti
+Aiso, Hideo
+Aist, Gregory
+Ait-Mokhtar, Salah
+Aizawa, Teruaki
+Ajani, Gianmaria
+Akama, Hiroyuki
+Akama, Seiki
+Akamine, Susumu
+Akbar, Mohammad
+Aker, Ahmet
+Akiba, Tomoyosi
+Akiba, Yasuhiro
+Akiva, Navot
+Akiyama, Kouji
+Akkaya, Cem
+Akker, Harm op den
+Akker, Rieks op den
+Alabau, Vicent
+Al-Adhaileh, Mosleh Hmoud
+Alain, D&#233
+Alam, Hassan
+Alamri, Abdulaziz
+Al-Badrashiny, Mohamed
+Al-Basoumy, Husein
+Albrecht, Joshua
+Albright, Adam
+Albro, Daniel M.
+Alcantara, Manuel
+Alc�zar, Jos�
+Aldabe, Itziar
+Aldag, Bjorn
+Aldaz Salmon, Javier A.
+Alder, Michael D.
+Alegria, I.
+Alegria, I�aki
+Aleven, Vincent
+Alexander, David
+Alexander, James H.
+Alexandersson, Jan
+, Alexandre
+Alexandrescu, Andrei
+Alexandrov-Kabadjov, Mijail
+Alexandrov, Theodore
+Alexin, Zoltan
+Al-Fares, Waleed
+Alfonseca, Enrique
+Ali, Aasim
+Ali, Mohammad Naveed
+Alink, Wouter
+Ali, Syed S.
+Alkhalifa, Musa
+Al Kharashi, Ibrahim A.
+Allan, James
+Allaria, Gianluca
+Allauzen, Alexandre
+Allauzen, Cyril
+Allbeck, Jan
+Allegrini, Paolo
+Allen, Barry A.
+Allen, James F.
+Allen, Jonathan
+Alleva, Fileno A.
+Allgayer, Jurgen
+Allison, Ben
+Allison, Timothy
+Allport, David
+Allwood, Jens
+Almas, Yousif
+Almberg, J�rn
+Alm, Norman
+Alm�si, Attila
+Almuhareb, Abdulrahman
+Al-Onaizan, Yaser
+Alonso, Miguel A.
+alo Oliveira, Hugo
+Alphonse, Erick
+Alsamara, Khalid
+Al-Shalabi, Riyad
+Alshawi, Hiyan
+Al Sughaiyer, Imad A.
+Althaus, Ernst
+Al-Thubaity, AbdulMohsen
+Altmann, Gerry
+Altmeyer, Randolf
+Altomari, Patrick J.
+Alumae, Tanel
+Alvarez, Amaury
+Alvarez-Pereyre, Michael
+Alves, Eduardo de Paiva
+Alviset, Christophe
+Amano, Shigeaki
+Amano, Shin-Ya
+Amaral, Luiz
+Amaya, Fredy A.
+Ambati, Vamshi
+Amble, Tore
+Amengual, J. C.
+Amigo, Enrique
+Amin, Samir K.
+Amir, Amihood
+Amo, Pedro
+Amores, J. Gabriel
+Amorrortu, Estibaliz
+Amsili, Pascal
+Amsler, Robert A.
+Amtrup, Jan W.
+Anand, Pranav
+Anastasakos, Anastasios
+Anaya-Sanchez, Henry
+Anberbir, Tadesse
+Andersen, �~C98>istein E.
+Andersen, Øistein E.
+Anderson, Don D.
+Anderson, John R.
+Anderson, Lloyd B.
+Andersson, Mikael
+Ando, Shinichi
+Andreewsky, Alexandre
+Andreoff, David
+Andrés-Ferrer, Jesús
+Andres, Frederic
+Andrew, Galen
+Andrews, Nicholas
+Andrews, Pierre
+Andreyev, Nicholas D.
+Andreyev, Slava
+Androutsopoulos, Ion
+Andrukovich, P. F.
+Andry, Francois
+Andrzejewski, David
+Angelov, Krasimir
+Ang, Jeremy
+Anick, Peter G.
+Anikst, Mark T.
+an, Khalil
+Ansari, Daniel
+Anshen, Frank
+Antani, Sameer K.
+Anthony, Stephen
+Antieau, Lamont
+Antohe, Daniel
+Antoine, Jean-Yves
+Aoe, Jun-Ichi
+Aparicio, Juan
+a, Pascal
+Apel, Ulrich
+Apollon, Daniel
+Appelbaum, Lee A.
+Appelt, Douglas E.
+Arabsorkhi, Mohsen
+Araki, Kenji
+Araki, Masahiro
+Araki, Tetsuo
+Aramaki, Eiji
+Arampatzis, Avi
+Aranovich, Roberto
+Arapov, M. V.
+Arciprete, Lorenzo
+Areces, Carlos
+Arehart, Mark
+Arens, Robert
+Arens, Roman G.
+Arens, Yigal
+Arez, Pedro
+Argamon, Shlomo
+Argenton, Hans
+Arguello, Jaime
+Arifin, S. M. Niaz
+Arita, Hidekazu
+Arita, Seigo
+Armanasu, Alex
+Arnaiz, Alfredo
+Arnaudov, Todor
+Arnola, Harri
+Arnold, Andrew
+Arnold, Doug J.
+Aronoff, Mark
+Aronson, Alan R.
+Aroonmanakun, Wirote
+Arosio, Fabrizio
+Arregi, Xabier
+Arregui, Miguel
+Arrieta, Bertol
+Arriola, Jose Maria
+Arrowood, Jon A.
+Artale, Alessandro
+Artiles, Javier
+Artola, Xabier
+Artstein, Ron
+Aruga, Norikazu
+Arumainayagam, Yogi
+Arun, Abhishek
+Asada, Yoshiaki
+Asadi, Ayman
+Asahara, Masayuki
+Asai, Ryota
+Asa, Yasuhiro
+Asher, Nicholas
+Ashley, Kevin D.
+Asker, Lars
+Assadi, Houssem
+Asterias, Jordi
+Aswani, Niraj
+Atallah, Mikhail J.
+Athitsos, Vassilis
+Atiyya, Mohammed
+Atkinson, Martin
+Atlam, El-Sayed
+Atserias, Jordi
+Attardi, Giuseppe
+Attia, Mohammed
+Atwell, Eric
+Atwell, Eric Steven
+Audibert, Laurent
+Audibert, Nicolas
+Aue, Anthony
+Auer, John
+Auli, Michael
+Austerweil, Joseph
+Austin, Steve
+avar, Damir
+Avramidis, Eleftherios
+Axelrod, Amittai
+Axelrod, Scott
+Ayan, Necip Fazil
+Ayo, Jonathan P.
+az, Alberto
+Azim, Roussanaly
+Aziz, Mohd Juzaiddin Ab
+Azzopardi, Leif
+Baayen, R. Harald
+Babych, Bogdan
+Bacalu, Ciprian
+Bacchiani, Michiel
+Bachimont, Bruno
+Bachman, Lyle F.
+Bach, Nguyen
+Bachrach, Asaf
+Bachrach, J. A.
+Bachut, Daniel
+Backer, Wm. J.
+Backofen, Rolf
+Badaskar, Sameer
+Badenhorst, Jaco
+Bader, Brett W.
+Badler, Norman
+Badran, Ahmed
+Bad, Rens
+Badr, Ibrahim
+Bagga, Amit
+Baggia, Paolo
+Bahl, L. R.
+Bailes, P. A. C.
+Bai, Ming-Hong
+Bainbridge, R. I.
+Baker, Collin F.
+Baker, James K.
+Baker, Jeffrey
+Baker, Kenneth
+Baker, Kirk
+Baker, Steven
+Bakker, Bart
+Balakrishnan, Sreeram
+Balakrishnan, Suhrid
+Balari, Sergio
+Balasubramanian, Vijay
+Balasuriya, Dominic
+Bal, Bal Krishna
+Balchandran, Rajesh
+Baldridge, Jason
+Balducci, Franco
+Baldwin, Breck
+Baldwin, Timothy
+Baldwin, Tyler
+Balfourier, Jean-Marie
+Ballard, Bruce W.
+Ballim, Afzal
+Ball, Jerry
+Ball, Julian
+Ball, Richard
+Balog, Krisztian
+Balvet, Antonio
+Bamberg, Paul
+Bamman, David
+Bancarz, Iain
+Banches, Rafael E.
+Banchs, Rafael E.
+Bandyopadhyay, Sivaji
+Bane, Max
+Banerjee, Pratyush
+Banerjee, Satanjeev
+Banerjee, Somnath
+Banga, Eduardo R.
+Bangalore, Srinivas
+Banjevic, Stefan
+Bannard, Colin
+Bansal, Mohit
+Bański, Piotr
+Bansleben, Erik
+Bao, Shenghua
+Ba, Ousmane
+Baptista, Jorge
+Baral, Chitta
+Barbosa, Luciano
+Barbu, Eduard
+Barclay, Chris
+Bares, William H.
+Bar-Haim, Roy
+Barker, Ken
+Barlow, Michael
+Barnard, Etienne
+Barnard, Kobus
+Barnden, John
+Barnden, John A.
+Barnett, James
+Baron, Alex
+Baron, Don
+Baroni, Marco
+Barra-Chicote, Roberto
+Barrachina, S.
+Barrachina, Sergio
+Barras, Claude
+Barr, Cory
+Barreaud, Vincent
+Barrett, Leon
+Barrutieta, Guillermo
+Barry, Chris
+Barry, Guy
+Barthelemy, Francois
+Bartolini, Roberto
+Barton Jr., G. Edward
+Barwise, Jon
+Bashyam, Vijayaraghavan
+Basile, Pierpaolo
+Basili, Roberto
+Bas, Johan
+Baskaran, Sankaran
+Basu, Anupam
+Batagelj, Vladimir
+Batchelor, Colin R.
+Bateman, John A.
+Batista, Fernando
+Batliner, Anton
+Batlle, Eloi
+Batori, Istvan
+Battista, Marco
+Baudrion, Philippe
+Baud, Robert
+Bauer, Travis L.
+Baumann, Stefan
+Baumann, Timo
+Baumgartner Jr., William A.
+Bayer, Samuel
+Bazillon, Thierry
+Beale, Andrew David
+Beale, Stephen
+Beal, Matthew J.
+Beamer, Brandon
+Bean, David L.
+Bear, John
+Beaugendre, Fr�d�ric
+Beaumont, Will de
+Beaven, John L.
+Beaver, David
+Beavers, John
+Becerra, Javier
+Bechet, Denis
+Bechet, Fr�d�ric
+Bechet, Frederic
+Beck, David
+Becker, Joseph D.
+Becker, Lee A.
+Becker, Markus
+Becker, Tilman
+Becket, Ralph
+Beckstein, C.
+Bedaride, Paul
+Beebe, Ralph D.
+Beeferman, Doug
+Beesley, Kenneth  R.
+Beesley, Kenneth R.
+Begeja, Lee
+Bei, Ben
+Beierle, Christoph
+Beigman, Eyal
+Beil, Franz
+Beineke, Philip
+Bejan, Cosmin Adrian
+Bejar, Isaac
+Bejček, Eduard
+Bekavac, Bozo
+Bekkerman, Ron
+Bekki, Daisuke
+Belenko, Dmitriy
+Belew, Richard K.
+Belkin, Mikhail
+Belkin, N. J.
+Bellare, Kedar
+Bell, Benjamin
+Bellegarda, Jerome
+Beller, Gregory
+Bell, Matthew
+Beltran-Ferruz, Pablo
+Belvin, Robert S.
+Bemstein, Jared
+Benajiba, Yassine
+Beňa, Peter
+Benavent, Francesc
+Bender, Oliver
+Benedict, Richard
+Benedi, Jose Miguel
+Bengio, Samy
+Bengio, Yoshua
+Bengoetxea, Kepa
+Bengtson, Eric
+Ben Hamadou, Abdelmajid
+Bennamoun, Mohammed
+Bennett, Andrew
+Bennett Novak, Gordon
+Bennett, Paul N.
+Bennett, Scott W.
+Bennett, Winfield S.
+, Beno&#238
+Benra, Jorg
+Bensaid, Amine
+Bensley, Jeremy
+Benson, David B.
+Benson, R. A.
+Benus, Stefan
+Benyon, David
+Berant, Jonathan
+Berber Sardinha, Tony
+Berck, Peter
+Berendsen, Egon
+Berg, Ansu
+Berger, Adam L.
+Berg-Kirkpatrick, Taylor
+Berglund, Anders
+Bergmair, Richard
+Bergmann, Carsten
+Bergsma, Shane
+Bergstra, James
+Berland, Matthew
+Berlanga-Llavori, Rafael
+Berment, Vincent
+Bernick, Philip
+Bernsen, Niels Ole
+Bernstein, Jared
+Bernth, Arendse
+Berrendonner, Alain
+Berry, Simon
+Berthelin, Jean-Baptiste
+Bertolo, Stefano
+Bertran, Manuel
+Berwick, Robert C.
+Besacier, Laurent
+Besan�on, Romaric
+Besemer, David J.
+Bes, Gabriel G.
+Bessieres, Philippe
+Bestgen, Yves
+Bethard, Steven
+Betteridge, Justin
+Bett, Michael
+Betz, Jonathan
+Bhagat, Rahul
+Bhandari, Harendra
+Bhanuprasad, Kamadev
+Bharathi, Akshar
+Bharati, Akshar
+Bhardwaj, Anurag
+Bhargava, Aditya
+Bhatia, Tej K.
+Bhattacharya, Indrajit
+Bhattacharya, Suvankar
+Bhattacharya, Tanmoy
+Bhattacharyya, Pushpak
+Bhattacharyya, Sayan
+Bhatt, Rajesh
+Bhembe, Dumisizwe
+Bhowmick, Plaban Kumar
+Bhutada, Pravin
+Biadsy, Fadi
+Bianchi, Dario
+Bian, Guo-Wei
+Bias, Gabriel G.
+Biatov, Konstantin
+Biber, Douglas
+Biber, Hanno
+Bibok, Karoly
+Bicici, Ergun
+Bick, Eckhard
+Bickel, Steffen
+Bickmore, Timothy W.
+Bicknell, Klinton
+Bielický, Viktor
+Biemann, Christian
+Bien, Janusz Stanislaw
+Biermann, Alan W.
+Bierner, Gann
+Biewald, Lukas
+Biewald, Luke
+Biewer, Axel
+Bigham, Jeffrey
+Bi, Jinbo
+Bikel, Daniel M.
+Bilac, Slaven
+Bilange, Eric
+Bilhaut, Frederik
+Bilidas, Dimitrios
+Bilidas, Dimitris
+Bilinski, Eric
+Biller, Ofer
+Billing Jr., Floyd H.
+Bills, Steven
+Bilmes, Jeff A.
+Bilotti, Matthew
+Bily, Milan
+Bindi, Remo
+BingQuan, Liu
+Binkowski, Ed
+Binnick, Robert I.
+Binot, Jean-Louis
+Birbanescu, Adrian
+Bird, Steven
+Birnbaum, Lawrence
+Biro, Tamas
+Bisani, Maximilian
+Bisiani, Roberto
+Bisson, Gilles
+Biswas, Pradipta
+Bittar, Andr&#233
+Bittencourt, Evandro
+bius, Bernd
+Bj�rne, Jari
+Blache, Philippe
+Black, Alan
+Black, Alan W.
+Blackburn, Patrick
+Black, Ezra
+Black, Ezra W.
+Black, John E.
+Black, Rolf
+Black, William J.
+Blackwood, Graeme
+Blaheta, Don
+Blair, Alan D.
+Blanchard, Daniel
+Blanchon, Herv
+Blanchon, Herv�
+Blanco, Eduardo
+Blanc, Olivier
+Blatak, Jan
+Blatz, John
+Blaylock, Nate
+Blei, David
+Blin, Laurent
+Blitzer, John
+Block, Hans Ulrich
+Block, Russell
+Bloedorn, Eric
+Bloemberg, Wilfried
+Blois, Marsden S.
+Bloodgood, Michael
+Bloom, Jonathan
+Bloom, Kenneth
+Blouin, Christian
+Blower, Paul E.
+Blume, Matthias
+Blunsom, Philip
+Bobadilla, Emilio
+Boberg, Jorma
+Bobrow, Daniel G.
+Bobrow, Robert J.
+Bobrow, Rusty
+Boda, Peter Pal
+Bode, Andreas
+Bodenreider, Olivier
+Bodirsky, Manuel
+Bodmer, Franck
+Bod, Rens
+Boeffard, Olivier
+Boella, Guido
+Boersma, Paul
+Bogers, Toine
+Boguraev, Branimir K.
+Boguslavsky, Igor
+Bohm, Klemens
+Bohnet, Bernd
+Bohus, Dan
+Boisen, Sean
+Boisvert, Serge
+Boitet, Christian
+Bojar, Ond&#345
+Bojar, Ondřej
+Bolc, Leonard
+Bollegala, Danushka
+Bolohan, Orest
+Bolshakov, Igor A.
+Bonafonte, Antonio
+Bonawitz, Keith
+Boncz, Peter
+Bond, Francis
+Bonfante, Guillaume
+Bonkowski, Christian
+Bonnema, Remko
+Bookman, Lawrence A.
+Boonkwan, Prachya
+Bopp, Stephan
+Boras, Damir
+Bordag, Stefan
+Borgelt, Christian
+Borghesi, Luigi
+Borgida, Alexander T.
+Borgo, Stefano
+Borin, Lars
+Borkovsky, Arkady
+Borkowski, Casimir
+Borkowsky, Arcady
+Bork, Peer
+Borneman, John
+Borra, Allan
+Borrajo, Daniel
+Borthwick, Andrew
+Bosch, Antal van den
+Boschetti, Federico
+Bosch, Louis Ten
+Bosch, Peter
+Bose, Dipankar
+Bos, Edwin
+Bos, Johan
+Bosma, Wauter
+Bos, M. J. W.
+Bossaert, Walter
+Botley, Simon
+Bottcher, Martin
+Bottner, Michael
+Bott, Stefan
+Bouaud, Jacques
+Bouchard, Alexandre
+Bouchard-C�t�, Alexandre
+Bouchard, Lorne H.
+Bouche, Olivier
+Boudin, Florian
+Boukobza, Ram
+Boulianne, Gilles
+Boulis, Constantinos
+Boullier, Pierre
+Boullosa, Jose R.
+Bouma, Gosse
+Bourbeau, Laurent
+Bourdaillet, Julien
+Bourgeois, Thomas C.
+Bourigault, Didier
+Bouzid, Ahmed
+Bouzoubaa, Karim
+Boves, Louis
+Bowes, Chris
+Boxwell, Stephen
+Boyd-Graber, Jordan
+Boye, Johan
+Boykin, Stanley
+Boyko, Igor
+Bozsahin, Cem
+Bozsahin, H. Cem
+Brachman, Ronald J.
+Bradford, James
+Brajnov, Svjatoslav
+Bramsen, Philip
+Branavan, S. R. K.
+Branavan, S.R.K.
+Branco, Ant�nio H.
+Branco, Antonio
+Brandle, Stefan
+Brandow, Ronald
+Brandt-Pook, Hans
+Brandyberry, David
+Branting, L. Karl
+Brants, Thorsten
+Braschler, Martin
+Braslavski, Pavel
+Bratt, Harry
+Bratus, Sergey
+Braun, Anthony
+Braun, Christian
+Braun, Gunter
+Braun, Stephan
+Bray, Patrick
+Brazdil, Pavel
+Brecht, Werner
+Breck, Eric
+Bredenkamp, Andrew
+Bree, D. S.
+Breen, Jim
+Bremer, John
+Brenier, Jason M.
+Brent, Michael R.
+Bretan, Ivan
+Brew, Chris
+Brewster, Christopher
+Briabrin, Victor
+Bridle, John
+Briffault, Xavier
+Brill, David
+Brill, Eric
+Bringert, Bj&#246
+Bringert, Bjorn
+Brinkmann, Karl-Heinz
+Briscoe, Ted
+Broadhead, Matthew
+Brockett, Chris
+Brockmann, Carsten
+Broda, Bartosz
+Brodda, Benny
+Brodersen, R.
+Brody, Samuel
+Broeder, Daan
+Broekett, Chris
+Broglio, John
+Broker, Norbert
+Bronisz, Didier
+Bronnenberg, W. J.
+Bronsart, Sebastien
+Bronzan, Aaron
+Brooke, Julian
+Brooks, David J.
+Brooks, James
+Bross, Irwin D. J.
+Broughton, Michael
+Brown, Allen
+Brown, David
+Brown, Dunstan
+Brown, Jonathan
+Brown, Keith
+Brown, Michael K.
+Brown, Peter F.
+Brown, Ralf D.
+Bruce, Bertram C.
+Brugman, Hennie
+Brugman, Ivo
+Brunet-Manquat, Francis
+Brunner, Hans
+Brunning, Jamie
+Brutti, Alessio
+Bryant, Barrett R.
+Bryant, John
+Bryant, Michael
+Bryl, Anton
+Brzoska, Christoph
+Buchberger, Ernst
+Buch-Kromann, Matthias
+Buchsbaum, Adam L.
+Buckeridge, Alan M.
+Buckland, Michael
+Buckley, Chris
+Buckley, Mark
+Buckwalter, Tim
+Buczy�~Dski, Aleksander
+Budanitsky, Alexander
+Buitelaar, Paul
+Bui, Trung
+Bujas, Zeljko
+Bu, Jiajun
+Bukatin, Michael
+Bukowski, Jedrzej
+Bulatov, Vladimir
+Bulyko, Ivan
+Bundy, Alan
+Bunescu, Razvan C.
+Bungeroth, Jan
+Bunker, Ross T.
+Bunnell, H. Timothy
+Bunsecu, Razvan
+Bunt, Harry
+Bunt, Harry C.
+Bunting, Karl Dieter
+Buntrock, James
+Buo, Finn Dag
+Burchardt, Aljoscha
+Burden, Hakan
+Burek, Gaston G.
+Burfoot, Clint
+Burge, John
+Burger, John D.
+Burger, John F.
+Burges, Christopher
+Burke, Carl
+Burke, Michael
+Burkert, Gerrit
+Burkett, David
+Burnett, Daniel C.
+Burns, Gully
+Burns, Ron
+Burridge, Robert R.
+Burstein, Mark H.
+Busa, Roberto
+Busby, George
+Buscaldi, Davide
+Buschmeier, Hendrik
+Busemann, Stephan
+Busser, Bertjan
+Buttelmann, H. Willam
+Butters, Jonathan
+Butt, Tahir
+Butzberger, John
+Byrd, Roy J.
+Byrne, Rod
+Byrnes, John
+Byrne, William J.
+By, Tomas
+Cabrero, David
+Caelen, Jean
+Cafarella, Michael J.
+Cafferkey, Conor
+Cai, Dongfeng
+Caid, William R.
+Cai, Junfu
+Cailliau, Frederik
+Cai, Qingsheng
+Cai, Zhiqiang
+Calcagno, Mike
+Calder, Jonathan
+Calderone, Basilio
+Caldwell, David E.
+Caldwell, Ted
+Calera-Rubio, Jorge
+Callaghan, Paul
+Callan, James P.
+Callan, James P.
+Callan, Jamie
+Callaway, Charles B.
+Callison-Burch, Chris
+Callmeier, Ulrich
+ca, Marius
+Camilleri, Carl
+Caminero, Javier
+Cammisa, Marco
+Campanile, Enrico
+Campbell, Alistair E.
+Campbell, David
+Campbell, Joseph
+Campbell, Lyle
+Campbell, Nick
+Campbell, Richard
+Campbell, W. N.
+Campia, Paolo
+Campr, Pavel
+Candido, Arnaldo
+Can, Dogan
+Canisius, Sander
+Cano, Antonio
+Canon, Stephen
+Cant, James
+Cantwell Smith, Brian
+Canzhong, Wu
+Cao, Diego De
+Cao, Jie
+Cao, Yong-Gang
+Cao, Yunbo
+Cao, Zhenfu
+Capman, Fran�ois
+Cappelli, Amedeo
+Cappe, Olivier
+Capp�, Olivier
+Carayannis, George
+Carazo, Jos� Mar�a
+Carbonell, Jaime G.
+Carbone, Marco
+Carbonetto, Peter
+Carbonnell, Jaime G.
+Cardenas, Carlos
+Cardillo, Peter S.
+Cardinal, Patrick
+Carenini, Giuseppe
+Carey, John
+Carlberger, Johan
+Carleton, Joel
+Carl, Michael
+Carlos, Cohan Sujay
+Carlson, Adam
+Carlson, Andrew
+Carlson, Greg
+Carlson, Rolf
+Carmen, Marc
+Carmona, Josep
+Carpenter, Bob
+Carrasco, Rafael C.
+Carrera, Jordi
+Carreras, Xavier
+Carr, Nathan
+Carroll, Glenn
+Carroll, James
+Carroll, Jeremy J.
+Carroll, John
+Carroll, John A.
+Carroll, Steven
+Carrrera, Jordi
+Carter, Alan W.
+Carter, David M.
+Carterette, Ben
+Carter, Richard
+Carthy, Joe
+Cartier, Emmanuel
+Cartoni, Bruno
+Cartwright, Timothy A.
+Caruana, Joe
+Caruana, Rich
+Carvalho, Vitor R.
+Casacuberta, Francisco
+Casacuberta, Francisko
+Casas, Bernardino
+Caseiro, Diamantino
+Caselli, Tommaso
+Casper, Mark
+Cassel, David
+Cassidy, Steve
+Castanet, Richard
+Castano, Jose M.
+Castelfranchi, Cristiano
+Castelli, Eric
+Castelli, Vittorio
+Castells, Pablo
+Castillo, Carlos
+Castillo, Mauro
+Castro, M. J.
+Catarsi, M. N.
+Cater, Arthur
+Cattoni, Roldano
+Caudal, Patrick
+Cavallotto, Nico
+Cavar, Damir
+Cavazza, Marc
+Cavedon, Lawrence
+Cavestro, Bruno
+Caywood, Matthew
+Ceauşu, Alexandru
+Cech, Claude G.
+Cederberg, Scott
+Celebi, Arda
+Celli, Fabio
+Cencioni, Roberto
+Cepen, Stephan
+Cerbah, Farid
+Cercone, Nick
+Cer, Daniel
+Ceroni, Alessio
+Cerri, Stefano A.
+Cesar, Christian
+Češka, Pavel
+Cettolo, Mauro
+Ceylan, Hakan
+Chafe, Wallace L.
+Chaitanya, Vineet
+Cha, Jeongwon
+Chakaravarthy, Venkatesan T.
+Chakrabarti, Soumen
+Chakravarthy, Anil S.
+Chakravarthy, Venkatesan
+Chali, Yllias
+Chalup, Stephan
+Chamberlain, Jon
+Chambers, Nathanael
+Chan, Chien-Lung
+Chan, Daniel Ka-Leung
+Chan, Dennis
+Chandler, Brian J.
+Chandrasekar, Raman
+Chan, Erwin
+Chanev, Atanas
+Chang, Andrew
+Chang, Baobao
+Chang, Chao-Huang
+Chang, Conrad
+Chang, Jason S.
+Chang, Jeong-Ho
+Chang, Jing-Shin
+Chang, Jonathan
+Chang, Jyun-Sheng
+Chang, Kai-min K.
+Chang, Kai-Wei
+Chan, G. K. K.
+Chang, Ming-Wei
+Chang, Moon-Soo
+Changning, Huang
+Chang, Shih-Fu
+Chang, Yu-Chia
+Chan, Hayward H.
+Chan, Kin-Wah
+Channarukul, Songsak
+Chanod, Jean-Pierre
+Chan, Samuel W. K.
+Chan, Shiu Tong
+Chan, Terence Y. W.
+Chantree, Francis
+Chan, Yu-Chung
+Chao, Chih-Yu
+Chao, Gerald
+Chao, Wen-Han
+Chapin, Paul G.
+Chapman, David
+Chappell, Alan
+Charniak, Eugene
+Charnois, Thierry
+Charocopos, Nicholas
+Charoenpornsawat, Paisarn
+Chase, Greg
+Cha, Seungho
+Chatain, Pierre
+Chatterjee, Niladri
+Chatterji, Sanjay
+Chatzichrisafis, Nikos
+Chauch�, Jacques
+Chaudhari, Upendra
+Chaudhary, Mark
+Chaudhuri, B. B.
+Chaudhuri, Bidyut Baran
+Chaudhuri, Sourish
+Chaudiron, St�phane
+Chaumartin, Francois-Regis
+Chavez, Hector
+Chee, Brant
+Cheikes, Brant A.
+Chelba, Ciprian
+Chen, Aitao
+Chen, Benfeng
+Chen, Benjamin L.
+Chen, Berlin
+Chen, Bin
+Chen, Bo
+Chen, Boxing
+Chen, Chao-Jan
+Chen, Chaomei
+Chen, Chen
+Chen, Cheng-Der
+Chen, Conrad
+Chen, Erdong
+Cheng, Chin-Chuan
+Cheng, Hua
+Cheng, Jian
+Cheng, Pu-Jen
+Cheng, Shun-Der
+Cheng, Xiwen
+Cheng, Xue-Qi
+Cheng, Yuchang
+Chen, Han-Bin
+Chen, Harr
+Chen, Hongbiao
+Chen, Hsin-Hsi
+Chen, Huey-Chyun
+Chen, Jack
+Chen, Jiajun
+Chen, J. N.
+Chen, John
+Chen, Kaijiang
+Chen, Kang
+Chen, Keh-Jiann
+Chen, Ken
+Chen, Kuang-Hua
+Chen, Kuang-Yu
+Chen, Longbin
+Chen, Mathis H.
+Chen, Ming-Jun
+Chen, Qing
+Chen, Sheng-Yi
+Chen, Shengyuan
+Chen, Stanley F.
+Chen, Tung-Tse
+Chen, Wan
+Chen, Wenliang
+Chen, Xiao
+Chen, Xiaohe
+Chen, Xiaoming
+Chen, XiXian
+Chen, Yaodong
+Chen, Yi-Jun
+Chen, Yin
+Chen, Yudong
+Chen, Yuqiang
+Chen, Yuquan
+Chen, Zheng
+Cherkassky, Vladimir L.
+Cherry, Colin
+Chester, Daniel
+Cheung, Chi Shun
+Cheung, Chi-Shun
+Cheung, Lap
+Cheung, Lawrence Y. L.
+Cheung, Percy
+Chevalier, Haakon
+Chevelu, Jonathan
+Che, Wanxiang
+Chew, Peter
+Chew, Peter A.
+Chiang, David
+Chiang, Tung-Hui
+Chiarcos, Christian
+Chia, Tee Kiah
+Chibout, Karim
+Chica, Sebastian
+Chickering, Max
+Chicoisne, Guillaume
+Chi, David N.
+Chien, Arnold J.
+Chien, Lee-Feng
+Chien, Y. T.
+Chieu, Hai Leong
+Chigier, Benjamin
+Chikayama, Takashi
+Chik, Francis C. Y.
+Childers, D. G.
+Chimeddorj, Odbayar
+Chin, Andy C.
+Chin, David N.
+Chinnakotla, Manoj Kumar
+Chinosi, Michele
+Chisholm, Michael A.
+Chitrao, Mahesh V.
+Chitturi, Rahul
+Chiu, Andy
+Chiu, Chih-Ming
+Chiu, Justin Liang-Te
+Chiu, T. S.
+Chizeck, Howard
+Chi, Zhiyi
+Chklovski, Timothy
+Cho, Chun-Hung
+Chodorow, Martin
+Chodorow, Martin S.
+Cho, Han-Cheol
+Cho, Hyung Joon
+Choi, Freddy Y. Y.
+Choi, Jinho
+Choi, John
+Choi, Key-Sun
+Choi, Sung-Kwon
+Choi, William
+Choi, Won Seug
+Cholakov, Kostadin
+Choma, Travis
+Chomjakov, M. V.
+Chong, Mickey W.C.
+Choudhary, Alok
+Choudhary, Hansraj
+Choudhury, Monojit
+Chou, George
+Choukri, Khalid
+Chou, Lin-Yi
+Chouraqui, Eugene
+Chou, Wen-Chi
+Chou, Ya-Min
+Chowdhury, Md. Faisal Mahbub
+Chow, Edmond
+Chow, Ka-Po
+Chow, Yen-Lu
+Christensen, Lee
+Christodoulakis, Dimitris N.
+Christoudias, C. Mario
+Christoudias, Mario
+Chrupala, Grzegorz
+Chrzanowski, Michael J.
+Chrz, Tomas
+Chuang, Thomas C.
+Chuang, Yi-Hsuan
+Chua, Tat-Seng
+Chu, David
+Chung, Hoon
+Chung, K. F. L.
+Chung, Minhwa
+Chun, Hong-Woo
+Churcher, Gavin E.
+Church, Kenneth W.
+Church, Kenneth Ward
+Chu, Stephen
+Chute, Christopher G.
+Chytil, Michal
+Ciaramita, Massimiliano
+Cicekli, Ilyas
+Cidral, Alexandre
+Cieri, Christopher
+Ciesielski, Victor B.
+Cigarran, Juan
+Cimiano, Philipp
+Cimino, James
+Ciortuz, Liviu
+Ciravegna, Fabio
+Ciric, Branimir
+Civera, Jorge
+ck, Bj&#246
+Claassen, Wim
+Clancey, William J.
+Clark, Alexander
+Clark, Brady
+Clark, Cortis
+Clarke, Charles L. A.
+Clarke, Daoud
+Clarke, James
+Clarke, John R.
+Clark, Herbert H.
+Clark, Jonathan H.
+Clark, Peter
+Clark, Robin
+Clark, Stephen
+Clausen, David
+Claveau, Vincent
+Clegg, B. Andrew
+Clemenceau, David
+Clemente Litran, Jose Carlos
+Clemente-Salazar, Marco A.
+Clement, Lionel
+Clements, Mark A.
+Clergerie, Eric Villemonte de la
+Cleuziou, Guillaume
+Clifford, James
+Climent, Salvador
+Cline, Ben E.
+Clippinger Jr., John Henry
+Cloeren, Jan
+Cloete, Ian
+Clough, Paul D.
+Clow, Josh
+Cmejrek, Martin
+Coccaro, Noah
+Cochard, Jean-Luc
+Coch, Jose
+Cochran, Dave
+Cocke, John
+Coelho, Helder
+Coelho, Jorge
+Coetzer, M. W.
+Cohen, Aaron
+Cohen, Andrew
+Cohen, Ariel
+Cohen, Jordan R.
+Cohen, K. Bretonnel
+Cohen, Michael
+Cohen, Philip R.
+Cohen, Phil R.
+Cohen, William W.
+Cohn, Trevor
+Coiera, Enrico
+Colaresi, Michael
+Colas, Jose
+Colban, Erik
+Colbath, Sean
+Colbourn, M. J.
+Colby, Kenneth Mark
+Coleman, John
+Cole, Ronald A.
+Coletti, Paolo
+Collier, Alex
+Collier, Nigel
+Collier, Renk
+Collier, Robin
+Collingham, Russell
+Collins, Allan M.
+Collins, Christopher
+Collins, Michael
+Collins, Michael John
+Collobert, Ronan
+Colman, Marcus
+Colognese, Alberto
+Colosimo, Marc
+Comas, Pere
+Comeau, Michel
+Compagnion, Herve
+Concejero, Pedro
+Congjun, Long
+Conklin, E. Jeffrey
+Connolly, Dennis
+Connor, Michael
+Conrad, Rudi
+Conroy, John M.
+Consoli, Carlo
+Constant, Matthieu
+Content, Alain
+Conway, Alan
+Conway, Mike
+Cook, Malcolm E.
+Cook, Martin
+Cook, Paul
+Cooper, Chris
+Cooper, Martin C.
+Cooper, Richard P.
+Cooper, Robin
+Copeck, Terry
+Coppen, Peter-Arno
+Coppens, Frederik
+Copperman, Max
+Coppola, Bonaventura
+Corbett, C. Greville
+Corbett, Greville G.
+Corbett, Peter T.
+Corbin, Harold
+Cordeiro, Joao
+Cordoba, Ricardo de
+Cordova, Aaron
+Corduneanu, Adrian
+Core, Mark G.
+Corio, Marc
+Cormack, G. V.
+Cornell, Thomas L.
+Cornish, Tim
+Cornu, Etienne
+Correa, Nelson
+Correira, Alfred
+Corriveau, Jean-Pierre
+Corston-Oliver, Simon H.
+Corvey, William
+Costa, Fabrizio
+Costa Florencio, Christophe
+Costa, Francisco
+Costa, Luis Fernando
+Costantino, Marco
+Costello, Dave
+Costello, Fintan J.
+Costello, J. Fintan
+Coster, Rickard
+Cotter, Philip
+Cotton, Scott
+Cottrell, Garrison W.
+Councill, Isaac
+Coursey, Kino
+Courtin, Jacques
+Cousseau, Peter
+Couto, Javier
+Covington, Michael A.
+Cowell, Andrew
+Cowie, James R.
+Cox, Stephen
+Coyaud, Maurice
+Coyne, Bob
+Crabbe, Benoit
+Craggs, Richard
+Craig, Matthew
+Cramer, Bart
+Cramer, Nick
+Crammer, Koby
+Crane, Gregory
+Cranen, Bert
+Cranias, Lambros
+Craven, Mark
+Craven, Patrick
+Creaney, Norman
+Creary, Lewis G.
+Crego, Josep
+Crego, Josep M.
+Cremers, Crit
+Crespin, Michael H.
+Crestan, Eric
+Creutz, Mathias
+Crim, Jeremiah
+Cristea, Dan
+Cristianini, Nello
+Cristoforetti, Luca
+Critz, James T.
+Croce, Danilo
+Crocker, Matthew W.
+Croft, W. Bruce
+Croft, William
+Cromieres, Fabien
+Crook, Nigel
+Crookston, Ian
+Cross, Stephen E.
+Crouch, Dick
+Crouch, Keith
+Crouch, Richard
+Crout, J. Norwood
+Crowe, Jeremy
+Crowther, William
+Cruz, Fernando
+Crysmann, Berthold
+Crystal, Michael
+Crystal, Thomas H.
+Csirik, J�nos
+Csomai, Andras
+Cucchiarelli, Alessandro
+Cucerzan, Silviu
+Cuda, Thomas V.
+Cui, Hang
+Cui, Zheng
+Culik, Karel
+Cullingford, R. E.
+Culotta, Aron
+Culy, Christopher
+Cummins, Fred
+Cunningham, Hamish
+Curin, Jan
+Curran, James R.
+Curran, Stephen
+Curteanu, Neculai
+Curtis, Jon
+Cushing, Steven
+Cussens, James
+Custer, Bradley B.
+Cutting, Douglass
+Cyphers, D. Scott
+Cysouw, Michael
+Czuba, Krzysztof
+Daciuk, Jan
+Dada, Ali
+Dadd, David
+Daelemans, Walter
+Dagan, Ido
+Dahlback, Nils
+Dahl, George
+Dahllof, Mats
+Dahlmeier, Daniel
+Dahlqvist, Bengt
+Dai, Dawei
+Dai, Hong-Jie
+Dailey, David P.
+Dai, Qifeng
+Dai, Wenyuan
+Dai, Xinyu
+Dakka, Wisam
+Daland, Robert
+Dale, Robert
+D'Alessio, Stephen
+Dalianis, Hercules
+Dalli, Angelo
+Dalsem III, Vol Van
+Dalvi, Nilesh
+Damani, Om P.
+Damas, Luis
+Damerau, Fred J.
+D'Amore, Ray
+Damper, Robert I.
+Damrongrat, Chaianun
+Dandapat, Sandipan
+Danescu-Niculescu-Mizil, Cristian
+Daniels, Michael W.
+Danlos, Laurence
+Dapkus, Pete
+Daranyi, Sandor
+Darlu, Pierre
+Darrell, Trevor
+Darwish, Kareem
+Das, Amar
+Das, Amitava
+Das, Dhrubajyoti
+Das, Dipanjan
+Das, Dipankar
+Dasgupta, Sajib
+Dasgupta, Tirthankar
+Dasher, B. J.
+Das, Rajib
+Datha, Naren
+Daudaravicius, Vidas
+Daude, J.
+Daugherty, Jeffrey
+Daume III, Hal
+Daum� III, Hal
+Daum, Michael
+Davidov, Dmitry
+David, Raphael
+Davidson, Duncan
+Davidson, James
+Davies, Todd
+Davis, Brian
+Davis, Chris
+Davis, Eric
+Davis, James Raymond
+Davis, Mark W.
+Davis, Neil
+Davis, Paul C.
+Davis, Randall
+Davis, Stuart
+Davulcu, Hasan
+Davy, Ian
+Davy, Ian P.
+Dawar, Anuj
+Daya, Ezra
+Day, David S.
+Daz, David
+D�chelotte, Daniel
+dde, Florian
+Deane, Paul
+Dean, Jeffrey
+De Baets, Bernard
+De Beaumont, William
+De Beule, Joachim
+De Bie, Tijl
+Debili, Fathi
+De Boer, Bart
+De Boni, Marco
+De Braekeleer, Gert
+De Brito, Marcilio
+De Bruin, Jos
+De BruinKimberle Koile, Jos
+De Buenaga Rodriguez, Manuel
+Debusmann, Ralph
+De Busser, Rik
+Decadt, Bart
+De Cao, Diego
+Decary, Michel
+Decerbo, Michael
+Dechelotte, Daniel
+Decitre, Paul
+Declerck, Thierry
+De Cordoba, Ricardo
+DeCristofaro, Jonathan D.
+Deemter, Kees van
+De Freitas, Nando
+de Gemmis, Marco
+Degórski, Łukasz
+Degorski, Ukasz
+De Groote, Philippe
+Deguernel, Olivier
+De Haas, Erik
+Dehdari, Jon
+De Hilster, David
+Dehmer, Matthias
+Dejean, Herve
+Dekens, Tomas
+De Kercadio, Yannick
+De Kock, Josse
+De Lacalle, Oier Lopez
+De La Clergerie, Eric Villemonte
+Delannoy, Jean-Francois
+Del Campo, Ignacio
+Del�glise, Paul
+Delhay, Arnaud
+Delisle, Sylvain
+Della Pietra, Stephen A.
+Della Pietra, Vincent J.
+Della Rocca, Michelangelo
+Dellert, Johannes
+Delmonte, Rodolfo
+Delmore, John
+De Loupy, Claude
+de Lucena, Diego Jesus
+del Valle-Agudo, David
+De Marcken, Carl G.
+Demasco, Patrick
+Demetriou, George C.
+De Meulder, Fien
+Demko, Michael
+De Montcheuil, Gregoire Moreau
+De Mori, Renato
+Dempster, Martin
+Denand, Nicolas
+Denda, Akihiro
+Dendien, Jacques
+Dendi, Vikram
+Denecke, Matthias
+DeNeefe, Steve
+DeNero, John
+Deng, Peter
+Deng, Qiang
+Deng, Xiaotie
+Deng, Xinyu
+Deng, Yonggang
+Denis, Alexandre
+Denis, Pascal
+Denny, James
+Denoual, Etienne
+Denoyer, Ludovic
+Densham, Ian
+Den, Yasuharu
+Deogun, Jitender S.
+De Oliveira, Osvaldo Novais
+de Pablo-Sanchez, Cesar
+De Paiva Alves, Eduardo
+De Palma, Paul
+De Pauw, Guy
+De Pijper, Jan Roelof
+Derczynski, Leon
+De Rijke, Maarten
+De Rijke, Maarten de
+Dermatas, Evangelos
+Deroo, Olivier
+DeRose, Steven J.
+De Rossi, Gianluca
+Derr, Alan
+De Saeger, Stijn
+Desalle, Yann
+De Salvo Braz, Rodrigo
+Deschacht, Koen
+Deschamp, Philippe
+Descles, Jean Pierre
+Deselaers, Thomas
+Deshpande, Pawan
+Desilets, Alain
+De Smedt, Koenraad
+DeSouza, Peter V.
+Dessus, Philippe
+Des Tombe, Louis
+Deterding, Robin
+Detering, Klaus
+Devadason, F. J.
+DeVault, David
+Devereux, Barry
+Devillers, Laurence
+Devos, Laurent
+De Vreught, J. P. M.
+De Vries, Arjen
+Dewdney, Niegel
+Deyne, Simon De
+Dey, Pradip
+D�hanens, Kristof
+Dharmanolla, Chitti
+D'Haro, Luis F.
+Dhillon, Paramveer S.
+Dhillon, Raj
+D�hoore, Bart
+Dhwaj, Arun
+Diagne, Abdel Kader
+Diamond, Ted
+Dias-da-Silva, Bento Carlos
+Dias, Gael
+Diaz-Guilera, Albert
+Di Carlo, Jurij
+Dichy, Joseph
+Dickerson, Jonathan
+Dickerson, Wayne B.
+Dickinson, Markus
+Dickinson, Sven
+Diderichsen, Philip
+Diederich, Joachim
+, Diego
+Diekhaus, Christoph
+Dien, Dinh
+Dienes, Peter
+Dierkes, Glenn
+Diermeier, Daniel
+Dietz, Robert
+Diewald, Nils
+Diez-Orzas, Pedro
+Di Fabbrizio, Giuseppe
+Digalakis, Vassilios
+Dikovsky, Alexander
+Dilger, Werner
+Dillet, Bruno
+Dilley, Stephan
+Dillinger, Mike
+Dill, Ken A.
+Dilts, Philip
+Di Manzo, Mauro
+Dimitrov, Stanko
+Dinarelli, Marco
+Dinenberg, F. G.
+Dinesh, Nikhil
+Dingli, Alexiei
+Ding, Shilin
+Ding, Weiwei
+Ding, Yung-Wei
+Dinh, David
+Dini, Luca
+Dinu, Liviu P.
+Dinur, Elad
+Dionne, Daniel
+Dirix, Peter
+Dirksen, Arthur
+Divay, Michel
+Divay, Olivier
+Divis, Jiri
+Divi, Vijay
+Dixon, Mike
+Dixon, Paul
+Djordjevic, Bojan
+Dligach, Dmitriy
+Doan-Nguyen, Hai
+Doan, Son
+Dobree, Nicholas J. S.
+Dobrisek, Simon
+Doddington, George R.
+Doermann, David
+Dogi, Grzegorz
+Dohsaka, Kohji
+Doi, Hirohumi
+Doi, Kouichi
+Doi, Norihisa
+Doi, Shinichi
+Doi, Takao
+Doi, Tsunehisa
+Dolan, Charles P.
+Dolan, Ron
+Dolan, William B.
+Dolbey, Andrew
+Dologlou, Yannis
+Domenig, Marc
+Domges, Florian
+Dominey, Peter Ford
+Domingo, David
+Domingos, Pedro
+Domingue, J. B.
+Donaghy, Kevin
+Donaldson, Ian
+Donaway, Robert L.
+Donecker, Paul G.
+Dong, Anlei
+Dong, Dong Zhen
+Donghong, Ji
+Dong, Ming Chui
+Dong, Minghui
+Dong, Zhendong
+Donnell, Mick
+Donner, Jeff
+Do, Quang
+Dorffner, Georg
+Dorna, Michael
+Dornescu, Iustin
+Dorre, Jochen
+D'Orta, Paolo
+Doshita, Shuji
+Dost, Ascander
+Doucet, Antoine
+Douglas, Benjamin
+Dou, Qing
+Dovedan, Zdravko
+Dowdall, James
+Dowding, John
+Dowling, John
+Downey, Doug
+Dozier, Christopher C.
+Drabek, Elliott Franco
+Drager, David
+Dragoni, Aldo
+, Drahom&#237
+Dras, Mark
+Draxler, Christoph
+Dredze, Mark
+Dreizin, Felix
+Drellishak, Scott
+Dresher, Elan B.
+Dreuw, Philippe
+Dreyer, Markus
+Driesen, Joris
+Driscoll, Alan S.
+Drissi, Youssef
+Drossaers, Marc F. J.
+Drozd, Janus
+Drozdzynski, Witold
+Druck, Gregory
+Drummey, Kevin W.
+D�silets, Alain
+Duan, Jianyong
+Duan, Xiangyu
+Duarte, Julio C.
+Duarte, Sergio
+Dubey, Amit
+Duboue, Pablo Ariel
+Dubuc, Julien
+Duchateau, Jacques
+Duchier, Denys
+Duch, Wlodzislaw
+Ducott, Richard
+Dudda, Friedrich
+Dudik, Miroslav
+Duff, David
+Duffy, Nigel
+Duffy, Patrick
+Dugas, Andre
+Dugast, Lo
+Dugast, Lo&#239
+Dugast, Lo�c
+Duh, Kevin
+Du, Jinhua
+Dukers, Alex
+Dumitrescu, Cristian
+Dumoulin, Benoit
+Dungca, Gary
+Dunlavy, Daniel M.
+Dunne, Cody
+Dunne, Simon
+Dunning, Ted E.
+Dunnion, John
+Dupoux, Emmanuel
+Dupuy, Sylvain
+Durbin, Richard
+Durham, Stanton P.
+Durieux, Gert
+Durme, Benjamin Van
+duVerle, David
+Duvert, Fr�d�ric
+Du, Yongping
+Dwiggins, Don
+Dwyer, Kenneth
+Dybkjaer, Hans
+Dyer, Charles R.
+Dyer, Chris
+Dyer, Christopher J.
+Dyer, Michael G.
+Dyer, R. R.
+Dyery, Chris
+Dymetman, Marc
+Dyvik, Helge
+Dzhubanov, Askar
+Eades, Domenyk
+Eagle, Nathan
+Eales, James
+Eastmond, John F. G.
+Eberle, Kurt
+Ebert, Christian
+Echihabi, Abdessamad
+Echizen-Ya, Hiroshi
+Eckart, Richard
+Eck, Matthias
+Eddy, Bruce
+Edelman, Shimon
+Edmonds, Philip G.
+Edmundson, H. P.
+Edwards, Douglas
+Edwards, Jaety
+Edwards, Peter
+Edwards, William R.
+Eeg-Olofsson, Mats
+Egges, Arjan
+Egg, Markus
+Eguchi, Koji
+Ehara, Terumasa
+Ehara, Yo
+Ehlen, Patrick
+Ehmer, Oliver
+Ehsani, Farzad
+Eidelman, Vladimir
+Eigner, Thomas
+Eineborg, Martin
+Eisele, Andreas
+Eisenstadt, Marc
+Eisenstein, Jacob
+Eishold, Florian
+Eisner, Jason M.
+Ekbal, Asif
+ek, David
+ek, Filip
+ek, Jan
+Eklund, Johan
+Eklund, Robert
+ek, Radek
+El-B�ze, Marc
+Eldawy, Mohamed
+El Demerdash, Osama
+Elder, John
+Elenius, Kjell
+Elgersma, Erik
+El Ghali, Adil
+Elhadad, Michael
+Elia, Annibale
+El Isbihani, Anas
+ElKateb, Sabry
+Elkiss, Aaron
+Elko, G. W.
+El Kourdi, Mohamed
+Ellard, Dan
+Elliott, John
+Ellis, Dan
+Ellis, David
+Ellis, Ged
+Ellison, Noel
+Ellison, T. Mark
+Ellman, Jeremy
+Ellsworth, Michael
+Elmacioglu, Ergin
+Elmi, Mohammad Ali
+Elming, Jakob
+Elnaggar, Ayman
+Elsayed, Tamer
+El-Shishiny, Hisham
+Elsner, Micha
+Elson, David
+Elson, David K.
+Elworthy, David
+Ely, John
+Emami, Ahmad
+Emam, Ossama
+Embarek, Mehdi
+Emele, Martin C.
+Emerson, Thomas
+Emery, Gary
+Emms, Martin
+Emonts, Michael
+Emorine, Olivier M.
+Endo, Tsutomu
+Engebretson, A. Maynard
+Engelberg, Klaus-Jurgen
+Engelbrecht, Klaus-Peter
+Engel, Donald
+Engelien, Gerhard
+Engelman, Carl
+Engel, Ralf
+Engelson, Sean P.
+English, Michael
+Enomoto, Hajime
+Enomoto, Kousuke
+, Enrique
+Ensais, B. Migault
+Epstein, Mark
+Epstein, Martin N.
+Epstein, Samuel S.
+Erbach, Gregor
+Erdenebat, Dashtseren
+Eredita, Michael A.
+Erell, Adoram
+Eriguchi, Yoshio
+Eriksson, Gunnar
+Erjavec, Tomaá
+Erjavec, Tomaš
+Erjavec, Tomaz
+Erkan, Gunes
+Esch, Dietmar
+Escudero, Gerard
+Eshghi, Arash
+Eskin, Eleazar
+Espeja, Sergio
+Espinosa, Dominic
+Esposito, Joseph
+Esquerra, Ignasi
+Estabrooks, Andrew
+Esteban, Jose
+Est�ve, Yannick
+Etchegoyhen, Thierry
+Ettelaie, Emil
+Etzioni, Oren
+Etzioni, Zohar
+Eubank, Stephen
+Evang, Kilian
+Evans, Bruce
+Evans, Chris
+Evans, David A.
+Evans, David Kirk
+Evans, Richard
+Evans, Roger
+Even-Zohar, Yair
+Evers, Mark
+Evert, Stefan
+Eyassu, Samuel
+Eyraud, Remi
+ez, Ricardo
+Fabbri, Marco
+Fabens, William
+Fabricz, Karoly
+Fabri, Ray
+Faconti, Giorgio P.
+Fader, Anthony
+Faessler, Erik
+Fafiotte, Georges
+Fahlman, Scott E.
+Fahmi, Ismail
+Faikenhainer, Brian
+Fairfield, John
+Fairon, Cedrick
+Faisal, Kanaan A.
+Fakotakis, Nikos D.
+Fall, J. M.
+Fan, Adrian T.
+Fanchon, Eric
+Fang, Alex Chengyu
+Fang, Haw-Ren
+Fang, Xiaoshan
+Fan, Jung-Wei
+Fantino, Fabio
+Fanton, Michel
+Fantry, George
+Fanty, Mark
+Fan, Weiguo
+Fan, Xiaozhong
+Fan, Xinghua
+Farahat, Ayman
+Farber, Benjamin
+Farghaly, Ali
+Fargues, Jean
+Farkas, Rich&#225
+Farkas, Rich�rd
+Farley, Benoit
+Farrar, David S.
+Farrar, Scott
+Farrell, Robert
+Farreres, Xavier
+Farr�, Jacques
+Faruque, Ehsanul
+Faruquie, Tanveer A.
+Farwell, David
+Fasciano, Massimo
+Fass, Dan
+Favero, Eloi L.
+Favre, Benoit
+Fawcett, Robin P.
+Fayruzov, Timur
+Fedder, Lee
+Feddes, Hendrik
+Federici, Stefano
+Federico, Marcello
+Federmann, Christian
+Feeney, Kevin
+Feinauer, Richard A.
+Feiner, Steven K.
+Feinstein, Daniel
+Feith, Tobias
+Feldman, Jerome A.
+Feldman, Ronen
+Feldman, Sergey
+Feldweg, Helmut
+Felfoldi, Laszlo
+Felger, Niko
+Fellinger, Carel
+Feneyrol, Christian
+Feng, Yansong
+Feng, Zhe
+Fenstad, Jens Erik
+Ferencz, Attila
+Ferguson, George
+Ferguson, Mark
+Ferguson, William
+Fernandez-Amoros, David
+Fernando, Tim
+Fern�ndez, Rub�n
+Ferrandez, Antonio
+Ferrandez, Oscar
+Ferrara, Franco
+Ferrari, Giacomo
+Ferreira, Eduardo
+Ferreras, Francisco L.
+Ferreres, Javi
+Ferrer i Cancho, Ramon
+Ferres, Daniel
+Ferret, Olivier
+Ferretti, Marco
+Ferrucci, David
+Fertig, Scott
+Fichtner, Gerrit
+Fiedler, Armin
+Fierrez, Julian
+Figueira, Lu�s
+Fikes, Richard E.
+Filali, Karim
+Filgueiras, Miguel
+Filimonov, Denis
+Filisko, Edward
+Fillmore, Charles J.
+Fillmore, Nathanael
+Finch, Andrew
+Finch, Steven
+Findler, Nicholas V.
+Finin, Timothy W.
+Finkel, Raphael
+Finkler, Wolfgang
+Finn, Gerard D.
+Finthammer, Marc
+Fischer, Dietrich H.
+Fischer, Gerhard
+Fischer, Markus
+Fiscus, Jonathan G.
+Fishel, Mark
+Fisher, Anthony J.
+Fisher, David
+Fisher, Seeger
+Fisher, W.
+Fisher, William M.
+Fish, Randall
+Fissaha Adafre, Sisay
+Fissaha, Sisay
+Fister, Andrew
+Fiszman, Marcelo
+Fitzsimons, Brian
+F�k, M�rk
+Flanagan, J. L.
+Flank, Steven
+Fleisch, Axel
+Fleischman, Michael
+Flejter, Dominik
+Fletcher, Ian
+Fletcher, William H.
+Flickinger, Dan
+Flickinger, Daniel P.
+Flores, Glenn
+Florian, Radu
+Flournoy, Raymond
+Fluhr, Christian
+Flynn, Mike
+Foltz, Peter W.
+Fong, Sandiway
+Fonollosa, Jos� A. R.
+Fontan, Lionel
+Foo, Shou King
+Forcada, Mikel L.
+Fordham, Andrew
+Ford, W. Randolph
+Fordyce, Cameron
+Forlines, Clifton
+Fornell, Jan
+Forster, Peter
+Forster, T. E.
+Forst, Martin
+Forsyth, David A.
+Fortmann, Christian
+Fortu, Ovidiu
+Fosler-Lussier, Eric
+Fossati, Davide
+Foster, George
+Foth, Kilian A.
+Fotiadis, Konstantinos A.
+Fouet, Jean-Baptiste
+Fought, Bill
+Fouquere, Christophe
+Fouvry, Frederik
+Fowler, Abraham
+Fowler, Timothy A. D.
+Fox, Chris
+Fox, Edward A.
+Fraga, P. Daun
+Frampton, Matthew
+Francez, Nissim
+Francis, W. Nelson
+Franco, Horacio
+Franco, Jose
+Francom, Jerid
+Francopoulo, Gil
+Frandsen, Michael
+Frank, Eibe
+Frank, Geoffrey
+Frank, Ian
+Frank, Michael C.
+Frank, Robert
+Franz, Alexander M.
+Franzen, Kristofer
+Franz, Martin
+Frasconi, Paolo
+Fraser, Alexander
+Fraser, Norman M.
+Fraser, Simon
+Frederickson, Dick H.
+Frederking, Robert
+Frederking, Robert E.
+Freeman, Andrew
+Freeman, Robert John
+Freiling, Michael J.
+Freitag, Dayne
+Freitas, Tiago
+Frelling, Michael J.
+Fresno, Victor
+Fretheim, Thorstein
+Freudenthal, Daniel
+Frey, David
+Frey, Werner
+Friedman, Moshe
+Frisch, Alan M.
+Fritzson, Richard
+Frixou Drakos, Nicos
+Frost, Richard
+Froumentin, Max
+F�rstenau, Hagen
+Fry, John
+Fuchi, Takeshi
+Fuentes, Olac
+Fugen, Christian
+Fu, Guohong
+Fujii, Atsushi
+Fujiki, Toshiaki
+Fuji, Masaru
+Fujimoto, Masakiyo
+Fujimura, Osamu
+Fujinami, Tsutomu
+Fujino, Akinori
+Fujioka, Eitaro
+Fujio, Masakazu
+Fujisaki, Tetsunosuke
+Fujita, Atsushi
+Fujita, Kimikazu
+Fujita, Minoru
+Fujita, Sumio
+Fujita, Yoneharu
+Fujiyoshi, Akio
+Fukamachi, Keiichiro
+Fukubayashi, Yuichiro
+Fukuda, Yasushi
+Fukumochi, Yasutomo
+Fukumoch, Yoji
+Fukumoto, Jun'ichi
+Fukuoka, Kenta
+Fukushima, Hiromichi
+Fukushima, Ken'ichi
+Fukushi, Masuru
+Fukushima, Toshikazu
+Fukusima, Takahiro
+Fulgosi, Sanja
+Fulkerson, Michael S.
+Fulop, Sean
+Fulop, Sean A.
+Fum, Danilo
+Funakoshi, Kotaro
+Funayama, Hirotaka
+Fung, Kin Wah
+Fung, Simon
+Furgori, Teiji
+Furihata, Kentaro
+Furlan, Aidan
+Furugori, Teiji
+Furui, Sadaoki
+Furuse, Osamu
+Furuya, Akihiro
+Fussell, Jesse W.
+Futrelle, Robert P.
+gaard, Anders
+Gabani, Keyur
+Gabay, David
+Gabbard, Ryan
+Gabbay, Igal
+Gabor, Kata
+Gabrilovich, Evgeniy
+Gagnon, Michel
+Gagnoulet, Christian
+Gaiffe, Bertrand
+Gailly, Pierre-Joseph
+Gaizasukas, Robert
+Gaizauskas, Robert
+Gaizauskas, Robert J.
+Galanis, Dimitrios
+Galescu, Lucian
+Gale, William A.
+Galibert, Olivier
+Gali, Karthik
+Galil, Zvi
+Gallant, Stephen L.
+Galley, Michel
+Gallinari, Patrick
+Gallippi, Anthony F.
+Gallo, Carlos G�mez
+Galron, Daniel
+Gal, Ya'akov
+Gamallo, Pablo
+Gamback, Bjorn
+Gambell, Timothy
+Gamez, Jose A.
+Gammon, Edward
+Gamon, Michael
+Gamper, Johann
+Ganapathibhotla, Murthy
+Ganchev, Kuzman
+Ganchev, Todor
+Gandcher, Franck
+Gandhe, Sudeep
+Ganev, Hristo
+Gangemi, Aldo
+Ganguly, Niloy
+Gan, Kok Wee
+Ganslandt, Sebastian
+Gantner, Zeno
+Gao, Bin
+Gao, Jianfeng
+Gao, Jiang
+Gao, Qin
+Gao, Quin
+Gao, Weijun
+Gao, Wenjun
+Gaoying, Cui
+Gao, Zhao-Ming
+Garay-Vitoria, Nestor
+Garber, Alan
+Garbin, Eric
+Garbuio, Lorenzo
+Garcia-Cumbreras, Miguel
+Garcia Cumbreras, Miguel Angel
+Garcia, Ernest V.
+Garcia, Fernando
+Garcia, M. Angel
+Garcia, Oscar N.
+Garcia Varea, Ismael
+Garcia-Varea, Ismael
+Garcia-Vega, Manuel
+Gardner, John
+Garera, Nikesh
+Garg, Ashish
+Gargett, Andrew
+Garg, Navendu
+Gargouri, Bilel
+Gargouri, Yassine
+Garibay, Ivan I.
+Garigliano, Roberto
+Garneau, Jean-Francois
+Garofolo, J.
+Garofolo, John S.
+Garretson, Gregory
+Garrett, Benjamin
+Garrette, Dan
+Garrido, Javier
+Garrido, Juan Maria
+Garside, Roger
+Garthwaite, Paul H.
+Garvin, Paul L.
+Gasch, Joachim
+Gaschler, Jean
+Gasser, Michael
+Gaston, Jeremy
+Gatt, Albert
+Gaudan, Sylvain
+Gaudinat, Arnaud
+Gaume, Bruno
+Gaussier, Eric
+Gauvain, Jean-Luc
+Gavalda, Marsal
+Gawron, Jean Mark
+Gaylord, Nicholas
+Gazdar, Gerald
+Gazendam, Luit
+G�dde, Florian
+Gebruers, Rudi
+Gedigian, Matt
+Geeraerts, Dirk
+Geertzen, Jeroen
+Gehrke, Manfred
+Gehrt, Richard F.
+Geissler, Stefan
+Gelbart, David
+Gelbukh, Alexander F.
+Geleijnse, Gijs
+Gelfond, Michael
+Geman, Stuart
+Gemello, Roberto
+Gemmis, Marco de
+Genabith, Josef van
+Genabith, van Josef
+gen, Christian
+Genereux, Michel
+Genet, Franck
+Genthial, Damien
+Genzel, Dmitriy
+Genzmann, Heinz
+Geoffrois, Edouard
+George, Bryan
+George, Monte
+Georgiev, Georgi
+Georgiou, Panayiotis G.
+Gerber, Matthew
+Gerbino, Walter
+Gerbrandy, Jelle
+Gerdemann, Dale
+Gergle, Darren
+Gerlach, Michael
+Germann, Ulrich
+Gerrish, Joshua
+Gershon, Nahum
+Gerstenberger, Ciprian
+Gerstl, Peter
+Gervas, Pablo
+Gey, Fredric C.
+Geyken, Alexander
+Ghahramani, Zoubin
+Ghani, Abdul Azim Abdul
+Ghassem-Sani, Gholamreza
+Ghayoomi, Masood
+Ghorbel, Hatem
+Ghose, Anindya
+Ghosh, Avishek
+Giachin, Egidio
+Giampiccolo, Danilo
+Giangrandi, Paolo
+Gibb, Darl
+Gibbon, Dafydd
+Gibbon, David
+Gibson, Bryan
+Gibson, Edward
+Gibson, John
+Giguet, Emmanuel
+Gil, Alexandre
+Gilardoni, Luca
+Gilbert, Juan
+Gilbert, Nathan
+Gilbert, Nigel
+Gildea, Daniel
+Gilder, Ari
+Giles, C Lee
+Giles, C. Lee
+Gilg, Thomas
+Gill, Alastair
+Gillam, Lee
+Gillett, John R.
+Gillick, Dan
+Gillick, Laurence S.
+Gillis, Steven
+Gill, Mandeep Singh
+Gillon, Brendan S.
+Gillott, Timothy J.
+Gilloux, Michel
+Gimenez, Jesus
+Giménez, Jesús
+Gim�nez, Jes�s
+Gimpel, Kevin
+Ginsparg, Jerrold M.
+Ginter, Filip
+Ginzburg, Jonathan
+Ginzton, Matt
+Giordano, William
+Giovannetti, Emiliano
+Girardi, Christian
+Gish, Herbert
+Gispert, Adri�
+Gispert, Adri&#224
+Gispert, Adria�De
+Gispert, Adri� de
+Giuliani, Fabio
+Giuliani, Manuel
+Giuliano, Claudio
+Giunchiglia, Fausto
+Glachin, Egidio P.
+Glaros, Nikos
+Glasbey, S.R.
+Glass, James R.
+Glass, Michael
+Glaysher, Elliot
+Gl�ckner, Ingo
+Gledhill, Christopher
+Gleim, R�diger
+Gleim, Rudiger
+Glennon, Dominic
+Glickman, Oren
+Gliozzo, Alfio Massimiliano
+Globerson, Amir
+Glover, W. W.
+G�mez-Rodr�guez, Carlos
+Gnjatovic, Milan
+Gobbo, Federico
+Gobeil, Fernand
+Gobeill, Julien
+Gobet, Fernand
+Godavarthy, Srinivasa Rao
+Godbole, Shantanu
+Goddeau, David
+Godden, Kurt
+Godfrey, John J.
+Godinho, Joaquim
+Goebel, Randy
+Goebl, Hans
+Goecke, Karl Ulrich
+Goertzel, Ben
+Goerz, G.
+Goerz, Guenther
+Goeser, Sebastian
+Goetz, Philip
+Goh, Hai-Kiat
+Gojenola, Koldo
+Gojobori, Takashi
+Golan, Igal
+Goldberg, Andrew
+Goldberg, Andrew B.
+Goldberg, Eli
+Goldberger, Jacob
+Goldberg, Jeff
+Goldberg, Yoav
+Goldfain, Albert
+Golding, Andrew
+Goldlust, Eric
+Goldman, Neil M.
+Goldman, Robert
+Goldman, Seth R.
+Goldsmith, John
+Goldwasser, Dan
+Gomez, Fernando
+Gomez Hidalgo, Jose M.
+Gomez-Hidalgo, Jose Maria
+Gomez-Rodriguez, Carlos
+Goncalves, M. R.
+Gonzales, Julio
+Gonzalez-Calero, P.
+Gonzalez, Hector
+Gonzalez, Jorge
+Gonzalez-Rodriguez, Joaquin
+Gonzalo, Julio
+Gonzalvo, Vicent Alabau
+Goodine, D.
+Goodine, David
+Good, Jeff
+Goodman, Bradley A.
+Goodman, Fred
+Goodman, Joshua
+Goodman, Michael
+Goodrum, Richard
+Goonetilleke, Sandeva
+Gopalakrishnan, P. S.
+, Goran
+Gordon, Andrew S.
+Gordon, Peter C.
+Gordon, Steven A.
+Gorelov, Zakhar
+Gorin, Allen L.
+Gorjanc, Vojko
+Gorlinsky, James
+Gorman, James
+Gorniak, Peter
+Gorz, Gunther
+Goss-Grubbs, David
+Goto, Hiroki
+Gotoh, Yoshihiko
+Goto, Isao
+Gotti, Fabrizio
+Gottwald, Sebastian
+Gotze, Michael
+Gotz, Thilo
+Goulart, Rodrigo
+Gouraros, Nickolas
+Goutte, Cyril
+Govindappa, Sunil
+Govindaraju, Venu
+Goweder, Abduelbaset
+Goyal, Amit
+Goyal, Ishaan
+Gozali, Jesse Prabawa
+Gra�a, Jo�o V.
+Grabowski, Joachim
+Graca, Joao
+Graehl, Jonathan
+Graesser, Arthur C.
+Graff, David
+Graft, David
+Graf, Winfried
+Graham, C. Ray
+Gralinski, Filip
+Granacki, John J.
+Grandchamp, Jean-Michel
+Grandemange, Philippe
+Grandjean, Ernest
+Granell, Ramon
+Granell Zafra, Joaquin
+Granfeldt, Jonas
+Granger, Richard H.
+Grannes, Dean
+Granville, Robert Alan
+Gratta, Riccardo Del
+Grau, Bernat
+Grau Puerto, Sergio
+Gravano, Agust�n
+Gravier, Guillaume
+Gray, John
+Greenbacker, Charles
+Greene, Stephan
+Greenfield, Peter
+Green, Ryan
+Green, Stephen J.
+Greental, Iddo
+Greenwood, Mark A.
+Grefenstette, Gregory
+Gregorowicz, Andy
+Gregory, Howard
+Greiff, John
+Greiff, Warren R.
+Greiner, Russell
+Greiner, Wiley
+Grenager, Trond
+Grenander, Ulf
+Grewal, Amardeep
+Grieser, Karl
+Griffith, John
+Griffiths, Thomas L.
+Grigoriev, Nikolai
+Grigorov, Alexander
+Grigorov, Ilko
+Grimes, Joseph E.
+Grimes, Stephen
+Grimley-Evans, Edmund
+Grimm, Scott
+Griol, David
+Grishman, Ralph
+Grisoli, Fabrizio
+Grocholewski, Stefan
+Groenendijk, Marius
+Groenewald, Hendrik Johannes
+Groenink, Annius V.
+Groenqvist, Leif
+Grois, Eugene
+Gronqvist, Leif
+Grosjean, Francois
+Grossi, Thomas
+Gross, Maurice
+Grouin, Cyril
+Groves, Declan
+Grozea, Cristian
+Gruenstein, Alexander
+G�tze, Michael
+Gu, Baohua
+Gubrynowicz, Ryszard
+Guedj, R. D.
+Guenter, Simon
+Guenthner, Franz
+Gu, Erdan
+Guerini, Marco
+guez, Carlos
+Guglielmo, Eugene J.
+Guhe, Markus
+Guida, Giovanni
+Guilbaud, Jean-Philippe
+Guillaume, Bruno
+Guillaume, Jacquet
+Guillaume, Pierre
+Guindon, Raymonde
+Guinn, Curry I.
+Guinness, Jethran
+Guirao, Jos� M.
+Gulla, Jon Atle
+Gul-Rajani, Greg
+Gumede, Tebogo
+Gunnarsson, Magnus
+Guo, Cheng-Ming
+GuoDong, Zhou
+Guo, Jiaqing
+Guo, Weiwei
+Guo, Wenyuan
+Guo, Xi S.
+Guo, Yikun
+Guo, Yuhang
+Guo, Zhili
+Gupta, Anurag
+Gupta, Kapil Kumar
+Gupta, Mayank
+Gupta, Mridul
+Gupta, Naman K.
+Gupta, Narendra
+Gupta, Prahlad
+Gupta, Prashant
+Gupta, Rahul
+Gupta, Samir
+Gupta, Vineet
+Gurrutxaga, Antton
+Gustafson, Joakim
+Guthrie, David
+Guthrie, Joe A.
+Gutwin, Carl
+Guy, Jacques B. M.
+Guyomard, Marc
+Guzey, Cemaleddin
+Gyamfi, Yaw
+Gyepesi, Gy&#246
+Gyimothy, Tibor
+Haack, Jereme
+Haas, Andrew R.
+Haase, Kenneth
+Haas, Norman
+Habash, Nizar
+Habel, Christopher U.
+Haberbeck, Rolf
+Habert, Benoit
+Habrard, Amaury
+Hachey, Ben
+Hacioglu, Kadri
+Hacken, Pius ten
+Hacken, ten Pius
+HaCohen-Kerner, Yaakov
+Haddock, Nicholas J.
+Haddow, Barry
+Haduch, Leszek
+Haertel, Robbie
+Haffari, Gholamreza
+Haffner, Patrick
+Hafiz, Rahmatullah
+Hagen, Andreas
+Hagen, Eli
+Hagert, Goran
+Haghighi, Aria
+Hagiwara, Masato
+Hahn, Sangyun
+Hahn, Stefan
+Hahn, Udo
+Hahn, Walther V.
+Haida, Andreas
+Haider, Peter
+Haigh, Robin
+Hain, Horst-Udo
+Hairetakis, Nikolaos
+Haji-Abdolhosseini, Mohammad
+Haji�~C8d>, Jan
+Hajic, Jan
+Hajič, Jan
+Hajlaoui, Najeh
+Hakenberg, Jorg
+Hakoda, Keita
+Hakulinen, Jaakko
+Halacsy, Peter
+Hal�csy, P�ter
+Hale, John
+Hall, Brian S.
+Hall, David
+Halldorsson, Magnus M.
+Haller, Johann
+Hall, Gary
+Hall, Johan
+Hall, Keith
+Hall, Keith B.
+Hall, Sam
+Halpern, Jack
+Halpin, Harry
+Halteren, Hans van
+Halvorsen, Per-Kristian
+Hamabe, Ryoji
+Hamadou, Abdelmajid Ben
+Hamamoto, Takeshi
+Hamburger, Henry
+Hamerich, Stefan
+Hammarstr�m, Harald
+hamme, Hugo Van
+Hammerton, James
+Hammo, Bassam
+Hamon, Olivier
+Hamon, Thierry
+Hampton, Tom
+Hana, Jiri
+Hana, Jirka
+Hanakata, Kenji
+Hanazawa, Ken
+Han, Benjamin
+Han, Dingyi
+Handschuh, Siegfried
+Hanks, Patrick
+Han, Kyoung-Soo
+Hanna, Philip
+Hanneforth, Thomas
+Hanneman, Greg
+Hansen, John P.
+Hansen, Steffen Leo
+Han, Xiwu
+Han, Young Kyoon
+Han, Young S.
+Haque, Rejwanul
+Harada, Ken'ichi
+Harada, Susumu
+Harada, Takashi
+Harada, Yasunari
+Hara, Kazuo
+Hara, Masami
+Hara, Sunao
+Hara, Tadayoshi
+Hardcastle, David
+Hardt, Daniel
+Hargraves, Orin
+Harkema, Henk
+Harley, Andrew
+Harmeling, Stefan
+Harnad, Stevan
+Haro, Luis Fernando
+Harper, Kenneth E.
+Harrington, Jonathan
+Harris, Brian
+Harris, Dave
+Harris, Larry R.
+Harrison, Phil
+Harrison, Philip
+Harris, Thomas
+Hartard, Felix
+Hartholt, Arno
+Hartley, Anthony
+Hartley, Roger
+Hartmann, Knut
+Hartman, Steven Lee
+Hartono, Rachmat
+Hartrumpf, Sven
+Hart, Ted
+Hartung, Matthias
+Haruechaiyasak, Choochart
+Haruno, Masahiko
+Harvey, Terrence
+Hasan, Kazi Saidul
+Hasan, Maruf
+Hasan, Sadid
+Hasebe, Koichi
+Hasegawa-Johnson, Mark
+Hasegawa, Takaaki
+Hasegawa, Toshihiro
+Hasegawa, Yuji
+Hashimoto, Kei
+Hashimoto, Mantaro J.
+Hashimoto, Taiichi
+Hashim, Raza
+Hashish, M. A.
+Hasida, Koiti
+Haskell, Benjamin R.
+Hassan, Ahmed
+Hassan, Hany
+Hassan, Samer
+Hassel, Martin
+Hassoun, Mohamed
+Hastie, Trevor
+Hastings, Peter M.
+Hathaway, Chris
+Hathout, Nabil
+Hatvani, Csaba
+Hatzivassiloglou, Vasileios
+Haugeneder, Hans
+Haug, Peter
+Hauptmann, Alexander G.
+Hauser, Bob
+Hausman, Kevin
+Havelka, Jiri
+Havranek, T.
+Hawker, Tobias
+Haxton, Isaac
+Hayakawa, Daichi
+Hayamizu, Satoru
+Hayase, Yoshikazu
+Hayashi, Yoshihiko
+Hayes, Bruce
+Hayes, Jer
+Hayes, Philip J.
+Hayes, William S.
+Hays, David G.
+Hazen, Timothy J.
+Headden III, William P.
+Heafield, Kenneth
+Healey, Patrick
+Healey, Patrick G.T.
+Hebnreich, Stephen
+Hecht-Nielsen, Robert
+He, Daqing
+Hedlund, Gregory
+Heeman, Peter A.
+Heeringa, Wilbert
+Hefner, David
+Hegde, Jayprasad
+Hegner, Stephen J.
+He, Hongzhao
+Heider, Paul M.
+Heidlage, F.
+Heidorn, George E.
+Heid, Ulrich
+Heilman, Michael
+Heimonen, Juho
+Heinecke, Johannes
+Heinonen, Oskari
+Heinrich, Christian
+Heinroth, Tobias
+Heintzelman, Norris
+Heintze, Silvan
+Heinze, Daniel T.
+Heinze, Terry
+Heinz, Jeffrey
+Heinz, Wolfgang
+Heisterkamp, Paul
+He, Jingzhou
+Helbig, Hermann
+Helfman, Jonathan I.
+Heljakka, Ari
+Hellan, Lars
+Hellwig, Peter
+Helmreich, Stephen
+Helzerman, Randall A.
+Hempelmann, Christian F.
+Hemphill, Charles T.
+Hemsen, Holmer
+Henderer, Joe
+Henderson, James
+Henderson, James B.
+Henderson, John C.
+Hendler, James A.
+Hendley, Robert J.
+Hendrick, Randall
+Hendrickson, Kenneth J.
+Hendrix, Gary G.
+Hennoste, Tiit
+Henrichsen, Peter Juel
+Henr�quez Q., Carlos A.
+Hepple, Mark
+Herath, Dulip
+Herbst, Evan
+Hering, Horst
+Hermet, Matthieu
+Hermjakob, Ulf
+Hernandez, Alvaro
+Hernandez Gomez, Luis A.
+Hernandez, Gregorio
+Hernandez-Lopez, Daniel
+Hernandez, Luis A.
+Hernandez, Nicolas
+Hern�ndez H., Adolfo
+Hern�ndez, Luis A.
+Herold, Axel
+Herrera, Jesus
+Herreros, Ivan
+Herring, Joshua
+Herring, Patrick
+Herweg, Michael
+Herz, M. M.
+Herzog, Gerd
+Herzog, Reinhart
+Hess, Michael
+Hetherington, Lee
+Heuvel, Henk van den
+Hewitt, Carl
+Hewson, John
+He, Xiaodong
+Heyer, Gerhard
+He, Yifan
+Heylen, Dirk
+He, Zhongjun
+H�ge, Harald
+Hickl, Andrew
+Hidano, Youichi
+Hida, Shinya
+Hieronymus, James
+Higasa, Wataru
+Higashide, Masahiro
+Higashinaka, Ryuichiro
+Higgins, Derrick
+Higuchi, Shinsuke
+Higuchi, Tetsuya
+Higuera, Colin de la
+Hildebrandt, Wesley
+Hillard, Dustin
+Hill, Jeff
+Hill, Simon
+Himmel, Dave
+Hinarejos, Carlos David Mart�nez
+Hincha, Georg
+Hindle, Donald
+Hinojosa, Ezequiel Andujar
+Hino, Kohei
+Hinrichs, Erhard W.
+Hipp, D. Richard
+Hiraga, Yuzuru
+Hirakawa, Hideki
+Hirano, Toru
+Hirao, Tsutomu
+Hirasawa, Jun-Ichi
+Hirata, Mikito
+Hirohata, Kenji
+Hiroshige, Makoto
+Hiroshi, Ichikawa
+Hiroshima, Nobuaki
+Hirsimaki, Teemu
+Hirst, Graeme
+Hisamitsu, Toru
+Hishiki, Teruyoshi
+Hitaka, Toru
+Hitkov, Ruslan
+H�nig, Christian
+Hoang-Anh, Viet
+Hoang, Hung Huu
+Hobbs, Jerry R.
+Hobbs, Reginald
+Hoeft, Thomas
+Hoeks, John
+Hoemann, Harry W.
+Hoenkamp, Edward
+Hoepelman, J. Ph.
+Hoeppner, Wolfgang
+Hof, Alexander
+Hofbauer, Konrad
+Hoffmann, Holger
+Hoffmann, Marcus
+Hoffmann, Martial
+Hoffmann, Paul
+Hoffmeister, Bjoern
+Hofmann, Hansj�rg
+Hofmann, Thomas R.
+Hogan, Christopher
+Hogan, Douglas L.
+Hogan, James M.
+Hog, Jia-Fei
+Ho, Hing-Cheung
+Hoisl, Bernhard
+Holan, Tomas
+Holland, Rod
+Holt, Alexander
+Holub, Martin
+Holz, Dieter
+Holz, Florian
+Hom, Kowloon Hung
+Homola, Petr
+Honarpisheh, Mohamad Ali
+Honda, Takeo
+Honeck, Martin
+Hong, Bryan Anthony
+Hong, Ching Hoi Andy
+Hong, Pengyu
+Hon, Hsiao-Wuen
+Honkela, Timo
+Honnibal, Matthew
+Hope, David
+Hopely, Philip
+Hopkins, Mark
+Hoppe, Alfred
+Horacek, Helmut
+Horak, Ales
+Hore, Campbell
+Horiguchi, Susumu
+Hori, Koichi
+Hori, Takaaki
+Horiuchi, Hiroaki
+Horiuchi, Takashi
+Horn, David
+Horn, Pieter
+Horowitz, David
+Horvitz, Eric
+Hoshiai, Tadashi
+Ho, Simon
+Ho, Tu Bao
+Houfeng, Wang
+House, David
+Hout, Roeland Van
+Hou, Yuexian
+Hovermale, DJ
+Hovy, Dirk
+Hovy, Eduard H.
+Howard, Tom
+Hoyt, Frederick M.
+Hoyt, Jeffrey
+Hric, Jan
+Hruschka Junior, Estevam Rafael
+Hr�z, Marek
+Hsiao, Kai-Yuh
+Hsiao, Roger
+Hsieh, Cho-Jui
+Hsieh, Shu-Kai
+Hsieh, Yu-Ming
+Hsiung, Alain
+Hsu, Bo-June (Paul)
+Hsu, Wei-Tek
+Hsu, Wen-Lian
+Huang, Bryant
+Huang, Changning
+Huang, Chu-Ren
+Huang, Degen
+Huang, Fang
+Huang, Fei
+Huang, HaiXiang
+Huang, Hung-Chi
+Huang, James
+Huang, Jian
+Huang, JinHu
+Huang, Jui-Ting
+Huang, Jyun-Wei
+Huang, Liang
+Huang, Minlie
+Huang, Qiang
+Huang, Shang-Ming
+Huang, Thomas
+Huang, Ting-Hao
+Huang, Xiuming
+Huang, Xuedong
+Huang, Yu-Fen
+Huang, Zhiheng
+Huang, Zhongqiang
+Hubal, Robert
+Hubbell, James
+Huber, Alexander
+Huber, Edmund
+Hu, Changjian
+Huckle, Christopher C.
+Huckstorf, Axel
+Hu, Dawei
+Hu, Dong Cheng
+Hudson, Richard A.
+Huenerfauth, Matt
+Huerta, Juan
+Huet, Gerard
+Huet, St�phane
+Huffaker, David
+Huggins-Daines, David
+Huggins, Jonathan
+Hughes, Baden
+Hughes, John
+Hughes, Thad
+Hughson, Ian
+Hugosson, Asa
+Hui, Bowen
+Huijbregts, Marijn
+Huiming, Duan
+Hu, Junfeng
+Hukari, Thomas E.
+Hulden, Mans
+Hull, Jonathan J.
+Hull, Richard
+Humphreys, Kevin
+Hung, Chen-Ming
+Hung, Chihli
+Hung, Hsi-Chuan
+Hung, Hsieh-Chuan
+Hung, K. Y.
+Hung, Peng-Hsiang
+Hunter, Jim
+Hunter, Lawrence
+Hunter, Phillip
+Hunt, Melvyn
+Hunt, Steve
+Hunt, Warren A.
+Hunze, Rudolf
+Hu, Qian
+Hurskainen, Arvi
+Hurst, Matthew
+Hurtado, Llu�s F.
+Hurum, Sven
+Hur, Wook
+Hussain, Sarmad
+Hussmann, Michael J.
+Hutchens, Jason L.
+Hutches, David J.
+Hutchins, Edwin L.
+Hutchinson, Ben
+Hu, Xia
+Hu, Xiaoguang
+Hu, Xinhui
+Huyck, Christian
+Huyghe, Richard
+Huynh, Cong-phap
+Hu, Zhangzhi
+Hwang, Kyu-Baek
+Hwang, Kyuwoong
+Hwang, Yi-Gyu
+Hyde, Clinton
+Hying, Christian
+Hyland, Rob
+Hyvonen, Eero
+Iacobelli, Francisco
+Ibrahim, Ali
+Ibrahim, Hossam
+Ibrahim, Hussny
+Ibushi, Katsutoshi
+Ichii, Koji
+Ichioka, Kenichi
+Ichiyama, Shunji
+Idiart, Marco
+Ienco, Dino
+Iftene, Adrian
+Igel, Stefan
+Iglesias, Gonzalo
+Igo, Sean
+Iida, Hitoshi
+Iida, Ryu
+IJdens, Jan
+Ikeda, Daisuke
+Ikeda, Hiroshi
+Ikeda, Hisashi
+Ikeda, Satoshi
+Ikeda, Takahiro
+Ikeda, Yuuji
+Ikehara, Satoru
+Ikonomov, Nikola
+Ikuta, Toshikazu
+Ilarionov, Ilarion
+Ilgen, Marc R.
+Ilhan, H. Tolga
+Illouz, Gabriel
+Imai, Hiroki
+Imai, Hisao
+Imai, Takeshi
+Imamura, Kenji
+Imamura, Makoto
+Imanishi, Tadashi
+im, Haldur
+Inagaki, Hirohito
+Inagaki, Yasuyoshi
+inen, Matti
+Infante-Lopez, Gabriel
+Ingersoll, Grant
+Ingleby, Michael
+Ingram, John
+Ingria, Robert J. P.
+Inouye, R. Bryce
+Inui, Kentaro
+Inui, Nobuo
+Inui, Takashi
+Inui, Toshio
+Inutsuka, Yusuke
+Iomdin, Leonid
+Ion, Radu
+Ipeirotis, Panagiotis
+Ipsic, Lvo
+Ircing, Pavel
+Ireson, Neil
+Iria, Jos
+Iria, Jos�
+Irwin, Joseph
+Isaac, Antoine
+Isabelle, Pierre
+Isahara, Hitoshi
+Isard, Stephen
+Isenhour, Phil
+Ishihara, Koichiro
+Ishii, Masayuki
+Ishikawa, Akira
+Ishikawa, Hiroshi
+Ishikawa, Shogo
+Ishikawa, Tetsuya
+Ishimoto, Arata
+Ishimoto, Hiroyuki
+Ishioka, Tsunenori
+Ishizaki, Masato
+Ishizaki, Shun
+Ishizuka, Mitsuru
+Islam, Aminul
+Islam, Zahurul
+Isoda, Michio
+Isogai, Shuntaro
+Isozaki, Hideki
+Israel, David J.
+Issar, Sunil
+Istace, Olivier
+Isu, Naoki
+Itagaki, Masaki
+Itahashi, Shuichi
+Itai, Alon
+Itamar, Einav
+Itami, Makoto
+Ito, Akira
+Itoh, Hideo
+Itoh, Kohji
+Itoh, Nobuyasu
+Itoh, Takayuki
+Itoh, Toshihiko
+Itoh, Yoshiaki
+Itoh, Yuichi
+Itoh, Yukihiro
+Ito, Kazunari
+Ito, Takahiko
+Itou, Katunobu
+Ittycheriah, Abraham
+Ittycheriah, Midhun
+Ivanov, Alexei V.
+Ivanovic, Edward
+Iverson, Eric
+Iwahashi, Naoto
+Iwakura, Tomoya
+Iwano, Koji
+Iwasaki, Hideya
+Iwatate, Masakazu
+Iwayama, Makoto
+Izagirre, Eli
+Izquierdo, Ruben
+Izumida, Yoshio
+Jackendoff, Ray
+Jackson, Eric
+Jacobs, Aaron J.
+Jacobson, R. Dan
+Jacobs, Paul S.
+Jacquemin, Bernard
+Jacquemin, Christian
+Jacquet, Guillaume
+Jaeger, T. Florian
+Jagadish, H. V.
+Jagarlamudi, Jagadeesh
+Jager, Samson de
+Jahr, Michael
+Jain, Prateek
+Jain, Viren
+Jairam, Arvind
+Jakeway, Bruce
+Jakopin, Primo
+Jalan, Vaibhav
+, Jan
+Janarthanam, Srinivasan
+Jancsary, Jeremy
+Jan, Dusan
+Jang, Myung-Gil
+Jang, Seok B.
+Jang, Tae-Yeoub
+Janíček, Miroslav
+Janin, Adam
+Jankowski Jr., Charles R.
+Jansche, Martin
+Jansen, Peter J.
+Jan, Shyh-Yi
+Janssen, Maarten
+Janssen, Wil
+Janus, Daniel
+Jappinen, Harri
+Jardino, Michele
+Jarecki, Stanislaw
+Jarrell, Bruce
+Jarvinen, Jouni
+Jarvinen, Timo
+Jarvis, Peter
+Jaspaert, Lieven
+Jassem, Krzysztof
+Jaworski, Wojciech
+Jayarajan, Dinakar
+Jayaraman, Shyamsundar
+Jayez, Jacques
+Jean-Marie, Francois
+Jedynak, Bruno
+Jelasity, M&#225
+Jelinek, Frederick
+Jellinghaus, Michael
+Jensen, Lars J.
+Jeong, Minwoo
+Jeon, Hyungbae
+Jeon, Je Hun
+Jern, Alan
+Jerry, Ye
+Jeuniaux, Patrick
+Jha, Girish Nath
+Jia-Jun, Chen
+Jiampojamarn, Sittichai
+Jiang, Hongfei
+Jiang, Jianmin
+Jiang, Long
+Jiang, Wenbin
+Jiang, Xue
+Jiang, Zheng Ping
+Jianshuo, Huang
+Jichuan, Zhang
+Ji, Donghong
+Ji, Hyungsuk
+Jijkoun, Valentin
+Jimenez-Salazar, Hector
+Jin, Chengguo
+Jingbo, Zhu
+Jin, Meixun
+Jin, Qin
+Jin, Zhen
+Jin, Zhihui
+Ji, Paul D.
+Jirku, Petr
+Ji, Shihao
+Jitkrittum, Wittawat
+Jmaiel, Mohamed
+J�nsson, Arne
+Joanis, Eric
+Jochim, Charles
+Johannessen, Janne Bondi
+Johansson, Christer
+Johansson, Richard
+Johnson, Aaron
+Johnson, Christopher
+Johnson, Dale
+Johnson, David E.
+Johnson, Howard
+Johnson, Kenneth
+Johnson, Mark
+Johnson, Matthew
+Johnson, Michael T.
+Johnson, Neil
+Johnson, Rod L.
+Johnson, Stephen B.
+Johnston, Michael
+Johnston, Trevor
+Joho, Hideo
+Jon, Chamberlain
+Jones, Bernard E. M.
+Jones, Craig
+Jones, Danny
+Jones, Dominic R.
+Jones, Douglas A.
+Jones, Gareth
+Jones, Mark Alan
+Jones, Michael P.
+Jones, Rhys James
+Jongejan, Bart
+Jonnalagadda, Siddhartha
+Jonsson, Arne
+Jordan, Desmond A.
+Jordan, Michael I.
+Jordan, Patrick
+Jorgensen, Joseph
+Jorgensen, Stig W.
+, Jos&#233
+Josan, Gurpreet Singh
+Jose, Damien
+Joseph, Brian
+Joseph, Mark
+Joshi, Aravind K.
+Joshi, Ashutosh
+Joshi, Mahesh
+Joshi, Sachindra
+Joshi, Shiv Sharma
+Josselson, Harry H.
+Jost, Patrick
+Joty, Shafiq R.
+Joubert, Alain
+Jouis, Christophe
+Jovicic, Slobodan
+Joyce, John D.
+Joyce, Terry
+Juan, Alfons
+Juan-C�scar, Alfons
+Judge, John
+Julia, Luc
+Jung, Hagen
+Jung, Hanmin
+Jung, Han-Min
+Jung, Hyuckchul
+Jung, Jaeyoung
+Jung, Sangkeun
+Jung, Sung Young
+Jun-Sheng, Zhou
+Jun, Zhao
+Juola, Patrick
+Jurafsky, Daniel
+Jurie, Pierre Fran�ois
+Jurkiewicz, Zbigniew
+Justeson, John S.
+Just, Marcel
+Just, Marcel Adam
+Jutras, Jean-Marc
+Jyh, Paul Wu Horng
+Kaalep, Heiki Jaan
+Kaalep, Heiki-Jaan
+Kabadjov, Mijail
+Kacic, Zdravko
+Kacmarcik, Gary
+Kac, Michael B.
+Kadri, Youssef
+Kaemareik, Gary
+Kagaya, Ryohei
+Kageura, Kyo
+Kaggal, Vinod
+Kahane, Sylvain
+Kahn, Dan
+Kahn, Jeremy G.
+Kaiser, Edward C.
+Kaisser, Michael
+Kaja, Jaan
+Kaji, Hiroyuki
+Kaji, Nobuhiro
+Kajino, Masayuki
+Kaji, Yuichi
+Kakegawa, Jun-ichi
+Kakegawa, Jun'ichi
+Kakigahara, Koji
+Kakimoto, Toshihiro
+Kaki, Satoshi
+Kakkonen, Tuomo
+Kalaydijev, Ognyan
+Kalita, Jugal K.
+Kaljurand, Kaarel
+Kallonis, Spyros
+Kalman, Laszlo
+Kalmar, Paul
+Kalra, Virinder S.
+Kalt, Tom
+Kamata, Kazuo
+Kambayashi, Yahiko
+Kambhatla, Nanda
+Kamboj, Sachin
+Kameda, Masayuki
+Kamei, Greg
+Kamei, Shin-ichiro
+KAMEI, Shin-ichiro
+Kamir, Dror
+Kampmann, Frank
+Kamps, Jaap
+Kamps, Thomas
+Kamvar, Sepandar D.
+Kanamaru, Toshiyuki
+Kanayama, Hiroshi
+Kanazawa, Makoto
+Kanda, Hisayuki
+Kanda, Naoyuki
+Kaneda, Shigeo
+kaneji, Kengo
+Kanejiya, Dharmendra
+Kane, Matthew
+Kang, Byeong-Kwu
+Kang, In-Ho
+Kang, Jaeho
+Kang, Jung-Goo
+Kang, Seung Shik
+Kang, Sin-Jae
+Kan, Min-Yen
+Kannan, Ashvin
+Kannan, Ravi
+Kanovich, Max I.
+Kano, Yoshinobu
+Kanthak, Stephan
+Kantor, Paul B.
+Kantrowitz, Mark
+Kao, Michael B.
+Kapadia, Sadik
+Kapah, Oren
+Kaplan, Dain
+Kaplan, Frederic
+Kaplan, Randy M.
+Kaplan, Ronald
+Kaplan, Ronald M.
+Kaplan, S. Jerrold
+Kappeler, Thomas
+Kapur, Shyam
+Kapustin, Victor
+Karaiskos, Vasilis
+Karakatsiotis, George
+Karakos, Damianos
+Karamanis, Nikiforos
+Karamuftuoglu, Murat
+Karande, Arjun
+Kareem, Omer
+Karger, David
+Karger, David R.
+Karkaletsis, Vangelis
+Karlgren, Hans
+Karlgren, Jussi
+Karlin, Robin F.
+Karlsson, Fred
+Karlstrom, Petter
+Karp, Daniel
+Kasahara, Kaname
+Kasami, Tadao
+Kasami, Tomohiko
+Kashani, Mehdi M.
+Kasher, Asa
+Kashima, Hisashi
+Kashioka, Hideki
+Kashket, Michael B.
+Kasper, Robert T.
+Kasper, Walter
+Kassaei, Mahmoud
+Kass, Alex
+Kass, Ariel
+Kass, Robert
+Kastner, Itamar
+Katagiri, Yasuhiro
+Kataoka, Ryoji
+Kate, Rohit
+Kate, Rohit J.
+Kathol, Andreas
+Katoh, Naoto
+Kato, Naoki
+Kato, Naoto
+Kato, Shingo
+Kato, Shuhei
+Kato, Susumu
+Kato, Tsuneaki
+Kato, Yoshihide
+Kato, Yoshikiyo
+Katragadda, Rahul
+Katrin, Tomanek
+Katsumaru, Masaki
+Katz, Boris
+Katz, Graham
+Katz, Phil
+Katz, Slava M.
+Kauchak, David
+Kaufmann, Stefan
+Kaufmann, Tobias
+Kaufmann, Todd
+Kawabata, Takeshi
+Kawada, Tsutomu
+Kawaguchi, Nobuo
+Kawaguchi, Yasunobu
+Kawahara, Daisuke
+Kawahara, Tatsuya
+Kawai, Atsuo
+Kawamori, Masahito
+Kawasaki, Zenshiro
+Kawata, Yasuhiro
+Kayaalp, Mehmet
+Kaye, Jonathan
+Kay, Martin
+Kay, Roderick
+Kazakov, Dimitar
+Kazama, Jun'ichi
+Kazawa, Hideto
+Kazemzadeh, Abe
+Kazi, Zunaid
+Keane, John
+Kearns, Michael S.
+Kedia, Piyush
+Keenan, Thomas A.
+Keeney, John
+Kehagias, Athanasios
+Kehler, Andrew
+Kehler, T. P.
+Keim, Greg A.
+Keizer, Simon
+Kelana, Eka
+Kelleher, D. John
+Kelleher, John D.
+Keller, Bill
+Keller, Frank
+Kellermann, Walter
+Kelly, Colin
+Kelly, Robert
+Kemighan, Mark D.
+Kempe, Andre
+Kempen, Gerard
+Kemper, Brian
+Kemps-Snijders, Marc
+Kennedy, Alistair
+Kennedy, Brandon
+Kennedy, Christopher
+Kennington, Casey
+Kenny, Patrick
+Kenyon, Dorry M.
+Kepser, Stephan
+Keri, Venkatesh
+Kerminen, Antti
+Kerpedjiev, Stephan M.
+Kerre, Etienne
+Kershenbaum, Aaron
+Keselj, Vlado
+Kese, Ralf
+Keshtkar, Fazel
+Keson, Britt
+Kesseler, Marcus
+Kesselheim, Michael
+Kessler, Brett
+Kessler, Jason
+Ketabdar, Hamed
+Keyser, Paul
+Khadivi, Shahram
+Khajour, Abdelaziz
+Khalid, Mahboob
+Khalilov, Maxim
+Khandelwal, Vikash
+Khan, Imtiaz Hussain
+Khan, M. A.
+Khan, Muhammad Aamir
+Khan, Shahzad
+Khapra, Mitesh M.
+Khayyamian, Mahdy
+K�hler, Joachim
+Khoo, Christopher S. G.
+Khot, Tushar
+Khudanpur, Sanjeev P.
+Kibble, Rodger
+Kida, Mitsuhiro
+Kidawara, Yutaka
+Kidwell, Paul
+Kiefer, Bernd
+Kiefer, Ferenc
+Kielty, John
+Kiem, Hoang
+Kienast, Gert
+Kiessling, Andreas
+Kietz, Jorg-Uwe
+Kijsirikul, Boonserm
+Kikuchi, H.
+Kikuchi, Norihiro
+Kikui, Genichiro
+Kikui, Gen-Itiro
+Kilbury, James
+Kilgariff, Adam
+Kilgarriff, Adam
+Kilgour, Jonathan
+Kilicoglu, Halil
+Kim, Albert
+Kim, Anthony
+Kimball, Owen
+Kimber, Don
+Kim, Byeongchang
+Kim, Byeong Man
+Kim, Deok-Bong
+Kim, Donghyun
+Kim, Dong-Il
+Kim, Gilchang
+Kim, Harksoo
+Kim, Hyeon-Jin
+Kim, Hyouk-Keun
+Kim, Jae Dong
+Kim, Jae-Ho
+Kim, Jee-Hyub
+Kim, Jin-Dong
+Kim, Jong-Bok
+Kim, Jong Wan
+Kim, Joungbum
+Kim, Jungi
+Kim, Jung-Jae
+Kim, Jun-Tae
+Kim, Kilyoun
+Kim, Kyoung-Young
+Kim, Kyungduk
+Kim, Sang-Bum
+Kim, Seokhwan
+Kim, Seongyong
+Kim, Seonho
+Kim, Seunghi
+Kim, Soo-Hong
+Kim, Sung Dong
+Kim, Taewan
+Kimura, Fuminori
+Kimura, Kazuhiro
+Kimura, Kenji
+Kimura, Shinichi
+Kimura, Yukihiko
+Kim, Woosung
+Kim, Yeun-Bae
+Kim, Yoonkwan
+Kim, Young-Kil
+Kim, Youngwhan
+Kim, Yung Taek
+Kim, Yu-Seop
+Kimzey, Jim
+King, Gary
+King, Irwin
+King, James
+King, Jonathan
+King, Josh
+King, Paul John
+King, Paul L.
+Kingsbury, B.
+Kingsbury, Brian
+Kingsbury, Paul
+Kinoshita, Akinori
+Kinoshita, Satoshi
+Kinoshita, Shuhei
+Kinsella, Thomas
+Kinukawa, Hiroshi
+Kinzey, Jim
+Kipp, Michael
+Kiraz, George
+Kiraz, George Anton
+Kirby, Simon
+Kirchmann, Heinz
+Kirchner, Jesse
+Kireyev, Kirill
+Kiriyama, Shinya
+Kirschenbaum, Amit
+Kirsch, Harald
+Kirschner, Manuel
+Kirschner, Zdenek
+Kirsten, Mathias
+Kirtman, Smart E.
+Kiryakov, Atanas
+Kis, Balazs
+Kishida, Kazuaki
+Kishida, Masahiro
+Kishino, Fumio
+Kiss, Tibor
+Kita, Kenji
+Kitamura, Keisuke
+Kitani, Tsuyoshi
+Kitano, Hiroaki
+Kitaoka, Norihide
+Kitazawa, Shigeyoshi
+Kit, Chunyu
+ki, Teemu
+Kitsuregawa, Masaru
+Kitt, Chunyu
+Kittredge, Richard
+Kity, Chunyu
+Kiyono, Masaki
+Kiyota, Yoji
+Kizawa, Makoto
+Kjaersgaard, Poul Soren
+Klabunde, Ralf
+Kladis, Basilis
+Klakow, Dietrich
+Klapaftis, Ioannis
+Klappholz, David
+Klarner, Martin
+Klassmann, Alex
+Kleeman, Alex
+Klein, Dan
+Kleinecke, David
+Kleiner, Stefan
+Klein, Ewan
+Klein, Gary
+Klein, Sheldon
+Kleinz, Jorg
+Kleiweg, Peter
+Klementiev, Alexandre
+Klenner, Manfred
+Kliegl, Reinhold
+Klingberg, Tor
+Klinger, Allen
+Klippel, Alex
+Kloosterman, Geert
+Kluck, Michael
+Knaus, Rodger
+Kn�bl, Ralf
+Knight, Kevin
+Knippen, Robert
+Knoll, Alois
+Knopp, Johannes
+Knorz, Gerhard
+Knott, Alistair
+Kobayakawa, Takeshi
+Kobayashi, Daisuke
+Kobayashi, Ichiro
+Kobayashi, Masahiro
+Kobayashi, Yutaka
+Kobsa, Alfred
+Koch, Gregers
+Kochman, Fred
+Koch, Ulrich
+Kocsor, Andras
+Kodama, Yasuhiro
+Ko, David
+Koedinger, Kenneth
+Koehler, Florian
+Koehn, Philipp
+Koeling, Rob
+Koenitz, Bernd
+Kogan, Shimon
+Kogure, Kiyoshi
+Kogure, Satoru
+Kohda, Masaki
+Kohl, Dieter
+Kohlhase, Michael
+Kohomban, Upali Sathyajith
+Koike, Chimato
+Koivula, Jeppe
+Ko, Jeongwoo
+Kojima, Hiroyuki
+Kojima, Takeyuki
+Kokkinakis, Dimitrios
+Kokkinakis, George K.
+Ko, K. T.
+Kolachina, Sudheer
+Kolak, Okan
+Koller, Alexander
+Koller, Thomas
+Kolluru, BalaKrishna
+Kolomiyets, Oleksandr
+Komachi, Mamoru
+Komagata, Nobo
+Komatani, Kazunori
+Komatsu, Eiji
+Komatsu, Hisashi
+Komatsu, Yasunori
+Komine, Kazuteru
+Kominek, John
+Kommenda, Markus
+Kompe, Ralf
+Konagaya, Akihiko
+Kondadadi, Ravikumar
+Kondoh, Yohsuke
+Kondo, Shozo
+Kondrak, Grzegorz
+Kong, Fang
+Kong, Tang Enya
+Kongyoung, Sarawoot
+Konolige, Kurt
+Konrad, Karsten
+Konstantopoulos, Stasinos
+Konstas, Ioannis
+Konyves-Toth, Michael
+Koolen, Marijn
+Koomen, Peter
+Koontz, Eugene
+Koontz-Garboden, Andrew
+Koo, Terry
+Koperski, Krzysztof
+Kopotev, Mikhail
+Koppel, Moshe
+Kopp, Stefan
+Korb, Joel
+Korb, Kevin B.
+Kording, Konrad P.
+Korkmaz, Emin Erkan
+Korkontzelos, Ioannis
+Korkrmaz, Turgay
+Kornai, Andr�s
+Korner, Fabian
+Korst, Jan
+Korte, Hannes
+Korthals, Christian
+Korycinski, Chris
+Kosawat, Krit
+Koshino, Hideya
+Koskenniemi, Kimmo
+Kosslyn, Stephen Michael
+Kostadinov, Fabian
+Kostoulas, Theodoros
+Kosy, Donald W.
+Kotani, Katsunori
+Kotani, Yoshiyuki
+Kothari, Govind
+Kotnik, Bojan
+Kotsanis, Yannis
+Kouji, Tamura
+Kountz, Manuel
+Kovarik, John J.
+Kowatch, Robert
+Kow, Eric
+Ko, Wunna Ko
+Koyama, Makoto
+Koyama, Takahiro
+Koyama, Teruo
+Koyama, Yasuo
+Ko, Youngjoong
+Kozawa, Shunsuke
+Kozima, Hideki
+Kozlowski, Raymond
+k, Pavel
+Kraaij, Wessel
+Kracht II, Marcus
+Krahmer, Emiel
+Kraif, Olivier
+Kralik, Jan
+Krallinger, Martin
+Kranstedt, Alfred
+Krapcho, Frank
+Kraus, Dirk
+Krause, Paul
+Krauwer, Steven
+Krbec, Pavel
+Kreidlin, Leonid
+Krek, Simon
+Krellenstein, Marc
+Kremer, Gerhard
+Krestel, Ralf
+Kreuz, Roger
+Krieger, Hans-Ulrich
+Krishna, Gopala
+Krishnakumaran, Saisuresh
+Krishna, Madhav
+Krishnamurthy, Rajasekar
+Krishnan, Vijay
+Krkoska, Michael
+Kroch, Anthony S.
+Krogh, Peter
+Kronfeld, Amichai
+Krotov, Alexander
+Krovetz, Robert
+Kruengkrai, Canasai
+Kruijff, Geert-Jan M.
+Krulee, Gilbert K.
+Krupka, George R.
+Kruschwitz, Udo
+Krymolowski, Yuval
+K, Sankar
+K, Saravanan
+Ksiezyk, Tomasz
+Kuba, Andras
+Kubala, Francis
+Kubon, Petr
+Kubon, Vladislav
+Kucera, Henry
+Kucera, Ondrej
+Kudo, Ikuo
+Kudo, Taku
+Kuehner, D. G.
+Kugel, Peter
+Kuhlen, Rainer
+Kuhlmann, Marco
+Kuhn, Jonas
+Kuhn, Michael
+Kuhn, Roland
+Kuhns, Robert J.
+Kuhn, Tobias
+Kulesza, Alex
+Kulick, Seth
+Kumano, Akira
+Kumano, Tadashi
+Kumar, Aman
+Kumaran, A
+Kumaran, A.
+Kumar, Anand
+Kumar, Arun
+Kumar, Ashwani
+Kumar, G. Bharadwaja
+Kumar, Mohit
+Kumar, Ravi
+Kumar, Rohit
+Kumar, Sandeep
+Kumar, Shankar
+Kumar, Sumit
+Kummel, Peter
+Kun, Andrew
+Kunath, Stephen A.
+Kundu, Amlan
+Kunii, Tosiyasu L.
+Kuno, Susumu
+Kunst, Jan Pieter
+Kunze, Jurgen
+Kuo, Hong-Kwang
+Kuo, Jin-Shea
+Kuo, June-Jei
+Kuper, Jan
+Kupiec, Julian
+Kupin, Joseph
+Kuppan, Sankar
+Kuppin, Michael A.
+Kurata, Gakuto
+Kuribayashi, Takayuki
+Kurimo, Mikko
+Kurkin, Sergei
+Kuroda, Kow
+Kurohashi, Sadao
+Kuroiwa, Shingo
+Kuroki, Hiroaki
+Kurosawa, Takehiro
+Kurtz, Jeff
+Kurtzman, Howard S.
+Kuruoz, Ilker
+Kusaka, Hiroji
+Kusakawa, Takashi
+Kusanagi, Yutaka
+Kushmerick, Nicholas
+Kussner, Uwe
+Kustner, Andreas
+Kutsumi, Takeshi
+Kuusisto, Jukka
+Kuwahara, Noriaki
+Kveton, Pavel
+K.V., Madhu Murthy
+Kwak, Byung-Kwan
+Kwak, JunWon
+Kwasny, Stan C.
+Kweon, Cheoljung
+Kwok, Kui Lam
+Kwon, Hyuk-Chul
+Laakso, Aarre
+Lacatusu, Finley
+LaCivita, Jeremy
+Lacoste-Julien, Simon
+Ladefoged, Peter
+Ladner, Richard
+Ladwig, Gunter
+Laenzlinger, Christopher
+Laffal, Julius
+Lafferty, John D.
+Lafourcade, Mathieu
+Lagarda, Antonio
+Lagarda, Antonio L.
+Lager, Torbjorn
+Lagus, Tommi
+Lahti, William
+Lai, Chia-Horng
+Lai, Tom Bong-Yeung
+Lai, Yu-Sheng
+Lakoff, George
+Lalanne, Denis
+Lally, Adam
+Lambeau, Fabre
+Lambert, Benjamin
+Lambert, Patrik
+Lambrix, Patrick
+Lamirel, Jean-Charles
+Lamjiri, Abolfazl
+Lampert, Andrew
+Lamping, John
+Lampouras, Gerasimos
+Lancel, Jean-Marie
+Lanchantin, Pierre
+Landauer, Thomas
+Landay, James
+Lane, Ian
+Lane, Peter
+Lang, Bernard
+Lange, Jean-Marc
+Lange, Marek
+Langendoen, D. Terence
+Lange, Rense
+Langer, Hagen
+Langer, Stefan
+Lang, Francois-Michel
+Langjahr, Andreas
+Lang, Jun
+Langlais, Philippe
+Langley, Chad
+Langley, Pat
+Langlois, David
+Langmead, Greg
+Langner, Brian
+Lango, Clemens
+Langsam, Yedidyah
+Lan, Xiang
+Laoudi, Jamal
+Lapalme, Guy
+Laparra, Egoitz
+LaPolla, Mark Vincent
+Laporte, Eric
+Lappin, Shalom
+Lara, Luis Fernando
+Lardilleux, Adrien
+Larkin, Samuel
+lar, Murat
+Laroui, Abdellatif
+Larsen, Bjornar
+Larsen, Jeppe
+Larson, Ray
+Larsson, Staffan
+Lascarides, Alex
+Lascelles, Mark
+Laskowski, Kornel
+Last, Mark
+Laszlo, Steven I.
+Latecki, Longin
+Lathrop, Brian
+Laublet, Philippe
+Laubsch, Joachim H.
+Lauc, Tomislava
+Lauer, Mark
+Lau, Gerd
+Lau, Peter
+Lau, Raymond
+Laurent, Antoine
+Laureys, Tom
+Lauria, Stanislao
+Lauriston, Andy
+Lavelli, Alberto
+Lavergne, Thomas
+Lavie, Alon
+Lavoie, Benoit
+Lavrenko, Victor
+Law, Hubert Hin-Cheung
+Laws, Florian
+Laws, Kenneth
+Łaziński, Marek
+Lazzari, Gianni
+Leal, Antonio
+Lease, Matthew
+Leass, Herbert J.
+Leavitt, John R. R.
+Lebanon, Guy
+Lebedev, Alexandr
+Lebowitz, Michael
+Lecoeuche, Renaud
+Lecomte, Alain
+Lee, Alan
+Lee, Beum-Seuk
+Lee, Bing-Huang
+Lee, Changbeom
+Lee, Changki
+Lee, Cheongjae
+Leech, Geoffrey
+Lee, Chih
+Lee, Chi-Hoon
+Lee, Chin-Hui
+Lee, Chun-Jen
+Lee, Do-Gil
+Lee, Donghyeon
+Lee, Dongwon
+Lee, Gary Geunbae
+Lee, Geunbae
+Lee, Haejoong
+Lee, Hian Beng
+Lee, Hodong
+Lee, Hsi-Jian
+Lee, Hyoung-Gyu
+Lee, Insup
+Lee, Jae-Won
+Lee, Jen-Chang
+Lee, Jin-Seok
+Lee, John
+Lee, Jonghoon
+Lee, Jong-Hyeok
+Lee, Joo-Young
+Lee, Jung-Tae
+Lee, Jye-Hoon
+Lee, Kai-Fu
+Lee, Ken Wing Kuen
+Lee, Ki-Joong
+Lee, Lin-shan
+Lee, Lin-Shan
+Lee, Lung-Hao
+Lee, Mark
+Lee, Minsuk
+Lee, Richard
+Lee, Sang-Zoo
+Lee, Seungwoo
+Lee, Seung-Wook
+Lee, Songwook
+Lee, Sungjin
+Lee, Sung-Jin
+Lee, Wonil
+Lee, WonIl
+Lee, Yeha
+Lee, Yong-Hun
+Lee, Yong-Won
+Lee, Yoong Keok
+Lee, Young-Jik
+Lee, Young-Suk
+Lee, Yunkeun
+Lefevre, Fabrice
+Legendre, Vincent
+Lehal, Gurpreet Singh
+Lehmann, Hubert
+Lehmann, John
+Lehmann, Winfred P.
+Lehmberg, Timm
+Lehnen, Patrick
+Lehrberger, Jack
+Lehtola, Aarno
+Leibscher, Robert
+Leidner, Jochen L.
+Leistensnider, James
+Leite, Daniel S.
+Lella, Luigi
+Lemaire, Beno&#238
+Lemmons, Maarten
+Lemnitzer, Lothar
+Lemon, Oliver
+Lenci, Alessandro
+Lenders, Winfried
+Lenin, James A.
+Le Nir, Yannick
+Lenke, Nils
+Lennig, Matthew
+Lennox, A. Scott
+Lenzo, Kevin
+Leonard, Jean-Leo
+Leon, Fernando Sanchez
+Leong, Chee Wee
+Lepage, Yves
+Ler, Daren
+Lerman, Kevin
+Le Roux, Joseph
+ler, Reinhard
+Lersundi, M.
+Lersundi, Mikel
+Leser, Ulf
+Leslie, Neil
+Lesmo, Leonardo
+Lesmo, Leonaxdo
+Lessard, Greg
+Lester, James C.
+Lestrade, Sander
+Letourneau, Sylvain
+Leturia, Igor
+Leunbach, Gustav
+Leusch, Gregor
+Leuski, Anton
+Levas, Anthony
+Leveling, Johannes
+Levelt, Willem J. M.
+Levent-Levi, Tsahi
+Levesque, Hector J.
+Lev, Iddo
+Le, Viet Bac
+Levin, Dimitry
+Levine, John
+Levine, Robert D.
+Levinger, Moshe
+Levis, James A.
+Levison, Michael
+Levy, Leon S.
+Levy, Roger
+Lewellen, Mark
+Lewin, Ian
+Lewis, David D.
+Lewis, Richard L.
+Lewis, William
+Lewis, William H.
+Lewy, Nicolas
+Leybold, Matthias
+Lezius, Wolfgang
+lez, Jorge
+Lhomme, Stanislas
+Liang, Jisheng
+Liang, Percy
+Liao, Ciya
+Liberman, Mark Y.
+Li, Bin
+Li, Bo
+Li, Chen
+Licheng, Zeng
+Li, Chi-Ho
+Lichte, Timm
+Li, Chunping
+Li, Cong
+Liden, Per
+Liebscher, Robert
+Liekens, Anthony
+lien, Max
+Lieske, Christian
+Li, Fangtao
+Lifchits, Andrei
+Li, Fuxin
+Light, Marc
+Ligozat, Gerard
+Li, Guofu
+Li, Guohua
+Li, Haizhou
+Li, Hang
+Li, Heng
+Li, Jianfeng
+Li, Jianguo
+Li, Jian-Hua
+Li, Jingyang
+Li, Jinji
+Li, Junhui
+Li, JunHui
+Lilley, Jason
+Lim, Daniel Chung Yong
+Lim, Dong-Hee
+Lim, Heui-Seok
+Li, Ming
+Li, Minghui
+Li, Mingqin
+Lim, Jong-Gyun
+Lim, Joon-Ho
+Lim, Soojong
+Lim, Tan Chew
+Li, Mu
+Linares, Georges
+Lin, Bo
+Lin, Bor-shen
+Lin, Changhwa
+Lin, Chao-Cheng
+Lin, Chi-Ching
+Lin, Chih-Jen
+Lin, Chih-Lung
+Lin, Chin-Yew
+Lin, Chi-San Althon
+Lin, Chuan-Jie
+Lindberg, Nikolaj
+Lin, Dekang
+Linden, Krister
+Lindstrom, Anders
+Lin, Fang
+Lin, Frank
+Lin, Hing-Lung
+Lin, I-Peng
+Lin, Jen-Hsiang
+Lin, Jimmy
+Lin, Kevin Hsin-Yih
+Link, Michael
+Lin, Koong H. C.
+Lin, Long-Ji
+Lin, Ming-Shun
+Linn Jr., William E.
+Lin, Shouxun
+Lin, Wei-Hao
+Lin, Wen-Cheng
+Lin, Winston
+Lin, Xiaojun
+Lin, Yi-Chung
+Lin, Yu-Chun
+Lin, Yuen Q.
+Lin, Yu-Hsiang
+Lin, Ziheng
+Li, Ping
+Lippincott, Tom
+Lippmann, Richard P.
+Lipshutz, Mark
+Li, Qing
+Lisacek, Frederique
+Liscombe, Jackson
+Li, Sheng
+Li, Shoushan
+Li, ShuangLong
+Li, Shuguang
+Li, Shuyin
+Lison, Pierre
+Lita, Lucian Vlad
+Litkowski, Kenneth C.
+Liu, Bing
+Liu, Chang
+Liu, Chao-Lin
+Liu, Chen
+Liu, Chuan
+Liu, Fang
+Liu, Fei
+Liu, Feifan
+Liu, Fu-Hua
+Liu, Haibin
+Liu, Hao
+Liu, Jianyi
+Liu, Jimin
+Liu, John S.
+Liu, Juan
+Liu, Key-Long
+Liu, PengYuan
+Liu, Qun
+Liu, Rey-Long
+Liu, Sean
+Liu, Shing-Huan
+Liu, Ting
+Liu, Vinci
+Liu, Weiquan
+Liu, Xiaohua
+Liu, Xingkun
+Liu, Xuemin
+Liu, Yiqun
+Liu, Yudong
+Liu, Yupeng
+Liu, Zhiyuan
+Li, Wei-Chuan
+Li, Weigang
+Li, Wenbo
+Li, Xiang-Bing
+Li, Xiaoge
+Li, Xiaohong
+Li, Xin
+Li, Xing
+Li, Yaoyong
+Li, Yin
+Li, Yiping
+Li, Yongqiang
+Li, Zhenghua
+Li, Zhifei
+Lizotte, Dan
+Ljolje, Andrej
+Ljubesic, Nikola
+Ljunglof, Peter
+ller, Christof
+ller, Sebastian
+Llido, Paul
+Lloberas, Agusti
+LLoberas, Agusti
+Llopis, Fernando
+Loatman, Bruce
+Lochel, Matthias
+Lockelt, Markus
+Lockemann, Peter C.
+Lockman, Abe
+Lo, David
+Loebner, Egon
+Loeff, Nicolas
+Loehr, Dan
+Loftsson, Hrafn
+Logie, Robert
+Loiseau, Sylvain
+Lombardo, Alessandro
+Lombardo, Vincenzo
+Long, Derek
+Long, Derek P.
+Lonning, Jan Tore
+Loper, Edward
+Lopez, Adam
+Lopez de Lacalle, Oier
+Lopez-Kasten, Dario
+Lopez-Lopez, Aurelio
+Lopez, Vicente
+Lopresti, Daniel
+Lops, Pasquale
+Lorand, David
+Lorenzo, Jose
+Lounela, Mikko
+Louwerse, Max
+Love, Douglas
+Lowden, B. G. T.
+Lowe, John B.
+Lowery, Kirk
+Lowe, Stephen
+Lowe, Will
+Lo, Yong-Sheng
+Lozinskii, Eliezer L.
+L�pez, Eduardo
+Lua, KimTeng
+Luca, Ernesto William De
+Lucas, Juan Manuel
+Lucena, Diego Jesus de
+Lu, Chi
+Luckhardt, Heinz-Dirk
+Lu, Dajin
+Ludovik, Eugene
+Ludovik, Yevgeny
+Ludskanov, A.
+Ludwig, Bernd
+Luengo, Iker
+Luengo, Juan Carlos
+LU, Jie
+Lu, Junzhi
+Lukaszewicz, Witold
+Luke, Kang-Kwong
+Luk, Robert Wing Pong
+Lu, Lie
+Lunati, Jean-Michel
+Lun, Caesar Suen
+Lundborg, Joakim
+Lund, Bruce A.
+Lungen, Harald
+Luo, Haitao
+Luo, Xiaoqiang
+Luo, Zhiyong
+Luque, Franco M.
+Luquet, Pierre-Sylvain
+Luria, Marc
+Lu, Ruzhan
+Lustgarten, Jonathan
+Luther, Wolfram
+Lutz, Hans Dieter
+Lu, Wen-Hsiang
+Lu, Xiaofei
+Lu, Xin
+Lu, Zhiyong
+Luzi, Danilo
+Luz, Saturnino
+Luzzati, Daniel
+Lv, Bibo
+�lvez, Javier
+Lv, Yuanhua
+Lyberg, Bertil
+Lynam, T. R.
+Lyon, Richard F.
+Lyons, Daniel
+Lytel, Eldon G.
+Lytinen, Steven L.
+Lytle, Eldon G.
+Maamouri, Mohamed
+Ma, Bin
+M. Abo Bakr, Hitham
+MacCartney, Bill
+Machado, Andr&#233
+Machek, Pavel
+Macherey, Klaus
+Macherey, Wolfgang
+Machi, Filip
+MacIntyre, Robert
+Mackay, Wesley
+MacKinlay, Andrew
+Macklovitch, Elliott
+Macks, Aaron
+MacMillan, Richard
+Mac Namee, Brian
+MacWhinney, Brian
+Madany, Abdel-Rahim
+Madkour, Amgad
+Madnani, Nitin
+Maeda, Akira
+Maeda, Eisaku
+Maeda, Hiroyuki
+Maeda, Kazuaki
+Maedche, Alexander
+Maekawa, K.
+Maekawa, Kikuo
+Maes, Fons
+Magadur, Jean-Yves
+Maganti, Harikrishna
+Magdy, Walid
+Magee, Bob
+Magerman, David M.
+Magistry, Pierre
+Magnini, Bernardo
+Magnusson, Magnus
+Magnusson, Martin
+Maguire, Peter
+Maguire, Phil
+Mahadevan, Iravatham
+Mahajan, Milind
+Mahasarakham, Puwarat Pavaputanont Na
+Mahesh, Kavi
+Mahgoub, H. E.
+Maier, David
+Maier, Holger
+Maier, Wolfgang
+Maillat, Didier
+Main, Michael G.
+Maiorano, Steven J.
+Mairesse, Fran�ois
+Maistros, Yanis
+Ma, Jianqiang
+Maji, Hemanta K.
+Ma, Jinshan
+Majumdar, Prosenjit
+Makalic, Enes
+Makatchev, Maxim
+Mak, Brian
+Makhoul, John
+Makimoto, Shimpei
+Makino, Hiroshi
+Makino, Takaki
+Makinouchi, Akifumi
+Makkonen, Juha
+Malaka, Rainer
+Malakasiotis, Prodromos
+Malavazosi, Christos
+Malcolm, James
+Malek, Alexander M.
+Maleki, Jalal
+Maletti, Andreas
+Malik, Abbas
+Malik, M. G. Abbas
+Malioutov, Igor
+Malkin, Jonathan
+Malkovsky, Michael G.
+Mallery, John C.
+Malnati, Giovanni
+Maloney, Gilles
+Maloney, John
+Maloor, Preetam
+Malouf, Robert
+Malsburg, Titus von der
+Mamede, Nuno
+Mammini, Michele
+Mamou, Jonathan
+Manabe, Toshihiko
+Mana Lopez, Manuel J.
+Manandhar, Suresh
+Mandal, Debasis
+Mandalia, Hemang
+Mandel, Mark
+Mandl, Thomas
+Manelski, Denis M.
+Mangeot-Lerebours, Mathieu
+Mani, Inderjeet
+Manine, Alaine-Pierre
+Manios, Kostas
+Mannem, Prashanth Reddy
+Mann, Gideon S.
+Manning, Brian
+Manning, Christopher D.
+Mann, William C.
+Manov, Dimitar
+Manshadi, Mehdi
+Mantel, Matthias
+Manzano-Macho, David
+Mao, Xinnian
+Mao, Yu-Hang
+Ma, Qing
+Maragoudakis, Manolis
+Marasek, Krzysztof
+Marburger, Heinz
+Marc, Daniel
+Marchand, Jonathan
+Marchand, Yannick
+Marchisio, Giovanni
+Marciniak, Tomasz
+Marc, Mitchell
+Marco, Baroni
+Marcos, Francisco
+Marcotte, Edward
+Marcu, Daniel
+Marcus, Mitchell P.
+Marcus, Shaul
+Marcus, Solomon
+Mardis, Scott
+Marek, Torsten
+Mareuil, Philippe Boula de
+Marge, Matthew
+Margolis, Todd
+Mariani, Joseph
+Marin, Marius
+Marino, Jose B.
+Marino, Massimo
+Marinov, Svetoslav
+Mari�o, Jos�
+Mari�o, Jos� B.
+Mark, Kevin
+, Marko
+Marko, Kornel
+Markovitch, Shaul
+Markov, Konstantin
+Marocco, Paolo
+Marok, Stefan
+Marom, Yuval
+Maroudas, Axel
+Marquardt, Lutz
+Marques Pelizzoni, Jorge
+Marques-Pita, Manuel
+Marquez, Lluis
+Márquez, Lluís
+Marshall, Ian
+Marsi, Erwin
+Martelli, Alessandro
+Martens, Jean-Pierre
+Martens, Scott
+Martin, David
+Martinez-Barco, Patricio
+Martinez, David
+Martinez Hinarejos, Carlos D.
+Martinez, Jose L.
+Martinez Santiago, Fernando
+Martin, James H.
+Martin, J. C.
+Martin, Jean-Claude
+Martin, Jeff
+Martin, Joel
+Martinovic, Miroslav
+Martin, Paul
+Martin, Pierre M.
+Martins, Andre
+Martin, Scott
+Martins de Matos, David
+Martin, Sean
+Martins, Filipe M.
+Martins, Gary R.
+Martins, Pedro
+Martins, Ronaldo Teixeira
+Martins, Rui
+Martin-Vide, Carlos
+Martin, William A.
+Martin, Willy
+Martin, Wynne
+Mart�nez-Hinarejos, Carlos D.
+Marton, Gregory
+Marton, Yuval
+Marty, Jean-Charles
+Marukawa, Yuzo
+Maruyama, Hiroshi
+Maruyama, Katsuteru
+Maruyama, Takehiko
+Marwin, Stan
+Marx, Zvika
+Masaaki, Yasuhara
+Masaki, Noguchi
+Masanz, James
+Ma, Shaoping
+Mashuichi, Hiroshi
+Mas, Josep &#192
+Maskey, Sameer
+Maslennikov, Mstislav
+Mason, Zachary J.
+Mass�, Guillem
+Masson, Nicolas
+Master, Demetrios
+Master, Demitrios
+Mastroianni, Michael
+Masuda, Hidetaka
+Masuda, Katsuya
+Masuda, Takeshi
+Masuichi, Hiroshi
+Masui, Fumito
+Masulli, Francesco
+Masuno, Naruaki
+Masuyama, Shigeru
+Masuyama, Takeshi
+Materna, Pavel
+Matessa, Mike
+Mathe, Jacob
+Matheson, Colin
+Mathet, Yann
+Mathews, Robert C.
+Mathias, Jim
+Matiasek, Johannes
+Matlagek, Johannes
+Matos, David Martins de
+Matsoukas, Spyros
+Matsubara, Hitoshi
+Matsubara, Shigeki
+Matsubayashi, Yuichiroh
+Matsuda, Shigeki
+Matsuda, Takeo
+Matsukawa, Tomoyoshi
+Matsumoto, Mitsutaka
+Matsumoto, Yuji
+Matsunaga, Shoichi
+Matsuoka, Hiroshi
+Matsuoka, Tatsuo
+Matsuo, Mamoru
+Matsuo, Yoshihiro
+Matsuo, Yutaka
+Matsusaka, Yosuke
+Matsushima, Katsumori
+Matsushita, Mitsunori
+Matsuyoshi, Suguru
+Matsuzaki, Takuya
+Matthews, Eric
+Matthews, Michael
+Matthiessen, Christian M. I. M.
+Matthieu, Hebert
+Matusov, Evgeny
+Matwin, Stan
+Matykiewicz, Pawel
+Mauldin, Michael L.
+Maurel, Denis
+Mauri, Giancarlo
+Mausam
+Mauser, Arne
+Mavridis, Nikolaos
+Ma, Wei-Yun
+Max, Aur�lien
+Max, Ingolf
+Maxwell, Bill D.
+Maxwell, Edward
+Maxwell III, John T.
+Maxwell, Michael
+Mayberry, Marshall R.
+Maybury, Mark T.
+Mayfield, Elijah
+Mayfield, James
+May, Jonathan
+Mayo, Neil
+Mayor, A.
+Mayor, Aingeru
+Mays, Eric
+Maziero, Erick
+Mazlack, Lawrence J.
+Mazur, Pawel
+Mazzei, Alessandro
+Mazzini, Giampaolo
+Mazzone, Marco
+McAllester, David
+McArthur, Gregory
+McCalla, Gordon I.
+McCallum, Andrew
+McCandless, Michael
+McCarley, J. Scott
+McCarthy, Joseph
+McCaw, John
+McClain, Jonathan T.
+McClanahan, Peter
+McClelland, James L.
+McClosky, David
+McConachy, Richard
+McConville, Mark
+McCord, Michael C.
+McCracken, James
+McCrohon, Luke
+McCulloh, Andrew
+McCullough, Daryl
+McDaniel, Eric S.
+McDermott, Erik
+McDonald, David D.
+McDonald, James E.
+McDonald, Ryan
+McDonald, Scott
+McEnery, Tony
+McEntee, Tom
+McEntire, Robin
+McFarland, Dan
+McFetridge, Paul
+McGee, David R.
+McGhee, Jeremiah
+McGlashan, Scott
+McGranaghan, Matthew
+McHale, Michael L.
+McIntyre, Angus
+McIntyre, Neil
+McKay, Donald P.
+McKee, Douglas
+McKeever, Kenneth J.
+McKelvie, David
+McLauchlan, Mark
+McLean, D. S.
+McLernon, Brian
+McMahon, John G.
+McNab, Rodger
+McNair, Arthur
+McNamee, Paul
+McNaught, John
+McNeilly, Chris
+McPeters, David L.
+McTait, Kevin
+McTear, Michael F.
+McVearry, Kenneth A.
+Means, Robert W.
+Meddeb-Hamrouni, Boubaker
+Medero, Shawn
+Medlock, Ben
+Meehan, James R.
+Meharg, Fergus
+Mehay, Dennis
+Mehdad, Yashar
+Mehler, Alexander
+Mehlhorn, Kurt
+Mehta, Rahul
+Meignier, Sylvain
+Meijs, Willem
+Meisel, William S.
+Meister, Einar
+Meives, Kirby A.
+Meknavin, Surapant
+Melamed, I. Dan
+Melby, Alan K.
+Mel'cuk, Igor A.
+Meletti, Franco
+Melichar, Miroslav
+Mellish, Chris
+Mellish, Chris S.
+Melo, Gerard de
+Melville, Prem
+Menchetti, Sauro
+Mendes, Carlos
+Menezes, Arul
+Menezo, Jacques
+Menzel, Wolfgang
+Mercer, Robert L.
+Merialdo, Bernard
+Merity, Stephen
+Merkel, Magnus
+Merlino, Andrew
+Mermelstein, P.
+Mertens, Piet
+Merten, Stefan
+Messiant, C�dric
+Messick, Steven L.
+Mettler, Mael
+Mettler, Matt
+Metze, Florian
+Metzing, Dieter
+Metzler, Donald
+Meunier, Frederic
+Meunier, Jean-Guy
+Meur, Andr� Le
+Meurer, Paul
+Meurers, Detmar
+Meurers, Walt Detmar
+Meuse, Paul C.
+Mexia, Joao
+Meyer-Ingwersen, Johannes
+Meyer, Josef
+Meyers, Adam
+Meyers, Amnon
+Meyer-Viol, Wilfried
+Mey, Jacob
+Meza, Rodrigo
+Meza-Ruiz, Ivan
+M�gele, Hannes
+m, Harald
+Miao, Chuanjiang
+Micallef, Paul
+Michael, Stephen
+Michalak, Phillip
+Michelbacher, Lukas
+Michelizzi, Jason
+Michell, B. G.
+Micher, Jeffrey
+Michiels, Archibald
+Miclet, Laurent
+Micol, Daniel
+Midgley, T. Daniel
+Miguel, Mario Crespo
+Mi, Haitao
+Mihaylov, Pavel
+Mihov, Stoyan
+Miike, Seiji
+Miikkulainen, Risto
+Mikami, Yoshiki
+Mikhailian, Alexander
+Mikheev, Andrei
+Milch, Brian
+Milde, Jan-Torsten
+Milhaud, Gerard
+Milidi�, Ruy Luiz
+Miller, Bradford W.
+Miller, Dale A.
+Miller, David
+Miller, George A.
+Miller, James R.
+Miller, John E.
+Miller, Keith
+Miller, Lance A.
+Miller, Michael
+Miller, Perry L.
+Miller, Scott
+Miller, Tim
+Mille, Simon
+Millies, Sebastian
+Mills, Greg J.
+Mills, Gregory
+Mills, Russell
+Millward, Scott
+Milne, Robert
+Milward, David
+Mima, Hideki
+Mimno, David
+Minami, Yasuhiro
+Min, Congmin
+Minel, Jean-Luc
+Minker, Wolfgang
+Min, Kyongho
+Minnen, Guido
+Minnis, Stephen
+Minow, Martin
+Minsky, Marvin
+Mintz, Mike
+Mirkin, Shachar
+Mirkovic, Danilo
+Mírovský, Jiří
+Mirroshandel, Ghassem
+Mirroshandel, Seyed Abolghasem
+Mishne, Gilad
+Mishra, Rohit
+Misra, Hemant
+Missikoff, Michele
+Misu, Teruhisa
+Mital, Manav Ratan
+Mitchell, Jeff
+Mitchell, Tom M.
+Mitchell, Tom T.
+Mitchener, W. Garrett
+Mitjushin, Leonid
+Mitkov, Ruslan
+Mitra, Mandar
+Mitra, Pabitra
+Mitra, Rudradeb
+Mitsuishi, Yutaka
+Mitsumori, Tomohiro
+Mittal, Vibhu O.
+Mittrapiyanuruk, Pradit
+Miura, Mitsugu
+Miura, Yasuhide
+Mival, Oli
+Miwa, Makoto
+Miyabe, Yasunari
+Miyahara, Sueharu
+Miyai, Hitoshi
+Miyanaga, Yoshikazu
+Miyao, Yusuke
+Miyata, Takashi
+Miyauchi, Tadanobu
+Miyazaki, Masaru
+Miyazaki, Noboru
+Miyo, Kengo
+Miyoshi, Hideo
+Mizoguchi, Fumio
+M�ller, Christof
+M�ller, Christof E.
+M�ller, Christoph
+M�ller, Sebastian
+Mobius, Bernd
+Mochihashi, Daichi
+Mochizuki, Hajime
+Modi, Issouf
+Moens, Marc
+Moen, William
+Moerdijk, Fons
+Mohamed, Ahmed A.
+Mohammadi, Reza
+Mohammad, Saif
+Mohammed, Altaf
+Mohanty, Rajat
+Mohanty, Surya
+Mohit, Behrang
+Mohler, Gregor
+Mohler, Michael
+Mohl, Mathias
+Mohri, Mehryar
+Moia, Telmo
+Moisl, Hermann
+Mokarat, Chumpol
+Mokbel, Chafic
+Mokrane, Abdenour
+Moldovan, Dan I.
+Molina, Antonio
+Molina, Martin
+Molina-Salgado, Hugo
+Molinero, Miguel A.
+Molla Aliod, Diego
+Molla, Diego
+Moller, Sebastian
+Momchev, Vassil
+Momma, Stefan
+Momouchi, Yoshio
+Monaco, Peter
+Mondal, Tapabrata
+Monroe, Burt L.
+Monson, Christian
+Mont, Alex
+Montalvo, Soto
+Monte, Enric
+Montejo-Raez, Arturo
+Montero, Calkin S.
+Montero, Francisco Alvarez
+Montero, Juan Manuel
+Montero Martinez, Juan Manuel
+Montes-Y-Gomez, Manuel
+Montfort, Nick
+Montgomery, Jesse
+Montolio, Josep
+Montoyo, Andr&#233
+Montoyo, Andres
+Monz, Christof
+Moody, John
+Mooney, David J.
+Mooney, Raymond
+Mooney, Raymond J.
+Moon, Taesun
+Moore, James A.
+Moore, Jeremy
+Moore, Robert C.
+Moore, Roger K.
+Morales, Nicolas
+Moran, Douglas B.
+Moran, Juan
+Moran, Steve
+Moran, Steven
+Morarescu, Paul
+Morawietz, Frank
+Moreau, Erwan
+Moreau, Nicolas
+Morency, Louis-Philippe
+Moreno, Pedro J.
+Moreno-Sandoval, Antonio
+MorenoSandoval, Antonio
+Moretti, Lorenzo
+Morey, Mathieu
+Morgan, Alex
+Morgan, Alexander A.
+Morgan, Jerry L.
+Morgan, Nelson
+Morgan, Richard G.
+Morgan, William T.
+Morie, Paul
+Morihiro, Koichiro
+Morimoto, Tsuyoshi
+Morimoto, Yasutsugu
+Morin, Emmanuel
+Morin, Jean-Yves
+Mori, Renato De
+Mori, Shinsuke
+Mori, Tatsunori
+Mori, Yoshiki
+Mork, James G.
+Morrill, Glyn
+Morris, Andrew C.
+Morris, Jeremy
+Morris, Robert W.
+Morse, Emile
+Morton, Thomas S.
+Moruz, Alex
+m, Oscar
+Moschitti, Alessandro
+Moscovich, Tomer
+Moshagen, Sjur Norstebo
+Moshier, M. Drew
+Mosny, Milan
+Mossel, Eelco
+Moss, Lawrence S.
+Mostefa, Djamel
+Mostow, Jack
+Moszczynski, Rados Aw
+Moszczyński, Radosław
+Motta, Enrico
+Moudenc, Thierry
+Moulin, Bernard
+Mouradian, George V.
+Moura, Leonardo
+Mouret, Pascal
+Mowatt, David
+Moyne, J. A.
+Mporas, Iosif
+M�rquez, Lluis
+M�rquez, Llu�s
+M�rth, Karlheinz
+M, Sasikumar
+Muaz, Ahmed
+Mueller, Christoph
+Mueller, Erik T.
+Mueller, Mark-Christoph
+Mueller, Stefan
+Muhirwe, Jackson
+Muhlhauser, Max
+Muhr, Rudolf
+Muischnek, Kadri
+Mukerjee, Amitabha
+Mukherjee, Animesh
+Mullen, Tony
+Muller, Christoph
+Muller, Frank Henrik
+Muller, Philippe
+Muller, Stefan
+Muller, Vinicius
+Mulligan, Michael
+Multon, Franck
+Munch, Klaus Heje
+Munoz, Rafael
+Munro, Robert
+Munson, Art
+Munson, Sean
+Munteanu, Cosmin
+Munteanu, Dragos Stefan
+Mu�oz, Rafael
+Murakami, Jin%ichi
+Murakami, Koji
+Murakami, Masahiko
+Muraki, Kazunori
+Murao, Hiroya
+Murase, Takahisa
+Murata, Kazuyoshi
+Murata, Masaki
+Murawaki, Yugo
+Murphy, Brian
+Murphy, Kevin
+Murray, Gabriel
+Murray, G. Craig
+Murray, Keith
+Murray-Rust, Peter
+Murray, William
+Murray, William R.
+Murthi, Vijay
+Murthy, Kavi Narayana
+Murveit, Hy
+Musgrave, Simon
+Musha, Hiroyuki
+Music, Bradley
+Muskens, Reinhard
+Muthukrishna, Michael
+Muthukrishnan, Pradeep
+Muto, Yukiyoshi
+Mutton, Andrew
+Myers, John K.
+Myllari, Aleksandr
+Myller, Niko
+Mylonakis, Markos
+Nabende, Peter
+Nadathur, Gopalan
+Nadin, Mihai
+Nagai, Akira
+Nagao, Hakoto
+Nagao, Katashi
+Nagao, Makoto
+Nagarajan, Arun
+Nagata, Junji
+Nagata, Masaaki
+Nagata, Ryo
+Nagel, David
+Nagy, Istv&#225
+Nagy, Istvan
+Nagy, Viktor
+Nahamoo, David
+Nahnsen, Thade
+Naik, J. M.
+Nair, Anish
+Nairn, Rowan
+Naito, Shozo
+Nakadai, Kazuhiro
+Nakagawa, Hiroshi
+Nakagawa, Seiichi
+Nakagawa, Tetsuji
+Nakagawa, Tohru
+Nakajima, Hideharu
+Nakamura, Alan M.
+Nakamura, Jun-Ichi
+Nakamura, Junpei
+Nakamura, Masami
+Nakamura, Masanobu
+Nakamura, Satoshi
+Nakamura, Teigo
+Nakanishi, Masakazu
+Nakanishi, Ryuichi
+Nakano, Hiroshi
+Nakano, Mikio
+Nakao, Koichi
+Nakao, Yoshio
+Nakase, Sumio
+Nakashima, Hideyuki
+Nakata, Takayuki
+Nakayama, Masato
+Nakayama, Takeaki
+Nakayama, Takehiro
+Nakayama, Yotaro
+Nakazawa, Toshiaki
+Nakhimovsky, Alexander
+Nakisa, Ramin Charles
+Nakov, Preslav I.
+Nallapati, Ramesh
+Nallasamy, Udhyakumar
+Namata, Galileo
+Nam, Seungho
+Nanba, Hidetsugu
+Nanjo, Hiroaki
+Naoyuki, Sakurai
+Naradowsky, Jason
+Narayanan, Ajit
+Narayanan, Ramanathan
+Narayanan, Shrikanth
+Narayanan, Shrikanth S.
+Narayanan, Srinivas
+Naroua, Harouna
+Na, Seung-Hoon
+Naskar, Sudip Kumar
+Nastase, Vivi
+Nasukawa, Tetsuya
+Naszodi, Matyas
+Natarajan, Premkumar
+Nathan, David
+Nath, Joydeep
+Naulleau, Elie
+Naumann, Ralf
+Navarretta, Costanza
+Navarro, Borja
+Navarro, Emmanuel
+Navigli, Roberto
+Naya, Futoshi
+Nayak, Amiya
+Nayan, Animesh
+Nazar, Rogelio
+Nazief, Bobby
+n, Carlos
+nchez, Joan-Andreu
+ndez H., Adolfo
+ndez, Iker
+Ndiaye, Alassane
+Nebel, Bernhard
+Nederhof, Mark-Jan
+Nedobejkine, Nicolas
+Neely, Howard
+Neeman, Yoni
+Negi, Sumit
+Negri, Matteo
+nek, Jan
+Nelimarkka, Esa
+Nelson, Andrew L.
+Nelson, Peter C.
+Nelson, R. J.
+Nelson, Stuart
+Nemat-Nasser, Syrus C.
+Nemec, Petr
+Nenadic, Goran
+Nepil, Milos
+Nepveu, Laurent
+Nerbonne, John
+Neri, Federico
+Nerima, Luka
+Neslihan, Demirguc
+Nessly, Larry
+Neto, Jo�o Paulo
+Netter, Klaus
+Nettleton, D. J.
+Neubert, Gunter
+Neuburg, Edward P.
+Neugebauer, Moritz
+Neuhaus, H. Joachim
+Neuhaus, Peter
+Neumann, Gerald
+Neumann, G�nter
+Neumann, Guenter
+Neumann, Heiko
+Neumeyer, Leonardo
+Neuvel, Sylvain
+Newbold, Neil
+Newman, Eamonn
+Newman, John
+Newman, P. S.
+Ney, H.
+Ney, Hermann
+Neylon, Tyler
+nez-Barco, Patricio
+Ng, Andrew Y.
+Ng, Hong-I
+Ng, Hwee Tou
+Ng, Kwong Bor
+Ng, Raymond
+Ng, Raymond T.
+Nguyen, Huy
+Nguyen, Long
+Nguyen, Luan
+Nguyen, Nghi
+Nguyen, Patrick
+Nguyen, Thien
+Nguyen, Van Hiep
+Nguyen, Vinh Van
+Ng, Vincent
+Nhan, Ngo Thanh
+Nian, Hongdong
+Nicholas, Charles
+Nicholl, Sheldon
+Nichols, Eric
+Nicholson, Devlan
+Nicholson, Jeremy
+Nicolae, Gabriel
+Nicolas, Lionel
+Nicolas, Pascal
+Nicolov, Nicolas
+Niculescu, Stefan
+Niederlich, Hendrik
+Niedermair, Gerh. Th.
+Niehren, Joachim
+Niehues, Jan
+Nie, Jian-Yun
+Nie, Jiazhong
+Niekrasz, John
+Nielsen, Leif Arda
+Nielsen, Rodney D.
+Niemann, Michael
+Niemi, Jyrki
+Nieminen, Ilari T.
+Niestadt, Jan
+Nie, Zaiqing
+Nigam, Kamal
+Nightingale, Stephen
+Niimi, Yasuhisa
+Nijholt, Anton
+Niklfeld, Georg
+Nillett, Ronald
+Nilsson, Jens
+Nilsson, Lars
+Nilsson, Mattias
+Ninomiya, Takashi
+Nioche, Julien
+Niranjan, Mahesan
+Nirenburg, Sergei
+Nishida, Fujio
+Nishida, Toyoaki
+Nishi, Junichiro
+Nishimoto, Takuya
+Nishimura, Masafumi
+Nishimura, Ryo
+Nishino, Fumihito
+Nishino, Takanori
+Nishiokayama, Shigeyuki
+Nishiura, Takanobu
+Nishiwaki, Masamichi
+Nishizaki, Hiromitsu
+Nishizawa, Shinichiro
+Nishizawa, Toshihiro
+Nisimura, Hirohiko
+Nitta, Tomoaki
+Nittayanuparp, Pairit
+Nitta, Yoshihiko
+Niu, Cheng
+Niu, Zhengyu
+Niu, Zheng-Yu
+Niv, Michael
+Nivre, Joakim
+Niwa, Yoshiki
+Niyogi, Partha
+Niyogi, Sourabh
+N�klestad, Anders
+N�meth, Laszlo
+N�meth, P�ter
+nning, Tore Jan
+Noah, William W.
+Noamany, Mohamed
+Nobata, Chikashi
+Nocera, Pascal
+Noda, Itsuki
+Noel, Mike
+Nogami, Hiroyasu
+Nogami, Masaru
+Noguchi, Naohiko
+Nohama, Percy
+Noh, Hyungjong
+Noikongka, Daoyos
+Nolan, James R.
+Noll, A. Michael
+Nomiyama, Hiroshi
+Nomoto, Tadashi
+Nomura, Hirosato
+Nomura, Kouichi
+Nomura, Naoyuki
+Noord, Gertjan
+Noord, Gertjan Van
+Nordg�rd, Torbj�rn
+Nordner, Anders
+Nordstrom, Magnus
+Noro, Taichi
+Noro, Tomoya
+North, Ryan
+Norton, Lewis M.
+Norvig, Peter
+Noth, Elmar
+Nothman, Joel
+Nouioua, Farid
+Noureddine, Soufiane
+Nouvel, Damien
+Novak, Hans-Joachim
+Novak Jr., Gordon S.
+Novak, Vaclav
+Novick, David G.
+Novischi, Adrian
+Nov�k, Attila
+Nov�k, V�clav
+Nowak, Chris
+Nowak, Robert
+Nowson, Scott
+Nozawa, Masanori
+n, Rafael
+N�rnberger, Andreas
+nsson, Arne
+Ntalampiras, Stavros
+Nuger, Justin
+Nugues, Pierre
+Nulty, Paul
+Numazaki, Hiroaki
+Nunberg, Geoffrey
+Nunes, Filipe
+Nunn, Steve
+Nunzio, Giorgio Di
+Nussbaum, Nir
+Nuttee, Cholwich
+Nutter, J. Terry
+Nwesri, Abdusalam F. A.
+Nyberg, Eric
+Nyberg, Eric H.
+Nygaard, Anders
+Nygaard, Lars
+Oakes, Michael
+Oard, Douglas W.
+Oates, Tim
+Obaid, Ali M.
+obanoglu, Onur
+Obashi, Fumihiko
+Obeid, Nadim
+Oberlander, Jon
+Obermeier, Klaus K.
+Obradović, Ivan
+Obrębski, Tomasz
+Obrst, Leo
+Och, Franz Josef
+Ochitani, Ryo
+O’Connor, Brendan
+Oda, Akira
+Oda, Hiroki
+Odani, Michitaka
+Odejobi, Odetunji Ajadi
+Odell, J. J.
+Odijk, Jan
+O'Donnell, Michael
+O'Donoghue, Tim F.
+Odriozola, Igor
+Oehrle, Richard T.
+Oemig, Frank
+o, Enrique
+Oepen, Stephan
+Oflazer, Kemal
+Ogata, Norihiro
+Ogata, Tetsuya
+Ogawa, Hitoshi
+Ogawa, Yasuhiro
+Ogawa, Yasushi
+Ogden, William C.
+Oger, Stanislas
+Ogino, Tsunao
+Ogiso, Toshinobu
+Ogonowski, Antoine
+Ogórkiewicz, Jerzy
+Ogren, Philip V.
+Ogun, Fatih
+Ogura, Hideki
+Ogura, Kentaro
+Ohara, Hisashi
+O'Hara, Thomas P.
+O'Hara, Tom
+Ohashi, Kazuteru
+Ohe, Kazuhiko
+Ohira, Shigeki
+Oh, Jong-Hoon
+Ohlsson, Stellan
+Ohnishi, Noboru
+Ohno, Sumio
+Ohno, Tomohiro
+Ohrstrom-Sandgren, Thorsten
+Ohsawa, Ichiro
+Ohshima, Yoshiaki
+Ohta, Kazuhisa
+Ohtake, Kiyonori
+Ohta, Kengo
+Ohtani, Akira
+Ohta, Yoshihiro
+Ohyama, Yutaka
+Oi, Kozo
+Oim, Haldur
+Oishi, Akira
+ois, Thomas
+o, Jos&#233
+Okabe, Masayuki
+Okada, Naoyuki
+Okada, Yoshihiro
+Okajima, Atsushi
+Okamoto, Hiroyuki
+Okamoto, Masashi
+Okamoto, Seishi
+Okamoto, Tetsuya
+Okanohara, Daisuke
+Oka, Tetsushi
+Okazaki, Naoaki
+Okita, Tsuyoshi
+Okuma, Hideharu
+Okuma, Hideo
+Okumara, Manabu
+Oku, Masahiro
+Okumura, Akitoshi
+Okumura, Manabu
+Okunishi, Toshiyuki
+Okuno, Hiroshi
+Okuno, Hiroshi G.
+Olano, Calvin
+Olawsky, Duane E.
+Oliva, Karel
+Oliveira, Lu�s
+Oliveira, Paulo C F de
+Oliver, Antoni
+Olivier, Patrick
+Olney, Andrew
+Olney, John
+Olsen, Sussi
+Olson, David R.
+Olsson, Fredrik
+Olsson, J. Scott
+Olsson, Leif-Joran
+Oltramari, Alessandro
+Omologo, Maurizio
+Omori, Nobuyuki
+O'Neill, Ian M.
+Onet, Adrian
+Onnis, Luca
+Ono, Kenji
+Ono, Kotaro
+Ono, Takahiro
+Ono, Yoshihiko
+Onyshkevych, Boyan A.
+Ookawa, Hiroshi
+Oonishi, Takashi
+Oonishi, Tasuku
+Oono, Masaki
+Ooshima, Yoshimitsu
+Ooyama, Yoshifumi
+Op den Akker, Rieks
+Op Den Akker, Rieks
+Oppacher, F.
+Oppenheimer, David
+Oquendo, Flavio
+Orăsan, Constantin
+Orasan, Constatin
+Oravecz, Csaba
+Ordelman, Roeland
+Ori, Manabu
+Orloff, Jeremy
+Orm�ndi, R�bert
+Ornan, Uzzi
+Orphanos, Giorgos S.
+Orr, Michael
+Orsnes, Bjarne
+Ortega-Garcia, Javier
+Ortiz-Mart�nez, Daniel
+Ortony, Andrew
+Osborne, Miles
+Osborne, Randy
+os, Daniel
+O Seaghdha, Diarmuid
+O'Shaughnessy, Douglas D.
+Osorio, Fernando Santos
+Osswald, Rainer
+Ostler, Nicholas
+O'Sullivan, Donie
+Otani, Naofumi
+Oubine, Ivan I.
+Ould Abdel Vetah, Mohamed
+Ounis, Iadh
+Over, Paul
+Ozaki, Akira
+Ozaki, Takahiro
+Ozeki, Kazuhiko
+Ozgencil, Necati Ercan
+Paass, Gerhard
+Pacak, Milos G.
+Pacey, Mike
+Packard, David W.
+Packard, Dennis
+Pack, Daniel
+Packel, Adrian
+Padmanabhan, Mukund
+Pado, Sebastian
+Padó, Sebastian
+Padro, Lluis
+Pad�, Sebastian
+Paek, Tim
+Pagan, Frank G.
+Page, Ellis B.
+Pahikkala, Tapio
+Paikeday, Thomas M.
+Paik, Woojin
+Paillet, Jean Pierre
+Paiva, Daniel S.
+Pajas, Petr
+Pakhomov, Serguei V.
+Pak, Seok Mun
+Paksima, Taghi
+Paladhi, Sibabrata
+Pala, Karel
+Paliouras, Georgios
+Pallett, David S.
+Pallier, Christophe
+Pallotta, Vincenzo
+Palme, Jacob
+Palmer, David
+Palmer, David D.
+Palmer, Justin
+Palmer, Stephen E.
+Palm, G�nther
+Pal, Miklos
+Palmucci, Jeff
+Palomar, Manuel
+Paltett, David S.
+Panaccione, Charles
+Panaget, Franck
+Pang, Bo
+Pangburn, Brian E.
+Pang, Lixin
+Pan, Haihua
+Pani, Bruno
+Pan, Michael J.
+Pan, Raj Kumar
+Pan, Shimei
+Pantel, Patrick
+Panunzi, Alessandro
+Pan, Yi-Cheng
+Pan, Yue
+Paolucci, Massimo
+Papageorgiou, Constantine P.
+Papageorgiou, Harris
+Papegaaij, B. C.
+Papineni, Kishore
+Papp, Ferenc
+Pappu, Aasish
+Paraboni, Ivandr&#233
+Paraboni, Ivandre
+Paraboni, Ivandr&eacute
+Paradis, Francois
+Parasuraman, Ram
+Pardo, Jose Manuel
+Pardo, Miguel Alonso
+Pardo, Thiago A. S.
+Paredes-Frigolett, Harold
+Pareja-Lora, Antonio
+Pareschi, Remo
+Parikh, Prashant
+Parisi, Domenico
+Parisien, Christopher
+Parisse, Christophe
+Park, Alex
+Park, Dong-In
+Park, Dong-Won
+Parker Jones, ‘Ōiwi
+Parker, Paul
+Parker, Robert
+Park, Hunil
+Park, Hyouk R.
+Park, HyukRo
+Parkison, Roger C.
+Park, Jinwoo
+Park, Jong C.
+Park, Jun
+Park, Jungyeul
+Park, Junsik
+Park, Jun-Sik
+Park, Sangkyu
+Park, Sang-Kyu
+Park, Seong-Bae
+Park, Y. Albert
+Park, Young C.
+Parlikar, Alok
+Parmentier, Thibault
+Parmentier, Yannick
+Paroubek, Patrick
+Parvaz, Dan
+Paşca, Marius
+Pasca, Marius A.
+Pascual-Montano, Alberto
+Pasero, Robert
+Passarotti, Marco
+Patel, Agam
+Patel, Chintan
+Patel, Chirag
+Patel, Ronakkumar
+Patil, Ramesh
+Patrick, Jon David
+Patry, Alexandre
+Patsis, Yorgos
+Patten, Terry
+Patwardhan, Siddharth
+Paul, Douglas B.
+Paulik, Matthias
+Paul, Karsten Ingmar
+Paul, Michael
+Paulo, S�rgio
+Paul, Patrick
+Pauls, Adam
+Paulsson, Niklas
+Paulus, Dietrich
+Paulussen, Hans
+Pau, Michael
+Paun, Gheorghe
+Pause, Eberhard
+Pautler, David
+Pavesic, Nikola
+Pavlov, Radoslav
+Paxton, William H.
+Payan, Donald G.
+Payne, Thomas E.
+Pazzani, Michael J.
+Pearce, Darren
+Pecatte, J. M.
+Peccoud, Francois
+Pecina, Pavel
+Peckham, Jeremy
+Pedersen, Bo
+Pedersen, Jan
+Pedersen, Mark
+Pedersen, Ted
+Pedrazzini, Sandro
+Peinado, Victor
+Peirsman, Yves
+Pekar, Viktor
+Pellegrini, Thomas
+Pelletier, Francis Jeffry
+Pellom, Bryan
+Pelt, Paul
+Penas, Anselmo
+Penchev, Jordan
+Pendar, Nick
+Peng, Fuchun
+Peng, Yinan
+Penkale, Sergio
+Pennacchiotti, Marco
+Pennachin, Cassio
+Penn, Gerald
+Pennington, Christopher A.
+Pentheroudakis, Joseph
+Pepe, Massimiliano
+Peral, Jesus
+Perea, Jose Manuel
+Pereira, Daniel Bastos
+Pereira, Fernando C. N.
+Pereira, Fernando C.N.
+Pereira Lopes, Jose Gabriel
+Peretz, Ariel
+Perez-Carballo, Jose
+Perez-Coutino, Manuel
+Perez, Fernando Saenz
+Perez, Guillermo
+Pericliev, Vladimir
+Perlin, Mark
+Perrault, Francois
+Perrault, Raymond C.
+Perrier, Guy
+Perry, Doyt
+Perschke, Sergei
+Persidis, Andreas
+Persing, Isaac
+Persson, Emil
+Pervouchine, Vladimir
+Perzanowski, Dennis
+Peserico, Enoch
+Peshkin, Leonid
+Pestian, John
+Pestian, John P.
+Petasis, Georgios
+Peter, Jan-Thorsten
+Peter, McClanahan
+Petersen, Ulrik
+Peters, Jochen
+Peters, Lee
+Peterson, Erik
+Peterson, Pat
+Peterson, Tyler
+Peters, Stanley
+Peters, Wim
+Petkevic, Vladimir
+Petofi, Janos S.
+Petrick, Stanley R.
+Petridis, Vassilios
+Petrik, Stefan
+Petroff, Ivan
+Petrov, Slav
+Pettersson, Paul
+Petterstedt, Michael
+Pevzner, Lev
+Peychev, Deyan
+Pfau, Thilo
+Pfeffer, Avi
+Pfeil, Martin
+Pfirez, Manuel A.
+Pfleger, Norbert
+Phan, Huy Khanh
+Phan, Steven
+Phan, Xuan-Hieu
+Pharies, Stefan
+Phelan, Peter
+Philipsenburg, Axel
+Phillips, Brian
+Phillips, John
+Phillips, Jon
+Phillips, Michael
+Phillips, Robert
+Phillips, William
+Philpot, Andrew
+Phyo, Thin Zar
+Pianesi, Fabio
+pianta, emanuele
+Pianta, Emanuele
+Piao, Scott S. L.
+Piasecki, Maciej
+Piat, Gerald
+Picard, Justin
+Picard, Olivier
+Picca, Davide
+Picchi, Eugenio
+Piccolino Boniforti, Marco Aldo
+Picheny, Michael A.
+Pico, David
+Picone, Joseph
+Pieraccini, Roberto
+Pierce, David
+Pierce, David R.
+Pierrel, Jean-Marie
+Pietsch, Christian
+Piitulainen, Jussi
+Pike, Chris
+Pilato, Samuel F.
+Pilz, Thomas
+Pinchak, Christopher
+Pineda, Luis A.
+Pine, Julian M.
+Pingali, Prasad
+Pinho, Roberto
+Pinkal, Manfred
+Pino, Juan
+Pinto, David
+Pinto, Hugo
+Piotrowski, R. G.
+Piperidis, Stelios
+Pirker, Hannes
+Pirlein, Thomas
+Pirrelli, Vito
+Pisani, Pier Paolo
+Pisanski, Tomaz
+Piskorski, Jakub
+Pitel, Guillaume
+Pitha, Petr
+Pitrelli, John F.
+Pittman, James A.
+Pitz, Michael
+Piwek, Paul
+Pizzato, Luiz Augusto
+Placeway, Paul
+Pla, Ferran
+Plamondon, Pierre
+Planas, Emmanuel
+Plante, Pierre
+Plantin, Edwin
+Platek, Martin
+Plate, Tony
+Plath, Warren J.
+Plaza-Arteche, Rosario
+Plebe, Alessio
+Pletat, Udo
+P�ll�, Matti
+Pociello, Eli
+Podlasov, Alexey
+Podvesky, Petr
+Poel, Mannes
+Poesio, Massimo
+Pogliano, Paolo
+Pogodalla, Sylvain
+Poibeau, Thierry
+Poka, Venkateswarlu
+Polak, Vaclav
+Polguere, Alain
+Polifroni, Joseph H.
+Polikarpov, A. A.
+Polikoff, James
+Polk, John
+Pollard, Carl J.
+Pollard, Shannon
+Poller, Peter
+Poll�k, Petr
+Polyak, Marat G.
+Pomik�lek, Jan
+Pong, Sandiway
+Ponte, Jay
+Ponting, Keith
+Ponvert, Elias
+Ponzetto, Simone Paolo
+Poon, Hoifung
+Popat, Ashok C.
+Popelinsky, Lubos
+Popel, Martin
+Popescu, Adrian
+Popescu-Belis, Andrei
+Popescu, Marius
+Popescu, Octavian
+Pop, Horia F.
+Popov, Borislav
+Popowich, Fred
+Poprat, Michael
+Porcelijn, Tijn
+Poria, Sanjay
+Portele, Thomas
+Porter, Bruce W.
+Porter, Harry H.
+Portet, Francois
+Portillo, Guillermo
+Porzel, Robert
+Poser, William
+Posse, Christian
+Postal, Paul M.
+Post, Matt
+Potamitis, Ilyas
+Potipiti, Tanapong
+Potts, Christopher
+Potvin, Gerard
+Pouliquen, Bruno
+Poupart, Pascal
+Pouteau, Xavier
+Poutsma, Arjen
+Poveda, Jordi
+Povey, D.
+Povlsen, Claus
+Power, Richard
+Powers, David M. W.
+Powley, Brett
+Pozar, Michael
+Poznanski, Victor
+P, Praveen
+Prabhakaran, Vinodkumar
+Pradhan, Sameer S.
+Pradhan, S. Sameer
+Prager, John
+Prakash, Sushant
+Prange, John D.
+Prasad, Rohit
+Prasad, Surendra
+Prasov, Zahar
+Prat, F.
+Prat, Federico
+Pratt, Arnold W.
+Prbszeky, Gabor
+Prendinger, Helmut
+Prescher, Detlef
+Pretorius, Rigardt
+Prevete, Roberto
+Prevost, Scott
+Prevot, Laurent
+P�rez, Javier
+Price, W. L.
+Prideaux, Gary D.
+Priestley, Joel
+Prince, Cambell
+Prinsloo, Danie
+Prins, Robbert
+Printz, Harry
+Pritchett, Bradley L.
+Prithviraj, Preethum
+Priya, Ritwik
+Prokopidis, Prokopis
+Prolo, Carlos A.
+Prosser, Charles
+Prost, Jean-Philippe
+Proszeky, Gabor
+Proudian, Derek
+Pr�sz�ky, G�bor
+Pr�vot, Laurent
+Przepiórkowski, Adam
+Przybocki, Mark A.
+Psutka, J.
+Ptacek, Jan
+Puche, Javier
+Pucher, Michael
+Puente, Salvador de la
+Pullum, Geoffrey K.
+Pulman, Stephen
+Pulman, Stephen G.
+Punyakanok, Vasin
+Purpura, Stephen
+Purver, Matthew
+Pustejovsky, James D.
+Pust, Michael
+Puurula, Antti
+Pylkkonen, Janne
+Pylyshyn, Zenon W.
+Pyo, Changhee
+Pyysalo, Sampo
+Qazvinian, Vahed
+Qian, Fang
+Qian, Longhua
+Qian, LongHua
+Qian, Peide
+Qian, Xian
+Qin, Hauwei
+Qinlong, Zhang
+Qiu, Likun
+Qiu, Long
+Qiu, Xipeng
+Quan, Changqin
+Quang Long, Nguyen
+Quantz, J. Joachim
+Quaresma, Paulo
+Quasthoff, Uwe
+Querido, Antonio A. M.
+Quezel-Ambrunaz, Maurice
+Quignard, Matthieu
+Quilici, Alex
+Quimby, Rob
+Quinn, Kevin M.
+Quint, Julien
+Quirk, Chris
+Qu, Kunbin
+Qu, Shaolin
+Qu, Weimin
+Raab, Jan
+Raaijmakers, Stephan
+Rabbat, Michael
+Rabiner, Lawrence R.
+Raccah, Pierre-Yves
+Rachevsky, Leonid
+Rachidi, Tajje-Eddine
+Radev, Dragomir R.
+Radul, Alexey
+Radzinski, Daniel
+Raffaelli, Remo
+Rafiei, Davood
+Rafkind, Barry
+Raghavan, Sriram
+Raghavan, Vijay V.
+Ragheb, Ahmed
+Raghunathan, Badri
+Ragno, Robert
+Rahman, Altaf
+Rahman, Fuad
+Rahman, Md. Altaf ur
+Rais-Ghasem, Mohsen
+Raj, Anand Arokia
+Rajan, Jayant V.
+Rajasekaran, Raja
+Raj, Bhiksha
+Rajkumar, Rajakrishnan
+Rajman, Martin
+Ralph, Bo
+Ramage, Daniel
+Ramakrishnamacharyulu, K. V.
+Ramakrishnan A., Ananth
+Ramakrishnan, Ganesh
+Ramakrishnan, Naren
+Raman, Anand
+Ramanathan, Ananthakrishnan
+Ramani, Arun
+Ram, Ashwin
+Rambow, Owen
+Ramisch, Carlos
+Ramos, Daniel
+Ramos-Garijo, R.
+Ramos, Jos� �ngel
+Ramsay, Allan
+Ramshaw, Lance A.
+Ranadive, Sagar
+Ranaivo-Malancon, Bali
+Ranganath, Rajesh
+Rangarajan Sridhar, Vivek Kumar
+Rangel, Jaime
+Ranta, Aarne
+Rao, B. Ravi Kiran
+Rao, Delip
+Rapaport, William J.
+Rapoport, T. R.
+Rappoport, Ari
+Rapp, Reinhard
+Rapp, Stefan
+Răschip, Marius
+Rashwan, Mohsen
+Raskin, Victor
+Rathod, Nishit
+Ratinov, Lev
+Ratiu, Florin
+Ratnaparkhi, Adwait
+Rats, M. M. M.
+Rauch, Erik
+Rauramo, Antti
+Rausch, John
+Raux, Antoine
+Ravichandran, Deepak
+Ravindran, B.
+Ravindran, Balaraman
+Ravi, Sujith
+Rawat, J.S.
+Rawding, Matt
+Raymond, Christian
+Rayner, Manny
+Rayson, Jim
+Rayson, Paul
+Razmara, Majid
+R. Banga, Eduardo
+Read, Jonathon
+Read, Tim
+Read, Walter
+Real, Francis
+Reape, Mike
+Rebholz-Schuhmann, Dietrich
+Reckman, Hilke
+Reddy, Manohar
+Reddy, Prashanth
+Reddy, Raj
+Redington, Martin
+Reed, Chris
+Reeker, Larry H.
+Reese, Brian
+Reeves, John
+Refice, Mario
+Regier, Terry
+Rehatschek, Herwig
+Rehfuss, Steve
+Rehkamper, Klaus
+Rehm, Georg
+Rehm, Matthias
+Reichartz, Frank
+Reichenberger, Klaus
+Reichert, Juergen
+Reichman, Marc
+Reich, Peter A.
+Reid, Bill
+Reid, James
+Reidsma, Dennis
+Reilly, Ronan G.
+Reimer, Ulrich
+Reimold, Peter
+Reinstein, Gabe
+Reisinger, Joseph
+Reitano, John W.
+Reiter, Ehud
+Reiter, Nils
+Reiter, Raymond
+Reithinger, Norbert
+Reitman, Walter
+Reitter, David
+Relano Gil, Jose
+Remondeau, Christophe
+Renals, Steve
+Ren, Dengjun
+Renders, Jean-Michel
+Renger, Bernard
+Rentier, Gerrit
+Rentzepopoulos, Panagiotis A.
+Ren, Xiaobo
+Ren, Zhixiang
+Resnik, Philip
+Retore, Christian
+Reuer, Veit
+Reutter, Tom
+reux, Michel
+Revard, Carter
+Revzin, Prof.
+Reyes, Rodrigo
+Reyle, Uwe
+Reynaert, Martin
+Reynar, Jeffrey C.
+Reynolds, Doug
+Reynolds, Jeff
+rez, Armando
+rgensen, Fredrik
+Rhinow, Steffen
+Rhyne, James R.
+Riandi, Oskar
+Riaz, Kashif
+Ribarov, Kiril
+Ribas Framis, Francesc
+Ribeiro, Antonio
+Ribeiro, Ricardo
+Riccardi, Giuseppe
+Rice, D. Lloyd
+Rice, Simon
+Richardella, Anthony
+Richards, Marc
+Richardson, Fred
+Richardson, Stephen D.
+Rich, Charles
+Richens, Tom
+Richer, Justin
+Richman, Alexander E.
+Richmond, Korin
+Richter, Frank
+Richter, Helmut
+Richter, Matthias
+Riddoch, Chris
+Riedel, Sebastian
+Rieger, Burghard B.
+Rieger III, Charles J.
+Riesbeck, Christopher K.
+Rieser, Hannes
+Ries, Klaus
+Riester, Arndt
+Riezler, Stefan
+Rigau, German
+Riggle, Jason
+Riha, Antonin
+Rijke, Maarten
+Riley, Michael D.
+Rilliard, Albert
+Rim, Hae-Chang
+Rinaldi, Fabio
+Rinaldo, Frank
+Rincel, Phillipe
+Rindflesch, Thomas C.
+Ringgaard, Michael
+Ringger, Eric K.
+Ringlstetter, Christoph
+Ristad, Eric Sven
+Rist, Thomas
+Ritchie, Graeme D.
+Ritter, Alan
+Rittman, Robert
+Ritzke, Johannes
+Riza, Hammam
+Rizov, Borislav
+rkelund, Anders
+rkowski, Adam
+rne, Jari
+Roark, Brian
+Roa, Sergio
+Ro, Atle
+Robaldo, Livio
+Robert, Gilbert
+Roberti, Pierluigi
+Roberts, Angus
+Roberts, Ian
+Roberts, Kirk
+Robertson, David
+Robertson, Stephen
+Robin, Jacques
+Robinson, John
+Robitaille, Xavier
+Robkop, Kergrit
+Rocha, Marco
+Rocha, Paulo
+Roche, Emmanuel
+Rodet, Xavier
+Rodolfo, Delmonte
+Rodr�guez, Juan Jos�
+Rodrigo, Alvaro
+Rodrigo, Luis
+Rodrigues, Paul
+Rodriguez Hontoria, Horacio
+Rodriguez, Horacio
+Rodriguez, Kepa Joseba
+Rodriguez, Luis
+Rodriguez Penagos, Carlos
+Rodr�quez, Horacio
+Roeder, Chris
+Roesner, Dietmar F.
+Rogers, Alex
+Rogers, David Ellis
+Rogers, James
+Rogers, Jon
+Rogers, Willie J.
+Rogina, Ivica
+Rohlicek, J. Robin
+Rohrer, Christian
+Rohwer, Richard
+Rojas, David
+Rojc, Matej
+Roland, Douglas
+Rolf, P. C.
+Romacker, Martin
+Romanelli, Massimo
+Romanello, Matteo
+Romanyshyn, Nicholas
+Romary, Laurent
+Romeral, Jose D.
+Romero, Rafael
+Romportl, Jan
+Roosmaa, Tiit
+Roossin, Paul S.
+Rooth, Mats
+Roque, Antonio
+Roscheisen, Martin
+Rosell, Magnus
+Rosen, Alexandr
+Rosenberg, Aaron
+Rosenberg, Andrew
+Rosenberg, Jarrett
+Rosenberg, Richard S.
+Rosenblum, James A.
+Rosenfeld, Benjamin
+Rosenschein, Stanley J.
+Rosenzweig, Joseph
+Rose, Stuart
+Rose, Tony G.
+Rose, Travis
+Rose, Yvan
+Rosner, Dietmar
+Rosner, Michael
+Rosner, Mike
+Rosner, Mike A.
+Ross, Aaron
+Rossignol, Mathias
+Rossi, Piercarlo
+Ross, Kenneth M.
+Rossler, Marc
+Ross, Michael
+Rosso, Paolo
+Rosti, Antti-Veikko
+Rosti, Antti-Veikko I.
+Rotaru, Mihai
+Roth, Bob
+Roth, Dan
+Roth, Michael
+Roth, Robert
+Roth, Ryan
+Roth, Steven F.
+Rouaix, Francois
+Rouault, Jacques
+Roukos, Salim
+Rounds, William C.
+Rous, Joep
+Roussarie, Laurent
+Rousseau, Daniel
+Roussel, David
+Rousselot, François
+Roussinov, Dmitri
+Routledge, Bryan R.
+Roux, Claude
+Rowe, Charles
+Rowe, Glenn
+Rowe, Neil C.
+Rowe, Steven
+Rowles, Chris
+Roy, Maxim
+Roy, Nicholas
+Roy, Shourya
+rquez, Llu&#237
+rrez-Rexach, Javier
+rstenau, Hagen
+r, Tunga
+Rubenstein, Alan
+Rubin, Gerald M.
+Rubinoff, Robert
+Ruch, Patrick
+Rudnicky, A.
+Rudnicky, Alexander I.
+Rudzicz, Frank
+Rue, Henrik
+Ruggenmann, Klaus
+Ruhlen, Paul
+Ruhrberg, Peter
+Ruiz-Rico, Fernando
+Ruland, Tobias
+Rullent, Claudio
+Rumbell, Timothy
+Ruopp, Achim
+Rupp, C.J.
+Ruppenhofer, Josef
+Rushall, David A.
+Rusk, Gregory M.
+Russel, Albert
+Russell, Graham J.
+Russell, Jeffrey
+Russell, Martin
+Russell, Robert A.
+Russell, William
+Russi, Thomas
+Russ, Thomas
+Rus, Vasile
+R, Vijayakrishna
+rwall, Jakob
+Ryan, Sean
+Ryant, Neville
+Rychl�, Pavel
+Rychly, Pavel
+Rykner, Arnaud
+Rytting, C. Anton
+Ryu, Koichiro
+Ryu, Pum-Mo
+Rzepka, Rafal
+Rzhetsky, Andrey
+r, Zsolt
+Saarikoski, Harri M. T.
+Sabah, Gerard
+Sabatier, Paul
+Sabatini, John
+Saba, Walid S.
+Sabbagh, Simon
+Sablayrolles, Pierre
+Sable, Carl
+Sabot, Gary W.
+Sabrsula, Jan
+Sacaleanu, Bogdan
+Sacerdoti, Earl
+Sachar, Howard E.
+Sadamitsu, Kugatsu
+Sadler, Victor
+Sadock, Jerrold M.
+Saebo, Kjell Johan
+Saenz, Richard M.
+Saers, Markus
+Sætre, Rune
+Saeys, Yvan
+Safier, Scott
+Sagae, Kenji
+Sagara, Kaoru
+Sagawa, Hirohiko
+Sagawa, Yuji
+Sagerer, Gerhard
+Saggion, Horacio
+� S�aghdha, Diarmuid
+Sagi, Eyal
+Sagi, Jacob S.
+Sagisaka, Yoshinori
+Sag, Ivan A.
+Sagot, Beno�t
+Saha, Sujan Kumar
+Sahlgren, Magnus
+Saini, Tejinder Singh
+Saint-Amand, Herv�
+Saint Dizier, Patrick
+Saint-Dizier, Patrick
+Saito, Hiroaki
+Saito, Yoshimi
+Saiz-Noeda, Maximiliano
+Sajjad, Hassan
+Sajous, Franck
+Sakaguchi, Takuya
+Sakai, Hiroyuki
+Sakai, Itiroo
+Sakai, Keiichi
+Sakai, Kunio
+Sakai, Satoshi
+Sakai, Shinsuke
+Sakai, Tetsuya
+Sakai, Toshiyuki
+Sakai, Yasuyuki
+Sakai, Yoshifumi
+Sakaki, Takeshi
+Sakamoto, Yoshiyuki
+Sakas, William Gregory
+Sakauchi, Masao
+Sakkis, Georgios
+Sakti, Sakriani
+Salakoski, Tapio
+Salkin, Robert
+Salkoff, Morris
+Salleb-Aouissi, Ansaf
+Salton, Gerard
+Saluveer, Madis
+Salvador, Chris
+Salvatierra, Robert Sola
+Salvati, Sylvain
+Salvetti, Franco
+Sammons, Mark
+Sammouda, Elyes
+Sampson, Geoffrey
+Sam, Sethserey
+Samuel, Ken
+Samuel, Kenneth
+Samuelsdorff, Paul O.
+Samuelsson, Christer
+Sanchez, Antonio Vaquero
+Sanchez, Jon
+Sanchez Peiro, Joan Andreu
+Sanchis, Alberto
+Sanchis, Emilio
+Sanchis, Germ�n
+Sanchis-Trilles, Germ�n
+Sandbank, Ben
+S, Anders
+Sanders, Eric
+Sanders, Gregory
+Sanders, Nathan C.
+Sanderson, Conrad
+Sanderson, Mark
+Sanders, Ted
+Sandoval, Antonio Moreno
+Sandra, Dominiek
+Sanfilippo, Antonio
+Sangal, Rajeev
+Sangati, Federico
+Sangkeettrakarn, Chatchawal
+SanJuan, Eric
+Sankaran, Baskaran
+Sankey, Jason
+Sankoff, David
+Sankofl, David
+Sano, Tomohisa
+San-Segundo, Ruben
+Sansone, Larry
+Santos, C�cero Nogueira
+Santos Jr., Eugene
+Sanyal, Sudip
+Saraclar, Murat
+Sarasola, K.
+Sarasola, Kepa
+Saraswat, Vijay
+Saratxaga, Ibon
+Sarbo, Janos
+Saric, Zoran
+Sarikaya, Ruhi
+Sarkar, Anoop
+Sarkar, Avik
+Sarkar, Sandipan
+Sarma, Arup
+Sasaki, Minoru
+Sasaki, Yasuhiro
+Sasaki, Yutaka
+Sasano, Ryohei
+Sassano, Manabu
+Sato, Hiroaki
+Satoh, Kenji
+Satoh, Masayuki
+Sato, Issei
+Sato, Kengo
+Sato, Manabu
+Sato, Nobuyoshi
+Sato, Paul T.
+Sato, Satoshi
+Sato, Taisuke
+Satou, Kenji
+Sato, Yo
+Satta, Giorgio
+Saul, Lawrence
+Saumjan, Sebastian K.
+Saunders, Craig
+Sautter, Guido
+Savitch, Walter J.
+Savkov, Aleksandar
+Savoy, Jacques
+Sawai, Susumu
+Sawaki, Yasuyo
+Sawalha, Majdi
+Sawamura, Eiji
+Say, Bilge
+Sayeed, Asad B.
+Sbrissia, Eduardo
+Scarci, Stefano
+Scattone, Francesco
+Scerri, Simon
+Schaaf, Thomas
+Schabes, Yves
+Schaden, Stefan
+Schafer, Charles
+Schafer, Ulrich
+Schaler, Reinhard
+Schank, Roger C.
+Schapire, Robert E.
+Scha, Remko
+Scha, Remko J. H.
+Scharl, Arno
+Schatzmann, Jost
+Schauble, Peter
+Schauer, Holger
+Scheffer, Tobias
+Schegloff, Emanuel A.
+Schehl, Jan
+Scheible, Christian
+Scheideck, Tobias
+Schein, Andrew
+Schellhammer, Ingo
+Schenk, Andre
+Scherer, Stefan
+Scherl, Richard
+Scherrer, Yves
+Sch�fer, Ulrich
+Schiaffino, Robert
+Schiehlen, Michael
+Schiel, Florian
+Schiffman, Barry
+Schilder, Frank
+Schlaefer, Nico
+Schlangen, David
+Schlenoff, Craig
+Schlesinger, Pavel
+Schless, Volker
+Schlueter, Ralf
+Schmeier, Sven
+Schmelzenbach, Mark
+Schmid, Helmut
+Schmid, Paul
+Schmidt, Carl J
+Schmidt, Charles F.
+Schmidt-Nielsen, Bent
+Schmidt, Paul
+Schmidt-Thieme, Lars
+Schmidt, Thomas
+Schmitt, Alexander
+Schnattinger, Klemens
+Schneider, David
+Schneider, Gerold
+Schneider, Karl-Michael
+Schneider, Mike
+Schneiker, Christian
+Schnelle, Helmut
+Schockaert, Steven
+Schoelles, Michael
+Schoenmackers, Stefan
+Schoenmakers, W. J.
+Schofield, Edward
+Scholer, Falk
+Scholz, Mario
+Scholz, Martin
+Schonefeld, Oliver
+Schone, Patrick
+Schonwetter, Michael
+Schopp, Jochen
+Schotel, Henk P.
+Schrementi, Giancarlo
+Schreurs, Dirk
+Schroder, Ingo
+Schroeder, Josh
+Schryver, Gilles-Maurice de
+Sch�tze, Hinrich
+Schubert, Klaus
+Schubert, Lenhart
+Schubert, Lenhart K.
+Schubert, Volker
+Schudy, Warren
+Schuetze, Hinrich
+Schuler, William
+Schultz, Karl
+Schultz, Stefan
+Schulz, Bastian
+Schulz, Christian
+Schulz, Henrik
+Schulz, Klaus U.
+Schulz, Stefan
+Schuman, Jonathan
+Schutte, Ken
+Schutz, Alexander
+Schutze, Carson T.
+Schutze, Hinrich
+Schutz, Jorg F. L.
+Schuurmans, Dale
+Schveiger, Paul
+Schwab, Didier
+Schwarcz, Robert M.
+Schwarten, Lasse
+Schwartz, Ariel S.
+Schwartz, Hansen A.
+Schwartz, Lane
+Schwartz, Richard M.
+Schweisthal, Klaus Gunther
+Schwenker, Friedhelm
+Schwenk, Holger
+Schwetzke, Henry
+Schwitter, Rolf
+Sclaroff, Stan
+Scott, Sam
+Scovel, Clint
+Seagull, Amon
+Sears, J. Allen
+, Sebastian
+Sebastiani, Fabrizio
+Sebastian, Shaji
+Seco, Nuno
+Seddah, Djame
+Sedding, Julian
+Sedelow Jr., Walter A.
+Sedogbo, Celestin
+Segal, Jonathan
+Segami, Carlos
+Seginer, Yoav
+Segond, Frederique
+Segre, Alberto Maria
+Seguela, Patrick
+Sehgal, Aditya Kumar
+Sehitoglu, Onur T.
+Seide, Frank
+Seidenberg, Mark S.
+Seipel, Dietmar
+Sejnowski, Terrence J.
+Sekiguchi, Yoshihiro
+Sekiguchi, Youichi
+Seki, Hiroyuki
+Seki, Kazuhiro
+Sekimizu, Tateshi
+Sekine, Satoshi
+Seki, Yohei
+Self, John
+Seligman, Mark
+Sellberg, Linus
+Sells, Peter
+Selouani, Sid-Ahmed
+Semecky, Jiri
+Semeraro, G.
+Semeraro, Giovanni
+Semmar, Nasredine
+Senellart, Jean
+Seng, Sopheap
+Sengupta, Probal
+Seo, Hee-Cheol
+Seol, Yoon-Ho
+Seon, Choong-Nyoung
+Seppanen, Jouko J.
+Seppi, Kevin
+Serafin, Riccardo
+Serasset, Gilles
+Sestero, Dario
+Sethy, Abhinav
+Setiawan, Hendra
+Settembre, Scott
+Settles, Burr
+Seuren, Pieter A. M.
+s, Fabien
+S�gaard, Anders
+Sgall, Petr
+Sgarbas, Kyriakos N.
+Shaalan, Khaled
+Shacham, Danny
+Shadbolt, Nigel
+Sha, Fei
+Shafran, Izhak
+Shahraray, Behzad
+Shah, Ritesh M.
+Shah, Sapan
+Shah, Shalin
+Shaikh, Mostafa Al Masum
+Shamir, Eli
+Shamma, Shihab
+Shan, Chung-Chieh
+Shank, Roger C.
+Shann, Patrick
+Shanon, Benny
+Shan, Roy
+Shapiro, Stuart C.
+Shareef, Safiullah
+Sharifi, Mehrbod
+Sharifloo, Amir Azim
+Sharman, R. A.
+Sharma, Utpal
+Sharoff, Serge
+Sharples, Nigel
+Sharp, Randall
+Shastri, Lokendra
+Shaumyan, Sebastian
+Shawe-Taylor, John
+Shaw, James
+Shaw, Richard
+Shei, Wen-Chi
+Shell, Peter
+Shemtov, Hadar
+Shen, Dan
+Shende, Sunil
+Shen, Libin
+Shen, Siwei
+Shen, Wade
+Shen, Yihai
+Shepherd, J. Adrian
+Shepitsen, Andriy
+Sherertz, David D.
+Sherif, Tarek
+Sherwood, Bruce Arne
+Shibata, Tomohide
+Shi, Bertram
+Shichiri, Takashi
+Shieber, Stuart M.
+Shifroni, Eyal
+Shigenaga, Minoru
+Shikano, Kiyohiro
+Shi, Liu
+Shillan, David
+Shimada, Mitsunobu
+Shima, Hideki
+Shimazu, Akira
+Shimazu, Hideo
+Shimbo, Masashi
+Shime, Takao
+Shimizu, Kei
+Shimizu, Nobuyuki
+Shimizu, Tohru
+Shim, Kwangseob
+Shim, Leem Seop
+Shimohata, Mitsuo
+Shimojima, Atsushi
+Shimomura, Takeshi
+Shinchu, Tsuyoshi
+Shin, Hyopil
+Shinmori, Akihiro
+Shinnou, Hiroyuki
+Shinohara, Yaushi
+Shin, Saim
+Shinyama, Yusuke
+Shinzato, Keiji
+Shirado, Tamotsu
+Shirai, Katsuhiko
+Shirai, Kiyoaki
+Shirai, Satoshi
+Shishtla, Praneeth M.
+Shitaoka, Kazuya
+Shi, Xiaodong
+Shi, Yanxin
+Shi, Zhongmin
+Shnarch, Eyal
+Shneiderman, Ben
+Shoen, Jay
+Shore, John
+Shortliffe, Edward H.
+Shoshani, Arie
+Shrager, Jeff
+Shrartz, Steven P.
+Shrestha, Lokesh
+Shrivastava, Manish
+Shrobe, Howard
+Shudo, Kosho
+Shukla, Sambit
+Shutoh, Masamichi
+Shutoh, Tomoki
+Shwartz, Steven P.
+Si Ameur, Lahcene
+Sicconi, Roberto
+Siddharthan, Advaith
+Sider, Ira
+Siebert, Alexander
+Siefkes, Christian
+Siegel, Eric V.
+Sierra, Basilio
+Sierra, Gerardo
+Sigelman, Sergey
+Sigurd, Bengt
+Siivola, Vesa
+Sikirić, Ivan
+Sikkel, Klaas
+Silber, H. Gregory
+Silberztein, Max D.
+Silk, Barry
+Silliman, Scott
+Si, Luo
+Silva, Jo�o
+Silva, Roberto
+Silverman, Harvey F.
+Sima'an, Khalil
+Simard, Michel
+Sim, Chul-Min
+Sim�es, Alberto
+Sim, Khe Chai
+Simma, Aleksandr
+Simmons, Geoffrey
+Simmons, Robert F.
+Simon, Petr
+Simons, Gary
+Simov, Alexander
+Simov, Kiril
+Simpson, Matthew
+, Sina
+Sindelar, Michael
+Sindhwani, Vikas
+Singer, Harald
+Singer, Yoram
+Singh, Akshay
+Singhal, Amit
+Singh, Anil Kumar
+Singh, Kulwinder
+Singh, Pawandeep
+Singh, Push
+Singh, Satinder
+Singh, Suchinder
+Singh, Thoudam Doren
+Singleton, Matt
+Sinha, Ravi
+Sinha, R. Mahesh K.
+Sinha, Sitabhra
+Siniakov, Peter
+Sin, KingKui
+Sinohara, Yasusi
+Sinthurahat, Tan
+Sirai, Hidetosi
+Siroux, Jacques
+Siskind, Jeffrey Mark
+Siu, Manhung
+Sizov, Victor
+Sj�bergh, Jonas
+Skadhauge, Peter Rossen
+Skadins, Raivis
+Skalmowski, Wojciech
+Skantze, Gabriel
+Skarnitzl, Radek
+ski, Marcin
+Skinner, Michael
+ski, Piotr
+Skon, Jim
+Skopeteas, Stavros
+Skuce, Douglas
+Skut, Wojciech
+Slack, Jon M.
+Slator, Brian M.
+Śledziński, Daniel
+Sloboda, Tilo
+Slocum, Jonathan
+Sloman, Aaron
+Smadja, Frank A.
+Small, Kevin
+Small, Steven L.
+Smarr, Joseph
+Šmerk, Pavel
+Smith, Andrew E.
+Smith, A. Noah
+Smith, Barry
+Smith, Bradley
+Smith, David A.
+Smith, Elliot
+Smith, Eric
+Smith, Francis J.
+Smith, Ira
+Smith, Jason
+Smith, Jonathan L.
+Smith, Lawrence H.
+Smith, Mark H.
+Smith, Melvin R.
+Smith, Noah A.
+Smith, Raoul N.
+Smith, Ronnie W.
+Smith, Simon
+Smith, Tony C.
+Smit, R. A.
+Smola, Alex
+Smolensky, Paul
+Smolka, Gert
+Smrz, Otakar
+Smrž, Otakar
+Smrz, Pavel
+Snae, Chakkrit
+Šnajder, Jan
+S�nchez, Joan Andreu
+S�nchez, Sebasti�n
+Sneiderman, Charles
+Snider, Neal
+Snover, Matthew G.
+Snow, Rion
+Snyder, Benjamin
+Snyder, Jaime
+Snyder, Kieran
+Soares, Matthew C.
+Sobashima, Yasuhiro
+Soboroff, Ian
+Soclof, Michal
+Soderland, Stephen
+Soehn, Jan-Philipp
+Sofianopoulos, Sokratis
+Sogaard, Anders
+Sogrin, Mikhail
+Sokirko, Alexey
+Solan, Zach
+Soloman, Danny
+Solomon, Stephan-Ylan
+Soltau, Hagen
+Solvay, Jean-Philippe
+Solway, Ben
+Somers, Harold L.
+Sondergaard, Georg
+Sondheimer, Norman K.
+Sone, Takaaki
+Song, Dong
+Song, Rou
+Song, Xinying
+Song, Young Chol
+Song, Young-In
+Song, Zhanjiang
+Song, Zhiyi
+Soni, Ankit
+Sonntag, Daniel
+Sonntag, Gerit P.
+Son, Rob van
+Son, Sunghoon
+Soong, Frank K.
+Soon, Wee Meng
+Soo, Von-Wun
+Sopena, Josep M.
+Sorensen, Finn
+Sorensen, Jeffrey S.
+Soricut, Radu
+Sornil, Ohm
+Sornlertlamvanich, Virach
+Soroa, Aitor
+Soudi, Abdelhadi
+Souflis, Dimitris
+Soulhi, Said
+Souter, Clive
+Southall, Humphrey
+Souza, Jose
+Sowa, John F.
+s, Pablo
+Spackman, Stephen P.
+Spanger, Philipp
+Spang-Hanssen, Ebbe
+Speelman, Dirk
+Spilker, Jorg
+Spitters, Martijn
+Spitz, A. Lawrence
+Spohr, Dennis
+Spooren, Wilbert
+Spousta, Miroslav
+Sprague, Colin
+Sprenger, Michael
+Spriet, Thierry
+Sproat, Richard W.
+Spurk, Christian
+Spyns, Peter
+Spyropoulos, Constantine D.
+S, Rajendran
+Srikanth, Munirathnam
+Srikaya, Ruhi
+Srikumar, Vivek
+Srinivasan, Ashwin
+Srinivasan, Prakash
+Sripada, Somayajulu
+Sripada, Somayajulu G.
+Sripada, Yaji
+Srivastava, Ankit Kumar
+Srivastava, Ramesh
+Staab, Steffen
+Stabler Jr., Edward P.
+Stach, Jerrold F.
+Stahl, Olov
+Sta, Jean-David
+Stallard, David G.
+Stamatatos, Efstathios
+Stamatopoulos, Panagiotis
+Stanat, Donald F.
+Stapley, Benjamin
+Stark, Matthias
+Starner, Thad
+Staros, Chris J .
+Starosta, Stanley
+Staudacher, Peter
+Stede, Manfred
+Steedman, Mark
+Steele, Robert
+Steels, Luc
+Ştefanescu, Dan
+Ştefănescu, Dan
+Stefan, Evert
+Stefankovic, Daniel
+Stegentritt, Erwin
+Stehouwer, Herman
+Steimanno, Friedrich
+Stein, Achim
+Steinberger, Josef
+Steinberger, Ralf
+Steinbrecher, Eric
+Stein, Daniel
+Steiner, Erich H.
+Stein, Gees C.
+Stellato, Armando
+Stem, Richard M.
+Stenetorp, Pontus
+Stenton, Phil
+Stenzhorn, Holger
+Štepánek, Jan
+Stepanov, Arthur
+Stephan, Jens
+Sterling, John
+Stern, Richard M.
+Stetina, Jiri
+Stevens, Gerwert
+Stevenson, Mark
+Stewart, D. W.
+Stewart, Robin
+St�hrenberg, Maik
+s, Tiago
+Stickel, Mark
+Stiefelhagen, Rainer
+St-Jacques, Claude
+Stock, Oliviero
+Stocky, Tom
+Stoianov, Ivelin
+Stokoe, Christopher
+Stolcke, Andreas
+Stolfo, Salvatore J.
+Stolle, Reinhard
+Stone, Matthew
+Stoness, Scott C.
+Stoops, Daniel S.
+Storoshenko, Dennis Ryan
+Stoyanov, Veselin
+Straňák, Pavel
+Strand, Ole Morten
+Strapparava, Carlo
+Streeter, Victor J.
+Streiter, Oliver
+Streit, Michael
+S�tre, Rune
+Str�mqvist, Sven
+Strong, William J.
+Stroppa, Nicolas
+Strube, Michael
+Struble, Craig A.
+Strunk, Jan
+Strutz, Robert
+Strzalkowski, Tomek
+Stubley, Peter
+Stuckardt, Roland
+Stuhrenberg, Maik
+Stumberger, Douglas E.
+Stumberger, Robert E.
+Stump, Gregory
+Sturtevant, Dean G.
+Sturt, Patrick
+Stuttle, Matthew
+Suarez, Armando
+Subba, Rajen
+Subbarao, K.V.
+Subotin, Michael
+Subramanian, Venkatesan
+Subramanya, Amarnag
+Suchanek, Fabian M.
+Sudbeck, David
+Suderman, Keith
+Sudoh, Katsuhito
+Sudo, Kiyoshi
+Suen, Ching Y.
+Suendermann, David
+Sugawara, Yasuo
+Sugaya, Fumiaki
+Sugie, Noboru
+Sugimoto, Masakatsu
+Sugimoto, Shigeo
+Sugimura, Ryochi
+Sugio, Toshiyuki
+Sugita, Shigeharu
+Sugiyama, Akira
+Sugiyama, Kazunari
+Sugiyama, Kenji
+Suh, Sungki
+Su, Keh-Yih
+Sukhotin, B. V.
+Sukvari, Thana
+Sullivan, Thomas M.
+Sumita, Eiichiro
+Sumita, Kazuo
+Sun, Chengjie
+Sundararajan, Arun
+Sundermann, David
+Sung, Cheng-Lung
+Sun, Gordon
+Sun, Guangfan
+Sun, Haotian
+Sun, Honglin
+Sun, Jiadong
+Sun, Jian
+Sun, Jiashen
+Sun, Jun
+Sun, Maosong
+Supnithi, Thepchai
+Suppes, Patrick
+Surana, Harshit
+Surdeanu, Mihai
+Surendran, Dinoj
+Suriyentrakorn, Pasin
+Su, Stanley Y. W.
+Sutcliffe, Richard F. E.
+Suthers, Daniel D.
+Sutinen, Erkki
+Sutton, Charles
+Sutton, Stephen
+Su, Weifeng
+Suzuki, Daisuke
+Suzuki, Kenji
+Suzuki, Masami
+Suzuki, Masanori
+Suzuki, Masaru
+Suzuki, Yoshimi
+Svartvik, Jan
+Švec, Jan
+Svenberg, Stefan
+Svendsen, Torbj�rn
+Svenson, Mats
+Svensson, Hans
+Svoboda, Jaroslav
+Swain, Bradley
+Swanson, Reid
+Swartout, William
+Sweeney, James P.
+Swerts, Marc
+Swier, Robert
+Swift, Adam
+s, Xavier
+Sydow, Marcin
+Syed, Umar
+Szab�, J�nos
+Szafron, Duane
+Szarvas, Gy�rgy
+Szedmak, Sandor
+Szpakowicz, Stan
+Szpektor, Idan
+Szummer, Marcin
+Tablan, Valentin
+Tachibana, Kenji
+Tadashi, Kamiwaki
+Tadic, Marko
+Tae, Yoon-Shik
+Tagami, Hayato
+Taira, Hirotoshi
+Taira, Ricky K
+Tait, John Irving
+Tai, Yin-Sheng
+Tajarobi, Arman
+Tajchman, Gary
+Tajima, Masato
+Takada, Shingo
+Takagi, Shinichiro
+Takagi, Toshihiro
+Takagi, Toshihisa
+Takahashi, Masahito
+Takahashi, Satoshi
+Takahashi, Tetsuro
+Takamatsu, Shinobu
+Takamura, Hiroya
+Takanashi, Katsuya
+Takano, Akihiko
+Takara, Tomio
+Takashima, Yosuke
+Takashi, Uzuoka
+Takayama, Yasuhiro
+Takebayashi, Yoichi
+Takechi, Mineki
+Takeda, Kazuya
+Takeda, Koichi
+Takeda, Yoshiyuki
+Takeichi, Masato
+Takeichi, Nobuyuki
+Takemoto, Yoshikazu
+Takenami, Yoshinori
+Takeo, Honda
+Takeshita, Atsushi
+Takeuchi, Akikazu
+Takeuchi, Hironori
+Takeuchi, Jumpei
+Takeuchi, Koichi
+Takeuchi, Masahito
+Takezawa, Toshiyuki
+Takida, Keiji
+Takiguchi, Tetsuya
+Takuma, Daisuke
+Talbot, David
+Talkin, David
+Talmy, Leonard
+Talukdar, Partha Pratim
+Tamamura, Shin�ichi
+Tamarit, Vicent
+Tamati, Tuneo
+Tambouratzis, Dimitrios
+Tambouratzis, George
+Tamburini, F.
+Tamburini, Fabio
+Tam, Daniel
+Tamura, Akihiro
+Tamura, N.
+Tamura, Noriyuki
+Tamura, Satoshi
+Tam, Yik-Cheung
+Tanabe, Toshifumi
+Tan, Ah-Hwee
+Tanaka, Hidehiko
+Tanaka, Hideki
+Tanaka, Hozumi
+Tanaka, Kokichi
+Tanaka, Masayuki
+Tanaka, Takaaki
+Tanaka, Takushi
+Tanaka, Yasuhito
+Tan, Chew Lim
+Tancig, Peter
+Tanenblatt, Michael
+Tanenhaus, Michael K.
+Tanev, Hristo
+Tang, Hao
+Tang, Jie
+Tang, Lappoon R.
+Tang, Xuri
+Tanimoto, Steven L.
+Tani, Tadaaki
+Tan, Lim Chew
+Tanner, Troy
+Tannier, Xavier
+Tan, Songbo
+Tantug, Ahmet Cuneyd
+Tao, Jianhua
+Tapanainen, Pasi
+Tapias, Daniel
+Tarau, Paul
+Tardiff, Seth
+Tari, Luis
+Tascini, Guido
+Tashiro, Toshihisa
+Taskar, Ben
+Tasso, Carlo
+Tateishi, Kenji
+Taura, Kenjiro
+Tavernier, Jean
+Tavosanis, Mirko
+Taylor, Brock H.
+Taylor, Gregory S.
+Taylor, II, Charles T.
+Taylor, Paul
+Taylor, Tony
+Taysom, William
+Tbahriti, Imad
+Tcheou, Francois
+Teahan, W. J.
+Tegos, Athanasios
+Teibel, Daniel A.
+Tejedor, Javier
+Temin, Aaron
+Temizsoy, Murat
+Temperley, David
+Tendeau, Frederic
+Tenenbaum, Joshua B.
+Teng, Chun-Yuan
+Tengli, Ashwin
+Ten Hacken, Pius
+Tennant, Harry R.
+Tennent, Paul
+Teo, Leong Hwee
+Tepper, Michael
+Tepper, Paul
+Terada, Akira
+Terashima, Ryuta
+Ter Doest, Hugo
+Terenziani, Paolo
+Terken, Jacques
+Terney, Thomas Vestskov
+Terra, Egidio L.
+Teruya, Kazuhiro
+Tesar, Bruce
+Tesconi, Maurizio
+Tesler, Larry
+Tetreault, Joel
+Tetreault, Joel R.
+Teubert, Wolfgang
+Teyssier, Marc
+Tey, TongGuan
+Tezuka, Yoshikazu
+Thadani, Kapil
+Thanopoulos, Aristomenis
+Tharp, Alan L.
+Thater, Stefan
+Thayaboon, Suphanut
+Thayer, Ignacio
+Thede, Scott M.
+Theeramunkong, Thanaruk
+Thelen, Michael
+Theodorakos, Aris
+Theofilidis, Axel
+Therneau, Terry
+Theron, Pieter
+Thesingh, Jan
+Thevenin, David
+Thibadeau, Robert
+Thibaux, Romain
+Thiel, Manfred
+Thiel, Ulrich
+Thiesson, Bo
+Thint, Marcus
+Thione, Gian Lorenzo
+Thollard, Franck
+Thoma, George R.
+Thomas, Ian
+Thomas, James
+Thomas, John C.
+Thomas, Markose
+Thomas, Martin
+Thomas, Matt
+Thomas, Michael S. C.
+Thomason, Richmond H.
+Thomas, Pete
+Thomas, Robert G.
+Thomas, Timothy
+Thompson, Craig W.
+Thompson, Frederick B.
+Thompson, Henry S.
+Thompson, John
+Thompson, Paul
+Thomson, Blaise
+Thornton, Simon
+Thornton, Wren N. G.
+Thrun, Sebastian
+Thurmair, Gregor
+Thurn, Martin
+Tian, Hao
+Tibbetts, Jason
+Tidhar, Dan
+Tiedemann, J�rg
+Tietze, Martin I.
+Tihanyi, L�szl�
+Tihelka, Daniel
+Tikhomirov, Boris D.
+Tikuisis, Aaron
+Tillmann, C.
+Tillmann, Christoph
+Timimi, Ismail
+Timonen, Jari
+Tinsley, John
+Tipper, Neil
+Tirpak, Thomas M.
+Tishby, Naftali
+Tisher, Gordon
+Titov, Ivan
+Tjaden, Brett C.
+Tjahjadi, Timotius
+Tjong Kim Sang, Erik F.
+Tlir, Gokhan
+Tobin, Richard
+Tochinai, Koji
+Toda, Seinosuke
+Todman, John
+Tofiloski, Milan
+Tojo, Satoshi
+Tokuda, Keiichi
+Tokuda, Naoyuki
+Tokuda, Takehiro
+Tokuhisa, Masato
+Tokunaga, Kozuke
+Tokunaga, Takenobu
+Tolba, Hesham
+Toledano, Doroteo T.
+Tomabechi, Hideto
+Tomas, David
+Tomasic, Anthony
+Tomas, Jesus
+Tomaso, Vittorio Di
+Tomita, Junji
+Tomita, Masaru
+Tomiura, Yoichi
+Tomkins, Andrew
+Tomokiyo, Takashi
+Tomono, Masahiro
+Toney, Dave
+Tong, Loong Cheong
+Tong, Matthew
+Tong, Richard M.
+Tong, Xiang
+Tonoike, Masatsugu
+Topper, Michael
+Toral, Antonio
+Torasso, Pietro
+Torii, Manabu
+Torisawa, Kentaro
+Tornita, Masaru
+Torre, Doroteo
+Torrens, Edson Wilson
+Torre, Ra�l de la
+Torres Martins, Andr� Filipe
+Torres-Moreno, Juan-Manuel
+Toselli, Alejandro H.
+Touset, Pascal
+Towell, Geoffrey
+Towns, Stuart G.
+Towsey, Michael
+Toyama, Katsuhiko
+Toyoda, Masashi
+T, Pattabhi R K Rao
+Tratz, Stephen
+Traue, Harald
+Traum, David
+Traum, David R.
+tre, Rune
+Trescases, Pierre
+Trilsbeek, Paul
+Trippel, Thorsten
+Trnka, Keith
+Tromble, Roy W.
+Trommer, Jochen
+Tron, Vikt&#243
+Tron, Viktor
+Tropf, Herbert
+Trosterud, Trond
+Trost, Harald
+Troussov, Alexander
+Trujillo, Arturo
+Tsai, Dylan B. S.
+Tsai, Jia-Lin
+Tsai, Jin-He
+Tsai, Richard Tzong-Han
+Tsai, Shih-Chang
+Tsai, Shih-Chung
+Tsai, Tzong-Han
+Tsai, Wang-Ju
+Tsatsaronis, George
+Tseng, I-Ju E.
+Tseng, Tsung-Yih
+Tsochantaridis, Ioannis
+T'sou, Benjamin K.
+Tsou, Benjamin K.
+Tsourakis, Nikos
+Tsuboi, Yuta
+Tsuchiya, Masatoshi
+Tsuchiya, Shin'Ichi
+Tsuge, Satoru
+Tsujii, Jun'ichi
+Tsuji, Keita
+Tsujino, Hiroshi
+Tsuji, Saburo
+Tsukada, Hajime
+Tsukahara, Nobuyuki
+Tsukamoto, Koji
+Tsunakawa, Takashi
+Tsunoda, Tatsuhiko
+Tsur, Oren
+Tsurumaru, Hiroaki
+Tsuruoka, Akio
+Tsuruoka, Yoshimasa
+Tsutsumi, Junya
+Tsutsumi, Taijiro
+Tsuzuki, Takashi
+tte, Niels
+Tucker, Allen B.
+Tucker, Gordon H.
+Tucker, Simon
+Tuda, Hirosi
+Tuells, Antoni
+Tufis, Dan
+Tufiş, Dan
+Tuggle, Francis D.
+Tugwell, David
+Tuldava, Juhan
+Tummala, Dinesh
+Turan, Umit Deniz
+Turcato, Davide
+Turchi, Marco
+Turchin, Alexander
+Ture, Ferhan
+Tur, Gokhan
+Turian, Joseph P.
+Turmo, Jordi
+Turner, Alan
+Turner-Maier, Jason
+Turner, Ray
+Turner, Ross
+Turney, Peter D.
+Turoff, Murray
+Turpin, Andrew
+Turtle, Howard
+Turunen, Markku
+Tuttle, Mark S.
+Tu, Yuancheng
+Twomey, David
+tze, Hinrich
+Ubaldino, Marc
+Uchida, Hiroshi
+Uchimoto, Kiyotaka
+Uchinami, Seiichi
+Uchino, Hajime
+Uchiumi, Kei
+Uchiyama, Koki
+Ucoluk, Gokturk
+Udupa, Raghavendra
+Ueda, Naonori
+Ueda, Yoshihiro
+Uehara, Minoru
+Uemura, Nobutaka
+Uemura, Shunsuke
+Ueno, Shinichi
+Uetake, Yoichi
+Ukai, Naoya
+Ulicny, Brian
+Ulmann, Martin S.
+Ulrich, Stefan
+Umeda, Masamitsu
+Umemura, Akihiro
+Umemura, Kyoji
+Ungar, Lyle
+Ungar, Lyle H.
+Ural, Ahmet Engin
+Uramoto, Naohiko
+Uratani, Noriyoshi
+Urbano, Francesco
+Urbina, Joaquin
+Urena-Lopez, L. Alfonso
+Ures, Lubos
+Urizar, R.
+Urizar, Ruben
+Ursu, Cristian
+Ushioda, Akira
+usler, Klaus
+Uszkoreit, Hans
+Uszkoreit, Jakob
+Utiyama, Masao
+Utka, Andrius
+Utsumi, Akira
+Utsuro, Takehito
+Utt, Jason
+Uytvanck, Dieter van
+Uzuhara, Shigeru
+Vadas, David
+Vahia, Mayank
+Vail, Douglas L.
+Vaillant, Pascal
+Vaithyanathan, Shivakumar
+Valderrabanos, Antonio S.
+Valdes-Dapena, Dan
+Valdes-Perez, Raul E.
+Valetto, Giuseppe
+Valkenhoef, Tobias
+Vallee, Arnaud
+Vallin, Alessandro
+Van Aelten, Filip
+Van Asch, Vincent
+Van Beek, Peter
+Van Breugel, Camiel
+Van Compernolle, Dirk
+Van de Cruys, Tim
+Van Deemter, Kees
+Vandeghinste, Vincent
+Vandegrift, Jeffrey
+Vandekerckhove, Bram
+Van Den Berg, Martin
+Van Den Bosch, Antal
+Vandenburgh, Harold R.
+Van de Peer, Yves
+Van Der Eijk, Pim
+Van Der Kraan, Mark
+Van Der Linden, Erik-Jan
+Vander Linden, Keith
+Van Der Sloot, Ko
+Van Der Steen, Gert J.
+VanderVliet, Hennie
+Van Der Wouden, Ton
+Van Durme, Benjamin
+Van Eijck, Jan
+Van Erk, Sebastiaan
+Van Eynde, Frank
+Van Gael, Jurgen
+Van Gemert, Jan
+van Genabith, Josef
+Van Genabith, Josef
+VanGent, Joop
+Van Hage, Willem Robert
+Van Halteren, Hans
+Van Hamme, Hugo
+Van Heerden, Charl
+Van Hoof, A. J. M.
+Van Huyssteen, Gerhard B.
+Van Kuppevelt, Jan
+Van Leeuwen, Hugo
+VanLehn, Kurt
+Van Lohuizen, Marcel P.
+Vanni, Stephan
+Van Noord, Gertjan
+Van Oostendorp, Marc
+Van Peek, Peter
+Van Rantwijk, Joris
+Van Rooy, Bertus
+Van Rooy, Robert
+Van Rullen, Tristan
+Van Santen, Jan P. H.
+Van Uytsel, Dong Hoon
+Van Vark, R. J.
+Van Vuuren, Sarel
+Van Zaanen, Menno
+Vapillon, Jerome
+Varadarajan, Balakrishnan
+Varadi, Tamas
+Varga, D�niel
+Varga, Istv&#225
+Varges, Sebastian
+Varile, Giovanni Battista
+Varjokallio, Matti
+Vasilakopoulos, Argyrios
+Vasireddy, Gunaranjan
+Vasishth, Shravan
+Vasserman, Alexander
+Vaturi, Sylvain
+Vauquois, Bernard
+Vazov, Nikolai
+Veale, Tony
+Veaux, Christophe
+Veber, Marek
+Veenendaal, Remco van
+Veenstra, Jorn
+Veenstra, Mettina
+Vega, Jose
+Vegnaduzzo, Stefano
+Veillon, Gerard
+Velldal, Erik
+Vendelmans, Ronald
+Venkatapathy, Sriram
+Venkataraman, Anand
+Venkatasubramanian, Suresh
+Venkatesan, Ramarathnam
+Ventura, Matthew
+Venugopal, Ashish
+Vera, David
+Verastegui-Carvajal, J. N.
+Verastegui, Nelson
+Verburg, P. A.
+Vercoe, Barry
+Verdu-Mas, Jose Luis
+Vergne, Jacques
+Verhagen, Marc
+Verhelst, Werner
+Verleg, Andre
+Veronis, Jean
+Verschelde, Jean-Luc
+Versley, Yannick
+Versmissen, Koen
+Verzi, Steve J.
+Vestre, Espen J.
+Vetulani, Zygmunt
+Vicedo Gonzalez, Jose Luis
+Vicedo, Jos&eacute
+Vicedo, Jose Luis
+Vichot, Frantz
+Vickrey, David
+Vidal, Enrique
+Vijayanand, Kommaluri
+Vijay-Shanker, K.
+Vijay-Shanker, K..
+Vilain, Alexander S. Yeh and Marc B.
+Vilain, Marc B.
+Vilar, David
+Vilares, Manuel
+Vilar, J. M.
+Vilar, Juan Miguel
+Vilar, Juan-Miguel
+Villadsen, Jorgen
+Villarejo, Luis
+Villasenor-Pineda, Luis
+Villemonte de la Clergerie, Eric
+Vilo, Jaak
+Vindigni, Michele
+Virbel, Jacques
+Virgilio, Michele
+Virpioja, Sami
+Visser, Eric M.
+Vitale, Anthony J.
+Vivaldi, Jorge
+V, Krishnakumar
+Vlachos, Andreas
+, Vladim&#x0ED
+, Vladislav
+Vliet, Hennie van der
+Vlk, Tomas
+Vloet, Joeri Van Der
+Voegtlin, Thomas
+Vogel, Carl
+Vogel, David
+Vogel, S.
+Vogel, Stephan
+Volk, Martin
+Vol�n, Jan
+Volokh, Alexander
+Volosen, Ionut
+Volz, Raphael
+Vondruska, Richard J.
+Von Glasersfeld, Ernst
+Vos, Rein
+Vossen, Piek
+Vosse, Theo
+vot, Laurent
+Votrubec, Jan
+Vouk, Mladen
+Voutilainen, Atro
+Vozila, Paul
+V, Ravi Kiran
+vre, Fabrice
+Vriend, Folkert De
+Vrusias, Bogdan
+V, Subbarao K
+V, Surya Ganesh
+Vu, Xuan Luong
+Vyas, Vishnu
+Vydiswaran, V.G.Vinod
+Wachsmuth, Ipke
+Wachsmuth, Sven
+Wachtel, Tom
+Wada, Hajime
+Wade, Vincent
+Wagacha, Peter Waiganjo
+Wagner, Joachim
+Wahlster, Wolfgang
+Wahrolen, Bengt
+Waibel, Alex
+Wakana, Takahiro
+Wakao, Takahiro
+Wakita, Toshiyuki
+Waldinger, Richard
+Waldron, Benjamin
+Wales, Roger
+Walker, Derek
+Walkerdine, James
+Walker, Donald E.
+Walker, Edward
+Walker, Elbert
+Walker, Kevin
+Wallenberg, Joel
+Wallington, Alan
+Wallington, Alan M.
+Wallis, Michael
+Walsh, Michael
+Walter, Stephan
+Walther, Markus
+Walther, Maxkus
+Waltz, David L.
+Wandmacher, Tonio
+Wang, Arthur
+Wang, Bin
+Wang, Bo
+Wang, Chao
+Wang, Chi-Shing
+Wang, Chi-Yung
+Wang, Chun-Hung
+Wang, Dingding
+Wang, Gang
+Wang, Guangwei
+Wang, Haifeng
+Wang, Honglin
+Wang, Hongling
+Wang, Houfeng
+Wang, Hsin-Min
+Wang, Huan
+Wang, Jianqiang
+Wang, Kuansan
+Wang, Liang-Jyh
+Wang, Meng
+Wang, Mengqiu
+Wang, Patrick
+Wang, Qian
+Wang, Ren-Jr
+Wang, Richard C.
+Wang, Rui
+Wang, Shan
+Wang, Shaojun
+Wang, Shilong
+Wang, Weiguo
+Wang, William S. Y.
+Wang, Xia
+Wang, Xiaofeng
+Wang, Xiaojie
+Wang, Xiaolin
+Wang, Xiaolong
+Wang, Xin
+Wang, Xinglong
+Wang, Xinhao
+Wang, Xuan
+Wang, Xuanhui
+Wang, Yefeng
+Wang, Ye-Yi
+Wang, Yong
+Wang, Yong-Cheng
+Wang, Yu-Chun
+Wang, Yue
+Wang, Zhen
+Wang, Zhenxing
+Wang, Zhiqiang
+Wang, Zhongjian
+Wang, Zhuoran
+Wanner, Leo
+Wan, Stephen
+Wan, Xiaojun
+Ward, Arthur
+Ward, Nigel
+Ward, Todd
+Ward, Wayne H.
+Wareham, Todd
+Warren, David H. D.
+Warren, David Scott
+Washburn, Clay
+Washtell, Justin
+Wasow, Thomas
+Wasson, Mark
+Watanabe, Hideo
+Watanabe, Satoru
+Watanabe, Takao
+Watanabe, Taro
+Watanabe, Tomohiro
+Watanabe, Yasuhiko
+Watanabe, Yotaro
+Waterman, Scott
+Waters, Richard C.
+Watkinson, Stephen
+Watson, Bruce W.
+Watson, Gordon
+Watson, Matt
+Watson, Richard E.
+Wauchope, Kenneth
+Way, Andy
+Wayne, Charles L.
+Wazinski, Peter
+Weale, Timothy
+Webber, Howard R.
+Webb, Nick
+Weber, David J.
+Weber, Hans
+Weber, Heinz J.
+Weber, Nicolas
+Weber, Volker
+Webster, Jonathan J.
+Webster, Mort
+Wechsler, Allan
+Wedekind, Jurgen
+Wedel, Andrew
+Weeber, Marc
+Weeks, Rollin V.
+Weerasinghe, Ruvan
+Weerkamp, Wouter
+Weese, Jonathan
+Wegstein, Werner
+Wehrle, Thomas
+Wehrli, Eric
+Weichselbraun, Albert
+Weidenbacher, Ulrich
+Weide, Robert
+Wei, Furu
+Weijters, Ton
+Weikum, Gerhard
+Weilhammer, Karl
+Weimer, Markus
+Weinberger, Steven H.
+Weinstein, Clifford J.
+Weinstein, Scott
+Weinstein, Steven P.
+Weintraub, Mitchel
+Weir, Carl
+Weir, David
+Weir, David J.
+Weischedel, Ralph M.
+Weise, David
+Weiss, Brian
+Weissenbacher, Davy
+Weiss, Stephen F.
+Weisweber, Wilhelm
+Wei, Xing
+Wei, Yu-Chuan
+Weld, Daniel
+Welgama, Viraj
+Wellington, Benjamin
+Wellner, Benjamin
+Wellner, Pierre
+Wells, Mike
+Weltman, Jerry
+Weng, Fuliang
+Wen, Ji-Rong
+Wen, Juan
+Wenliang, Chen
+Wentland, Wolodja
+Wen-Xin, Wang
+Werff, Laurens van der
+Wermter, Joachim
+Wermter, Stefan
+Werner, Eric
+Wesseling, Wieneke
+Westbrook, David
+Westerlund, Torbj�rn
+Weston, Jason
+Westphal, Martin
+Wettler, Manfred
+we, Welf
+White, Christopher M.
+White, George M.
+Whitehouse, Kamin
+White, John S.
+Whitelaw, Casey
+Whitelock, Pete
+Whitelock, Pete J.
+White, Michael
+White, Noah
+White, Peter
+White, Ryan
+Whitman, Brian
+Whitney, Paul
+Whittaker, Edward W. D.
+Whittaker, Steve
+Whittemore, Greg
+Whyte, Bill
+Wible, David
+Wicentowski, Richard
+Wick, Michael
+Widdows, Dominic
+Widlocher, Antoine
+Wiegand, Michael
+Wieling, Martijn
+Wiemer-Hastings, Peter
+Wiersma, Wybo
+Wiese, Richard
+Wightman, Colin
+Wilbur, Ronnie B.
+Wilbur, W. John
+Wilcock, Graham
+Wilcox, Che
+Wilensky, Robert
+Wilkens, Rolf
+Wilkerson, John
+Wilkinson, Ross
+Wilks, Yorick
+Will, Craig A.
+Willems, Yves
+Willett, Peter
+William, Scott
+Williams, David
+Williams, Jason
+Williams, John
+Williams, Ken
+Williams, Robert
+Willis, Alistair
+Wilms, Geert Jan
+Wilpon, Jay G.
+Wilson, Andrew
+Wilson, George
+Wilson, Harold
+Wilson, Stephen
+Wilson, Terry
+Wilson V, James M.
+Wilson, William H.
+Wilton, Murray T.
+Windhouwer, Menzo
+Winiwarter, Werner
+Winkel, Adam
+Winkelmann, Gunter
+Winkler, Thomas
+Winnemoller, Ronald
+Winograd, Terry
+Winterboer, Andi
+Winters, Scott
+Winter, Yoad
+Wiren, Mats
+Wirth, Michael
+Wise, Bowden
+Wise, G. Bowden
+Witbrock, Michael J.
+Witkam, Toon
+Witschel, Hans Friedrich
+Witt, Andreas
+Wittek, Peter
+Wittenburg, Kent
+Wittenburg, Peter
+Witten, Ian H.
+Woelfel, Joseph
+Woelfel, Matthias
+Wojcik, Richard H.
+Wolf, Brian
+Wolf, Chris
+Wolff, Christian
+Wolf, Florian
+Wolf, Peter
+Wolinski, Francis
+Wong, Daniel
+Wong, Fai
+Wong, Jimmy
+Wong, Kam-Fai
+Wong, Kim-Fai
+Wong, Percy Ping-Wai
+Wong, Raymond K.
+Wong, Wern
+Wong, William
+Wong, Wilson
+Wong, Yuk Wah
+Woo, Chong Woo
+Wood, Gordon R.
+Woodland, P. C.
+Woods, R. C.
+Woods, William A.
+Wooldridge, Michael
+Woolley, G. H.
+Worm, Karsten L.
+Wothke, Klaus
+Woyna, Adam G.
+Wright, Jerry
+Wright, Nick
+Wright, Richard
+Wroblewski, David A.
+Wu, Andi
+Wubben, Sander
+Wu, Chia-Wei
+Wu, Chien-Cheng
+Wu, Chien-Ping
+Wu, Chung-Hsien
+Wu, Dan
+Wu, Dekai
+Wu, Haodong
+Wu, Horng Jyh Paul
+Wu, Hua
+Wu, Mingli
+Wu, Ming-Wen
+Wunderlich, Dieter
+Wunsch, Holger
+Wu, Paul
+Wu, Qiang
+Wu, Shih-Hung
+Wu, Stephen
+Wutiwiwatchai, Chai
+Wu, Weilin
+Wu, Xian
+Wu, Xiaofeng
+Wu, Xiaohong
+Wu, Yiu Kei
+Wu, Yuanbin
+Wu, Zhenyu
+Wu, Zhibiao
+Wynne, Martin
+Wysoker, Alec
+Xanthos, Aris
+Xia, Fei
+Xia, Hairong
+Xiaohu, Liu
+Xiao, Jianguo
+Xiaojing, Bai
+Xiao, Juan
+XiaoLong, Wang
+Xiao, Weimin
+Xiao, Xinyan
+Xia, Rui
+Xia, Yingju
+Xia, YingJu
+Xia, Yiyuan
+Xia, Yunqing
+Xin, Chengsheng
+Xing, Eric P.
+Xing, Fei
+Xi, Ning
+Xinzhi, Chang
+Xiong, Deyi
+Xiong, Hao
+Xiong, Miao
+Xiong, Zhongyang
+Xi, Xiaoming
+Xuan-Jing, Huang
+Xuan, Weijian
+Xu, Bo
+Xue, Nianwen
+Xue, Xiangyang
+Xu, Fang
+Xu, Feiyu
+Xu, Hongzhi
+Xu, Hua
+Xu, Jian-ming
+Xu, Jinxi
+Xu, Kui
+Xu, Mingwei
+Xu, Mingxing
+Xun, Endong
+Xu, Ruifeng
+Xu, Sheng
+Xu, Tan
+Xu, Weiran
+Xu, Yinghui
+Xu, Zhiming
+Xu, Zhonghui
+Yaari, Yaakov
+Yablonsky, Serge A.
+Yada, Koji
+Yadav, Vineet
+Yaghi, Jim
+Yaginuma, Yoshitomo
+Yagisawa, Tsuyoshi
+Yagi, Tsunekazu
+Yaich, Elyes
+Yalcinkaya, Ihsan
+Yallop, Jeremy
+Yamabana, Kiyoshi
+Yamada, Atsushi
+Yamada, Hiroshi
+Yamada, Hiroyasu
+Yamada, Hisao
+Yamada, Ichiro
+Yamada, Kenji
+Yamada, Koichi
+Yamada, Seiji
+Yamada, Setsuo
+Yamada, Takeshi
+Yamada, Tomokazu
+Yamaguchi, Masaya
+Yamaji, Takahiro
+Yamaji, Yusuke
+Yamamoto, Akihiko
+Yamamoto, Hirofumi
+Yamamoto, Hirohumi
+Yamamoto, Kaoru
+Yamamoto, Kazuhide
+Yamamoto, Kazumasa
+Yamamoto, Masato
+Yamamoto, Mikio
+Yamamoto, Seiichi
+Yamamoto, Tadashi
+Yamane, Masaya
+Yamanishi, Kenji
+Yamano, Fumiyuki
+Yamaoka, Takayuki
+Yamasaki, Noriyuki
+Yamashina, Masaki
+Yamashita, Kazuyuki
+Yamashita, Koichi
+Yamashita, Tatsuo
+Yamashita, Yoichi
+Yamauchi, Hiroyuki
+Yamazaki, Hiroki
+Yamazaki, Takefumi
+Yampol, Todd
+Yamrom, Boris
+Yamron, Jonathan
+Yanagida, Masuzo
+Yan, Baoshi
+Yangarber, Roman
+Yang, Changhua
+Yang, Charles D.
+Yang, Dong
+Yang, Dongqiang
+Yang, Duen-Chi
+Yang, Guowen
+Yang, Jianwu
+Yang, Jie
+Yang, Lingpeng
+Yang, Qiang
+Yang, Shiquan
+Yang, Xiaofeng
+Yang, Yiming
+Yang, Yongsheng
+Yang, Yuansheng
+Yang, Yuhang
+Yang, Zhongfa
+Yan, Hao
+Yan, Yongfeng
+Yao, Jianmin
+Yao, Tianfang
+Yao, Tianshun
+Yarowsky, David
+Yaseen, Mustafa
+Yasuda, Keiji
+Yasuda, Norihito
+Yasuhara, Hiroshi
+Yasunaga, Hisashi
+Yata, Yasunori
+Yatbaz, Mehmet Ali
+Yates, Alexander
+Yates, D. M.
+Yee, Lo Yuen
+Yeh, Alex
+Yeh, Alexander S.
+Yeh, Ching-Long
+Yeh, Eric
+Yeh, Jui-Feng
+Yeh, Kevin C.
+Yencken, Lars
+Ye, Patrick
+Ye, Shiren
+Yi, Byoung-Kee
+Yih, Scott Wen-Tau
+Yih, Wen-tau
+Yilmazel, Ozgur
+Yilmaz, Yasin
+YingJu, Xia
+Ying, Shiao
+Yip, Kenneth Man-Kam
+Yi, Wu Sok
+Yi, Xing
+Yli-Jyra, Anssi
+Ylilammi, Matti
+Yllmaz, Okan
+Yngve, Victor H.
+Yokoo, Akio
+Yokota, Eiji
+Yokoyama, Shoichi
+Yonamine, Yasunori
+Yona, Shlomo
+Yoneoka, Mitsuhiro
+Yonezaki, Naoki
+Yonezawa, Akinori
+Yoon, Do-Sang
+Yoon, Juntae
+Yoon, SinWon
+Yoon, Taejin
+Yoon, Taewan
+Yooseph, Shibu
+Yoshida, Kazuhiro
+Yoshida, Keiichi
+Yoshida, Minoru
+Yoshida, Sho
+Yoshie, Makoto
+Yoshikawa, Katsumasa
+Yoshikawa, Masatoshi
+Yoshimi, Takehiko
+Yoshimoto, Kei
+Yoshimura, Kenji
+Yoshinaga, Naoki
+Yoshino, Toshiaki
+Yoshioka, Osamu
+Youd, Nick J.
+You, Hyunjo
+You, Jia-Ming
+Young, Brian
+Young, Mark A.
+Young, R. Michael
+Young, Robert
+Young, S. J.
+Young, Steve
+Yousfi-Monod, Mehdi
+Yuan, Chunfa
+Yuan, Xiaojun
+Yu, Bin
+Yu, Dan
+Yu, Dong
+Yu, Edmund S.
+Yue, Ming
+Yuen, Denis
+Yuen, Edmund
+Yuen, Raymond W. M.
+Yu, George
+Yu, Hao
+Yu, Hong-Kui
+Yu, Hua
+Yu, Kun
+Yu, Liang-Chih
+Yuret, Deniz
+Yu, Shihong
+Yu, Shiwen
+Yu, Shi-Wen
+Yusoff, Zaharin
+Yusuf, Hammam R.
+Yuura, Katsuhiko
+Yu, Xiaofeng
+Yu, Yeong-Ho
+Yu, Yong
+Yvon, Francois
+Yvon, Fran�ois
+Zaanen, Menno van
+Zabokrtsky, Zdenek
+Zacharski, Ron
+Zadeh, Lotfi A.
+Zadrozny, Wlodek
+Zagibalov, Taras
+Zaidan, Omar
+Zaidan, Omar F.
+Zaidel, Martin
+Zaiss, Zachary
+Zajac, Remi
+Zajic, David
+Zalizniak, A.
+Zamanian, Alex
+Zamchick, Gary
+Zampolli, Antonio
+Zancanaro, Massimo
+Zanoli, Roberto
+Zanzotto, Fabio Massimo
+Zapirain, Be&#241
+Zapirain, Be�at
+Zaragoza, Hugo
+Zarnfaller, F. L.
+Zarrella, Guido
+Zarriess, Sina
+Zarri, Gian Piero
+Zaslavskiy, Mikhail
+Zavaliagkos, George
+Zavarella, Vanni
+Zavrel, Jakub
+Zbib, Rabih
+Zechner, Klaus
+Zeevat, Henk
+Zeiler, Shawn
+Zeldes, Amir
+Zelenko, Dmitry
+Zelezny, Milos
+Zeljkovic, Ilija
+Zelon, Harvey
+Zeman, Daniel
+Zender, Hendrik
+Zeng, Guangping
+Zens, Richard
+Zernik, Uri
+Zesch, Torsten
+Zettlemoyer, Luke
+Zeyrek, Deniz
+Zhai, ChengXiang
+Zhai, Lufeng
+Zhang, Chao
+Zhang, Chen
+Zhang, Dakun
+Zhang, Guohua
+Zhang, Guoqing
+Zhang, Hao
+Zhang, James
+Zhang, Jason
+Zhang, Jiajun
+Zhang, Jian
+Zhang, Jianfeng
+Zhang, Jianping
+Zhang, Junlin
+Zhang, Kevin
+Zhang, Meng
+Zhang, Mingyao
+Zhang, Qin
+Zhang, Ruiqiang
+Zhang, Xian
+Zhang, Yaozhong
+Zhang, Yao-zhong
+Zhang, Yibo
+Zhang, Yimin
+Zhang, Yitao
+Zhang, Yongkui
+Zhang, Yue
+Zhang, Yuqi
+Zhan, Xuegang
+Zhao, Hai
+Zhao, Jian
+Zhao, Jinglei
+Zhao, Leon J.
+Zhao, Shanheng
+Zhao, Shaojun
+Zhao, Sheng
+Zhao, Shiqi
+Zhao, Shubin
+Zhao, Tiejun
+Zhaoxiong, Chen
+Zhao, Yong
+Zhechev, Ventsislav
+Zheng, Dequan
+Zheng, Weimin
+Zheng, Yabin
+Zhengyu, Niu
+Zheng, Zhaohui
+Zheng, Zhiping
+Zhong, Hua
+Zhong, Zhi
+Zhou, Bowen
+Zhou, Deyu
+Zhou, Dong
+Zhou, Guodong
+Zhou, GuoDong
+Zhou, Joe F.
+Zhou, Junsheng
+Zhou, Liming
+Zhou, Lixin
+Zhou, Ming
+Zhou, Qiang
+Zhou, Xiaodong
+Zhou, Yilu
+Zhou, Yiping
+Zhou, Yujian
+Zhou, Zheng-Yu
+Zhuang, Xiaodan
+Zhuang, Ziming
+Zhu, Conghui
+Zhu, Honggang
+Zhu, Jingbo
+Zhu, Mingjie
+Zhu, Muhua
+Zhu, Qiaoming
+Zhu, QiaoMing
+Zhu, Qingsheng
+Zhu, Wei-Jing
+Zhu, Xiaodan
+Zhu, Xiaojin
+Ziedan, Ibrahim
+Zielund, Thomas
+Ziesche, Soenke
+Ziff, Paul
+Zimak, Dav
+Zimmer, James
+Zimmermann, Harald H.
+Zini, Manuel
+Zinn, Claus
+Zissman, Marc
+Zitouni, Imed
+Zivov, Victor
+Zock, Michael
+Zollmann, Andreas
+Zoltan, Szabo
+Zong, Chengqing
+Zorn, Hans-Peter
+Zou, Bo
+Zribi, Adnane
+Zschorn, Andrew
+Zubiaga, Alex
+Zubiaga, Arkaitz
+Zubizarreta Aizpuru, J. R.
+Zue, Victor W.
+Zuidema, Willem
+Zwarts, Simon
+Zweigenbaum, Pierre
+Zweig, Geoffrey
+Zweig, George

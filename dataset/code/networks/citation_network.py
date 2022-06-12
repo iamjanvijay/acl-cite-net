@@ -239,11 +239,12 @@ class CitationNet:
                 country_to_paper_ids[country].append(paper_id)
         return country_to_paper_ids
     
-    def extract_country_cited_count(self, save_fpath):
+    def extract_country_cited_count(self, with_paper_age = False, reference_year = None, save_fpath = None):
         '''
             for every "paper" (say X) identies the "count of papers" (Y) citing it;
             identifies countries associated with X and returns an aggregated list of form: 
             "country" (associated with "paper" X_1, X_2, ... X_n) => [Y_1, Y_2, ... Y_n]
+            for with_paper_age option: "country" => [(Y_1, age_1), (Y_2, age_2), ... (Y_n, age_n)]
         '''
         country_cited_count = dict()
         for paper_id in self.paper_to_citedby:
@@ -252,7 +253,12 @@ class CitationNet:
             for country in country_list:
                 if country not in country_cited_count:
                     country_cited_count[country] = []
-                country_cited_count[country].append(citations)
+                if not with_paper_age:
+                    country_cited_count[country].append(citations)
+                else:
+                    paper_age = reference_year - int(self.paper_features[paper_id]['year'])
+                    assert(paper_age>=0)
+                    country_cited_count[country].append((citations, paper_age))
         
         if save_fpath==None:
             return country_cited_count

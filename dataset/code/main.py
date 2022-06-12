@@ -320,111 +320,218 @@ def main(args):
         country_citation_count_fpath = './downloads/country_cited_count.json'
         inter_country_citation_count_fpath = './downloads/inter_country_cited_count.json'
         inter_country_citation_count_wo_year_fpath = './downloads/inter_country_cited_count_wo_year.json'
-        year_to_country_citation_count_fpath = './downloads/year_to_country_citation_count.json'
         country_to_country_referened_count_fpath = './downloads/country_to_referenced_country_counts.json'
         country_pair_to_clique_size_fpath = './downloads/country_pair_to_clique_size.json'
         country_pair_to_dominant_count_clique_size_fpath = './downloads/country_pair_to_dominant_count_clique_size.json'
         country_pair_to_dominant_fraction_clique_size_fpath = './downloads/country_pair_to_dominant_fraction_clique_size.json'
         regression_features_fpath = './downloads/paper_key_to_regression_features.csv'
 
-        citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict)
-        # citenet.print_top_k_cited(20) # prints top-20 cited papers
+        to_do = {
+                    'dump_country_paper_count': False, 
+                    'dump_year_and_avg_citation_of_country': False,
+                    'dump_paper_age_to_citations_of_country': True,
+                    'dump_regression_features': False,
+                }
 
-        for i, paperID in enumerate(citenet.paper_features):
-            if i >= 10:
-                break
-            paper_features = citenet.paper_features[paperID]
-            print(paperID)
-            print(paper_features)
-    
-        # output the features list in a csv
-        row_header = ['paper-key', 'countries', 'author genders (in authorship order)', 'author names (in authorship order)', 'authors count', 'authors citations (uptil present; in authorship order)', 'authors citations (uptil year of publication; in authorship order)', 'nlp academic age (uptil present; in authorship order)', 'nlp academic age (uptil year of publication; in authorship order)', 'venue', 'min university rank', 'max university rank', 'age of paper (years)', 'paper total ciatations']
-        with open(regression_features_fpath, 'w') as f:
-            csv_writer = csv.writer(f, delimiter='|')
-            csv_writer.writerow(row_header)
-            paper_key_to_venue = json.load(open('./downloads/dict_paper_id_to_venue.json'))
-            paper_key_to_min_rank_cat = json.load(open('./downloads/dict_paper_uni_minrank.json'))
-            paper_key_to_mean_rank_cat = json.load(open('./downloads/dict_paper_uni_meanrank.json'))
+        if to_do['dump_country_paper_count']:
+            # dump [country, paper_count] tsv for tabelu world-map plot
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict)
+            country_to_paper_count_fpath ='./downloads/country_to_paper_count.tsv'
+            
+            country_to_paperids = citenet.country_to_publications()
+            with open(country_to_paper_count_fpath, 'w') as f_tsv:
+                f_tsv.write(f'Country\tPaper Count\n')
+                for country in country_to_paperids:
+                    paper_count = len(country_to_paperids[country])
+                    print(country, paper_count)
+                    f_tsv.write(f'{country.strip()}\t{paper_count}\n')
 
-            for i, paperID in enumerate(citenet.paper_features):
+        if to_do['dump_year_and_avg_citation_of_country']:
+            # dump [year, country, paper_count, total_citations, avg_citation] tsv for tabelu world-map plot
+            year_to_country_citation_count_fpath = './downloads/year_to_country_citation_count.tsv'
+            country_year_to_citation_count = dict()
+            last_year_country_paper_counts = []
 
-                paper_key = citenet.paper_features[paperID]['paper_key']
-                paper_id_year = int(citenet.paper_features[paperID]['year'])
+            with open(year_to_country_citation_count_fpath, 'w') as f_tsv:
+                for year in range(2000, 2022):
+                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict)
+                    country_to_papers_citation_count = citenet.extract_country_cited_count()
+                    
+                    last_year_country_paper_counts = [] # reset
+                    for country in country_to_papers_citation_count:
+                        paper_count = len(country_to_papers_citation_count[country])
+                        citation_count = sum(country_to_papers_citation_count[country]) # for **median** simply take median of country_to_papers_citation_count[country]
+                        key = f'{country}\t{year}'
+                        country_year_to_citation_count[key] = [paper_count, citation_count, round(float(citation_count)/paper_count, 2)]
+                        last_year_country_paper_counts.append((country, paper_count))
 
-                # countries associated with the paper; excluding the company names
-                countries = ','.join([country.strip() for country in citenet.paper_features[paperID]['countries'] if country not in citenet.company_names])
-                if len(countries.strip()) == 0:
-                    countries = 'unknown'
+                # writing the statistics to the tsv file
+                top_10_publishing_countries = [(country, _) for country, _ in sorted(last_year_country_paper_counts, key=lambda x: x[1]) if country not in citenet.company_names][-10:]
+                f_tsv.write(f'Country\tYear\tPaper Count\tCitation Count\tCitation Average (per paper)\n')
+                for country, _ in top_10_publishing_countries:
+                    for year in range(2000, 2022):
+                        key = f'{country}\t{year}'
+                        if key not in country_year_to_citation_count:
+                            paper_count, citation_count, citation_average = 0, 0, 0.00
+                        else:
+                            paper_count, citation_count, citation_average = country_year_to_citation_count[key]
+                        f_tsv.write(f'{country}\t{year}\t{paper_count}\t{citation_count}\t{citation_average}\n')
+                        print(f'{country}\t{year}\t{paper_count}\t{citation_count}\t{citation_average}')
 
-                # author count and names of authors
-                authors = citenet.paper_features[paperID]['bib_authors']
-                authors = ['~'.join([name.strip() for name in f_name_l_name]) for f_name_l_name in authors]
-                authors_count = len(authors)
-                authors = ','.join(authors)
+        if to_do['dump_paper_age_to_citations_of_country']:
+            # dump [year, country, paper_count, total_citations, avg_citation] tsv for tabelu world-map plot
+            paper_age_to_country_citation_count_fpath = './downloads/paper_age_to_country_citation_count.tsv'
+            country_and_paper_age_to_citation_count = dict()
+            last_year_country_paper_counts = []
 
-                # gender of authors
-                author_genders = citenet.paper_features[paperID]['bib_author_genders']
-                author_genders = ','.join(author_genders)
+            with open(paper_age_to_country_citation_count_fpath, 'w') as f_tsv:
+                max_paper_age = 0
+                for year in range(2000, 2022):
+                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, verbose=False)
+                    country_to_papers_citation_count = citenet.extract_country_cited_count(with_paper_age=True, reference_year=year)
+                    
+                    last_year_country_paper_counts = [] # reset
+                    for country in country_to_papers_citation_count:
+                        paper_count = len(country_to_papers_citation_count[country])
+                        for paper_cite_count, paper_age in country_to_papers_citation_count[country]:
+                            key = f'{country}\t{paper_age}'
+                            max_paper_age = max(max_paper_age, paper_age)
+                            if key not in country_and_paper_age_to_citation_count:
+                                country_and_paper_age_to_citation_count[key] = []
+                            country_and_paper_age_to_citation_count[key].append(paper_cite_count)
+                        last_year_country_paper_counts.append((country, paper_count))
 
-                # citation uptil present & uptil year of publication | some papers might be missing in computation of citation count since few authors don't author ids from Semantic Scholar| len(author_names) - len(ciation_count) is missed authors for paper
-                # unkonwn (without semnatic scholar id) authors are assinged 0 ciations
-                citations_uptil_present, citations_uptil_yop = [], []
-                author_ids = [auth_id_auth_name[0] for auth_id_auth_name in citenet.paper_features[paperID]['sem_authors'] if auth_id_auth_name!=['']] # what if author id doesn't take a valid value?
-                for author_id in author_ids:
-                    author_citation_count = citenet.cumulative_citations[author_id][paper_id_year]
-                    citations_uptil_yop.append(author_citation_count)
+                for key in country_and_paper_age_to_citation_count:
+                    paper_cite_count_list = country_and_paper_age_to_citation_count[key]
+                    count_of_papers = len(paper_cite_count_list) # count of papers with certain age and for certain country
+                    citation_of_papers = sum(paper_cite_count_list)
+                    average_citation_per_paper = float(citation_of_papers)/count_of_papers # **median** can be computed here if required
+                    country_and_paper_age_to_citation_count[key] = [count_of_papers, citation_of_papers, average_citation_per_paper]
 
-                    final_year = max(citenet.cumulative_citations[author_id])
-                    author_citation_count = citenet.cumulative_citations[author_id][final_year]
-                    citations_uptil_present.append(author_citation_count)
-                citations_uptil_yop = ','.join([str(count) for count in citations_uptil_yop])
-                citations_uptil_present = ','.join([str(count) for count in citations_uptil_present])
-                # empty string if citaitons not found for any of the authors
-                
-                # NLP academic age uptil present & uptil year of publication
-                acad_age_uptil_present, acad_age_uptil_yop = [], []
-                for author_id in author_ids:
-                    acad_age_uptil_yop.append(paper_id_year - citenet.first_pub_year[author_id])
-                    acad_age_uptil_present.append(final_year - citenet.first_pub_year[author_id])
-                acad_age_uptil_yop = ','.join([str(age) for age in acad_age_uptil_yop])
-                acad_age_uptil_present = ','.join([str(age) for age in acad_age_uptil_present])
-                # empty string if citaitons not found for any of the authors
+                # writing the statistics to the tsv file
+                top_10_publishing_countries = [(country, _) for country, _ in sorted(last_year_country_paper_counts, key=lambda x: x[1]) if country not in citenet.company_names][-10:]
+                f_tsv.write(f'Country\tAge of Paper\tPaper Count\tCitation Count\tCitation Average (per paper)\n')
+                paper_age_bins = [(0, 3), (4, 6), (7, 9), (10, 14), (15, 1000)]
+                use_paper_bins = False
+                for country, _ in top_10_publishing_countries:
+                    if use_paper_bins:
+                        for paper_age_bin in paper_age_bins:
+                            bin_paper_count, bin_citation_count = 0, 0
+                            for paper_age in range(paper_age_bin[0], paper_age_bin[1]+1):
+                                key = f'{country}\t{paper_age}'
+                                if key not in country_and_paper_age_to_citation_count:
+                                    paper_count, citation_count, citation_average = 0, 0, 0.00
+                                else:
+                                    paper_count, citation_count, citation_average = country_and_paper_age_to_citation_count[key]
+                                # bin stats here
+                                bin_paper_count += paper_count
+                                bin_citation_count += citation_count
+                            bin_citation_average = float(bin_citation_count) / bin_paper_count
+                            # writing to tsv file
+                            bin_age_str = '-'.join([str(x) for x in paper_age_bin])
+                            f_tsv.write(f'{country}\t{bin_age_str}\t{bin_paper_count}\t{bin_citation_count}\t{bin_citation_average}\n')
+                            print(f'{country}\t{bin_age_str}\t{bin_paper_count}\t{bin_citation_count}\t{bin_citation_average}')
+                    else:
+                        for paper_age in range(1, 21):
+                            key = f'{country}\t{paper_age}'
+                            if key not in country_and_paper_age_to_citation_count:
+                                paper_count, citation_count, citation_average = 0, 0, 0.00
+                            else:
+                                paper_count, citation_count, citation_average = country_and_paper_age_to_citation_count[key]
+                            f_tsv.write(f'{country}\t{paper_age}\t{paper_count}\t{citation_count}\t{citation_average}\n')
+                            print(f'{country}\t{paper_age}\t{paper_count}\t{citation_count}\t{citation_average}')
 
-                # venue
-                venue = paper_key_to_venue[paper_key]
-                venue = 'unknown' if len(venue.strip())==0 else venue.strip()
-                
-                # min university rank
-                if paper_key in paper_key_to_min_rank_cat:
-                    min_rank = paper_key_to_min_rank_cat[paper_key]
-                else:
-                    min_rank = 'UNK'
-                if min_rank is not None:
-                    min_rank = min_rank.strip()
-                else:
-                    min_rank = 'UNK'
-                min_rank = min_rank if min_rank!='UNK' else 'unknown'
-                
-                # max university rank
-                if paper_key in paper_key_to_mean_rank_cat:
-                    mean_rank = paper_key_to_mean_rank_cat[paper_key]
-                else:
-                    mean_rank = 'UNK'
-                if mean_rank is not None:
-                    mean_rank = mean_rank.strip()
-                else:
-                    mean_rank = 'UNK'
-                mean_rank = mean_rank if mean_rank!='UNK' else 'unknown'
+        if to_do['dump_regression_features']:
+            # output the regression features list in a csv
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict)
+            
+            row_header = ['paper-key', 'countries', 'author genders (in authorship order)', 'author names (in authorship order)', 'authors count', 'authors citations (uptil present; in authorship order)', 'authors citations (uptil year of publication; in authorship order)', 'nlp academic age (uptil present; in authorship order)', 'nlp academic age (uptil year of publication; in authorship order)', 'venue', 'min university rank', 'max university rank', 'age of paper (years)', 'paper total ciatations']
+            with open(regression_features_fpath, 'w') as f:
+                csv_writer = csv.writer(f, delimiter='|')
+                csv_writer.writerow(row_header)
+                paper_key_to_venue = json.load(open('./downloads/dict_paper_id_to_venue.json'))
+                paper_key_to_min_rank_cat = json.load(open('./downloads/dict_paper_uni_minrank.json'))
+                paper_key_to_mean_rank_cat = json.load(open('./downloads/dict_paper_uni_meanrank.json'))
 
-                # age of the NLP paper
-                assert(final_year==2021)
-                paper_age = final_year - paper_id_year
+                for i, paperID in enumerate(citenet.paper_features):
 
-                # total citations of the paper
-                paper_total_ciatations = len(citenet.paper_to_citedby[paperID]) if paperID in citenet.paper_to_citedby else 0
+                    paper_key = citenet.paper_features[paperID]['paper_key']
+                    paper_id_year = int(citenet.paper_features[paperID]['year'])
 
-                row = [paper_key, countries, author_genders, authors, authors_count, citations_uptil_present, citations_uptil_yop, acad_age_uptil_present, acad_age_uptil_yop, venue, min_rank, mean_rank, paper_age, paper_total_ciatations]
-                csv_writer.writerow(row)
+                    # countries associated with the paper; excluding the company names
+                    countries = ','.join([country.strip() for country in citenet.paper_features[paperID]['countries'] if country not in citenet.company_names])
+                    if len(countries.strip()) == 0:
+                        countries = 'unknown'
+
+                    # author count and names of authors
+                    authors = citenet.paper_features[paperID]['bib_authors']
+                    authors = ['~'.join([name.strip() for name in f_name_l_name]) for f_name_l_name in authors]
+                    authors_count = len(authors)
+                    authors = ','.join(authors)
+
+                    # gender of authors
+                    author_genders = citenet.paper_features[paperID]['bib_author_genders']
+                    author_genders = ','.join(author_genders)
+
+                    # citation uptil present & uptil year of publication | some papers might be missing in computation of citation count since few authors don't author ids from Semantic Scholar| len(author_names) - len(ciation_count) is missed authors for paper
+                    # unkonwn (without semnatic scholar id) authors are assinged 0 ciations
+                    citations_uptil_present, citations_uptil_yop = [], []
+                    author_ids = [auth_id_auth_name[0] for auth_id_auth_name in citenet.paper_features[paperID]['sem_authors'] if auth_id_auth_name!=['']] # what if author id doesn't take a valid value?
+                    for author_id in author_ids:
+                        author_citation_count = citenet.cumulative_citations[author_id][paper_id_year]
+                        citations_uptil_yop.append(author_citation_count)
+
+                        final_year = max(citenet.cumulative_citations[author_id])
+                        author_citation_count = citenet.cumulative_citations[author_id][final_year]
+                        citations_uptil_present.append(author_citation_count)
+                    citations_uptil_yop = ','.join([str(count) for count in citations_uptil_yop])
+                    citations_uptil_present = ','.join([str(count) for count in citations_uptil_present])
+                    # empty string if citaitons not found for any of the authors
+                    
+                    # NLP academic age uptil present & uptil year of publication
+                    acad_age_uptil_present, acad_age_uptil_yop = [], []
+                    for author_id in author_ids:
+                        acad_age_uptil_yop.append(paper_id_year - citenet.first_pub_year[author_id])
+                        acad_age_uptil_present.append(final_year - citenet.first_pub_year[author_id])
+                    acad_age_uptil_yop = ','.join([str(age) for age in acad_age_uptil_yop])
+                    acad_age_uptil_present = ','.join([str(age) for age in acad_age_uptil_present])
+                    # empty string if citaitons not found for any of the authors
+
+                    # venue
+                    venue = paper_key_to_venue[paper_key]
+                    venue = 'unknown' if len(venue.strip())==0 else venue.strip()
+                    
+                    # min university rank
+                    if paper_key in paper_key_to_min_rank_cat:
+                        min_rank = paper_key_to_min_rank_cat[paper_key]
+                    else:
+                        min_rank = 'UNK'
+                    if min_rank is not None:
+                        min_rank = min_rank.strip()
+                    else:
+                        min_rank = 'UNK'
+                    min_rank = min_rank if min_rank!='UNK' else 'unknown'
+                    
+                    # max university rank
+                    if paper_key in paper_key_to_mean_rank_cat:
+                        mean_rank = paper_key_to_mean_rank_cat[paper_key]
+                    else:
+                        mean_rank = 'UNK'
+                    if mean_rank is not None:
+                        mean_rank = mean_rank.strip()
+                    else:
+                        mean_rank = 'UNK'
+                    mean_rank = mean_rank if mean_rank!='UNK' else 'unknown'
+
+                    # age of the NLP paper
+                    assert(final_year==2021)
+                    paper_age = final_year - paper_id_year
+
+                    # total citations of the paper
+                    paper_total_ciatations = len(citenet.paper_to_citedby[paperID]) if paperID in citenet.paper_to_citedby else 0
+
+                    row = [paper_key, countries, author_genders, authors, authors_count, citations_uptil_present, citations_uptil_yop, acad_age_uptil_present, acad_age_uptil_yop, venue, min_rank, mean_rank, paper_age, paper_total_ciatations]
+                    csv_writer.writerow(row)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

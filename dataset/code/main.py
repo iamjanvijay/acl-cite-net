@@ -15,7 +15,7 @@ from difflib import SequenceMatcher
 from fuzzywuzzy import fuzz
 import json
 from networks import CitationNet
-import networkx as nx
+import numpy as np
 
 def read_bibfile(filepath):
     if filepath=='./downloads/anthology+abstracts.bib' and os.path.exists('./downloads/anthology+abstracts.pkl'):
@@ -169,6 +169,13 @@ def query_dict(dict_object, key):
         return dict_object[key]
     return 'None'
 
+# define function to calculate Gini coefficient
+def gini(x):
+    total = 0
+    for i, xi in enumerate(x[:-1], 1):
+        total += np.sum(np.abs(xi - x[i:]))
+    return total / (len(x)**2 * np.mean(x))
+
 def main(args):
     bib_dict = read_bibfile(args.bib_path)
     bib_dict = {k: v for k, v in bib_dict.items() if v['type']!='proceedings'} # filter conference proceedings
@@ -317,20 +324,15 @@ def main(args):
         ref_paperids_fpath = './downloads/ref_paper_ids.csv'
         bib_paper_details_fpath = './downloads/bib_paper_details.csv'
         paper_country_fpath = './downloads/paper_country_list_all_company.json'
-        country_citation_count_fpath = './downloads/country_cited_count.json'
-        inter_country_citation_count_fpath = './downloads/inter_country_cited_count.json'
-        inter_country_citation_count_wo_year_fpath = './downloads/inter_country_cited_count_wo_year.json'
-        country_to_country_referened_count_fpath = './downloads/country_to_referenced_country_counts.json'
-        country_pair_to_clique_size_fpath = './downloads/country_pair_to_clique_size.json'
-        country_pair_to_dominant_count_clique_size_fpath = './downloads/country_pair_to_dominant_count_clique_size.json'
-        country_pair_to_dominant_fraction_clique_size_fpath = './downloads/country_pair_to_dominant_fraction_clique_size.json'
         regression_features_fpath = './downloads/paper_key_to_regression_features.csv'
 
         to_do = {
                     'dump_country_paper_count': False, 
                     'dump_year_and_avg_citation_of_country': False,
-                    'dump_paper_age_to_citations_of_country': True,
+                    'dump_paper_age_to_citations_of_country': False,
                     'dump_regression_features': False,
+                    'dump_top_10_publishing_country_heat_map': False,
+                    'dump_gini_coeff_over_years': True,
                 }
 
         if to_do['dump_country_paper_count']:
@@ -532,6 +534,116 @@ def main(args):
 
                     row = [paper_key, countries, author_genders, authors, authors_count, citations_uptil_present, citations_uptil_yop, acad_age_uptil_present, acad_age_uptil_yop, venue, min_rank, mean_rank, paper_age, paper_total_ciatations]
                     csv_writer.writerow(row)
+
+        if to_do['dump_top_10_publishing_country_heat_map']:
+            # dump the averaged citation percentages from country to referenced-country [all countries]
+            paper_age_to_country_citation_count_fpath, year = './downloads/inter_country_citation_percentages.tsv', 2021
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict)
+            # stats_dict = citenet.country_to_country_counts(k = 10) # top-10 countries
+            stats_dict = citenet.country_to_country_counts(k = -1) # all the countries
+
+            convert_first_to_fraction = True
+            if convert_first_to_fraction:
+    
+                for country in stats_dict: # set fraction to 1.0
+                    for ref_country in stats_dict[country]:
+                        if ref_country == 'all': # aggregation
+                            continue
+                        
+                        for paper_idx in range(len(stats_dict[country][ref_country])):
+                                if stats_dict[country][ref_country][paper_idx] != 0: # if paper has total non-zero references
+                                    stats_dict[country][ref_country][paper_idx] = stats_dict[country][ref_country][paper_idx] / float(stats_dict[country]['all'][paper_idx])
+
+                for country in stats_dict: # set fraction for country_to_all to 1.0
+                    for paper_idx in range(len(stats_dict[country]['all'])):
+                        if stats_dict[country]['all'][paper_idx] != 0: # if paper has total non-zero references
+                            stats_dict[country]['all'][paper_idx] = 1.0
+
+            with open(paper_age_to_country_citation_count_fpath, 'w') as fw:
+                fw.write(f'Country\tReferenced Country\tPercentage\n')
+                for country in sorted(stats_dict):
+                    for ref_country in sorted(stats_dict[country]):
+                        if ref_country == 'all': # aggregation
+                            continue
+                        if sum(stats_dict[country][ref_country]) == 0:
+                            perc = 0.0
+                        else:
+                            perc = 100 * sum(stats_dict[country][ref_country]) / sum(stats_dict[country]['all'])
+                        fw.write(f'{country}\t{ref_country}\t{perc}\n')
+        
+        if to_do['dump_gini_coeff_over_years']:
+            # dump the gini-coeffient for country-a citing country-b across years [country-a, year] => gini_coeffcient | for country-a we only include top-10 publishing countries
+            k1, k2 = 10, 10 # k1 is the number of cited countries to be considered, k2 is the number of citing countries
+            # k1, k2 = -1, 10
+            gini_coeffs_over_years_fpath = f'./downloads/gini_coeffs_over_years_{k2}_{k1}.tsv'
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict, verbose=False)
+            all_countries = citenet.top_k_publishing_countries(k1) # list of all the cited countries
+            top_k2_countries = citenet.top_k_publishing_countries(k2) # list of all the citing countries
+            print("Considering citing countries:", top_k2_countries)
+            print("Considering cited countries:", all_countries)
+
+            with open(gini_coeffs_over_years_fpath, 'w') as fw:
+                fw.write(f'Country (Citing Country)\tYear\tGini-Coefficient\n')
+                for year in range(2000, 2022):
+                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, verbose=False)
+                    stats_dict = citenet.country_to_country_counts(countries=all_countries)
+
+                    convert_first_to_fraction = True
+                    if convert_first_to_fraction:
+                        for country in stats_dict: # set fraction to 1.0
+                            for ref_country in stats_dict[country]:
+                                if ref_country == 'all': # aggregation
+                                    continue
+                                
+                                for paper_idx in range(len(stats_dict[country][ref_country])):
+                                        if stats_dict[country][ref_country][paper_idx] != 0: # if paper has total non-zero references
+                                            stats_dict[country][ref_country][paper_idx] = stats_dict[country][ref_country][paper_idx] / float(stats_dict[country]['all'][paper_idx])
+
+                        for country in stats_dict: # set fraction for country_to_all to 1.0
+                            for paper_idx in range(len(stats_dict[country]['all'])):
+                                if stats_dict[country]['all'][paper_idx] != 0: # if paper has total non-zero references
+                                    stats_dict[country]['all'][paper_idx] = 1.0
+
+                    country_to_citation_fractions = dict()
+                    for country in sorted(stats_dict):
+                        if country not in country_to_citation_fractions:
+                            country_to_citation_fractions[country] = dict()
+
+                        for ref_country in sorted(stats_dict[country]):
+                            if ref_country == 'all': # aggregation
+                                continue
+
+                            if sum(stats_dict[country][ref_country]) == 0:
+                                perc = 0.0
+                            else:
+                                perc = 100 * sum(stats_dict[country][ref_country]) / sum(stats_dict[country]['all'])
+
+                            country_to_citation_fractions[country][ref_country] = perc
+                        
+                    for country in top_k2_countries: # filling in missing values if any missed
+                        if country not in country_to_citation_fractions:
+                            country_to_citation_fractions[country] = dict()
+                        for ref_country in all_countries:
+                            if ref_country not in country_to_citation_fractions[country]:
+                                country_to_citation_fractions[country][ref_country] = 0.0
+
+                    overall_citation_fractions = []
+                    size = None
+                    for country in top_k2_countries:  
+                        citation_fractions = [country_to_citation_fractions[country][ref_country] for ref_country in country_to_citation_fractions[country]]
+                        if size is None:
+                            size = len(citation_fractions)
+                        else:
+                            assert(size == len(citation_fractions))
+                        overall_citation_fractions.extend(citation_fractions)
+                        gini_coeff = float(gini(np.array(citation_fractions)))
+                        print(year, country, citation_fractions, gini_coeff)
+                        
+                    gini_coeff = float(gini(np.array(overall_citation_fractions)))
+                    fw.write(f'all countries\t{year}\t{gini_coeff}\n') # only the citing countries considered which is top-k2
+
+                    
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

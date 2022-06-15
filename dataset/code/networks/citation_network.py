@@ -14,7 +14,7 @@ class CitationNet:
         self.paper_to_citedby = dict() # paperID => [list of papers citing paper with paperID]
         self.paper_features = dict() # paperID => [dictonary of features of paper with paperID]
         self.cache = dict() # stores some results to speed-up computations
-        self.company_names = ['google', 'amazon', 'facebook', 'microsoft', 'huggingface', 'ibm', 'bloomberg', 'yahoo', 'samsung', 'alibaba', 'allenai', 'baidu']
+        self.company_names = ['google', 'amazon', 'facebook', 'microsoft', 'huggingface', 'ibm', 'bloomberg', 'yahoo', 'samsung', 'alibaba', 'allenai', 'baidu', 'twitter', 'allen institute for ai', 'airbnb', 'naver', 'netflix', 'openai', 'xerox']
 
         with open(bib_details_filepath) as csvfile: # load bib details.
             bib_title_to_bib_details = dict()
@@ -136,6 +136,15 @@ class CitationNet:
             self.paper_features[paper_id]['bib_author_genders'] = bib_author_genders
 
         print(f"Stanford Hit: {stanford_hit/total} | SSA Hit: {ssa_hit/total} | PubMed Hit: {pubmed_hit/total}")
+
+    def top_k_publishing_countries(self, k):
+        country_to_paper_ids = self.country_to_publications()
+        country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in self.company_names} # filter out company names
+        if k==-1:
+            top_k_countries = sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))
+        else:
+            top_k_countries = sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:k]
+        return [country[0] for country in top_k_countries]
 
     def author_id_to_num_citations_in_a_year(self):
         citations = dict() # accessed as citations[author_id][1997]
@@ -345,14 +354,23 @@ class CitationNet:
                     paper_id_to_country_cited[paper_id][ref_country] += 1
         return paper_id_to_country_cited
 
-    def country_to_country_fraction(self, save_fpath, k = 10):
+    def country_to_country_counts(self, save_fpath=None, k = -1, countries=None):
         '''
             For top-k countries computes the fraction of references (of all the references of country A) of country A to country B
         '''
         paper_id_to_country_cited = self.paper_id_to_country_cited_count()
         country_to_paper_ids = self.country_to_publications()
         country_to_paper_ids = {k: country_to_paper_ids[k] for k in country_to_paper_ids if k not in self.company_names} # filter out company names
-        top_k_countries = [country_1 for country_1, country_1_paper_ids in sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))[:k]] # top k publishing countries
+        
+        if countries is not None:
+            all_countries = countries
+            top_k_countries = all_countries
+        else:
+            all_countries = [country_1 for country_1, country_1_paper_ids in sorted(country_to_paper_ids.items(), key=lambda x: -len(x[1]))]
+            if k != -1:
+                top_k_countries = all_countries[:k]
+            else:
+                top_k_countries = all_countries
 
         country_to_ref_country_counts = dict()
         for country in top_k_countries:
@@ -381,8 +399,11 @@ class CitationNet:
             for ref_country in top_k_countries:
                 assert(paper_count==len(country_to_ref_country_counts[country][ref_country]))
 
-        with open(save_fpath, 'w') as f:
-            json.dump(country_to_ref_country_counts, f)
+        if save_fpath is not None:
+            with open(save_fpath, 'w') as f:
+                json.dump(country_to_ref_country_counts, f)
+        else:
+            return country_to_ref_country_counts
 
     def cont_1_to_cont_2_auth_edges_and_names(self, country_1_paper_ids, country_2_paper_ids, dominant_edges_thresold, thresold_type):
         author_id_to_author_name, author_id_to_references_count, edges_dict = dict(), dict(), dict()

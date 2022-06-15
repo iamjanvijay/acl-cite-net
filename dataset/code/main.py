@@ -323,16 +323,16 @@ def main(args):
         title_to_paper_details_fpath = './downloads/title_to_paper_filtered_details.csv'
         ref_paperids_fpath = './downloads/ref_paper_ids.csv'
         bib_paper_details_fpath = './downloads/bib_paper_details.csv'
-        paper_country_fpath = './downloads/paper_country_list_all_company.json'
+        paper_country_fpath = './downloads/dict_paper_location_final_june.json'
         regression_features_fpath = './downloads/paper_key_to_regression_features.csv'
 
         to_do = {
-                    'dump_country_paper_count': False, 
+                    'dump_country_paper_count': True, 
                     'dump_year_and_avg_citation_of_country': False,
                     'dump_paper_age_to_citations_of_country': False,
                     'dump_regression_features': False,
                     'dump_top_10_publishing_country_heat_map': False,
-                    'dump_gini_coeff_over_years': True,
+                    'dump_gini_coeff_over_years': False,
                 }
 
         if to_do['dump_country_paper_count']:

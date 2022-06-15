@@ -1,200 +1,143 @@
-Country,Paper Count
-georgia	194
-united states	17073
-germany	4653
-netherlands	1752
-italy	1863
-united kingdom	6022
-google	1300
-cambodia	41
-taiwan	1290
-amazon	584
-india	2113
-sweden	1250
-greece	421
-philippines	103
-costa rica	114
-spain	1679
-facebook	512
-ibm	1432
-denmark	801
-yahoo	711
-thailand	153
-finland	630
-china	5631
-vietnam	187
-korea	713
-austria	747
-japan	4187
-singapore	1114
-iran	179
-microsoft	1781
-canada	2572
-hong kong	1137
-france	3881
-jersey	104
-poland	311
-belgium	687
-australia	1469
-brazil	421
-twitter	477
-romania	290
-allen institute for ai	123
-egypt	144
-czechia	46
-iceland	61
-estonia	251
-naver	92
-indonesia	88
-samsung	158
-ireland	1154
-switzerland	810
-latvia	110
-russia	435
-alibaba	287
-zimbabwe	5
-pakistan	183
-portugal	470
-czech republic	577
-macau	71
-macao	67
-myanmar	24
-slovenia	164
-algeria	42
-united arab emirates	179
-qatar	365
-lebanon	48
-saudi arabia	92
-israel	782
-turkey	302
-jordan	254
-bloomberg	87
-tunisia	78
-morocco	101
-kuwait	17
-luxembourg	132
-new zealand	92
-bosnia and herzegovina	816
-norway	490
-bulgaria	205
-croatia	170
-sri lanka	53
-allenai	225
-iran, islamic republic of	78
-argentina	86
-mexico	297
-huggingface	19
-niger	17
-mongolia	96
-baidu	209
-uruguay	26
+Country	Paper Count
+united states	15695
+germany	5101
+united kingdom	5462
+italy	1454
+cambodia	17
+taiwan	1275
+india	2042
+sweden	952
+greece	340
+mexico	149
+costa rica	44
+spain	1421
+netherlands	817
+denmark	646
+thailand	120
+china	5053
+vietnam	178
+korea	628
+japan	4174
+singapore	898
+iran	159
+austria	179
+canada	2162
+hong kong	646
+france	3557
+poland	275
+belgium	543
+australia	1241
+brazil	383
+egypt	124
+czechia	32
+iceland	50
+indonesia	69
+philippines	81
+ireland	1081
+estonia	97
+switzerland	642
+latvia	94
+russia	481
+pakistan	74
+portugal	406
+myanmar	13
+czech republic	438
+slovenia	131
+algeria	36
+qatar	302
+lebanon	35
+saudi arabia	56
+israel	691
+turkey	211
+jordan	62
+united arab emirates	89
+tunisia	66
+morocco	50
+new zealand	76
+finland	344
+romania	241
+norway	276
+bulgaria	236
+croatia	134
+sri lanka	44
+argentina	69
+mongolia	29
+uruguay	23
 ecuador	16
-hungary	199
-cuba	39
-bangladesh	38
-bahrain	25
-palestinian territory	13
-nepal	18
-slovakia	50
-netflix	4
-syria	16
-cyprus	16
-north macedonia	6
-chad	10
-nigeria	54
-iraq	32
-kazakhstan	19
-malta	100
-kenya	14
-openai	8
-uzbekistan	3
-south africa	100
-zambia	15
-ghana	5
-chile	39
-xerox	340
-cape verde	26
-ethiopia	28
-puerto rico	4
-albania	10
-brunei	5
-malaysia	56
-reunion	4
-ukraine	19
-peru	30
-armenia	6
-afghanistan	15
-botswana	2
-cameroon	4
-palestinian territory, occupied	4
-yemen	11
-serbia	33
-macedonia	10
-lithuania	32
-paraguay	3
-senegal	6
-uganda	27
-saint martin	24
-namibia	4
-colombia	50
-south korea	13
-kosovo	6
-oman	7
-azerbaijan	3
-guinea	13
-moldova	21
-moldova, republic of	1
-west bank	5
-cook islands	1
-airbnb	2
-north korea	5
-madagascar	1
-montenegro	5
-palau	3
-dominica	1
-haiti	2
+hungary	121
+cuba	31
+bangladesh	31
+bahrain	8
+nepal	11
+slovakia	33
+syria	6
+cyprus	7
+haiti	3
+chad	8
+nigeria	25
+kazakhstan	17
+malta	78
+kenya	7
+uzbekistan	1
+south africa	81
+palestinian territory	3
+chile	24
+jersey	19
+macau	24
+peru	25
+armenia	4
+malaysia	39
+iraq	12
+ethiopia	24
+luxembourg	87
+cape verde	14
+mali	37
+botswana	1
+kuwait	7
+macedonia	9
+lithuania	28
+moldova	26
+ghana	4
+paraguay	1
+senegal	4
+uganda	4
+serbia	20
+cameroon	2
+namibia	1
+togo	1
+colombia	26
+ukraine	8
+afghanistan	2
+zimbabwe	3
+oman	3
+azerbaijan	2
+bosnia and herzegovina	1
+niger	11
 belarus	7
-guatemala	9
-jamaica	2
-panama	22
-nicaragua	4
-el salvador	23
-mozambique	3
+jamaica	1
 burkina faso	2
 gabon	2
 mauritius	1
 djibouti	1
-venezuela	10
-tajikistan	3
-somalia	2
-vatican city	1
-grenada	2
-bolivia	4
-laos	4
-mali	2
-mauritania	2
-libya	5
-sudan	4
-papua new guinea	3
-solomon islands	1
-aruba	3
-fiji	25
-guadeloupe	4
-martinique	2
-andorra	2
-bermuda	2
-turkmenistan	1
-seychelles	1
-guyana	5
-french guiana	2
-isle of man	1
-curaçao	1
-honduras	4
-angola	2
+saint martin	11
+sudan	2
+yemen	4
+libya	1
+mauritania	1
+fiji	9
+guadeloupe	3
+panama	3
+kosovo	1
+north macedonia	1
+brunei	1
+guinea	2
+guatemala	3
+venezuela	1
+reunion	2
+greenland	1
 rwanda	1
-south sudan	1
+north korea	1
+zambia	2
 equatorial guinea	1
-benin	1
 kyrgyzstan	1
-monaco	1
-dominican republic	1
+anguilla	1

@@ -327,9 +327,9 @@ def main(args):
         regression_features_fpath = './downloads/paper_key_to_regression_features.csv'
 
         to_do = {
-                    'dump_country_paper_count': True, 
+                    'dump_country_paper_count': False, 
                     'dump_year_and_avg_citation_of_country': False,
-                    'dump_paper_age_to_citations_of_country': False,
+                    'dump_paper_age_to_citations_of_country': True,
                     'dump_regression_features': False,
                     'dump_top_10_publishing_country_heat_map': False,
                     'dump_gini_coeff_over_years': False,

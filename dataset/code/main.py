@@ -329,9 +329,9 @@ def main(args):
         to_do = {
                     'dump_country_paper_count': False, 
                     'dump_year_and_avg_citation_of_country': False,
-                    'dump_paper_age_to_citations_of_country': True,
+                    'dump_paper_age_to_citations_of_country': False,
                     'dump_regression_features': False,
-                    'dump_top_10_publishing_country_heat_map': False,
+                    'dump_top_10_publishing_country_heat_map': True,
                     'dump_gini_coeff_over_years': False,
                 }
 
@@ -542,7 +542,7 @@ def main(args):
             # stats_dict = citenet.country_to_country_counts(k = 10) # top-10 countries
             stats_dict = citenet.country_to_country_counts(k = -1) # all the countries
 
-            convert_first_to_fraction = True
+            convert_first_to_fraction = False
             if convert_first_to_fraction:
     
                 for country in stats_dict: # set fraction to 1.0
@@ -562,6 +562,7 @@ def main(args):
             with open(paper_age_to_country_citation_count_fpath, 'w') as fw:
                 fw.write(f'Country\tReferenced Country\tPercentage\n')
                 for country in sorted(stats_dict):
+                    ref_perc_sum = 0.0
                     for ref_country in sorted(stats_dict[country]):
                         if ref_country == 'all': # aggregation
                             continue
@@ -569,7 +570,9 @@ def main(args):
                             perc = 0.0
                         else:
                             perc = 100 * sum(stats_dict[country][ref_country]) / sum(stats_dict[country]['all'])
+                        ref_perc_sum += perc
                         fw.write(f'{country}\t{ref_country}\t{perc}\n')
+                    assert(abs(ref_perc_sum-100.0)<0.0001 or ref_perc_sum==0), f"Reference Percentage Sum != 100 for {country}; but the Sum is {ref_perc_sum}"
         
         if to_do['dump_gini_coeff_over_years']:
             # dump the gini-coeffient for country-a citing country-b across years [country-a, year] => gini_coeffcient | for country-a we only include top-10 publishing countries
@@ -662,3 +665,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     main(args)
+            
+
+

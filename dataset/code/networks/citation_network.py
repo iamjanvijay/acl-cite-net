@@ -9,7 +9,7 @@ def strip_non_alpha(text):
     return ''.join([i for i in text if i.isalpha()])
 
 class CitationNet:
-    def __init__(self, paper_details_filepath, references_filepath, bib_details_filepath, country_list_filepath, thresold_year, bib_dict, verbose=True):
+    def __init__(self, paper_details_filepath, references_filepath, bib_details_filepath, country_list_filepath, thresold_year, bib_dict, country_to_region_map_filepath, verbose=True, use_regions_as_country=False):
         self.paper_to_references = dict() # paperID => [list of references of paper with paperID]
         self.paper_to_citedby = dict() # paperID => [list of papers citing paper with paperID]
         self.paper_features = dict() # paperID => [dictonary of features of paper with paperID]
@@ -53,12 +53,17 @@ class CitationNet:
                                 self.paper_to_citedby[referenced_paper_id] = set()
                             self.paper_to_citedby[referenced_paper_id].add(curr_paper_id)
                             
-        print("finished creating citation network...")
+        print(f"finished creating citation network uptil year {thresold_year}...")
 
         with open(country_list_filepath) as f: # load country annotations.
             paper_key_to_country_list = json.load(f)
 
+        with open(country_to_region_map_filepath) as f: # load region annotations.
+            country_to_region_map = json.load(f)
+
         missing, total = 0, 0
+        if use_regions_as_country:
+            not_found_countries, total_countries = set(), set()
         for paper_id in self.paper_features: # adding bib-details and country annotations in nodes.
             paper_key, paper_type, paper_book_title, month, year, url, bib_authors = bib_title_to_bib_details[self.paper_features[paper_id]['bib_title']] 
             self.paper_features[paper_id]['paper_key'] = paper_key
@@ -78,8 +83,22 @@ class CitationNet:
                 missing += 1
             total += 1
             self.paper_features[paper_id]['countries'] = list(set(country_list)) # unique
+            if use_regions_as_country: # update the couttries as regions
+                region_list = []
+                for country in list(set(country_list)):
+                    total_countries.add(country.lower())
+                    if country.lower() in country_to_region_map:
+                        region_list.append(country_to_region_map[country.lower()])
+                    else:
+                        if country.lower() not in self.company_names:
+                            not_found_countries.add(country.lower())
+                            print(f"Country {country.lower()} not found in region_to_country mapping")
+                self.paper_features[paper_id]['countries'] = list(set(region_list))
+                
 
         print(f"*** Total {missing} out of {total} paper-keys missing in country list.")
+        if use_regions_as_country:
+            print(f"*** Total Countries: {len(total_countries)} | Missing Countries: {len(not_found_countries)}")
 
         # author id to ciations
         self.cumulative_citations = self.author_id_to_num_citations_in_a_year() # self.cumulative_citations[author_id][year]
@@ -376,11 +395,17 @@ class CitationNet:
         for country in top_k_countries:
             if country not in country_to_ref_country_counts:
                 country_to_ref_country_counts[country] = dict()
+
+            if country not in country_to_paper_ids: # no paper_ids for this country
+                country_to_ref_country_counts[country]['all'] = []
+                continue
+
             for paper_id in country_to_paper_ids[country]: # iterating over all the paper_ids of country
 
                 all_counts = 0
-                for referenced_country in paper_id_to_country_cited[paper_id]:
-                    all_counts += paper_id_to_country_cited[paper_id][referenced_country]
+                for referenced_country in top_k_countries:
+                    if referenced_country in paper_id_to_country_cited[paper_id]:
+                        all_counts += paper_id_to_country_cited[paper_id][referenced_country]
                 if 'all' not in country_to_ref_country_counts[country]: # all country to all references count
                     country_to_ref_country_counts[country]['all'] = []
                 country_to_ref_country_counts[country]['all'].append(all_counts)
@@ -394,10 +419,10 @@ class CitationNet:
                         country_to_ref_country_counts[country][ref_country] = []
                     country_to_ref_country_counts[country][ref_country].append(ref_country_count)    
                     
-        for country in top_k_countries:
-            paper_count = len(country_to_ref_country_counts[country]['all'])
-            for ref_country in top_k_countries:
-                assert(paper_count==len(country_to_ref_country_counts[country][ref_country]))
+        # for country in top_k_countries:
+        #     paper_count = len(country_to_ref_country_counts[country]['all'])
+        #     for ref_country in top_k_countries:
+        #         assert(paper_count==len(country_to_ref_country_counts[country][ref_country]))
 
         if save_fpath is not None:
             with open(save_fpath, 'w') as f:

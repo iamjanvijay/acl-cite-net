@@ -16,6 +16,7 @@ from fuzzywuzzy import fuzz
 import json
 from networks import CitationNet
 import numpy as np
+import statistics
 
 def read_bibfile(filepath):
     if filepath=='./downloads/anthology+abstracts.bib' and os.path.exists('./downloads/anthology+abstracts.pkl'):
@@ -325,19 +326,24 @@ def main(args):
         bib_paper_details_fpath = './downloads/bib_paper_details.csv'
         paper_country_fpath = './downloads/dict_paper_location_final_june.json'
         regression_features_fpath = './downloads/paper_key_to_regression_features.csv'
+        country_to_region_map_filepath = './downloads/dict_country_region_final.json'
 
         to_do = {
-                    'dump_country_paper_count': False, 
-                    'dump_year_and_avg_citation_of_country': False,
-                    'dump_paper_age_to_citations_of_country': False,
+                    'dump_country_paper_count': True, 
+                    'dump_year_and_avg_citation_of_country': True,
+                    'dump_year_and_avg_citation_of_region': True,
+                    'dump_paper_age_to_citations_of_country': True,
+                    'dump_paper_age_to_citations_of_region': True,
                     'dump_regression_features': False,
                     'dump_top_10_publishing_country_heat_map': True,
-                    'dump_gini_coeff_over_years': False,
+                    'dump_regions_heat_map': True,
+                    'dump_gini_coeff_over_years': True,
+                    'dump_gini_coeff_over_years_regions': True,
                 }
 
         if to_do['dump_country_paper_count']:
             # dump [country, paper_count] tsv for tabelu world-map plot
-            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict)
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict, country_to_region_map_filepath)
             country_to_paper_count_fpath ='./downloads/country_to_paper_count.tsv'
             
             country_to_paperids = citenet.country_to_publications()
@@ -356,29 +362,65 @@ def main(args):
 
             with open(year_to_country_citation_count_fpath, 'w') as f_tsv:
                 for year in range(2000, 2022):
-                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict)
+                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, country_to_region_map_filepath)
                     country_to_papers_citation_count = citenet.extract_country_cited_count()
                     
                     last_year_country_paper_counts = [] # reset
                     for country in country_to_papers_citation_count:
                         paper_count = len(country_to_papers_citation_count[country])
                         citation_count = sum(country_to_papers_citation_count[country]) # for **median** simply take median of country_to_papers_citation_count[country]
+                        mean_citation = round(float(citation_count)/paper_count, 2)
+                        median_citation = statistics.median(country_to_papers_citation_count[country])
                         key = f'{country}\t{year}'
-                        country_year_to_citation_count[key] = [paper_count, citation_count, round(float(citation_count)/paper_count, 2)]
+                        country_year_to_citation_count[key] = [paper_count, citation_count, mean_citation, median_citation]
                         last_year_country_paper_counts.append((country, paper_count))
 
                 # writing the statistics to the tsv file
                 top_10_publishing_countries = [(country, _) for country, _ in sorted(last_year_country_paper_counts, key=lambda x: x[1]) if country not in citenet.company_names][-10:]
-                f_tsv.write(f'Country\tYear\tPaper Count\tCitation Count\tCitation Average (per paper)\n')
+                f_tsv.write(f'Country\tYear\tPaper Count\tCitation Count\tMean Citation (per paper)\tMedian Citation\n')
                 for country, _ in top_10_publishing_countries:
                     for year in range(2000, 2022):
                         key = f'{country}\t{year}'
                         if key not in country_year_to_citation_count:
-                            paper_count, citation_count, citation_average = 0, 0, 0.00
+                            paper_count, citation_count, citation_average, citation_median = 0, 0, 0.00, 0
                         else:
-                            paper_count, citation_count, citation_average = country_year_to_citation_count[key]
-                        f_tsv.write(f'{country}\t{year}\t{paper_count}\t{citation_count}\t{citation_average}\n')
-                        print(f'{country}\t{year}\t{paper_count}\t{citation_count}\t{citation_average}')
+                            paper_count, citation_count, citation_average, citation_median = country_year_to_citation_count[key]
+                        f_tsv.write(f'{country}\t{year}\t{paper_count}\t{citation_count}\t{citation_average}\t{citation_median}\n')
+                        print(f'{country}\t{year}\t{paper_count}\t{citation_count}\t{citation_average}\t{citation_median}')
+
+        if to_do['dump_year_and_avg_citation_of_region']:
+            # dump [year, region, paper_count, total_citations, avg_citation] tsv for tabelu world-map plot
+            year_to_region_citation_count_fpath = './downloads/year_to_region_citation_count.tsv'
+            region_year_to_citation_count = dict()
+            last_year_region_paper_counts = []
+
+            with open(year_to_region_citation_count_fpath, 'w') as f_tsv:
+                for year in range(2000, 2022):
+                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, country_to_region_map_filepath, use_regions_as_country=True)
+                    region_to_papers_citation_count = citenet.extract_country_cited_count()
+                    
+                    last_year_region_paper_counts = [] # reset
+                    for region in region_to_papers_citation_count:
+                        paper_count = len(region_to_papers_citation_count[region])
+                        citation_count = sum(region_to_papers_citation_count[region]) # for **median** simply take median of region_to_papers_citation_count[region]
+                        mean_citation = round(float(citation_count)/paper_count, 2)
+                        median_citation = statistics.median(region_to_papers_citation_count[region])
+                        key = f'{region}\t{year}'
+                        region_year_to_citation_count[key] = [paper_count, citation_count, mean_citation, median_citation]
+                        last_year_region_paper_counts.append((region, paper_count))
+
+                # writing the statistics to the tsv file
+                top_10_publishing_regions = [(region, _) for region, _ in sorted(last_year_region_paper_counts, key=lambda x: x[1]) if region not in citenet.company_names][-10:]
+                f_tsv.write(f'Region\tYear\tPaper Count\tCitation Count\tMean Citation (per paper)\tMedian Citation\n')
+                for region, _ in top_10_publishing_regions:
+                    for year in range(2000, 2022):
+                        key = f'{region}\t{year}'
+                        if key not in region_year_to_citation_count:
+                            paper_count, citation_count, citation_average, citation_median = 0, 0, 0.00, 0
+                        else:
+                            paper_count, citation_count, citation_average, citation_median = region_year_to_citation_count[key]
+                        f_tsv.write(f'{region}\t{year}\t{paper_count}\t{citation_count}\t{citation_average}\t{citation_median}\n')
+                        print(f'{region}\t{year}\t{paper_count}\t{citation_count}\t{citation_average}\t{citation_median}')
 
         if to_do['dump_paper_age_to_citations_of_country']:
             # dump [year, country, paper_count, total_citations, avg_citation] tsv for tabelu world-map plot
@@ -389,7 +431,7 @@ def main(args):
             with open(paper_age_to_country_citation_count_fpath, 'w') as f_tsv:
                 max_paper_age = 0
                 for year in range(2000, 2022):
-                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, verbose=False)
+                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, country_to_region_map_filepath, verbose=False)
                     country_to_papers_citation_count = citenet.extract_country_cited_count(with_paper_age=True, reference_year=year)
                     
                     last_year_country_paper_counts = [] # reset
@@ -443,9 +485,72 @@ def main(args):
                             f_tsv.write(f'{country}\t{paper_age}\t{paper_count}\t{citation_count}\t{citation_average}\n')
                             print(f'{country}\t{paper_age}\t{paper_count}\t{citation_count}\t{citation_average}')
 
+        if to_do['dump_paper_age_to_citations_of_region']:
+            # dump [year, region, paper_count, total_citations, avg_citation] tsv for tabelu world-map plot
+            paper_age_to_region_citation_count_fpath = './downloads/paper_age_to_region_citation_count.tsv'
+            region_and_paper_age_to_citation_count = dict()
+            last_year_region_paper_counts = []
+
+            with open(paper_age_to_region_citation_count_fpath, 'w') as f_tsv:
+                max_paper_age = 0
+                for year in range(2000, 2022):
+                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, country_to_region_map_filepath, verbose=False, use_regions_as_country=True)
+                    region_to_papers_citation_count = citenet.extract_country_cited_count(with_paper_age=True, reference_year=year)
+                    
+                    last_year_region_paper_counts = [] # reset
+                    for region in region_to_papers_citation_count:
+                        paper_count = len(region_to_papers_citation_count[region])
+                        for paper_cite_count, paper_age in region_to_papers_citation_count[region]:
+                            key = f'{region}\t{paper_age}'
+                            max_paper_age = max(max_paper_age, paper_age)
+                            if key not in region_and_paper_age_to_citation_count:
+                                region_and_paper_age_to_citation_count[key] = []
+                            region_and_paper_age_to_citation_count[key].append(paper_cite_count)
+                        last_year_region_paper_counts.append((region, paper_count))
+
+                for key in region_and_paper_age_to_citation_count:
+                    paper_cite_count_list = region_and_paper_age_to_citation_count[key]
+                    count_of_papers = len(paper_cite_count_list) # count of papers with certain age and for certain region
+                    citation_of_papers = sum(paper_cite_count_list)
+                    average_citation_per_paper = float(citation_of_papers)/count_of_papers # **median** can be computed here if required
+                    region_and_paper_age_to_citation_count[key] = [count_of_papers, citation_of_papers, average_citation_per_paper]
+
+                # writing the statistics to the tsv file
+                top_10_publishing_regions = [(region, _) for region, _ in sorted(last_year_region_paper_counts, key=lambda x: x[1]) if region not in citenet.company_names][-10:]
+                f_tsv.write(f'Region\tAge of Paper\tPaper Count\tCitation Count\tCitation Average (per paper)\n')
+                paper_age_bins = [(0, 3), (4, 6), (7, 9), (10, 14), (15, 1000)]
+                use_paper_bins = False
+                for region, _ in top_10_publishing_regions:
+                    if use_paper_bins:
+                        for paper_age_bin in paper_age_bins:
+                            bin_paper_count, bin_citation_count = 0, 0
+                            for paper_age in range(paper_age_bin[0], paper_age_bin[1]+1):
+                                key = f'{region}\t{paper_age}'
+                                if key not in region_and_paper_age_to_citation_count:
+                                    paper_count, citation_count, citation_average = 0, 0, 0.00
+                                else:
+                                    paper_count, citation_count, citation_average = region_and_paper_age_to_citation_count[key]
+                                # bin stats here
+                                bin_paper_count += paper_count
+                                bin_citation_count += citation_count
+                            bin_citation_average = float(bin_citation_count) / bin_paper_count
+                            # writing to tsv file
+                            bin_age_str = '-'.join([str(x) for x in paper_age_bin])
+                            f_tsv.write(f'{region}\t{bin_age_str}\t{bin_paper_count}\t{bin_citation_count}\t{bin_citation_average}\n')
+                            print(f'{region}\t{bin_age_str}\t{bin_paper_count}\t{bin_citation_count}\t{bin_citation_average}')
+                    else:
+                        for paper_age in range(1, 21):
+                            key = f'{region}\t{paper_age}'
+                            if key not in region_and_paper_age_to_citation_count:
+                                paper_count, citation_count, citation_average = 0, 0, 0.00
+                            else:
+                                paper_count, citation_count, citation_average = region_and_paper_age_to_citation_count[key]
+                            f_tsv.write(f'{region}\t{paper_age}\t{paper_count}\t{citation_count}\t{citation_average}\n')
+                            print(f'{region}\t{paper_age}\t{paper_count}\t{citation_count}\t{citation_average}')
+
         if to_do['dump_regression_features']:
             # output the regression features list in a csv
-            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict)
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict, country_to_region_map_filepath)
             
             row_header = ['paper-key', 'countries', 'author genders (in authorship order)', 'author names (in authorship order)', 'authors count', 'authors citations (uptil present; in authorship order)', 'authors citations (uptil year of publication; in authorship order)', 'nlp academic age (uptil present; in authorship order)', 'nlp academic age (uptil year of publication; in authorship order)', 'venue', 'min university rank', 'max university rank', 'age of paper (years)', 'paper total ciatations']
             with open(regression_features_fpath, 'w') as f:
@@ -538,7 +643,7 @@ def main(args):
         if to_do['dump_top_10_publishing_country_heat_map']:
             # dump the averaged citation percentages from country to referenced-country [all countries]
             paper_age_to_country_citation_count_fpath, year = './downloads/inter_country_citation_percentages.tsv', 2021
-            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict)
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, country_to_region_map_filepath, verbose=False)
             # stats_dict = citenet.country_to_country_counts(k = 10) # top-10 countries
             stats_dict = citenet.country_to_country_counts(k = -1) # all the countries
 
@@ -573,13 +678,52 @@ def main(args):
                         ref_perc_sum += perc
                         fw.write(f'{country}\t{ref_country}\t{perc}\n')
                     assert(abs(ref_perc_sum-100.0)<0.0001 or ref_perc_sum==0), f"Reference Percentage Sum != 100 for {country}; but the Sum is {ref_perc_sum}"
-        
+
+        if to_do['dump_regions_heat_map']:
+            # dump the averaged citation percentages from country to referenced-country [all countries]
+            paper_age_to_country_citation_count_fpath, year = './downloads/inter_region_citation_percentages.tsv', 2021
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, country_to_region_map_filepath, verbose=False, use_regions_as_country=True)
+            # stats_dict = citenet.country_to_country_counts(k = 10) # top-10 countries
+            stats_dict = citenet.country_to_country_counts(k = -1) # all the countries
+
+            convert_first_to_fraction = False
+            if convert_first_to_fraction:
+    
+                for country in stats_dict: # set fraction to 1.0
+                    for ref_country in stats_dict[country]:
+                        if ref_country == 'all': # aggregation
+                            continue
+                        
+                        for paper_idx in range(len(stats_dict[country][ref_country])):
+                                if stats_dict[country][ref_country][paper_idx] != 0: # if paper has total non-zero references
+                                    stats_dict[country][ref_country][paper_idx] = stats_dict[country][ref_country][paper_idx] / float(stats_dict[country]['all'][paper_idx])
+
+                for country in stats_dict: # set fraction for country_to_all to 1.0
+                    for paper_idx in range(len(stats_dict[country]['all'])):
+                        if stats_dict[country]['all'][paper_idx] != 0: # if paper has total non-zero references
+                            stats_dict[country]['all'][paper_idx] = 1.0
+
+            with open(paper_age_to_country_citation_count_fpath, 'w') as fw:
+                fw.write(f'Region\tReferenced Region\tPercentage\n')
+                for country in sorted(stats_dict):
+                    ref_perc_sum = 0.0
+                    for ref_country in sorted(stats_dict[country]):
+                        if ref_country == 'all': # aggregation
+                            continue
+                        if sum(stats_dict[country][ref_country]) == 0:
+                            perc = 0.0
+                        else:
+                            perc = 100 * sum(stats_dict[country][ref_country]) / sum(stats_dict[country]['all'])
+                        ref_perc_sum += perc
+                        fw.write(f'{country}\t{ref_country}\t{perc}\n')
+                    assert(abs(ref_perc_sum-100.0)<0.0001 or ref_perc_sum==0), f"Reference Percentage Sum != 100 for {country}; but the Sum is {ref_perc_sum}"
+
         if to_do['dump_gini_coeff_over_years']:
             # dump the gini-coeffient for country-a citing country-b across years [country-a, year] => gini_coeffcient | for country-a we only include top-10 publishing countries
-            k1, k2 = 10, 10 # k1 is the number of cited countries to be considered, k2 is the number of citing countries
-            # k1, k2 = -1, 10
+            # k1, k2 = 10, 10 # k1 is the number of cited countries to be considered, k2 is the number of citing countries
+            k1, k2 = -1, 10
             gini_coeffs_over_years_fpath = f'./downloads/gini_coeffs_over_years_{k2}_{k1}.tsv'
-            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict, verbose=False)
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict, country_to_region_map_filepath, verbose=False)
             all_countries = citenet.top_k_publishing_countries(k1) # list of all the cited countries
             top_k2_countries = citenet.top_k_publishing_countries(k2) # list of all the citing countries
             print("Considering citing countries:", top_k2_countries)
@@ -588,10 +732,10 @@ def main(args):
             with open(gini_coeffs_over_years_fpath, 'w') as fw:
                 fw.write(f'Country (Citing Country)\tYear\tGini-Coefficient\n')
                 for year in range(2000, 2022):
-                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, verbose=False)
+                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, country_to_region_map_filepath, verbose=False)
                     stats_dict = citenet.country_to_country_counts(countries=all_countries)
 
-                    convert_first_to_fraction = True
+                    convert_first_to_fraction = False
                     if convert_first_to_fraction:
                         for country in stats_dict: # set fraction to 1.0
                             for ref_country in stats_dict[country]:
@@ -611,17 +755,18 @@ def main(args):
                     for country in sorted(stats_dict):
                         if country not in country_to_citation_fractions:
                             country_to_citation_fractions[country] = dict()
-
+                        ref_perc_sum = 0.0
                         for ref_country in sorted(stats_dict[country]):
                             if ref_country == 'all': # aggregation
                                 continue
-
+                            
                             if sum(stats_dict[country][ref_country]) == 0:
                                 perc = 0.0
                             else:
                                 perc = 100 * sum(stats_dict[country][ref_country]) / sum(stats_dict[country]['all'])
-
+                            ref_perc_sum += perc
                             country_to_citation_fractions[country][ref_country] = perc
+                        assert(abs(ref_perc_sum-100.0)<0.0001 or ref_perc_sum==0), f"Reference Percentage Sum != 100 for {country}; but the Sum is {ref_perc_sum}"
                         
                     for country in top_k2_countries: # filling in missing values if any missed
                         if country not in country_to_citation_fractions:
@@ -641,10 +786,83 @@ def main(args):
                         overall_citation_fractions.extend(citation_fractions)
                         gini_coeff = float(gini(np.array(citation_fractions)))
                         print(year, country, citation_fractions, gini_coeff)
+                        fw.write(f'{country}\t{year}\t{gini_coeff}\n') 
                         
                     gini_coeff = float(gini(np.array(overall_citation_fractions)))
                     fw.write(f'all countries\t{year}\t{gini_coeff}\n') # only the citing countries considered which is top-k2
+        
+        if to_do['dump_gini_coeff_over_years_regions']:
+            # dump the gini-coeffient for country-a citing country-b across years [country-a, year] => gini_coeffcient | for country-a we only include top-10 publishing countries
+            # k1, k2 = 10, 10 # k1 is the number of cited countries to be considered, k2 is the number of citing countries
+            k1, k2 = -1, 10
+            gini_coeffs_over_years_fpath = f'./downloads/gini_coeffs_over_years_{k2}_{k1}_regions.tsv'
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021, bib_dict, country_to_region_map_filepath, verbose=False, use_regions_as_country=True)
+            all_countries = citenet.top_k_publishing_countries(k1) # list of all the cited countries
+            top_k2_countries = citenet.top_k_publishing_countries(k2) # list of all the citing countries
+            print("Considering citing regions:", top_k2_countries)
+            print("Considering cited regions:", all_countries)
 
+            with open(gini_coeffs_over_years_fpath, 'w') as fw:
+                fw.write(f'Region (Citing Region)\tYear\tGini-Coefficient\n')
+                for year in range(2000, 2022):
+                    citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, year, bib_dict, country_to_region_map_filepath, verbose=False, use_regions_as_country=True)
+                    stats_dict = citenet.country_to_country_counts(countries=all_countries)
+
+                    convert_first_to_fraction = False
+                    if convert_first_to_fraction:
+                        for country in stats_dict: # set fraction to 1.0
+                            for ref_country in stats_dict[country]:
+                                if ref_country == 'all': # aggregation
+                                    continue
+                                
+                                for paper_idx in range(len(stats_dict[country][ref_country])):
+                                        if stats_dict[country][ref_country][paper_idx] != 0: # if paper has total non-zero references
+                                            stats_dict[country][ref_country][paper_idx] = stats_dict[country][ref_country][paper_idx] / float(stats_dict[country]['all'][paper_idx])
+
+                        for country in stats_dict: # set fraction for country_to_all to 1.0
+                            for paper_idx in range(len(stats_dict[country]['all'])):
+                                if stats_dict[country]['all'][paper_idx] != 0: # if paper has total non-zero references
+                                    stats_dict[country]['all'][paper_idx] = 1.0
+
+                    country_to_citation_fractions = dict()
+                    for country in sorted(stats_dict):
+                        if country not in country_to_citation_fractions:
+                            country_to_citation_fractions[country] = dict()
+                        ref_perc_sum = 0.0
+                        for ref_country in sorted(stats_dict[country]):
+                            if ref_country == 'all': # aggregation
+                                continue
+                            
+                            if sum(stats_dict[country][ref_country]) == 0:
+                                perc = 0.0
+                            else:
+                                perc = 100 * sum(stats_dict[country][ref_country]) / sum(stats_dict[country]['all'])
+                            ref_perc_sum += perc
+                            country_to_citation_fractions[country][ref_country] = perc
+                        assert(abs(ref_perc_sum-100.0)<0.0001 or ref_perc_sum==0), f"Reference Percentage Sum != 100 for {country}; but the Sum is {ref_perc_sum}"
+                        
+                    for country in top_k2_countries: # filling in missing values if any missed
+                        if country not in country_to_citation_fractions:
+                            country_to_citation_fractions[country] = dict()
+                        for ref_country in all_countries:
+                            if ref_country not in country_to_citation_fractions[country]:
+                                country_to_citation_fractions[country][ref_country] = 0.0
+
+                    overall_citation_fractions = []
+                    size = None
+                    for country in top_k2_countries:  
+                        citation_fractions = [country_to_citation_fractions[country][ref_country] for ref_country in country_to_citation_fractions[country]]
+                        if size is None:
+                            size = len(citation_fractions)
+                        else:
+                            assert(size == len(citation_fractions))
+                        overall_citation_fractions.extend(citation_fractions)
+                        gini_coeff = float(gini(np.array(citation_fractions)))
+                        print(year, country, citation_fractions, gini_coeff)
+                        fw.write(f'{country}\t{year}\t{gini_coeff}\n') 
+                        
+                    gini_coeff = float(gini(np.array(overall_citation_fractions)))
+                    fw.write(f'all regions\t{year}\t{gini_coeff}\n') # only the citing countries considered which is top-k2
                     
 
 

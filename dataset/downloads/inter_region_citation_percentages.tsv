@@ -1,0 +1,101 @@
+Region	Referenced Region	Percentage
+africa	africa	12.5
+africa	central asia	0.5122950819672131
+africa	eastern europe	2.971311475409836
+africa	north america	27.868852459016395
+africa	oceania	3.1762295081967213
+africa	south america	0.6147540983606558
+africa	south-eastern asia	3.1762295081967213
+africa	southern-eastern asia	10.655737704918034
+africa	western asia	11.168032786885245
+africa	western europe	27.35655737704918
+central asia	africa	0.46382189239332094
+central asia	central asia	11.410018552875696
+central asia	eastern europe	3.4322820037105752
+central asia	north america	26.34508348794063
+central asia	oceania	4.174397031539889
+central asia	south america	0.8348794063079777
+central asia	south-eastern asia	3.803339517625232
+central asia	southern-eastern asia	14.656771799628942
+central asia	western asia	7.699443413729128
+central asia	western europe	27.179962894248607
+eastern europe	africa	0.5979073243647235
+eastern europe	central asia	1.0762331838565022
+eastern europe	eastern europe	19.402092675635277
+eastern europe	north america	27.443946188340806
+eastern europe	oceania	3.8863976083707024
+eastern europe	south america	0.866965620328849
+eastern europe	south-eastern asia	2.9596412556053813
+eastern europe	southern-eastern asia	10.523168908819134
+eastern europe	western asia	6.576980568011958
+eastern europe	western europe	26.666666666666668
+north america	africa	0.5273284401054656
+north america	central asia	0.8812560868429179
+north america	eastern europe	1.8741537803748307
+north america	north america	35.62079859379082
+north america	oceania	5.000118767666691
+north america	south america	0.852751846837217
+north america	south-eastern asia	4.413406494216015
+north america	southern-eastern asia	16.318677403263735
+north america	western asia	7.755528634884439
+north america	western europe	26.755979952017864
+oceania	africa	0.5374899220639613
+oceania	central asia	0.83310937919914
+oceania	eastern europe	2.2037086804622414
+oceania	north america	28.62133834990594
+oceania	oceania	18.43590432679387
+oceania	south america	1.0212308519215265
+oceania	south-eastern asia	3.7624294544477292
+oceania	southern-eastern asia	14.888470841171728
+oceania	western asia	5.536146197258802
+oceania	western europe	24.16017199677506
+south america	africa	0.6051437216338881
+south america	central asia	1.13464447806354
+south america	eastern europe	2.344931921331316
+south america	north america	29.12254160363086
+south america	oceania	5.597579425113464
+south america	south america	13.161875945537066
+south america	south-eastern asia	3.706505295007564
+south america	southern-eastern asia	12.254160363086234
+south america	western asia	4.9167927382753405
+south america	western europe	27.155824508320727
+south-eastern asia	africa	0.4549331816889394
+south-eastern asia	central asia	0.597099800966733
+south-eastern asia	eastern europe	2.1609326130224624
+south-eastern asia	north america	26.442991185669605
+south-eastern asia	oceania	5.54449815183395
+south-eastern asia	south america	0.6539664486778505
+south-eastern asia	south-eastern asia	16.718794427068524
+south-eastern asia	southern-eastern asia	19.590560136479954
+south-eastern asia	western asia	5.146431617856128
+south-eastern asia	western europe	22.689792436735853
+southern-eastern asia	africa	0.24285714285714285
+southern-eastern asia	central asia	0.7314285714285714
+southern-eastern asia	eastern europe	1.4885714285714287
+southern-eastern asia	north america	29.794285714285714
+southern-eastern asia	oceania	3.9285714285714284
+southern-eastern asia	south america	0.74
+southern-eastern asia	south-eastern asia	6.457142857142857
+southern-eastern asia	southern-eastern asia	26.877142857142857
+southern-eastern asia	western asia	5.448571428571428
+southern-eastern asia	western europe	24.291428571428572
+western asia	africa	2.669188734762505
+western asia	central asia	0.5674653215636822
+western asia	eastern europe	3.551912568306011
+western asia	north america	26.58680117696511
+western asia	oceania	4.686843211433375
+western asia	south america	1.008827238335435
+western asia	south-eastern asia	3.488860865910046
+western asia	southern-eastern asia	13.219840269020597
+western asia	western asia	20.05044136191677
+western asia	western europe	24.169819251786464
+western europe	africa	0.5947427179539226
+western europe	central asia	0.9337257688013803
+western europe	eastern europe	3.036638587232315
+western europe	north america	30.886024561047396
+western europe	oceania	4.747792550492236
+western europe	south america	1.0859636658885619
+western europe	south-eastern asia	3.8181264589465136
+western europe	southern-eastern asia	14.23931797422105
+western europe	western asia	7.2891505125342535
+western europe	western europe	33.36851720288237

@@ -1,0 +1,222 @@
+Region	Year	Paper Count	Citation Count	Mean Citation (per paper)
+Median Citation
+central asia	2000	9	16	1.78	1
+central asia	2001	9	16	1.78	1
+central asia	2002	12	20	1.67	1.0
+central asia	2003	13	24	1.85	2
+central asia	2004	18	32	1.78	1.0
+central asia	2005	18	34	1.89	2.0
+central asia	2006	21	42	2.0	2
+central asia	2007	23	53	2.3	2
+central asia	2008	24	61	2.54	2.0
+central asia	2009	26	70	2.69	2.0
+central asia	2010	32	80	2.5	1.0
+central asia	2011	35	86	2.46	1
+central asia	2012	39	95	2.44	1
+central asia	2013	48	131	2.73	1.0
+central asia	2014	58	203	3.5	2.0
+central asia	2015	70	264	3.77	1.5
+central asia	2016	83	347	4.18	1
+central asia	2017	99	420	4.24	1
+central asia	2018	121	535	4.42	2
+central asia	2019	160	722	4.51	2.0
+central asia	2020	209	1214	5.81	2
+central asia	2021	246	1657	6.74	2.0
+africa	2000	6	27	4.5	2.0
+africa	2001	9	31	3.44	1
+africa	2002	9	35	3.89	2
+africa	2003	10	37	3.7	2.0
+africa	2004	13	47	3.62	2
+africa	2005	15	59	3.93	2
+africa	2006	20	77	3.85	1.5
+africa	2007	25	90	3.6	2
+africa	2008	30	105	3.5	2.0
+africa	2009	40	127	3.17	1.0
+africa	2010	53	173	3.26	2
+africa	2011	59	199	3.37	2
+africa	2012	65	248	3.82	2
+africa	2013	71	282	3.97	2
+africa	2014	91	364	4.0	2
+africa	2015	105	432	4.11	2
+africa	2016	127	519	4.09	2
+africa	2017	146	598	4.1	2.0
+africa	2018	164	688	4.2	2.0
+africa	2019	187	789	4.22	2
+africa	2020	230	984	4.28	2.0
+africa	2021	259	1160	4.48	2
+south america	2000	4	33	8.25	8.5
+south america	2001	5	36	7.2	3
+south america	2002	6	43	7.17	5.0
+south america	2003	8	55	6.88	3.5
+south america	2004	10	75	7.5	4.0
+south america	2005	15	91	6.07	1
+south america	2006	20	116	5.8	2.0
+south america	2007	27	141	5.22	2
+south america	2008	28	166	5.93	3.0
+south america	2009	32	194	6.06	2.5
+south america	2010	45	240	5.33	2
+south america	2011	57	289	5.07	2
+south america	2012	77	345	4.48	2
+south america	2013	89	420	4.72	2
+south america	2014	108	505	4.68	2.0
+south america	2015	129	594	4.6	2
+south america	2016	143	756	5.29	2
+south america	2017	163	894	5.48	2
+south america	2018	198	1099	5.55	2.0
+south america	2019	224	1256	5.61	2.0
+south america	2020	262	1497	5.71	2.0
+south america	2021	293	1740	5.94	2
+south-eastern asia	2000	12	60	5.0	1.5
+south-eastern asia	2001	15	74	4.93	2
+south-eastern asia	2002	20	108	5.4	1.5
+south-eastern asia	2003	29	155	5.34	2
+south-eastern asia	2004	36	226	6.28	3.0
+south-eastern asia	2005	47	305	6.49	4
+south-eastern asia	2006	66	443	6.71	3.0
+south-eastern asia	2007	82	545	6.65	2.5
+south-eastern asia	2008	113	787	6.96	3
+south-eastern asia	2009	147	1158	7.88	3
+south-eastern asia	2010	191	1635	8.56	4
+south-eastern asia	2011	234	2117	9.05	4.0
+south-eastern asia	2012	284	2703	9.52	4.0
+south-eastern asia	2013	322	3301	10.25	4.0
+south-eastern asia	2014	353	3955	11.2	5
+south-eastern asia	2015	387	4577	11.83	4
+south-eastern asia	2016	444	5349	12.05	4.0
+south-eastern asia	2017	486	5953	12.25	4.0
+south-eastern asia	2018	544	6801	12.5	5.0
+south-eastern asia	2019	622	7866	12.65	4.5
+south-eastern asia	2020	724	9481	13.1	5.0
+south-eastern asia	2021	820	10893	13.28	5.0
+eastern europe	2000	25	44	1.76	1
+eastern europe	2001	28	48	1.71	1.0
+eastern europe	2002	35	75	2.14	1
+eastern europe	2003	43	95	2.21	1
+eastern europe	2004	56	156	2.79	1.0
+eastern europe	2005	61	184	3.02	1
+eastern europe	2006	86	298	3.47	1.5
+eastern europe	2007	104	369	3.55	1.0
+eastern europe	2008	134	477	3.56	2.0
+eastern europe	2009	149	581	3.9	2
+eastern europe	2010	179	757	4.23	2
+eastern europe	2011	199	867	4.36	2
+eastern europe	2012	257	1145	4.46	2
+eastern europe	2013	302	1373	4.55	2.0
+eastern europe	2014	365	1699	4.65	2
+eastern europe	2015	411	1979	4.82	2
+eastern europe	2016	485	2440	5.03	2
+eastern europe	2017	548	2913	5.32	2.5
+eastern europe	2018	627	3517	5.61	3
+eastern europe	2019	715	4175	5.84	3
+eastern europe	2020	825	4994	6.05	3
+eastern europe	2021	885	5718	6.46	3
+oceania	2000	10	50	5.0	4.0
+oceania	2001	11	58	5.27	4
+oceania	2002	12	65	5.42	4.0
+oceania	2003	21	87	4.14	2
+oceania	2004	33	138	4.18	2
+oceania	2005	53	196	3.7	2
+oceania	2006	75	290	3.87	2
+oceania	2007	101	412	4.08	2
+oceania	2008	142	586	4.13	2.0
+oceania	2009	169	765	4.53	2
+oceania	2010	216	1036	4.8	2.0
+oceania	2011	262	1361	5.19	2.0
+oceania	2012	306	1849	6.04	2.0
+oceania	2013	357	2354	6.59	2
+oceania	2014	415	3016	7.27	3
+oceania	2015	465	3617	7.78	3
+oceania	2016	528	4398	8.33	3.0
+oceania	2017	586	5309	9.06	3.0
+oceania	2018	668	6455	9.66	3.0
+oceania	2019	746	7493	10.04	3.0
+oceania	2020	837	8960	10.7	3
+oceania	2021	930	10315	11.09	4.0
+western asia	2000	27	204	7.56	5
+western asia	2001	31	221	7.13	3
+western asia	2002	35	248	7.09	3
+western asia	2003	35	261	7.46	3
+western asia	2004	41	299	7.29	4
+western asia	2005	53	341	6.43	3
+western asia	2006	72	452	6.28	2.0
+western asia	2007	90	621	6.9	3.0
+western asia	2008	117	864	7.38	3
+western asia	2009	141	1142	8.1	4
+western asia	2010	176	1484	8.43	3.0
+western asia	2011	203	1764	8.69	4
+western asia	2012	235	2221	9.45	4
+western asia	2013	285	2794	9.8	4
+western asia	2014	353	3570	10.11	4
+western asia	2015	417	4490	10.77	4
+western asia	2016	494	5876	11.89	5.0
+western asia	2017	584	7259	12.43	5.0
+western asia	2018	685	9213	13.45	5
+western asia	2019	805	11598	14.41	5
+western asia	2020	964	15032	15.59	5.0
+western asia	2021	1126	18396	16.34	6.0
+southern-eastern asia	2000	350	1401	4.0	2.0
+southern-eastern asia	2001	397	1584	3.99	2
+southern-eastern asia	2002	479	1885	3.94	2
+southern-eastern asia	2003	573	2293	4.0	2
+southern-eastern asia	2004	688	2851	4.14	2.0
+southern-eastern asia	2005	836	3462	4.14	2.0
+southern-eastern asia	2006	1008	4287	4.25	2.0
+southern-eastern asia	2007	1120	4926	4.4	2.0
+southern-eastern asia	2008	1354	6139	4.53	2.0
+southern-eastern asia	2009	1584	7566	4.78	2.0
+southern-eastern asia	2010	1890	9523	5.04	2.0
+southern-eastern asia	2011	2151	11571	5.38	2
+southern-eastern asia	2012	2538	14082	5.55	2.0
+southern-eastern asia	2013	2833	16591	5.86	3
+southern-eastern asia	2014	3242	19489	6.01	3.0
+southern-eastern asia	2015	3645	22383	6.14	3
+southern-eastern asia	2016	4174	26677	6.39	3.0
+southern-eastern asia	2017	4614	30641	6.64	3.0
+southern-eastern asia	2018	5305	37171	7.01	3
+southern-eastern asia	2019	6081	45442	7.47	3
+southern-eastern asia	2020	7370	58382	7.92	3.0
+southern-eastern asia	2021	8569	72777	8.49	3
+north america	2000	1070	7915	7.4	3.0
+north america	2001	1190	8705	7.32	3.0
+north america	2002	1362	10154	7.46	3.0
+north america	2003	1547	11747	7.59	3
+north america	2004	1791	14300	7.98	3
+north america	2005	2042	17044	8.35	3.0
+north america	2006	2356	21452	9.11	3.0
+north america	2007	2608	25191	9.66	3.5
+north america	2008	2981	30656	10.28	4
+north america	2009	3374	37688	11.17	4.0
+north america	2010	3916	47488	12.13	4.0
+north america	2011	4404	56826	12.9	4.0
+north america	2012	5014	68541	13.67	4.0
+north america	2013	5559	80514	14.48	4
+north america	2014	6239	94896	15.21	5
+north america	2015	6857	108981	15.89	5
+north america	2016	7576	126944	16.76	5.0
+north america	2017	8208	143105	17.43	5.0
+north america	2018	9167	166587	18.17	5
+north america	2019	10242	194278	18.97	5.0
+north america	2020	11762	233206	19.83	5.0
+north america	2021	13233	274522	20.75	6
+western europe	2000	724	3159	4.36	2.0
+western europe	2001	838	3574	4.26	2.0
+western europe	2002	1050	4411	4.2	2.0
+western europe	2003	1208	5239	4.34	2.0
+western europe	2004	1524	6689	4.39	2.0
+western europe	2005	1726	7853	4.55	2.0
+western europe	2006	2177	10413	4.78	2
+western europe	2007	2537	12662	4.99	2
+western europe	2008	2989	15801	5.29	2
+western europe	2009	3452	19588	5.67	2.0
+western europe	2010	4116	24923	6.06	3.0
+western europe	2011	4629	29560	6.39	3
+western europe	2012	5465	36700	6.72	3
+western europe	2013	6134	44105	7.19	3.0
+western europe	2014	7049	53276	7.56	3
+western europe	2015	7776	61417	7.9	3.0
+western europe	2016	8989	73383	8.16	3
+western europe	2017	9948	85362	8.58	3.0
+western europe	2018	11063	101718	9.19	3
+western europe	2019	12060	118869	9.86	4.0
+western europe	2020	13570	143079	10.54	4.0
+western europe	2021	14796	166058	11.22	4.0

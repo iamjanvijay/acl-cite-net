@@ -17,6 +17,15 @@ import json
 from networks import CitationNet
 import numpy as np
 import statistics
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+import string
+import nltk
+import json
+import pandas as pd
+nltk.download('punkt')
+nltk.download('stopwords')
+
 
 def read_bibfile(filepath):
     if filepath=='./downloads/anthology+abstracts.bib' and os.path.exists('./downloads/anthology+abstracts.pkl'):
@@ -339,6 +348,8 @@ def main(args):
                     'dump_regions_heat_map': True,
                     'dump_gini_coeff_over_years': True,
                     'dump_gini_coeff_over_years_regions': True,
+                    'dump_area_of_research_countries': True,
+                    'dump_venue_of_publication_countries': True
                 }
 
         if to_do['dump_country_paper_count']:
@@ -863,7 +874,325 @@ def main(args):
                         
                     gini_coeff = float(gini(np.array(overall_citation_fractions)))
                     fw.write(f'all regions\t{year}\t{gini_coeff}\n') # only the citing countries considered which is top-k2
-                    
+        
+        if to_do['dump_area_of_research_countries']:
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
+            title_to_paper_details = dict()
+            paper_id_to_title = dict()
+            if os.path.exists(title_to_paper_details_filepath): # reading existing mappings
+                with open(title_to_paper_details_filepath) as csvfile:
+                    csvreader = csv.reader(csvfile)
+                    for row in csvreader:
+                        # print('row:', row)
+                        paper_id, bib_title, ret_title, authors, fuzzy_score, request_type = row 
+                        authors = [author_and_id.strip().split('#') for author_and_id in authors.strip().split('%')] # auth_1#auth_1_id%auth_2#auth_2_id
+                        title_to_paper_details[bib_title] = [paper_id, ret_title, authors, fuzzy_score, request_type]
+                        paper_id_to_title[paper_id] = bib_title
+                        if (request_type=="1") or (request_type=="2" and fuzzy_score=="100"):
+                            correct_paper_details += 1
+                        total_paper_details += 1
+            title_list = []
+            for paper_id in paper_id_to_title.keys():
+                title_list.append(paper_id_to_title[paper_id])
+            
+            paper_id_to_bigrams_list = dict()
+            count_bigrams = dict()
+            for paper_id in paper_id_to_title.keys():
+                title = paper_id_to_title[paper_id]
+                tokens = title.split(" ")
+                tokens = [w.lower() for w in tokens] # convert to lower case
+                table = str.maketrans('', '', string.punctuation) # remove punctuation from each word
+                stripped = [w.translate(table) for w in tokens]
+                words = [word for word in stripped if word.isalpha()] # remove remaining tokens that are not alphabetic
+                stop_words = set(stopwords.words('english'))
+                words = [w for w in words if not w in stop_words] # filter out stop words
+                bigrams = [b for b in zip(words[:-1], words[1:])]
+                paper_id_to_bigrams_list[paper_id] = bigrams
+                for bigram in bigrams:
+                    if(bigram not in count_bigrams.keys()):
+                        count_bigrams[bigram] = 0
+                    count_bigrams[bigram] += 1
+            
+            count_bigrams = dict(sorted(count_bigrams.items(), key=lambda x: x[1], reverse=True))
+            print(len(count_bigrams.items()))
+
+            bigram_country_count = dict()
+            bigram_country_citations = dict()
+            bigram_to_paper_id = dict()
+            dict_area_to_citation_statistics = dict()
+
+            for bigram in list(count_bigrams.keys())[:20]:
+                print(bigram)
+                country_count = dict()
+                country_citations = dict()
+                bigram_citation = []
+                bigram_to_paper_id[bigram] = []
+                for paper_id in paper_id_to_bigrams_list.keys():
+                    if(bigram in paper_id_to_bigrams_list[paper_id]):
+                        bigram_to_paper_id[bigram].append(paper_id)
+                        if(paper_id in citenet.paper_features.keys()):
+                            # print(citenet.paper_features[paper_id])
+                            country_list = citenet.paper_features[paper_id]['countries']
+                            for country in country_list:
+                                if(country not in country_count.keys()):
+                                    country_count[country] = 0
+                                    country_citations[country] = []
+                                country_count[country] += 1
+                                if(paper_id in citenet.paper_to_citedby.keys()):
+                                    country_citations[country].append(len(citenet.paper_to_citedby[paper_id]))
+                        if(paper_id in citenet.paper_to_citedby.keys()):
+                            bigram_citation.append(len(citenet.paper_to_citedby[paper_id]))
+                
+                dict_area_to_citation_statistics[bigram] = {'mean':statistics.mean(bigram_citation), 'median':statistics.median(bigram_citation)}
+                country_count = dict(sorted(country_count.items(), key=lambda x: x[1], reverse=True))
+                bigram_country_count[bigram] = country_count
+                bigram_country_citations[bigram] = country_citations
+
+            data = {'bigram':[],
+            'country':[],
+            'Mean':[],
+            'Median':[],
+            'Support':[]}
+            df = pd.DataFrame(data)
+
+            for bigram in bigram_country_count.keys():
+                # print(bigram)
+                # print(bigram_country_count[bigram])
+                for country in list(bigram_country_count[bigram].keys())[:5]:
+                    mean_citation = statistics.mean(bigram_country_citations[bigram][country])
+                    median_citation = statistics.median(bigram_country_citations[bigram][country])
+                    print(f"Country: {country} | Mean: {mean_citation} | Median: {median_citation} | Support: {len(bigram_country_citations[bigram][country])}")
+                    new_row = {'bigram':bigram, 'country':country, 'Mean':mean_citation, 'Median':median_citation, 'Support':len(bigram_country_citations[bigram][country])}
+                    df = df.append(new_row, ignore_index=True)
+                print()
+                print()
+            df.to_csv('output.csv')
+
+            countries_considered = ['united states', 
+                                    'china', 
+                                    'united kingdom', 
+                                    'india', 
+                                    'italy',
+                                    'france',
+                                    'japan',
+                                    'spain',
+                                    'canada',
+                                    'germany'
+                                    ]
+
+            dict_country_area_count = {}
+            dict_country_mean_citation = {}
+            dict_country_median_citation = {}
+
+            for country in countries_considered:
+                dict_country_area_count[country] = {}
+                dict_country_mean_citation[country] = {}
+                dict_country_median_citation[country] = {}
+
+            dict_country_mean_citation['mean'] = {}
+            dict_country_median_citation['median'] = {}
+
+            for bigram in bigram_country_count.keys():
+                bigram_string = bigram[0] + " " + bigram[1]
+                print(f"Bigram = {bigram}")
+                for country in countries_considered:
+                    if(country in bigram_country_citations[bigram].keys() and len(bigram_country_citations[bigram][country])>0):
+                        mean_citation = statistics.mean(bigram_country_citations[bigram][country])
+                        median_citation = statistics.median(bigram_country_citations[bigram][country])
+                        print(f"Country: {country} | Mean: {mean_citation} | Median: {median_citation} | Support: {len(bigram_country_citations[bigram][country])}")
+                        dict_country_mean_citation[country][bigram_string] = mean_citation
+                        dict_country_median_citation[country][bigram_string] = median_citation
+                        dict_country_area_count[country][bigram_string] = len(bigram_country_citations[bigram][country])
+                dict_country_mean_citation['mean'][bigram_string] = dict_area_to_citation_statistics[bigram]['mean']
+                dict_country_median_citation['median'][bigram_string] = dict_area_to_citation_statistics[bigram]['median']
+                print(f"Mean citation: {dict_country_mean_citation['mean'][bigram_string]} | Median Citation: {dict_country_median_citation['median'][bigram_string]} ")
+                print()
+            
+            with open('country_to_area_count_june.json', 'w') as fp:
+                json.dump(dict_country_area_count, fp)
+
+            with open('country_to_area_mean_june.json', 'w') as fp:
+                json.dump(dict_country_mean_citation, fp)
+
+            with open('country_to_area_median_june.json', 'w') as fp:
+                json.dump(dict_country_median_citation, fp)
+
+        if to_do['dump_venue_of_publication_countries']:
+            
+            conference_names = dict()
+            conference_names['CL'] = 'computational linguistics'
+            conference_names['TACL'] = 'transactions of the association for computational linguistics'
+
+            conference_names['ACL'] = 'annual meeting of the association for computational linguistics'
+            conference_names['CONLL'] = 'Conference on Computational Natural Language Learning'
+            conference_names['COLING'] = 'international Conference on Computational Linguistics'
+            conference_names['EACL'] = 'European Chapter of the Association for Computational Linguistics'
+            conference_names['EMNLP'] = 'Conference on Empirical Methods in Natural Language Processing'
+            conference_names['Findings'] = 'Findings of the Association for Computational Linguistics'
+            conference_names['NAACL'] = 'North American Chapter of the Association for Computational Linguistics'
+
+            conference_names['SEMEVAL'] = 'international workshop on semantic evaluation'
+            # conference_names['WMT'] = ['Workshop on Statistical Machine Translation', 'Conference on Machine Translation']
+            conference_names['IJCNLP'] = 'International Joint Conference on Natural Language Processing'
+            conference_names['LREC'] = 'Language Resources and Evaluation'
+            conference_names['PACLIC'] = 'Pacific Asia Conference on Language, Information and Computation'
+            conference_names['ROCLING'] = 'Conference on Computational Linguistics and Speech Processing'
+            conference_names['RANLP'] = 'International Conference Recent Advances in Natural Language Processing'
+
+            #convert to lower case:
+            for key in conference_names.keys():
+                conference_names[key] = conference_names[key].lower()
+            
+            citenet = CitationNet(title_to_paper_details_fpath, ref_paperids_fpath, bib_paper_details_fpath, paper_country_fpath, 2021)
+
+            dict_venue_to_paper_id = dict()
+            special_characters = ['!','#','$','%','&','@','[',']',']','_','{','}',',','.',':','\\']
+            venue_list = []
+            for paper_id in citenet.paper_features:
+                venue = citenet.paper_features[paper_id]['paper_book_title']
+                venue = ''.join(filter(lambda i:i not in special_characters, venue))
+                venue_list.append(venue)
+            unique_venues = sorted(list(set(venue_list)))
+            
+
+            # get the dict[paper_id] -> venue
+            dict_paper_id_to_venue = dict()
+            for paper_id in citenet.paper_features:
+                venue = citenet.paper_features[paper_id]['paper_book_title']
+                venue_processed = venue.lower()
+                venue_processed = ''.join(filter(lambda i:i not in special_characters, venue_processed))
+                venue = ""
+                for key in conference_names.keys():
+                    if(conference_names[key] in venue_processed):
+                        venue  = key
+                    if(key == 'CL'):
+                        if(conference_names[key] == venue_processed):
+                            venue = key
+                # if(venue not in dict_venue_to_paper_id.keys()):
+                #     dict_paper_id_to_venue[citenet.paper_features[paper_id]['paper_key']] = []
+                dict_paper_id_to_venue[citenet.paper_features[paper_id]['paper_key']] = venue
+
+            with open('dict_paper_id_to_venue.json', 'w') as fp:
+                json.dump(dict_paper_id_to_venue, fp)
+
+            for paper_id in citenet.paper_features:
+                venue = citenet.paper_features[paper_id]['paper_book_title']
+                venue_processed = venue.lower()
+                venue_processed = ''.join(filter(lambda i:i not in special_characters, venue_processed))
+                
+                venue = ""
+                for key in conference_names.keys():
+                    if(conference_names[key] in venue_processed):
+                        venue  = key
+                    if(key == 'CL'):
+                        if(conference_names[key] == venue_processed):
+                            venue = key
+                if(venue not in dict_venue_to_paper_id.keys()):
+                    dict_venue_to_paper_id[venue] = []
+                dict_venue_to_paper_id[venue].append(paper_id)
+
+
+            dict_venue_to_country_count = dict()
+            dict_venue_to_country_citations = dict()
+            dict_venue_to_citation_statistics = dict()
+
+            for venue in dict_venue_to_paper_id.keys():
+                paper_id_list = dict_venue_to_paper_id[venue]
+                country_count = dict()
+                country_citations = dict()
+                venue_citation = []
+                for paper_id in paper_id_list:
+                    country_list = citenet.paper_features[paper_id]['countries']
+                    for country in country_list:
+                        if(country not in country_count.keys()):
+                            country_count[country] = 0
+                            country_citations[country] = []
+                        country_count[country] += 1
+                        if(paper_id in citenet.paper_to_citedby.keys()):
+                            country_citations[country].append(len(citenet.paper_to_citedby[paper_id]))
+                    if(paper_id in citenet.paper_to_citedby.keys()):
+                        venue_citation.append(len(citenet.paper_to_citedby[paper_id]))
+                
+                dict_venue_to_citation_statistics[venue] = {'mean':statistics.mean(venue_citation), 'median':statistics.median(venue_citation)}
+                country_count = dict(sorted(country_count.items(), key=lambda x: x[1], reverse=True))
+                dict_venue_to_country_count[venue] = country_count
+                dict_venue_to_country_citations[venue] = country_citations
+
+
+            data = {'Venue':[],
+            'Country':[],
+            'Mean':[],
+            'Median':[],
+            'Support':[]}
+            df = pd.DataFrame(data)
+
+            print(dict_venue_to_country_count)
+            for venue in dict_venue_to_country_count.keys():
+                print(f"Venue: {venue} | Total papers : {sum(dict_venue_to_country_count[venue].values())}")
+                print(dict_venue_to_country_count[venue])
+                for country in list(dict_venue_to_country_count[venue].keys())[:10]:
+                    if(len(dict_venue_to_country_citations[venue][country])>0):
+                        mean_citation = statistics.mean(dict_venue_to_country_citations[venue][country])
+                        median_citation = statistics.median(dict_venue_to_country_citations[venue][country])
+                        print(f"Country: {country} | Mean: {mean_citation} | Median: {median_citation} | Support: {len(dict_venue_to_country_citations[venue][country])}")
+                        new_row = {'Venue':venue, 'Country':country, 'Mean':mean_citation, 'Median':median_citation, 'Support':len(dict_venue_to_country_citations[venue][country])}
+                        new_df = pd.DataFrame([new_row])
+                        df = pd.concat([df, new_df], ignore_index = True)
+                print()
+                print()
+            df.to_csv('output_venue.csv')
+            print('*'*100)
+            print('*'*100)
+
+            countries_considered = ['united states', 
+                                    'china', 
+                                    'united kingdom', 
+                                    'india', 
+                                    'italy',
+                                    'france',
+                                    'japan',
+                                    'spain',
+                                    'canada',
+                                    'germany'
+                                    ]
+
+            dict_country_venue_count = {}
+            dict_country_mean_citation = {}
+            dict_country_median_citation = {}
+
+            for country in countries_considered:
+                dict_country_venue_count[country] = {}
+                dict_country_mean_citation[country] = {}
+                dict_country_median_citation[country] = {}
+
+            dict_country_mean_citation['mean'] = {}
+            dict_country_median_citation['median'] = {}
+
+            for venue in dict_venue_to_country_count.keys():
+                print(f"Venue = {venue}")
+                for country in countries_considered:
+                    if(country in dict_venue_to_country_citations[venue].keys() and len(dict_venue_to_country_citations[venue][country])>0):
+                        mean_citation = statistics.mean(dict_venue_to_country_citations[venue][country])
+                        median_citation = statistics.median(dict_venue_to_country_citations[venue][country])
+                        print(f"Country: {country} | Mean: {mean_citation} | Median: {median_citation} | Support: {len(dict_venue_to_country_citations[venue][country])}")
+                        dict_country_mean_citation[country][venue] = mean_citation
+                        dict_country_median_citation[country][venue] = median_citation
+                        dict_country_venue_count[country][venue] = len(dict_venue_to_country_citations[venue][country])
+                dict_country_mean_citation['mean'][venue] = dict_venue_to_citation_statistics[venue]['mean']
+                dict_country_median_citation['median'][venue] = dict_venue_to_citation_statistics[venue]['median']
+                print(f"Mean citation: {dict_country_mean_citation['mean'][venue]} | Median Citation: {dict_country_median_citation['median'][venue]} ")
+                print()
+
+            # dump the results to json file
+            with open('country_to_venue_count.json', 'w') as fp:
+                json.dump(dict_country_venue_count, fp)
+
+            with open('country_to_venue_mean.json', 'w') as fp:
+                json.dump(dict_country_mean_citation, fp)
+
+            with open('country_to_venue_median.json', 'w') as fp:
+                json.dump(dict_country_median_citation, fp)
+
 
 
 if __name__ == '__main__':

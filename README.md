@@ -1,7 +1,7 @@
 # ACL-Cite-Net
 This repo contains codes for the following paper:
 
-Mukund Rungta, Janvijay Singh, Saif M. Mohammad, Diyi Yang: Geographic Citation Gaps in NLP Research, EMNLP 2022
+Mukund Rungta, Janvijay Singh, Saif M. Mohammad, Diyi Yang: [Geographic Citation Gaps in NLP Research](https://arxiv.org/pdf/2210.14424.pdf), EMNLP 2022
 If you would like to refer to it, please cite the paper mentioned above. 
 
 ## Getting Started

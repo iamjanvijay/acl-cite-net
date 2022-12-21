@@ -5,10 +5,12 @@ import requests
 import json
 import concurrent.futures
 from tqdm import tqdm
+import shutil
 
 # input files
 bib_details_file = '../dataset/downloads/bib_paper_details.csv'
 title_to_filtered_details = '../dataset/downloads/title_to_paper_filtered_details.csv'
+old_references_details = '../dataset/downloads/ref_paper_ids.csv'
 
 # output files
 references_file = './data/s2_paper_keys_for_references.csv'
@@ -36,8 +38,6 @@ with open(bib_details_file) as csv_file:
         else: # additional entries for this paper title
             paper_title_to_details[paper_title].append([acl_paper_key, paper_type, paper_book_title, month, year, url]) 
         count += 1
-        if count == 100:
-            break
 
 print("Fetching paper-details for acl papers...")
 missed_count, total_count = 0, 0
@@ -71,6 +71,13 @@ with open(title_to_filtered_details) as csv_file:
             total_count += 1
 
 print(f"{missed_count} missed entires with multiple publications for same title, among a total paper count of {total_count}")
+
+USE_OLD_REF_DETAILS = True
+if USE_OLD_REF_DETAILS:
+    with open(paper_details_file, 'w') as f_json:
+        json.dump(paper_details, f_json)
+    shutil.copy(old_references_details, references_file)
+    exit()
 
 # identifying the references and dumping them out
 print("Fetching refereces for acl papers...")

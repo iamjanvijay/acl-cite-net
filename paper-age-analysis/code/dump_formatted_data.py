@@ -16,13 +16,51 @@ old_references_details = '../dataset/downloads/ref_paper_ids.csv'
 references_file = './data/s2_paper_keys_for_references.csv'
 paper_details_file = './data/s2_paper_keys_to_paper_details.json'
 
-# cache
-request_reponses = dict()
-def request_to_respose(request_string):
-    return requests.get(request_string, headers={'x-api-key': 'qZWKkOKyzP5g9fgjyMmBt1MN2NTC6aT61UklAiyw'})
-    # if request_string not in request_reponses:
-    #     request_reponses[request_string] = requests.get(request_string, headers={'x-api-key': 'qZWKkOKyzP5g9fgjyMmBt1MN2NTC6aT61UklAiyw'})
-    # return request_reponses[request_string]
+# cache file
+request_to_response_file = './cache/request_to_response.csv' # dump the request_url and response_file_json for successful requests
+requests_cache = './cache'
+os.makedirs(requests_cache, exist_ok = True)
+
+# sent a request
+def request_to_respose(request_url):
+    request_response = requests.get(request_url, headers={'x-api-key': 'qZWKkOKyzP5g9fgjyMmBt1MN2NTC6aT61UklAiyw'})
+    return request_response
+
+# cache folder to save json output of request
+cur_request_id = 0
+cached_request_response = dict()
+if os.path.exists(request_to_response_file):
+    with open(request_to_response_file) as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        for line_idx, row in enumerate(csv_reader):
+            request_url, request_id = row
+            # incrementing number of successfull requests
+            cur_request_id = int(request_id) + 1
+            # aggregating cached request responses in the cache dict
+            with open(os.path.join(requests_cache, f'{request_id}.json'), "r") as infile:
+                response_json = json.load(infile)
+                cached_request_response[request_url] = response_json
+
+def save_response_to_cache(request_url, response_json):
+    global cur_request_id
+    with open(request_to_response_file, 'a') as csv_file:
+        writer = csv.writer(csv_file)
+        # make a entry in mapping file
+        writer.writerow([request_url, cur_request_id])
+        # save the response json file
+        with open(os.path.join(requests_cache, f'{cur_request_id}.json'), 'w') as f_json:
+            json.dump(response_json, f_json)
+        # updating cache dict
+        cached_request_response[request_url] = response_json
+        # incrementing number of successfull requests
+        cur_request_id += 1
+
+def response_from_cache(request_url):
+    # return response from cache dict if available otherwise return -1
+    global cached_request_response
+    if request_url in cached_request_response:
+        return cached_request_response[request_url]
+    return -1
 
 # loading paper detail from bib
 count = 0
@@ -53,15 +91,30 @@ with open(title_to_filtered_details) as csv_file:
             updated_cur_rows = []
             for cur_row in paper_title_to_details[bib_title]:
                 acl_id = cur_row[-1][len('https://aclanthology.org/'):] # acl-url to acl-id
-                r = request_to_respose(f'https://api.semanticscholar.org/graph/v1/paper/ACL:{acl_id}?fields=authors')
-                if r.status_code == 200:
-                    s2_paper_key, authors = r.json()['paperId'], r.json()['authors']
+                request_url = f'https://api.semanticscholar.org/graph/v1/paper/ACL:{acl_id}?fields=authors'
+
+                response_json = response_from_cache(request_url) # check in cache
+                if response_json != -1: # if found in cache
+                    # do work
+                    s2_paper_key, authors = response_json['paperId'], response_json['authors']
                     authors = [[author['authorId'], author['name']] for author in authors]
                     updated_cur_rows.append([s2_paper_key,] + cur_row + [authors,])
                     paper_details[s2_paper_key] = dict(zip(['title', 'acl_paper_key', 'paper_type', 'venue', 'month', 'year', 'url', 'authors'], [bib_title,] + cur_row + [authors,]))
                     paper_details[s2_paper_key]['acl'] = True
-                else:
-                    missed_count += 1
+                else: # if not found in cache
+                    r = request_to_respose(request_url)
+                    if r.status_code == 200: # if successful request
+                        # save the request response json in cache
+                        save_response_to_cache(request_url, r.json())
+                        # do work
+                        s2_paper_key, authors = r.json()['paperId'], r.json()['authors']
+                        authors = [[author['authorId'], author['name']] for author in authors]
+                        updated_cur_rows.append([s2_paper_key,] + cur_row + [authors,])
+                        paper_details[s2_paper_key] = dict(zip(['title', 'acl_paper_key', 'paper_type', 'venue', 'month', 'year', 'url', 'authors'], [bib_title,] + cur_row + [authors,]))
+                        paper_details[s2_paper_key]['acl'] = True
+                    else:
+                        missed_count += 1
+
                 total_count += 1
             paper_title_to_details[bib_title] = updated_cur_rows # updating paper_title_to_details with s2_paper_key and authors
         else:
@@ -72,7 +125,7 @@ with open(title_to_filtered_details) as csv_file:
 
 print(f"{missed_count} missed entires with multiple publications for same title, among a total paper count of {total_count}")
 
-USE_OLD_REF_DETAILS = True
+USE_OLD_REF_DETAILS = False
 if USE_OLD_REF_DETAILS:
     with open(paper_details_file, 'w') as f_json:
         json.dump(paper_details, f_json)
@@ -83,53 +136,94 @@ if USE_OLD_REF_DETAILS:
 print("Fetching refereces for acl papers...")
 total_references, none_references = 0, 0
 non_acl_s2_paper_keys = set() # s2_paper_keys corresponding to non *CL papers
+failed_requests = 0
 futures = []
 with open(references_file, 'w') as fw:
-    with concurrent.futures.ThreadPoolExecutor(max_workers = 100) as executor:
-        # multi-threaded fetching...
+    with concurrent.futures.ThreadPoolExecutor(max_workers = 50) as executor:
+        # check in cache dict otherwise send a requests in multiple-threads
         for s2_paper_key in paper_details:
-            futures.append(executor.submit(request_to_respose, f'https://api.semanticscholar.org/graph/v1/paper/{s2_paper_key}?fields=references'))
-        # using fetched results
-        for task in tqdm(concurrent.futures.as_completed(futures), total=len(paper_details), leave=True):
+            request_url = f'https://api.semanticscholar.org/graph/v1/paper/{s2_paper_key}?fields=references'
+            response_json = response_from_cache(request_url) # check in cache
+            if response_json == -1: # if reponse to request url not already in cache
+                futures.append(executor.submit(request_to_respose, request_url))
+            else: # if reponse to request url already in cache
+                # do work
+                s2_paper_key = response_json['paperId']
+                if 'references' not in response_json:
+                    continue
+                s2_ref_paper_keys = [reference_paper_tuple['paperId'] for reference_paper_tuple in response_json['references']]
+                filtered_s2_ref_paper_keys = [s2_ref_paper_key for s2_ref_paper_key in s2_ref_paper_keys if s2_ref_paper_key is not None]
+                total_references += len(s2_ref_paper_keys)
+                none_references += (len(s2_ref_paper_keys) - len(filtered_s2_ref_paper_keys))
+                s2_ref_paper_keys = filtered_s2_ref_paper_keys
+                out_str = ','.join([s2_paper_key,] + s2_ref_paper_keys) + '\n' # first paper_key is for the new paper and rest of the paper_keys are for referenced papers
+                fw.write(out_str)
+
+                # accumulate the s2_paper_keys for non *CL references
+                for s2_ref_paper_key in s2_ref_paper_keys:
+                    if s2_ref_paper_key not in paper_details:
+                        non_acl_s2_paper_keys.add(s2_ref_paper_key)
+
+        # using the responses from the sent requests
+        for task in tqdm(concurrent.futures.as_completed(futures), total=len(futures), leave=True):
             r = task.result()
-            s2_paper_key = r.json()['paperId']
-            if 'references' not in r.json():
-                continue
-            s2_ref_paper_keys = [reference_paper_tuple['paperId'] for reference_paper_tuple in r.json()['references']]
-            filtered_s2_ref_paper_keys = [s2_ref_paper_key for s2_ref_paper_key in s2_ref_paper_keys if s2_ref_paper_key is not None]
-            total_references += len(s2_ref_paper_keys)
-            none_references += (len(s2_ref_paper_keys) - len(filtered_s2_ref_paper_keys))
-            s2_ref_paper_keys = filtered_s2_ref_paper_keys
-            out_str = ','.join([s2_paper_key,] + s2_ref_paper_keys) + '\n' # first paper_key is for the new paper and rest of the paper_keys are for referenced papers
-            fw.write(out_str)
+            if r.status_code == 200: # if sucessful request
+                # save the request response json in cache
+                s2_paper_key = r.json()['paperId']
+                request_url = f'https://api.semanticscholar.org/graph/v1/paper/{s2_paper_key}?fields=references'
+                save_response_to_cache(request_url, r.json())
+                # do work
+                if 'references' not in r.json():
+                    continue
+                s2_ref_paper_keys = [reference_paper_tuple['paperId'] for reference_paper_tuple in r.json()['references']]
+                filtered_s2_ref_paper_keys = [s2_ref_paper_key for s2_ref_paper_key in s2_ref_paper_keys if s2_ref_paper_key is not None]
+                total_references += len(s2_ref_paper_keys)
+                none_references += (len(s2_ref_paper_keys) - len(filtered_s2_ref_paper_keys))
+                s2_ref_paper_keys = filtered_s2_ref_paper_keys
+                out_str = ','.join([s2_paper_key,] + s2_ref_paper_keys) + '\n' # first paper_key is for the new paper and rest of the paper_keys are for referenced papers
+                fw.write(out_str)
 
-            # accumulate the s2_paper_keys for non *CL references
-            for s2_ref_paper_key in s2_ref_paper_keys:
-                if s2_ref_paper_key not in paper_details:
-                    non_acl_s2_paper_keys.add(s2_ref_paper_key)
-
+                # accumulate the s2_paper_keys for non *CL references
+                for s2_ref_paper_key in s2_ref_paper_keys:
+                    if s2_ref_paper_key not in paper_details:
+                        non_acl_s2_paper_keys.add(s2_ref_paper_key)
+            else:
+                failed_requests += 1 
 print(f"{none_references} refereces were there for which 'None' s2-paper-keys were reteived among a total of {total_references} references")
+print(f"Total failed request for computing references: {failed_requests} out of {len(futures)}")
 
 # append details for non-acl papers in paper_detail
 print("Fetching paper-details for non-acl papers...")
 futures = []
-with concurrent.futures.ThreadPoolExecutor(max_workers = 100) as executor:
+failed_requests = 0
+with concurrent.futures.ThreadPoolExecutor(max_workers = 50) as executor:
     # multi-threaded fetching...
     for s2_paper_key in non_acl_s2_paper_keys:
-        futures.append(executor.submit(request_to_respose, f'https://api.semanticscholar.org/graph/v1/paper/{s2_paper_key}?fields=venue,year,title'))
-    # using fetched results
-    for task in tqdm(concurrent.futures.as_completed(futures), total=len(non_acl_s2_paper_keys), leave=True):
-        # Check the status of the task
-        if task.done():
-            # Do something with the result of the task
-            r = task.result()
-            s2_paper_key, title, venue, year = r.json()['paperId'], r.json()['title'], r.json()['venue'], r.json()['year']
-            # assert(ret_s2_paper_key not in paper_details), f"{ret_s2_paper_key} aleardy exists, must be a *CL paper"
+        request_url = f'https://api.semanticscholar.org/graph/v1/paper/{s2_paper_key}?fields=venue,year,title'
+        response_json = response_from_cache(request_url) # check in cache
+        if response_json == -1: # if reponse to request url not already in cache
+            futures.append(executor.submit(request_to_respose, request_url))
+        else: # if reponse to request url already in cache
+            # do work
+            s2_paper_key, title, venue, year = response_json['paperId'], response_json['title'], response_json['venue'], response_json['year']
             paper_details[s2_paper_key] = {'title':title, 'venue': venue, 'year': str(year), 'acl': False}
 
+    # using the responses from the sent requests
+    for task in tqdm(concurrent.futures.as_completed(futures), total=len(futures), leave=True):
+        # Check the status of the task
+        if task.done():
+            r = task.result()
+            if r.status_code == 200: # if sucessful request
+                s2_paper_key, title, venue, year = r.json()['paperId'], r.json()['title'], r.json()['venue'], r.json()['year']
+                request_url = f'https://api.semanticscholar.org/graph/v1/paper/{s2_paper_key}?fields=venue,year,title'
+                save_response_to_cache(request_url, r.json())
+                paper_details[s2_paper_key] = {'title':title, 'venue': venue, 'year': str(year), 'acl': False}
+            else:
+                failed_requests += 1 
+
+print(f"Total failed request for computing paper details of non-acl papers: {failed_requests} out of {len(futures)}")
 with open(paper_details_file, 'w') as f_json:
     json.dump(paper_details, f_json)
-
 
     
 
